@@ -14,10 +14,10 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>true</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Filter a string</Description>
   </Methods>
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>FilterService is a service which processes and filter user inputs</Description>
 </ClassDef>

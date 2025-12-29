@@ -5,5 +5,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Hidden is a object used for hiding instances.</Description>
 </ClassDef>

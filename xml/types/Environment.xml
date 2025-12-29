@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines the current camera which player is using to view</Description>
   </Properties>
   <Properties>
     <Name>Gravity</Name>
@@ -16,7 +16,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The direction and strength of gravity in the world.</Description>
   </Properties>
   <Properties>
     <Name>PartDestroyHeight</Name>
@@ -24,7 +24,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The height at which unanchored parts are destroyed when they fall below it.</Description>
   </Properties>
   <Properties>
     <Name>AutoGenerateNavMesh</Name>
@@ -32,7 +32,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines whether or not to automatically build a navigation mesh for NPC pathfinding. This property is disabled by default so there are no performance issues with larger maps.</Description>
   </Properties>
   <Methods>
     <Name>Raycast</Name>
@@ -64,7 +64,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Casts a ray from origin with a specified direction and returns a RayResult for the first hit object.</Description>
   </Methods>
   <Methods>
     <Name>RaycastAll</Name>
@@ -96,7 +96,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Casts a ray from origin with a specified direction and returns a RayResult array for all hit objects.</Description>
   </Methods>
   <Methods>
     <Name>OverlapSphere</Name>
@@ -122,7 +122,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Returns a list of instances intersecting with the sphere in the given position and radius.</Description>
   </Methods>
   <Methods>
     <Name>OverlapBox</Name>
@@ -154,7 +154,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Returns a list of instances intersecting with the box in the given position, size and rotation.</Description>
   </Methods>
   <Methods>
     <Name>RebuildNavMesh</Name>
@@ -162,7 +162,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Rebuilds the navigation mesh which determines the empty space where NPCs can pathfind in.</Description>
   </Methods>
   <Methods>
     <Name>GetPointOnNavMesh</Name>
@@ -176,10 +176,10 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Returns a point on the navigation mesh at the given position.</Description>
   </Methods>
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Environment is the primary object intended for storing active objects in the place.</Description>
 </ClassDef>

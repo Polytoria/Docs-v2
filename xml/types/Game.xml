@@ -16,7 +16,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The ID of the current Polytoria place.</Description>
   </Properties>
   <Properties>
     <Name>ServerID</Name>
@@ -24,7 +24,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The server ID of the current instance.</Description>
   </Properties>
   <Properties>
     <Name>UpTime</Name>
@@ -32,7 +32,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The uptime of this game in seconds.</Description>
   </Properties>
   <Properties>
     <Name>InstanceCount</Name>
@@ -40,12 +40,12 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The total number of instances currently loaded.</Description>
   </Properties>
   <Events>
     <Name>Ready</Name>
     <Arguments></Arguments>
-    <Description>Missing Documentation</Description>
+    <Description>Fires when the game is ready</Description>
   </Events>
   <Events>
     <Name>Rendered</Name>
@@ -53,10 +53,10 @@
       <Name>delta</Name>
       <Type>number</Type>
     </Arguments>
-    <Description>Fires when the game has been rendered</Description>
+    <Description>Fires every frame after the place has been rendered. The `delta` parameter is the time between the last frame and the current.</Description>
   </Events>
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Game is the root object in the Polytoria instance tree. It is the object from which everything is descended.</Description>
 </ClassDef>

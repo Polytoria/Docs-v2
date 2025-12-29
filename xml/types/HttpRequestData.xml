@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The target endpoint of the HTTP request.</Description>
   </Properties>
   <Properties>
     <Name>Method</Name>
@@ -16,7 +16,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The HTTP method used for the request.</Description>
   </Properties>
   <Properties>
     <Name>Body</Name>
@@ -24,7 +24,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The payload sent with the request.</Description>
   </Properties>
   <Properties>
     <Name>Headers</Name>
@@ -32,7 +32,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>A table of HTTP headers to include with the request, represented as key-value pairs.</Description>
   </Properties>
   <Methods>
     <Name>New</Name>
@@ -40,10 +40,10 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>true</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Creates and returns a new instance of `HttpRequestData`</Description>
   </Methods>
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>HttpRequestData represents the data required to construct an HTTP request</Description>
 </ClassDef>

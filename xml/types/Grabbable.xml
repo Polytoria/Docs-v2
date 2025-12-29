@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines the force used to drag this object.</Description>
   </Properties>
   <Properties>
     <Name>MaxRange</Name>
@@ -16,7 +16,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines the max range that this object can be dragged.</Description>
   </Properties>
   <Properties>
     <Name>PermissionMode</Name>
@@ -24,7 +24,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines the permission mode for this grabber</Description>
   </Properties>
   <Properties>
     <Name>Dragger</Name>
@@ -32,7 +32,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Returns the current dragger</Description>
   </Properties>
   <Properties>
     <Name>PermissionPredicate</Name>
@@ -40,7 +40,15 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>A predicate function deciding whenever this player can grab this object. `PermissionMode` must be set to `GrabbablePermissionMode.Scripted`
+
+Example usage:
+```lua
+grabbable.PermissionMode = Enums.GrabbablePermissionMode.Scripted
+grabbable.PermissionPredicate = function(player)
+  return player.Name == &quot;Player1&quot;
+end
+```</Description>
   </Properties>
   <Events>
     <Name>Grabbed</Name>
@@ -58,5 +66,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>true</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Grabbable represents a object that can be dragged by user. It can be parented to Physical to give user ability to drag that object.</Description>
 </ClassDef>

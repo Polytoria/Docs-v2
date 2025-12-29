@@ -14,7 +14,7 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Send a request using the `HttpRequestData`</Description>
   </Methods>
   <Methods>
     <Name>GetAsync</Name>
@@ -34,7 +34,7 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Sends a GET request to the specified URL.</Description>
   </Methods>
   <Methods>
     <Name>PostAsync</Name>
@@ -60,7 +60,7 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Sends a POST request to the specified URL.</Description>
   </Methods>
   <Methods>
     <Name>PutAsync</Name>
@@ -86,7 +86,7 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Sends a PUT request to the specified URL.</Description>
   </Methods>
   <Methods>
     <Name>DeleteAsync</Name>
@@ -112,7 +112,7 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Sends a DELETE request to the specified url.</Description>
   </Methods>
   <Methods>
     <Name>PatchAsync</Name>
@@ -138,10 +138,10 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Sends a PATCH request to the specified url.</Description>
   </Methods>
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Http is a service used for HTTP communications and requests.</Description>
 </ClassDef>

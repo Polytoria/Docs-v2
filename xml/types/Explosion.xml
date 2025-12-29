@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines the radius of this explosion</Description>
   </Properties>
   <Properties>
     <Name>Force</Name>
@@ -16,7 +16,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines the force of this explosion that will be applied to affected hits</Description>
   </Properties>
   <Properties>
     <Name>AffectAnchored</Name>
@@ -24,7 +24,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines if this explosion should affect anchored parts or not</Description>
   </Properties>
   <Properties>
     <Name>Damage</Name>
@@ -32,7 +32,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Damage that is affected to player</Description>
   </Properties>
   <Properties>
     <Name>AffectPredicate</Name>
@@ -40,7 +40,15 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>A predicate function deciding whenever this part should be accepted or not
+    
+Example usage:
+```lua
+explosion.AffectPredicate = function(hit)
+  -- always explode
+  return true
+end
+```</Description>
   </Properties>
   <Events>
     <Name>Hitted</Name>
@@ -53,5 +61,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>true</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Explosion is a deadly explosion killing players and applying force to parts at the given position.</Description>
 </ClassDef>
