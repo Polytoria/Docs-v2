@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Defines the parent of this instance in the hierarchy.</Description>
   </Properties>
   <Properties>
     <Name>EditableChildren</Name>
@@ -24,7 +24,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Tags associated with this instance.</Description>
   </Properties>
   <Methods>
     <Name>GetDescendants</Name>
@@ -32,7 +32,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Gets all descendants of this instance.</Description>
   </Methods>
   <Methods>
     <Name>FindChild</Name>
@@ -46,7 +46,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Finds a child of this instance by name.</Description>
   </Methods>
   <Methods>
     <Name>WaitChild</Name>
@@ -80,7 +80,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Finds a child of this instance by class name.</Description>
   </Methods>
   <Methods>
     <Name>MoveChild</Name>
@@ -108,7 +108,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Gets all children of this instance.</Description>
   </Methods>
   <Methods>
     <Name>GetChildrenOfClass</Name>
@@ -122,7 +122,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Gets all children of this instance that are of the specified class.</Description>
   </Methods>
   <Methods>
     <Name>IsAncestorOf</Name>
@@ -136,7 +136,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Determines if this instance is an ancestor of the given instance.</Description>
   </Methods>
   <Methods>
     <Name>IsDescendantOf</Name>
@@ -150,7 +150,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Determines if this instance is a descendant of the given instance.</Description>
   </Methods>
   <Methods>
     <Name>IsDescendantOfClass</Name>
@@ -164,7 +164,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Determines if this instance is a descendant of the given class.</Description>
   </Methods>
   <Methods>
     <Name>New</Name>
@@ -184,7 +184,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>true</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Creates a new instance of the specified class.</Description>
   </Methods>
   <Methods>
     <Name>AddTag</Name>
@@ -198,7 +198,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Adds a tag to this instance.</Description>
   </Methods>
   <Methods>
     <Name>RemoveTag</Name>
@@ -212,7 +212,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Removes a tag from this instance.</Description>
   </Methods>
   <Methods>
     <Name>HasTag</Name>
@@ -226,7 +226,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Checks if this instance has the specified tag.</Description>
   </Methods>
   <Methods>
     <Name>Reparent</Name>
@@ -248,7 +248,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Gets the parent of this instance.</Description>
   </Methods>
   <Methods>
     <Name>SetParent</Name>
@@ -262,7 +262,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Sets the parent of this instance.</Description>
   </Methods>
   <Events>
     <Name>ChildAdded</Name>
@@ -299,5 +299,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>true</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Instance is the base class of all classes. Every class derives from it and has all properties, events and functions Instance has.</Description>
 </ClassDef>

@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Indicates whether the game window is currently focused.</Description>
   </Properties>
   <Properties>
     <Name>IsTouchscreen</Name>
@@ -16,7 +16,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Indicates whether the input device is a touchscreen.</Description>
   </Properties>
   <Properties>
     <Name>IsGameFocused</Name>
@@ -24,7 +24,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Indicates whether the game is currently focused.</Description>
   </Properties>
   <Properties>
     <Name>IsInputFocused</Name>
@@ -32,7 +32,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Indicates whether an input is currently focused.</Description>
   </Properties>
   <Properties>
     <Name>IsGamepadConnected</Name>
@@ -40,7 +40,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Indicates whether a gamepad is currently connected.</Description>
   </Properties>
   <Properties>
     <Name>IsMenuOpened</Name>
@@ -48,7 +48,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Indicates whether the game menu is currently opened.</Description>
   </Properties>
   <Properties>
     <Name>CursorLocked</Name>
@@ -56,7 +56,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines whether the cursor is currently locked.</Description>
   </Properties>
   <Properties>
     <Name>CursorVisible</Name>
@@ -64,7 +64,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines whether the cursor is currently visible.</Description>
   </Properties>
   <Properties>
     <Name>MousePosition</Name>
@@ -72,7 +72,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Indicates the current position of the mouse cursor.</Description>
   </Properties>
   <Properties>
     <Name>ScreenWidth</Name>
@@ -80,7 +80,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Indicates the width of the screen.</Description>
   </Properties>
   <Properties>
     <Name>ScreenHeight</Name>
@@ -88,7 +88,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Indicates the height of the screen.</Description>
   </Properties>
   <Methods>
     <Name>GetMouseWorldPosition</Name>
@@ -102,7 +102,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Returns the 3D world-space position corresponding to the current mouse cursor location.</Description>
   </Methods>
   <Methods>
     <Name>GetVector2</Name>
@@ -130,7 +130,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Returns true if the specified button is being held down.</Description>
   </Methods>
   <Methods>
     <Name>GetAxis</Name>
@@ -144,7 +144,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Returns the value of the specified axis.</Description>
   </Methods>
   <Methods>
     <Name>BindButton</Name>
@@ -239,5 +239,5 @@
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>InputService is a class used for retrieving user input data, such as the mouse and keyboard.</Description>
 </ClassDef>
