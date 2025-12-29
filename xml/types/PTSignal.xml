@@ -14,7 +14,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Connect a function to this signal</Description>
   </Methods>
   <Methods>
     <Name>Disconnect</Name>
@@ -28,7 +28,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Disconnect a function from this signal</Description>
   </Methods>
   <Methods>
     <Name>Wait</Name>
@@ -36,7 +36,7 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Wait until this signal&apos;s emitted</Description>
   </Methods>
   <Methods>
     <Name>Once</Name>
@@ -50,10 +50,10 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Listen to this signal only once</Description>
   </Methods>
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>A signal which scripts can subscribe to</Description>
 </ClassDef>

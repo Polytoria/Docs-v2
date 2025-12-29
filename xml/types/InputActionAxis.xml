@@ -29,5 +29,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description></Description>
+  <Description>InputActionAxis is a class that represents input action of axis type.</Description>
 </ClassDef>

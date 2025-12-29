@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines if this tween is looped</Description>
   </Properties>
   <Properties>
     <Name>Parallel</Name>
@@ -16,7 +16,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines if this tween will run all the tweens in parallel</Description>
   </Properties>
   <Properties>
     <Name>SpeedScale</Name>
@@ -24,7 +24,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines the speed scale of this tween</Description>
   </Properties>
   <Properties>
     <Name>IsRunning</Name>
@@ -32,7 +32,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Returns whether or not this tween is running</Description>
   </Properties>
   <Properties>
     <Name>ElapsedTime</Name>
@@ -40,7 +40,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Returns the elapsed time of this tween</Description>
   </Properties>
   <Methods>
     <Name>SetDirection</Name>
@@ -54,7 +54,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Set the direction of this tween. This function returns a `TweenObject` which means you can stack it with other functions.</Description>
   </Methods>
   <Methods>
     <Name>SetTrans</Name>
@@ -68,7 +68,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Set the transition of this tween. This function returns a `TweenObject` which means you can stack it with other functions.</Description>
   </Methods>
   <Methods>
     <Name>TweenPosition</Name>
@@ -94,7 +94,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Tweens the position of a Dynamic.</Description>
   </Methods>
   <Methods>
     <Name>TweenRotation</Name>
@@ -120,7 +120,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Tweens the rotation of a Dynamic.</Description>
   </Methods>
   <Methods>
     <Name>TweenSize</Name>
@@ -146,7 +146,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Tweens the size of a Dynamic.</Description>
   </Methods>
   <Methods>
     <Name>TweenColor</Name>
@@ -178,7 +178,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Tweens a color between two specified values.</Description>
   </Methods>
   <Methods>
     <Name>TweenNumber</Name>
@@ -210,7 +210,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Tweens a number between two specified values.</Description>
   </Methods>
   <Methods>
     <Name>TweenVector2</Name>
@@ -242,7 +242,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Tweens a Vector2 between two specified values.</Description>
   </Methods>
   <Methods>
     <Name>TweenVector3</Name>
@@ -274,7 +274,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Tweens a Vector3 between two specified values.</Description>
   </Methods>
   <Methods>
     <Name>Play</Name>
@@ -282,7 +282,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Play this tween</Description>
   </Methods>
   <Methods>
     <Name>Pause</Name>
@@ -290,7 +290,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Pause this tween</Description>
   </Methods>
   <Methods>
     <Name>Stop</Name>
@@ -298,7 +298,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Stop this tween</Description>
   </Methods>
   <Methods>
     <Name>Interval</Name>
@@ -312,7 +312,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Creates a delay in the tween.</Description>
   </Methods>
   <Methods>
     <Name>Chain</Name>
@@ -320,7 +320,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Chain a tween if parallel is set to true</Description>
   </Methods>
   <Methods>
     <Name>Cancel</Name>
@@ -334,7 +334,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Cancel this tween</Description>
   </Methods>
   <Events>
     <Name>Finished</Name>
@@ -349,5 +349,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>An object that represents tween</Description>
 </ClassDef>

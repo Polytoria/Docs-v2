@@ -5,5 +5,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>true</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>PhysicalModel is a object that represent a group of objects, that&apos;s affected by physics.</Description>
 </ClassDef>

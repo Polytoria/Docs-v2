@@ -33,5 +33,5 @@
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>PreferencesService is a service that allows scripts to access some of the user preferences</Description>
 </ClassDef>

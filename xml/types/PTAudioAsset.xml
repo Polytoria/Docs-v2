@@ -13,5 +13,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>true</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Audio asset which is loaded from Polytoria</Description>
 </ClassDef>

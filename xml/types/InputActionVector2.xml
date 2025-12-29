@@ -45,5 +45,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>InputActionVector2 is a class that represents input action of Vector2 type.</Description>
 </ClassDef>

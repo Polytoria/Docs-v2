@@ -85,5 +85,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>true</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Physical represents a physics object</Description>
 </ClassDef>

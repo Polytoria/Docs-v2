@@ -6,7 +6,7 @@
     <Name>CurrentCamera</Name>
     <Type>Camera</Type>
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
-    <IsReadOnly>true</IsReadOnly>
+    <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
     <Description>Determines the current camera which player is using to view</Description>
   </Properties>

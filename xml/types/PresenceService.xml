@@ -29,5 +29,5 @@
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>PresenceService is a service that allows scripts to set the active status of the player. Which will be used to display in supported integrations.</Description>
 </ClassDef>

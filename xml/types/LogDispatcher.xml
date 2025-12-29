@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>LogDispatcher</Name>
-  <BaseType>NetworkedObject</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
-</ClassDef>

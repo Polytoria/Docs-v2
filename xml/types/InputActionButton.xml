@@ -39,5 +39,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>InputActionButton is a class that represents input action of button type.</Description>
 </ClassDef>

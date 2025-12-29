@@ -38,6 +38,20 @@
     <IsStatic>true</IsStatic>
     <Description>Missing Documentation</Description>
   </Methods>
+  <Methods>
+    <Name>Lerp</Name>
+    <ReturnType>number</ReturnType>
+    <Parameters>
+      <Name>t</Name>
+      <Type>number</Type>
+      <IsOptional>false</IsOptional>
+      <DefaultValue></DefaultValue>
+    </Parameters>
+    <IsAsync>false</IsAsync>
+    <IsObsolete>false</IsObsolete>
+    <IsStatic>false</IsStatic>
+    <Description>Missing Documentation</Description>
+  </Methods>
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>

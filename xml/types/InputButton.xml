@@ -35,5 +35,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>InputButton is a class that represents a button KeyCode</Description>
 </ClassDef>

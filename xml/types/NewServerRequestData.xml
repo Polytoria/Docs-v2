@@ -29,5 +29,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>NewServerRequestData represents the request data for a new server instance, to be used with PlacesService.</Description>
 </ClassDef>

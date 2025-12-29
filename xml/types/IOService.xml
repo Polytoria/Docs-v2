@@ -14,7 +14,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Read the file data from path</Description>
   </Methods>
   <Methods>
     <Name>WriteBytesToPath</Name>
@@ -34,7 +34,7 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Write data to file in the project</Description>
   </Methods>
   <Methods>
     <Name>ListProjectFiles</Name>
@@ -42,7 +42,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>List all files in the project</Description>
   </Methods>
   <Methods>
     <Name>ReadBytesFromID</Name>
@@ -56,7 +56,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Read the file data from linked ID</Description>
   </Methods>
   <Methods>
     <Name>GetPathFromID</Name>
@@ -70,10 +70,10 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Get the file path from linked ID</Description>
   </Methods>
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Class for interacting with IO in project, only usable with scripts with the respective permission.</Description>
 </ClassDef>

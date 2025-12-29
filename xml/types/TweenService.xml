@@ -8,10 +8,12 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Creates a new tween object
+    
+    Note: Tween will run automatically after one frame, you must use it&apos;s function right after creating it.</Description>
   </Methods>
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>TweenService is a service for managing tweens</Description>
 </ClassDef>

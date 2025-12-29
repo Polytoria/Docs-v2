@@ -14,7 +14,7 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Request a new server with data</Description>
   </Methods>
   <Methods>
     <Name>NewServerAsync</Name>
@@ -28,7 +28,7 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Request a new server with data</Description>
   </Methods>
   <Methods>
     <Name>JoinPlaceAsync</Name>
@@ -48,7 +48,7 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Join a player to a public server of the specified place</Description>
   </Methods>
   <Methods>
     <Name>JoinPlacePartyAsync</Name>
@@ -68,7 +68,7 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Join a party of player to a public server of the specified place</Description>
   </Methods>
   <Methods>
     <Name>JoinPrivateAsync</Name>
@@ -88,7 +88,7 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Join a player to a private server of the specified place</Description>
   </Methods>
   <Methods>
     <Name>JoinPrivatePartyAsync</Name>
@@ -108,10 +108,10 @@
     <IsAsync>true</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Join a party of player to a private server of the specified place</Description>
   </Methods>
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>PlacesService is a service that is used to join players to other places</Description>
 </ClassDef>
