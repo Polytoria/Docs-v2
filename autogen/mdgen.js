@@ -87,11 +87,14 @@ for (const xmlFile of xmlFiles) {
         appendLine("")
     }
 
-    appendLine("")
-    appendLine("## Properties")
-    appendLine("")
-
     const properties = c.Properties ? (Array.isArray(c.Properties) ? c.Properties : [c.Properties]) : [];
+
+    if (properties.length > 0) {
+        appendLine("")
+        appendLine("## Properties")
+        appendLine("")
+    }
+
     for (const prop of properties) {
         appendLine(`### ${prop.Name}:${prop.Type} { property }`)
         appendLine(``)
@@ -99,11 +102,13 @@ for (const xmlFile of xmlFiles) {
         appendLine(``)
     }
 
-    appendLine("")
-    appendLine("## Methods")
-    appendLine("")
-
     const methods = c.Methods ? (Array.isArray(c.Methods) ? c.Methods : [c.Methods]) : [];
+
+    if (methods.length > 0) {
+        appendLine("")
+        appendLine("## Methods")
+        appendLine("")
+    }
     for (const m of methods) {
         if (m.IsObsolete) continue
         let params = []
@@ -119,11 +124,14 @@ for (const xmlFile of xmlFiles) {
         appendLine(``)
     }
 
-    appendLine("")
-    appendLine("## Events")
-    appendLine("")
-
     const events = c.Events ? (Array.isArray(c.Events) ? c.Events : [c.Events]) : [];
+
+    if (events.length > 0) {
+        appendLine("")
+        appendLine("## Events")
+        appendLine("")
+    }
+
     for (const e of events) {
         let args = []
 
