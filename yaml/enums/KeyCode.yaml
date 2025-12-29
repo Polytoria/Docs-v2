@@ -1,0 +1,322 @@
+Name: KeyCode
+InternalName: KeyCodeEnum
+Options:
+  - Name: None
+    Description: ""
+  - Name: Space
+    Description: ""
+  - Name: Exclam
+    Description: ""
+  - Name: QuotedBl
+    Description: ""
+  - Name: Numbersign
+    Description: ""
+  - Name: Dollar
+    Description: ""
+  - Name: Percent
+    Description: ""
+  - Name: Ampersand
+    Description: ""
+  - Name: Apostrophe
+    Description: ""
+  - Name: ParenLeft
+    Description: ""
+  - Name: Parenright
+    Description: ""
+  - Name: Asterisk
+    Description: ""
+  - Name: Plus
+    Description: ""
+  - Name: Comma
+    Description: ""
+  - Name: Minus
+    Description: ""
+  - Name: Period
+    Description: ""
+  - Name: Slash
+    Description: ""
+  - Name: Key0
+    Description: ""
+  - Name: Key1
+    Description: ""
+  - Name: Key2
+    Description: ""
+  - Name: Key3
+    Description: ""
+  - Name: Key4
+    Description: ""
+  - Name: Key5
+    Description: ""
+  - Name: Key6
+    Description: ""
+  - Name: Key7
+    Description: ""
+  - Name: Key8
+    Description: ""
+  - Name: Key9
+    Description: ""
+  - Name: Colon
+    Description: ""
+  - Name: Semicolon
+    Description: ""
+  - Name: Less
+    Description: ""
+  - Name: Equal
+    Description: ""
+  - Name: Greater
+    Description: ""
+  - Name: Question
+    Description: ""
+  - Name: At
+    Description: ""
+  - Name: A
+    Description: ""
+  - Name: B
+    Description: ""
+  - Name: C
+    Description: ""
+  - Name: D
+    Description: ""
+  - Name: E
+    Description: ""
+  - Name: F
+    Description: ""
+  - Name: G
+    Description: ""
+  - Name: H
+    Description: ""
+  - Name: I
+    Description: ""
+  - Name: J
+    Description: ""
+  - Name: K
+    Description: ""
+  - Name: L
+    Description: ""
+  - Name: M
+    Description: ""
+  - Name: N
+    Description: ""
+  - Name: O
+    Description: ""
+  - Name: P
+    Description: ""
+  - Name: Q
+    Description: ""
+  - Name: R
+    Description: ""
+  - Name: S
+    Description: ""
+  - Name: T
+    Description: ""
+  - Name: U
+    Description: ""
+  - Name: V
+    Description: ""
+  - Name: W
+    Description: ""
+  - Name: X
+    Description: ""
+  - Name: Y
+    Description: ""
+  - Name: Z
+    Description: ""
+  - Name: BracketLeft
+    Description: ""
+  - Name: Backslash
+    Description: ""
+  - Name: BracketRight
+    Description: ""
+  - Name: Asciicircum
+    Description: ""
+  - Name: Underscore
+    Description: ""
+  - Name: QuoteLeft
+    Description: ""
+  - Name: BraceLeft
+    Description: ""
+  - Name: Bar
+    Description: ""
+  - Name: BraceRight
+    Description: ""
+  - Name: Asciitilde
+    Description: ""
+  - Name: Yen
+    Description: ""
+  - Name: Section
+    Description: ""
+  - Name: GamepadA
+    Description: ""
+  - Name: GamepadB
+    Description: ""
+  - Name: GamepadX
+    Description: ""
+  - Name: GamepadY
+    Description: ""
+  - Name: GamepadBack
+    Description: ""
+  - Name: GamepadGuide
+    Description: ""
+  - Name: GamepadStart
+    Description: ""
+  - Name: GamepadLeftStick
+    Description: ""
+  - Name: GamepadRightStick
+    Description: ""
+  - Name: GamepadLeftShoulder
+    Description: ""
+  - Name: GamepadRightShoulder
+    Description: ""
+  - Name: GamepadDpadUp
+    Description: ""
+  - Name: GamepadDpadDown
+    Description: ""
+  - Name: GamepadDpadLeft
+    Description: ""
+  - Name: GamepadDpadRight
+    Description: ""
+  - Name: GamepadPaddle1
+    Description: ""
+  - Name: GamepadPaddle2
+    Description: ""
+  - Name: GamepadPaddle3
+    Description: ""
+  - Name: GamepadPaddle4
+    Description: ""
+  - Name: GamepadTouchpad
+    Description: ""
+  - Name: MouseLeft
+    Description: ""
+  - Name: MouseRight
+    Description: ""
+  - Name: MouseMiddle
+    Description: ""
+  - Name: MouseWheelUp
+    Description: ""
+  - Name: MouseWheelDown
+    Description: ""
+  - Name: MouseWheelLeft
+    Description: ""
+  - Name: MouseWheelRight
+    Description: ""
+  - Name: MouseXbutton1
+    Description: ""
+  - Name: MouseXbutton2
+    Description: ""
+  - Name: GamepadAxisLeftX
+    Description: ""
+  - Name: GamepadAxisLeftY
+    Description: ""
+  - Name: GamepadAxisRightX
+    Description: ""
+  - Name: GamepadAxisRightY
+    Description: ""
+  - Name: GamepadAxisTriggerLeft
+    Description: ""
+  - Name: GamepadAxisTriggerRight
+    Description: ""
+  - Name: Special
+    Description: ""
+  - Name: Escape
+    Description: ""
+  - Name: Tab
+    Description: ""
+  - Name: Backtab
+    Description: ""
+  - Name: Backspace
+    Description: ""
+  - Name: Enter
+    Description: ""
+  - Name: KpEnter
+    Description: ""
+  - Name: Insert
+    Description: ""
+  - Name: Delete
+    Description: ""
+  - Name: Left
+    Description: ""
+  - Name: Up
+    Description: ""
+  - Name: Right
+    Description: ""
+  - Name: Down
+    Description: ""
+  - Name: PageUp
+    Description: ""
+  - Name: PageDown
+    Description: ""
+  - Name: Shift
+    Description: ""
+  - Name: Ctrl
+    Description: ""
+  - Name: Meta
+    Description: ""
+  - Name: Alt
+    Description: ""
+  - Name: CapsLock
+    Description: ""
+  - Name: NumLock
+    Description: ""
+  - Name: ScrollLock
+    Description: ""
+  - Name: F1
+    Description: ""
+  - Name: F2
+    Description: ""
+  - Name: F3
+    Description: ""
+  - Name: F4
+    Description: ""
+  - Name: F5
+    Description: ""
+  - Name: F6
+    Description: ""
+  - Name: F7
+    Description: ""
+  - Name: F8
+    Description: ""
+  - Name: F9
+    Description: ""
+  - Name: F10
+    Description: ""
+  - Name: F11
+    Description: ""
+  - Name: F12
+    Description: ""
+  - Name: Menu
+    Description: ""
+  - Name: Hyper
+    Description: ""
+  - Name: KpMultiply
+    Description: ""
+  - Name: KpDivide
+    Description: ""
+  - Name: KpSubtract
+    Description: ""
+  - Name: KpPeriod
+    Description: ""
+  - Name: KpAdd
+    Description: ""
+  - Name: Kp0
+    Description: ""
+  - Name: Kp1
+    Description: ""
+  - Name: Kp2
+    Description: ""
+  - Name: Kp3
+    Description: ""
+  - Name: Kp4
+    Description: ""
+  - Name: Kp5
+    Description: ""
+  - Name: Kp6
+    Description: ""
+  - Name: Kp7
+    Description: ""
+  - Name: Kp8
+    Description: ""
+  - Name: Kp9
+    Description: ""
+  - Name: Unknown
+    Description: ""
+Description: Missing Documentation

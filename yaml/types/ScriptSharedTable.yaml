@@ -1,0 +1,10 @@
+Name: ScriptSharedTable
+BaseType: null
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: Shared table of object. This class provides a table which any
+  scripts can modify.

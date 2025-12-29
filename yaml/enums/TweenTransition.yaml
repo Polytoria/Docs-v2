@@ -1,0 +1,28 @@
+Name: TweenTransition
+InternalName: TweenTransitionEnum
+Options:
+  - Name: Linear
+    Description: ""
+  - Name: Sine
+    Description: ""
+  - Name: Quint
+    Description: ""
+  - Name: Quart
+    Description: ""
+  - Name: Quad
+    Description: ""
+  - Name: Expo
+    Description: ""
+  - Name: Elastic
+    Description: ""
+  - Name: Cubic
+    Description: ""
+  - Name: Circ
+    Description: ""
+  - Name: Bounce
+    Description: ""
+  - Name: Back
+    Description: ""
+  - Name: Spring
+    Description: ""
+Description: Missing Documentation

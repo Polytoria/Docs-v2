@@ -1,0 +1,143 @@
+Name: Entity
+BaseType: Physical
+Properties:
+  - Name: Color
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The color of the entity.
+  - Name: CastShadows
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the entity casts shadows.
+  - Name: IsSpawn
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the part can be used as a spawn location or not.
+  - Name: UseGravity
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the entity is affected by gravity.
+  - Name: Mass
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the mass of the entity.
+  - Name: Friction
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the friction of the entity.
+  - Name: Drag
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the drag (air resistance) of the entity.
+  - Name: AngularDrag
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the angular drag of the entity.
+  - Name: Bounciness
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the bounciness of the entity.
+Methods:
+  - Name: AddForce
+    ReturnType: nil
+    Parameters:
+      - Name: force
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: mode
+        Type: ForceModeEnum
+        IsOptional: true
+        DefaultValue: Force
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Applies a force to the entity.
+  - Name: AddTorque
+    ReturnType: nil
+    Parameters:
+      - Name: force
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: mode
+        Type: ForceModeEnum
+        IsOptional: true
+        DefaultValue: Force
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Applies a rotational force to the entity.
+  - Name: AddForceAtPosition
+    ReturnType: nil
+    Parameters:
+      - Name: force
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: position
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: mode
+        Type: ForceModeEnum
+        IsOptional: true
+        DefaultValue: Force
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Applies a force to the entity from a specific position.
+  - Name: AddRelativeForce
+    ReturnType: nil
+    Parameters:
+      - Name: force
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: mode
+        Type: ForceModeEnum
+        IsOptional: true
+        DefaultValue: Force
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Adds a force to the part relative to its own rotation.
+  - Name: AddRelativeTorque
+    ReturnType: nil
+    Parameters:
+      - Name: torque
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: mode
+        Type: ForceModeEnum
+        IsOptional: true
+        DefaultValue: Force
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Adds a rotational force to the part relative to its own rotation.
+Events: []
+IsStatic: false
+IsAbstract: true
+IsInstantiatable: false
+Description: Entity represents a physics object that's related to building
+  blocks (inherited by Part and Mesh)

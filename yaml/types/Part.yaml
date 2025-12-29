@@ -1,0 +1,33 @@
+Name: Part
+BaseType: Entity
+Properties:
+  - Name: Shape
+    Type: ShapeEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the shape of the part.
+  - Name: Material
+    Type: PartMaterialEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the material of the part.
+  - Name: Color
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the color of the part.
+  - Name: CastShadows
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the part casts shadows.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Parts represent the basic building blocks of the world.

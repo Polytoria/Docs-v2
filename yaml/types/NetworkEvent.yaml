@@ -1,0 +1,70 @@
+Name: NetworkEvent
+BaseType: Instance
+Properties:
+  - Name: Reliable
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+Methods:
+  - Name: InvokeServer
+    ReturnType: nil
+    Parameters:
+      - Name: msg
+        Type: NetMessage
+        IsOptional: false
+        DefaultValue: ""
+      - Name: _
+        Type: any
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Sends a message to the server.
+  - Name: InvokeClient
+    ReturnType: nil
+    Parameters:
+      - Name: msg
+        Type: NetMessage
+        IsOptional: false
+        DefaultValue: ""
+      - Name: player
+        Type: Player
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Sends a message to a specific client.
+  - Name: InvokeClients
+    ReturnType: nil
+    Parameters:
+      - Name: msg
+        Type: NetMessage
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Sends a message to all connected clients.
+Events:
+  - Name: InvokedServer
+    Arguments:
+      - Name: sender
+        Type: Player
+      - Name: msg
+        Type: NetMessage
+    Description: Fires when server receives message from client
+  - Name: InvokedClient
+    Arguments:
+      - Name: sender
+        Type: nil
+      - Name: msg
+        Type: NetMessage
+    Description: Fires when client receives message from server
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Missing Documentation

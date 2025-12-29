@@ -1,0 +1,15 @@
+Name: IntValue
+BaseType: ValueBase
+Properties:
+  - Name: Value
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The value of this object.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: IntValue is an object that holds an integer value.

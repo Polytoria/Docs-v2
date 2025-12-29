@@ -1,0 +1,10 @@
+Name: ClientPlatform
+InternalName: ClientPlatformEnum
+Options:
+  - Name: Desktop
+    Description: ""
+  - Name: Mobile
+    Description: ""
+  - Name: VR
+    Description: ""
+Description: Missing Documentation

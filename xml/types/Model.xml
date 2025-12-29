@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>Model</Name>
-  <BaseType>Dynamic</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>true</IsInstantiatable>
-  <Description>Model is an instance that can hold other instances, and which transform affects its children.</Description>
-</ClassDef>

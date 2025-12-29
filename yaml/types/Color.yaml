@@ -1,0 +1,133 @@
+Name: Color
+BaseType: null
+Properties:
+  - Name: R
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Red color component
+  - Name: G
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Green color component
+  - Name: B
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Blue color component
+  - Name: A
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Alpha (opacity) color component
+Methods:
+  - Name: New
+    ReturnType: Color
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a new Color with the set R, G, B and A values
+  - Name: New
+    ReturnType: Color
+    Parameters:
+      - Name: d
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a new Color with the set R, G, B and A values
+  - Name: New
+    ReturnType: Color
+    Parameters:
+      - Name: r
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: g
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a new Color with the set R, G, B and A values
+  - Name: New
+    ReturnType: Color
+    Parameters:
+      - Name: r
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: g
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: a
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a new Color with the set R, G, B and A values
+  - Name: Random
+    ReturnType: Color
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Returns a random color with an alpha value of 1.
+  - Name: FromHex
+    ReturnType: Color
+    Parameters:
+      - Name: hex
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a new Color from the specified hex value.
+  - Name: Lerp
+    ReturnType: Color
+    Parameters:
+      - Name: a
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+      - Name: t
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Linearly interpolates colors a and b by t.
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: >-
+  Color is a data type that represents a color.
+    
+    The alpha property is between 0 and 1. 0 is fully transparent and 1 is fully visible.

@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>ResourceAsset</Name>
-  <BaseType>BaseAsset</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>true</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>Base class for resource based assets</Description>
-</ClassDef>

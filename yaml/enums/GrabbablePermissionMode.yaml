@@ -1,0 +1,10 @@
+Name: GrabbablePermissionMode
+InternalName: GrabbablePermissionModeEnum
+Options:
+  - Name: None
+    Description: ""
+  - Name: Everyone
+    Description: ""
+  - Name: Scripted
+    Description: ""
+Description: Missing Documentation

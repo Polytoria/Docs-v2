@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>ImageAsset</Name>
-  <BaseType>ResourceAsset</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>true</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>Base class for image assets</Description>
-</ClassDef>

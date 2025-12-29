@@ -1,0 +1,65 @@
+Name: IOService
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: ReadBytesFromPath
+    ReturnType: string
+    Parameters:
+      - Name: path
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Read the file data from path
+  - Name: WriteBytesToPath
+    ReturnType: nil
+    Parameters:
+      - Name: path
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: bytes
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Write data to file in the project
+  - Name: ListProjectFiles
+    ReturnType: table
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: List all files in the project
+  - Name: ReadBytesFromID
+    ReturnType: string
+    Parameters:
+      - Name: id
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Read the file data from linked ID
+  - Name: GetPathFromID
+    ReturnType: string
+    Parameters:
+      - Name: indexID
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Get the file path from linked ID
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: Class for interacting with IO in project, only usable with scripts
+  with the respective permission.

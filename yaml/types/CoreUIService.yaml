@@ -1,0 +1,58 @@
+Name: CoreUIService
+BaseType: Instance
+Properties:
+  - Name: UseUserCard
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not the user card (in the upper right hand
+      corner above the leaderboard) is visible.
+  - Name: UseChat
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not the chat box is visible.
+  - Name: UseHealthBar
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not the player's health bar is visible.
+  - Name: UseLeaderboard
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not the player list/leaderboard is visible.
+  - Name: UseHotbar
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not the hot bar is visible.
+  - Name: UseMenuButton
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not the menu button is visible.
+  - Name: UseEmoteWheel
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not the emote wheel is visible.
+  - Name: CanRespawn
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not the player can respawn.
+Methods: []
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: CoreUI is a static class that allows for the toggling of certain core GUI.

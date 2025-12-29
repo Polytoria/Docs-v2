@@ -1,0 +1,21 @@
+Name: DatastoreService
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: GetDatastore
+    ReturnType: Datastore
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Attempts to get a Datastore object from the Datastore service.
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: Datastore (not to be confused with the Datastore data type) is a
+  service used for storing data between place sessions.

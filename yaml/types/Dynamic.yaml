@@ -1,0 +1,238 @@
+Name: Dynamic
+BaseType: Instance
+Properties:
+  - Name: Position
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The position of the object.
+  - Name: Rotation
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The rotation of the object.
+  - Name: Size
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The size of the object.
+  - Name: LocalPosition
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The position of the object relative to its parent.
+  - Name: LocalRotation
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The rotation of the object relative to its parent.
+  - Name: LocalSize
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The size of the object relative to its parent.
+  - Name: Quaternion
+    Type: Quaternion
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The rotation of the object represented as a quaternion.
+  - Name: Locked
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the object can be selected in the Creator.
+  - Name: Forward
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The forward direction vector of the object.
+  - Name: Right
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The right direction vector of the object.
+  - Name: Up
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The up direction vector of the object.
+Methods:
+  - Name: LookAt
+    ReturnType: nil
+    Parameters:
+      - Name: target
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Orients the object to look at a target with a specified up vector.
+  - Name: LookAt
+    ReturnType: nil
+    Parameters:
+      - Name: target
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+      - Name: up
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Orients the object to look at a target with a specified up vector.
+  - Name: MovePosition
+    ReturnType: nil
+    Parameters:
+      - Name: position
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: MoveRotation
+    ReturnType: nil
+    Parameters:
+      - Name: rotation
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: Translate
+    ReturnType: nil
+    Parameters:
+      - Name: translation
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Moves the transform in the direction and distance of translation.
+  - Name: RotateAround
+    ReturnType: nil
+    Parameters:
+      - Name: point
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: axis
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: angle
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Rotates the object around a point by the specified Euler angles.
+  - Name: Rotate
+    ReturnType: nil
+    Parameters:
+      - Name: eulerAngles
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Rotates the object by the specified Euler angles.
+  - Name: InverseTransformPoint
+    ReturnType: Vector3
+    Parameters:
+      - Name: point
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Transforms a point from world space to local space.
+  - Name: TransformPoint
+    ReturnType: Vector3
+    Parameters:
+      - Name: point
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Transforms a point from local space to world space.
+  - Name: InverseTransformDirection
+    ReturnType: Vector3
+    Parameters:
+      - Name: direction
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Transforms a direction from world space to local space.
+  - Name: TransformDirection
+    ReturnType: Vector3
+    Parameters:
+      - Name: direction
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Transforms a direction from local space to world space.
+  - Name: InverseTransformVector
+    ReturnType: Vector3
+    Parameters:
+      - Name: vector
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Transforms a vector from world space to local space.
+  - Name: InverseTransformPosition
+    ReturnType: Vector3
+    Parameters:
+      - Name: position
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Transforms a position from world space to local space.
+  - Name: GetBounds
+    ReturnType: Bounds
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets the bounding box of the object.
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Dynamic is the base class where all objects with a position,
+  rotation and scale derive from.

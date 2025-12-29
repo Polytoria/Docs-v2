@@ -1,0 +1,29 @@
+Name: PresenceService
+BaseType: Instance
+Properties:
+  - Name: State
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: CoverImage
+    Type: PTImageAsset
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+Methods:
+  - Name: ResetTimer
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: PresenceService is a service that allows scripts to set the active
+  status of the player. Which will be used to display in supported integrations.

@@ -1,0 +1,29 @@
+Name: NewServerRequestData
+BaseType: null
+Properties:
+  - Name: PlacePath
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: MaxPlayers
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+Methods:
+  - Name: New
+    ReturnType: NewServerRequestData
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: NewServerRequestData represents the request data for a new server
+  instance, to be used with PlacesService.

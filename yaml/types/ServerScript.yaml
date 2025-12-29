@@ -1,0 +1,9 @@
+Name: ServerScript
+BaseType: Script
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: ServerScript is a script that runs on the server.

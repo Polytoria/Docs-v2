@@ -1,0 +1,50 @@
+Name: NumberRange
+BaseType: ValueType
+Properties:
+  - Name: Min
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the minimum value of the range.
+  - Name: Max
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the maximum value of the range.
+Methods:
+  - Name: New
+    ReturnType: NumberRange
+    Parameters:
+      - Name: from
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: to
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a new NumberRange object with the specified minimum and
+      maximum values.
+  - Name: Lerp
+    ReturnType: number
+    Parameters:
+      - Name: t
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Linearly interpolates between the minimum and maximum values of the
+      range based on the parameter t, which is typically between 0 and 1.
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: NumberRange is a data type that represents a range between two
+  numbers, defined by a minimum and maximum value.

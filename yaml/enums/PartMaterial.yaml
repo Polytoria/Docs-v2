@@ -1,0 +1,46 @@
+Name: PartMaterial
+InternalName: PartMaterialEnum
+Options:
+  - Name: SmoothPlastic
+    Description: ""
+  - Name: Brick
+    Description: ""
+  - Name: Concrete
+    Description: ""
+  - Name: Dirt
+    Description: ""
+  - Name: Fabric
+    Description: ""
+  - Name: Grass
+    Description: ""
+  - Name: Ice
+    Description: ""
+  - Name: Marble
+    Description: ""
+  - Name: Metal
+    Description: ""
+  - Name: MetalGrid
+    Description: ""
+  - Name: MetalPlate
+    Description: ""
+  - Name: Neon
+    Description: ""
+  - Name: Planks
+    Description: ""
+  - Name: Plastic
+    Description: ""
+  - Name: Plywood
+    Description: ""
+  - Name: RustyIron
+    Description: ""
+  - Name: Sand
+    Description: ""
+  - Name: Sandstone
+    Description: ""
+  - Name: Snow
+    Description: ""
+  - Name: Stone
+    Description: ""
+  - Name: Wood
+    Description: ""
+Description: Missing Documentation

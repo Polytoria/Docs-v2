@@ -1,0 +1,9 @@
+Name: VehicleSeat
+BaseType: Seat
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: A seat for Vehicle

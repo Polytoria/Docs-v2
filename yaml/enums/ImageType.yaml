@@ -1,0 +1,20 @@
+Name: ImageType
+InternalName: ImageTypeEnum
+Options:
+  - Name: Asset
+    Description: ""
+  - Name: AssetThumbnail
+    Description: ""
+  - Name: PlaceThumbnail
+    Description: ""
+  - Name: UserAvatar
+    Description: ""
+  - Name: UserAvatarHeadshot
+    Description: ""
+  - Name: GuildIcon
+    Description: ""
+  - Name: GuildBanner
+    Description: ""
+  - Name: PlaceIcon
+    Description: ""
+Description: Missing Documentation

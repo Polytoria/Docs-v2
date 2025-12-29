@@ -1,0 +1,58 @@
+Name: Script
+BaseType: Instance
+Properties:
+  - Name: Source
+    Type: string
+    IsAccessibleByScripts: false
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The source code of the script as a string.
+  - Name: LinkedScript
+    Type: FileLinkAsset
+    IsAccessibleByScripts: false
+    IsReadOnly: false
+    IsObsolete: false
+    Description: A linked script asset associated with this script.
+  - Name: Compatibility
+    Type: boolean
+    IsAccessibleByScripts: false
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Indicates whether the script is running in compatibility mode.
+Methods:
+  - Name: Call
+    ReturnType: nil
+    Parameters:
+      - Name: funcName
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: args
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Calls a function in the script with the given arguments.
+  - Name: CallAsync
+    ReturnType: nil
+    Parameters:
+      - Name: funcName
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: args
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Calls a function in the script asynchronously with the given arguments.
+Events: []
+IsStatic: false
+IsAbstract: true
+IsInstantiatable: false
+Description: Scripts are abstract base classes representing Lua code that can be
+  executed in the game.

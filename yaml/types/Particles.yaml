@@ -1,0 +1,77 @@
+Name: Particles
+BaseType: Dynamic
+Properties:
+  - Name: Image
+    Type: ImageAsset
+    IsAccessibleByScripts: false
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The image used for the particles.
+  - Name: Color
+    Type: ColorSeries
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The color gradient used for the particles.
+  - Name: Lifetime
+    Type: NumberRange
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the lifetime of a particle.
+  - Name: Amount
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the number of particles emitted.
+  - Name: Gravity
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the gravity effect applied to the particles.
+  - Name: Shaded
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the particles are shaded.
+  - Name: Autoplay
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the particle system plays automatically.
+Methods:
+  - Name: Play
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Starts playing the particle system.
+  - Name: Stop
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Stops playing the particle system.
+  - Name: Emit
+    ReturnType: nil
+    Parameters:
+      - Name: count
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Emits a specified number of particles immediately.
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Particles represents a particle system that can be used to create
+  various visual effects.

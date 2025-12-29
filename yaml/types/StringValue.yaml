@@ -1,0 +1,15 @@
+Name: StringValue
+BaseType: ValueBase
+Properties:
+  - Name: Value
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The value of this object.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: StringValue is an object that holds a string value.

@@ -1,0 +1,21 @@
+Name: UIScrollView
+BaseType: UIField
+Properties:
+  - Name: HorizontalScrollMode
+    Type: ScrollModeEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the horizontal scroll mode of the scroll view.
+  - Name: VerticalScrollMode
+    Type: ScrollModeEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the vertical scroll mode of the scroll view.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: UIScrollView is a class that allows the user to scroll content within a view.

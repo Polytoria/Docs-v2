@@ -1,0 +1,10 @@
+Name: Model
+BaseType: Dynamic
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Model is an instance that can hold other instances, and which
+  transform affects its children.

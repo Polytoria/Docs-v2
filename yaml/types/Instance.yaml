@@ -1,0 +1,236 @@
+Name: Instance
+BaseType: NetworkedObject
+Properties:
+  - Name: Parent
+    Type: Instance
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Defines the parent of this instance in the hierarchy.
+  - Name: EditableChildren
+    Type: boolean
+    IsAccessibleByScripts: false
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: Tags
+    Type: table
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Tags associated with this instance.
+Methods:
+  - Name: GetDescendants
+    ReturnType: table
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets all descendants of this instance.
+  - Name: FindChild
+    ReturnType: Instance
+    Parameters:
+      - Name: name
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Finds a child of this instance by name.
+  - Name: WaitChild
+    ReturnType: Instance
+    Parameters:
+      - Name: name
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: timeoutSec
+        Type: number
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: FindChildByClass
+    ReturnType: Instance
+    Parameters:
+      - Name: className
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Finds a child of this instance by class name.
+  - Name: MoveChild
+    ReturnType: nil
+    Parameters:
+      - Name: child
+        Type: Instance
+        IsOptional: false
+        DefaultValue: ""
+      - Name: index
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: GetChildren
+    ReturnType: table
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets all children of this instance.
+  - Name: GetChildrenOfClass
+    ReturnType: table
+    Parameters:
+      - Name: className
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets all children of this instance that are of the specified class.
+  - Name: IsAncestorOf
+    ReturnType: boolean
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determines if this instance is an ancestor of the given instance.
+  - Name: IsDescendantOf
+    ReturnType: boolean
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determines if this instance is a descendant of the given instance.
+  - Name: IsDescendantOfClass
+    ReturnType: boolean
+    Parameters:
+      - Name: className
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determines if this instance is a descendant of the given class.
+  - Name: New
+    ReturnType: Instance
+    Parameters:
+      - Name: className
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: parent
+        Type: Instance
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a new instance of the specified class.
+  - Name: AddTag
+    ReturnType: nil
+    Parameters:
+      - Name: tag
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Adds a tag to this instance.
+  - Name: RemoveTag
+    ReturnType: nil
+    Parameters:
+      - Name: tag
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Removes a tag from this instance.
+  - Name: HasTag
+    ReturnType: boolean
+    Parameters:
+      - Name: tag
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Checks if this instance has the specified tag.
+  - Name: Reparent
+    ReturnType: nil
+    Parameters:
+      - Name: to
+        Type: Instance
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: GetParent
+    ReturnType: Instance
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets the parent of this instance.
+  - Name: SetParent
+    ReturnType: nil
+    Parameters:
+      - Name: newParent
+        Type: Instance
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Sets the parent of this instance.
+Events:
+  - Name: ChildAdded
+    Arguments:
+      Name: child
+      Type: Instance
+    Description: Fires when child has been added to this instance
+  - Name: ChildRemoved
+    Arguments:
+      Name: child
+      Type: Instance
+    Description: Fires when child has been removed from this instance (either via
+      reparent or delete)
+  - Name: ChildDeleting
+    Arguments:
+      Name: child
+      Type: Instance
+    Description: Fires when child is being deleted from this instance
+  - Name: ChildDeleted
+    Arguments:
+      Name: child
+      Type: Instance
+    Description: Fires when child has been deleted from this instance
+IsStatic: false
+IsAbstract: true
+IsInstantiatable: false
+Description: Instance is the base class of all classes. Every class derives from
+  it and has all properties, events and functions Instance has.

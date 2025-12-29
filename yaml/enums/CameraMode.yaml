@@ -1,0 +1,10 @@
+Name: CameraMode
+InternalName: CameraModeEnum
+Options:
+  - Name: Follow
+    Description: ""
+  - Name: Free
+    Description: ""
+  - Name: Scripted
+    Description: ""
+Description: Missing Documentation

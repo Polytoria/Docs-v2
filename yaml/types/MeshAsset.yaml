@@ -1,0 +1,9 @@
+Name: MeshAsset
+BaseType: ResourceAsset
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: true
+IsInstantiatable: false
+Description: Base class for mesh assets

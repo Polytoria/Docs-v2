@@ -1,0 +1,26 @@
+Name: CharacterModel
+BaseType: Dynamic
+Properties:
+  - Name: Animator
+    Type: Animator
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The animator for this character
+Methods:
+  - Name: GetAttachment
+    ReturnType: Dynamic
+    Parameters:
+      - Name: attachmentEnum
+        Type: CharacterAttachmentEnum
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Get attachment dynamic from this character
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Base class for Character Models

@@ -1,0 +1,29 @@
+Name: BodyPosition
+BaseType: Instance
+Properties:
+  - Name: TargetPosition
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the target position that the body applies forces to get to.
+  - Name: Force
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines how much force the body applies.
+  - Name: AcceptanceDistance
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines how close the body has to be to the target position to
+      stop applying forces to it.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: BodyPosition are objects that apply a force to their parent until
+  it moves toward the target position.

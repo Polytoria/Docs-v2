@@ -1,0 +1,12 @@
+Name: ForceMode
+InternalName: ForceModeEnum
+Options:
+  - Name: Force
+    Description: ""
+  - Name: Acceleration
+    Description: ""
+  - Name: Impulse
+    Description: ""
+  - Name: VelocityChange
+    Description: ""
+Description: Missing Documentation

@@ -1,0 +1,60 @@
+Name: Tool
+BaseType: PhysicalModel
+Properties:
+  - Name: Droppable
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the tool can be dropped by the player.
+  - Name: Holder
+    Type: NPC
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines who is currently holding this tool.
+Methods:
+  - Name: Activate
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Activates the tool, similarly to pressing the mouse button.
+  - Name: Deactivate
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Deactivates the tool, similarly to releasing the mouse button.
+  - Name: PlayAnimation
+    ReturnType: nil
+    Parameters:
+      - Name: animationName
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Plays the specified animation on the holder of the tool.
+Events:
+  - Name: Equipped
+    Arguments: ""
+    Description: Fires when this tool has been equipped
+  - Name: Unequipped
+    Arguments: ""
+    Description: Fires when this tool has been unequipped
+  - Name: Activated
+    Arguments: ""
+    Description: Fires when this tool has been activated (via mouse press or
+      `Tool:Activate`)
+  - Name: Deactivated
+    Arguments: ""
+    Description: Fires when this tool has been deactivated (via mouse release or
+      `Tool:Deactivate`)
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Tools are objects that can be held by the player.

@@ -1,0 +1,147 @@
+Name: Environment
+BaseType: Instance
+Properties:
+  - Name: CurrentCamera
+    Type: Camera
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the current camera which player is using to view
+  - Name: Gravity
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The direction and strength of gravity in the world.
+  - Name: PartDestroyHeight
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The height at which unanchored parts are destroyed when they fall below it.
+  - Name: AutoGenerateNavMesh
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not to automatically build a navigation mesh
+      for NPC pathfinding. This property is disabled by default so there are no
+      performance issues with larger maps.
+Methods:
+  - Name: Raycast
+    ReturnType: RayResult
+    Parameters:
+      - Name: origin
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: direction
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: maxDistance
+        Type: number
+        IsOptional: true
+        DefaultValue: "10000"
+      - Name: ignoreList
+        Type: table
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Casts a ray from origin with a specified direction and returns a
+      RayResult for the first hit object.
+  - Name: RaycastAll
+    ReturnType: table
+    Parameters:
+      - Name: origin
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: direction
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: maxDistance
+        Type: number
+        IsOptional: true
+        DefaultValue: "1000"
+      - Name: ignoreList
+        Type: table
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Casts a ray from origin with a specified direction and returns a
+      RayResult array for all hit objects.
+  - Name: OverlapSphere
+    ReturnType: table
+    Parameters:
+      - Name: origin
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: radius
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: ignoreList
+        Type: table
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Returns a list of instances intersecting with the sphere in the
+      given position and radius.
+  - Name: OverlapBox
+    ReturnType: table
+    Parameters:
+      - Name: pos
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: size
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: rot
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: ignoreList
+        Type: table
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Returns a list of instances intersecting with the box in the given
+      position, size and rotation.
+  - Name: RebuildNavMesh
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Rebuilds the navigation mesh which determines the empty space where
+      NPCs can pathfind in.
+  - Name: GetPointOnNavMesh
+    ReturnType: Vector3
+    Parameters:
+      - Name: toPoint
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Returns a point on the navigation mesh at the given position.
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: Environment is the primary object intended for storing active
+  objects in the place.

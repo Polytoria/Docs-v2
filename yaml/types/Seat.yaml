@@ -1,0 +1,31 @@
+Name: Seat
+BaseType: Part
+Properties:
+  - Name: Occupant
+    Type: NPC
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Indicates who is currently occupying the seat.
+  - Name: CanNPCSit
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether NPCs are allowed to sit on this seat or only players.
+Methods: []
+Events:
+  - Name: Sat
+    Arguments:
+      Name: occupant
+      Type: NPC
+    Description: Fires when an occupant sits on the seat.
+  - Name: Vacated
+    Arguments:
+      Name: occupant
+      Type: NPC
+    Description: Fires when an occupant leaves the seat.
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Seats are parts the player can sit on.

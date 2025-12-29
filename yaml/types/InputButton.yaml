@@ -1,0 +1,33 @@
+Name: InputButton
+BaseType: null
+Properties:
+  - Name: KeyCode
+    Type: KeyCodeEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+Methods:
+  - Name: New
+    ReturnType: InputButton
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: New
+    ReturnType: InputButton
+    Parameters:
+      - Name: key
+        Type: KeyCodeEnum
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: InputButton is a class that represents a button KeyCode

@@ -1,0 +1,111 @@
+Name: HttpService
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: RequestAsync
+    ReturnType: HttpResponseData
+    Parameters:
+      - Name: data
+        Type: HttpRequestData
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Send a request using the `HttpRequestData`
+  - Name: GetAsync
+    ReturnType: string
+    Parameters:
+      - Name: url
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: headers
+        Type: table
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Sends a GET request to the specified URL.
+  - Name: PostAsync
+    ReturnType: string
+    Parameters:
+      - Name: url
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: body
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: headers
+        Type: table
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Sends a POST request to the specified URL.
+  - Name: PutAsync
+    ReturnType: string
+    Parameters:
+      - Name: url
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: body
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: headers
+        Type: table
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Sends a PUT request to the specified URL.
+  - Name: DeleteAsync
+    ReturnType: string
+    Parameters:
+      - Name: url
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: body
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: headers
+        Type: table
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Sends a DELETE request to the specified url.
+  - Name: PatchAsync
+    ReturnType: string
+    Parameters:
+      - Name: url
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: body
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: headers
+        Type: table
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Sends a PATCH request to the specified url.
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: Http is a service used for HTTP communications and requests.

@@ -1,0 +1,69 @@
+Name: Text3D
+BaseType: Dynamic
+Properties:
+  - Name: Text
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The text content displayed.
+  - Name: FontSize
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The size of the font used for the text.
+  - Name: Color
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The color of the text.
+  - Name: OutlineWidth
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The width of the text outline.
+  - Name: OutlineColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The color of the text outline.
+  - Name: FaceCamera
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the text should always be facing the camera.
+  - Name: HorizontalAlignment
+    Type: TextHorizontalAlignmentEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the horizontal alignment of the text.
+  - Name: VerticalAlignment
+    Type: TextVerticalAlignmentEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the vertical alignment of the text.
+  - Name: FontAsset
+    Type: FontAsset
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The font asset used for the text.
+  - Name: UseRichText
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the text should be parsed as rich text.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Text3D is a class that represents 3D text in the game world.

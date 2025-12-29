@@ -1,0 +1,21 @@
+Name: PTImageAsset
+BaseType: ImageAsset
+Properties:
+  - Name: ImageID
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Asset ID of this image
+  - Name: ImageType
+    Type: ImageTypeEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Image type of this image
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: An image asset that's loaded from Polytoria.

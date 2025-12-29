@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>NetworkService</Name>
-  <BaseType>Instance</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
-</ClassDef>

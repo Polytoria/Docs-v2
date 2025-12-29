@@ -1,0 +1,65 @@
+Name: Physical
+BaseType: Dynamic
+Properties:
+  - Name: Anchored
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether this object is affected by physics.
+  - Name: CanCollide
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether this object can collide with other objects.
+  - Name: Velocity
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the linear velocity of this object.
+  - Name: AngularVelocity
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the angular velocity of this object.
+Methods:
+  - Name: SetNetworkAuthority
+    ReturnType: nil
+    Parameters:
+      - Name: plr
+        Type: Player
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Sets the network authority of this object to the specified player.
+Events:
+  - Name: Touched
+    Arguments:
+      Name: hit
+      Type: Physical
+    Description: Fires when this object has collide with other object
+  - Name: TouchEnded
+    Arguments:
+      Name: hit
+      Type: Physical
+    Description: Fires when this object has stopped colliding with other object
+  - Name: MouseEnter
+    Arguments: ""
+    Description: Fires when cursor is hovered on this object. Only fired locally
+  - Name: MouseExit
+    Arguments: ""
+    Description: Fires when cursor leaves this object. Only fired locally
+  - Name: Clicked
+    Arguments:
+      Name: player
+      Type: Player
+    Description: Fires when this object has been clicked by a player
+IsStatic: false
+IsAbstract: true
+IsInstantiatable: false
+Description: Physical represents an object affected by physics in the world.

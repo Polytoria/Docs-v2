@@ -1,0 +1,63 @@
+Name: Grabbable
+BaseType: Instance
+Properties:
+  - Name: Force
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the force used to drag this object.
+  - Name: MaxRange
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the max range that this object can be dragged.
+  - Name: PermissionMode
+    Type: GrabbablePermissionModeEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the permission mode for this grabber
+  - Name: Dragger
+    Type: Player
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Returns the current dragger
+  - Name: PermissionPredicate
+    Type: function
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: >-
+      A predicate function deciding whenever this player can grab this object.
+      `PermissionMode` must be set to `GrabbablePermissionMode.Scripted`
+
+
+      Example usage:
+
+      ```lua
+
+      grabbable.PermissionMode = Enums.GrabbablePermissionMode.Scripted
+
+      grabbable.PermissionPredicate = function(player)
+        return player.Name == "Player1"
+      end
+
+      ```
+Methods: []
+Events:
+  - Name: Grabbed
+    Arguments:
+      Name: grabber
+      Type: Player
+    Description: Fires when this object has been grabbed
+  - Name: Released
+    Arguments: ""
+    Description: Fires when this object has been released
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Grabbable represents a object that can be dragged by user. It can
+  be parented to Physical to give user ability to drag that object.

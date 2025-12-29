@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>UIHorizontalLayout</Name>
-  <BaseType>UIHVLayout</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>true</IsInstantiatable>
-  <Description>UIHorizontalLayout is a class that aligns all of its children horizontally.</Description>
-</ClassDef>

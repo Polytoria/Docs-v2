@@ -1,0 +1,9 @@
+Name: LightingModifier
+BaseType: Instance
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: true
+IsInstantiatable: false
+Description: Base class for lighting modifiers

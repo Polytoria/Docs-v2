@@ -1,0 +1,49 @@
+Name: PTSignal
+BaseType: null
+Properties: []
+Methods:
+  - Name: Connect
+    ReturnType: nil
+    Parameters:
+      - Name: action
+        Type: function
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Connect a function to this signal
+  - Name: Disconnect
+    ReturnType: nil
+    Parameters:
+      - Name: action
+        Type: function
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Disconnect a function from this signal
+  - Name: Wait
+    ReturnType: any
+    Parameters: []
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Wait until this signal's emitted
+  - Name: Once
+    ReturnType: nil
+    Parameters:
+      - Name: action
+        Type: function
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Listen to this signal only once
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: A signal which scripts can subscribe to

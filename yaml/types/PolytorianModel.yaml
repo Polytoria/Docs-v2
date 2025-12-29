@@ -1,0 +1,185 @@
+Name: PolytorianModel
+BaseType: CharacterModel
+Properties:
+  - Name: HeadColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: TorsoColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: LeftArmColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: RightArmColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: LeftLegColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: RightLegColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: FaceImage
+    Type: ImageAsset
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: ShirtImage
+    Type: ImageAsset
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: PantsImage
+    Type: ImageAsset
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: TorsoMesh
+    Type: MeshAsset
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: Ragdolling
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: RagdollPosition
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: RagdollRotation
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+Methods:
+  - Name: StartRagdoll
+    ReturnType: nil
+    Parameters:
+      - Name: force
+        Type: Vector3
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: StopRagdoll
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: GetAttachment
+    ReturnType: Dynamic
+    Parameters:
+      - Name: attachmentEnum
+        Type: CharacterAttachmentEnum
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: LoadAppearance
+    ReturnType: nil
+    Parameters:
+      - Name: userID
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: ClearAppearance
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: SetAttachmentTransformOverride
+    ReturnType: nil
+    Parameters:
+      - Name: attachment
+        Type: CharacterAttachmentEnum
+        IsOptional: false
+        DefaultValue: ""
+      - Name: overrideThis
+        Type: boolean
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: SetAttachmentPositionOverride
+    ReturnType: nil
+    Parameters:
+      - Name: attachment
+        Type: CharacterAttachmentEnum
+        IsOptional: false
+        DefaultValue: ""
+      - Name: pos
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: SetAttachmentRotationOverride
+    ReturnType: nil
+    Parameters:
+      - Name: attachment
+        Type: CharacterAttachmentEnum
+        IsOptional: false
+        DefaultValue: ""
+      - Name: rot
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+Events:
+  - Name: RagdollStarted
+    Arguments: ""
+    Description: Fires when ragdoll has been started
+  - Name: RagdollStopped
+    Arguments: ""
+    Description: Fires when ragdoll has been stopped
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Missing Documentation

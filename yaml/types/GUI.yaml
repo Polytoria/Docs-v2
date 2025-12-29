@@ -1,0 +1,9 @@
+Name: GUI
+BaseType: UIField
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: GUI is a class that is used to create a GUI.

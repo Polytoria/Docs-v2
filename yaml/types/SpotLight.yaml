@@ -1,0 +1,22 @@
+Name: SpotLight
+BaseType: Light
+Properties:
+  - Name: Range
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The maximum distance the light can reach.
+  - Name: Angle
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The angle of the spotlight's cone.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: SpotLight is a source of light emitting in a specific direction and
+  angle that can be placed in the world.

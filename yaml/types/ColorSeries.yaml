@@ -1,0 +1,112 @@
+Name: ColorSeries
+BaseType: ValueType
+Properties:
+  - Name: PointCount
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Returns the point count of this color series
+Methods:
+  - Name: New
+    ReturnType: ColorSeries
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Create color series by this color range
+  - Name: New
+    ReturnType: ColorSeries
+    Parameters:
+      - Name: min
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+      - Name: max
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Create color series by this color range
+  - Name: SetColor
+    ReturnType: nil
+    Parameters:
+      - Name: point
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: color
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Sets the color at the specified point in the color series.
+  - Name: RemovePoint
+    ReturnType: nil
+    Parameters:
+      - Name: point
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Removes the point at the specified index from the color series.
+  - Name: SetOffset
+    ReturnType: nil
+    Parameters:
+      - Name: point
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: offset
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Sets the offset at the specified point in the color series.
+  - Name: GetColor
+    ReturnType: Color
+    Parameters:
+      - Name: point
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets the color at the specified point in the color series.
+  - Name: GetOffset
+    ReturnType: number
+    Parameters:
+      - Name: point
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets the offset at the specified point in the color series.
+  - Name: Lerp
+    ReturnType: Color
+    Parameters:
+      - Name: t
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Interpolates between colors in the series based on the parameter t.
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: Color series is a data type that represents a collection of color
+  and points, also known as gradient.

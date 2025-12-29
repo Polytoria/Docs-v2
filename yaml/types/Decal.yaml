@@ -1,0 +1,28 @@
+Name: Decal
+BaseType: Dynamic
+Properties:
+  - Name: Image
+    Type: ImageAsset
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The image texture applied to the decal.
+  - Name: Energy
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: Color
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The color tint applied to the decal.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Decals are objects that can have an image texture and are wrapped
+  around other objects.

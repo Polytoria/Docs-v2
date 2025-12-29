@@ -1,0 +1,10 @@
+Name: ImageStretchMode
+InternalName: ImageStretchModeEnum
+Options:
+  - Name: Stretch
+    Description: ""
+  - Name: Centered
+    Description: ""
+  - Name: Covered
+    Description: ""
+Description: Missing Documentation

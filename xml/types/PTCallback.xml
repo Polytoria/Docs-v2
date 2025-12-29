@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>PTCallback</Name>
-  <BaseType/>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>A function that doesn&apos;t expect a return value. This will sometimes be referred as `function`</Description>
-</ClassDef>

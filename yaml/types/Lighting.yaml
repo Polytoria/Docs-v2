@@ -1,0 +1,53 @@
+Name: Lighting
+BaseType: Instance
+Properties:
+  - Name: Skybox
+    Type: SkyboxEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Sets the skybox to one of the preset skyboxes.
+  - Name: AmbientSource
+    Type: AmbientSourceEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the source of ambient lighting in the place.
+  - Name: AmbientColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Sets the ambient color of the lighting in the place.
+  - Name: FogEnabled
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Enables or disables fog in the place.
+  - Name: FogColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Sets the color of the fog in the place.
+  - Name: FogStartDistance
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Sets the distance from the camera at which fog begins to appear.
+  - Name: FogEndDistance
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Sets the distance from the camera at which fog stops appearing.
+Methods: []
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: Lighting is responsible for controlling the state of the lighting
+  in the place. It provides many different options for creators to enhance and
+  fine-tune the visuals of their worlds.

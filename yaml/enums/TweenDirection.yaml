@@ -1,0 +1,12 @@
+Name: TweenDirection
+InternalName: TweenDirectionEnum
+Options:
+  - Name: In
+    Description: ""
+  - Name: Out
+    Description: ""
+  - Name: InOut
+    Description: ""
+  - Name: OutIn
+    Description: ""
+Description: Missing Documentation

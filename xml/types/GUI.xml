@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>GUI</Name>
-  <BaseType>UIField</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>true</IsInstantiatable>
-  <Description>GUI is a class that is used to create a GUI.</Description>
-</ClassDef>

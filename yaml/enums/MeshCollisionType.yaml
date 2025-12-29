@@ -1,0 +1,10 @@
+Name: MeshCollisionType
+InternalName: CollisionTypeEnum
+Options:
+  - Name: Bounds
+    Description: ""
+  - Name: Convex
+    Description: ""
+  - Name: Exact
+    Description: ""
+Description: Missing Documentation

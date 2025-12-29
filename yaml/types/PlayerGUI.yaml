@@ -1,0 +1,9 @@
+Name: PlayerGUI
+BaseType: Instance
+Properties: []
+Methods: []
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: PlayerGUI is a class that contains all custom GUIs.

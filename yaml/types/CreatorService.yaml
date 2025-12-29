@@ -1,0 +1,40 @@
+Name: CreatorService
+BaseType: null
+Properties:
+  - Name: Interface
+    Type: CreatorInterface
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: Clipboard
+    Type: CreatorClipboard
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: CurrentGame
+    Type: Game
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: LocalTestActive
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+Methods: []
+Events:
+  - Name: LocalTestStarted
+    Arguments: ""
+    Description: Fires when local testing starts
+  - Name: LocalTestStopped
+    Arguments: ""
+    Description: Fires when local testing ends
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: CreatorService is the class that manages the creator. This class is
+  only available in the creator.

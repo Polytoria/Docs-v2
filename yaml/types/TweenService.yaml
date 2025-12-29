@@ -1,0 +1,19 @@
+Name: TweenService
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: NewTween
+    ReturnType: TweenObject
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: >-
+      Creates a new tween object
+          
+          Note: Tween will run automatically after one frame, you must use it's function right after creating it.
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: TweenService is a service for managing tweens

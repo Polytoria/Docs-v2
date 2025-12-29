@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>BaseAsset</Name>
-  <BaseType>NetworkedObject</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>true</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>Base class for all assets</Description>
-</ClassDef>

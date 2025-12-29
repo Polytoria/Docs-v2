@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>Folder</Name>
-  <BaseType>Instance</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>true</IsInstantiatable>
-  <Description>Folder is similar to a model, used for storing objects in the place.</Description>
-</ClassDef>

@@ -1,0 +1,15 @@
+Name: BuiltInAudioAsset
+BaseType: AudioAsset
+Properties:
+  - Name: AudioPreset
+    Type: BuiltInAudioPresetEnum
+    IsAccessibleByScripts: false
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The target audio to use
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Audio asset that's built-in with the client

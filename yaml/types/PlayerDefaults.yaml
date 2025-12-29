@@ -1,0 +1,108 @@
+Name: PlayerDefaults
+BaseType: Hidden
+Properties:
+  - Name: MaxHealth
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The default maximum health of the player.
+  - Name: WalkSpeed
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The default walking speed of the player.
+  - Name: SprintSpeed
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The default sprinting speed of the player.
+  - Name: JumpPower
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The default jump power of the player.
+  - Name: RespawnTime
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The default time the player has to wait before respawning.
+  - Name: ChatColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The default chat color of the player.
+  - Name: CanMove
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the player can move by default.
+  - Name: StaminaBurn
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The rate at which the player's stamina depletes while sprinting.
+  - Name: UseStamina
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the player uses stamina.
+  - Name: Stamina
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the default stamina of players.
+  - Name: MaxStamina
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the default maximum stamina of players.
+  - Name: StaminaRegen
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the rate at which the player's stamina regenerates.
+  - Name: UseHeadTurning
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the player uses head turning by default.
+  - Name: UseBubbleChat
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the player uses bubble chat by default.
+  - Name: AutoLoadAppearance
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the player's appearance is automatically loaded
+      by default.
+Methods:
+  - Name: LoadDefaults
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Resets the specified player back to their default values.
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: PlayerDefaults is a service used for storing the default values of
+  the  Player when created.

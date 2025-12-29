@@ -1,0 +1,26 @@
+Name: BindableEvent
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: Invoke
+    ReturnType: nil
+    Parameters:
+      - Name: par
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Invoke this event with parameters
+Events:
+  - Name: Invoked
+    Arguments:
+      Name: ...
+      Type: any
+    Description: Fires when this event has been invoked
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: BindableEvent are events that can be called to communicate between
+  scripts in the same boundary.

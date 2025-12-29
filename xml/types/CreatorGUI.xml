@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>CreatorGUI</Name>
-  <BaseType>PlayerGUI</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>CreatorGUI is an object that allows GUI to overlay on top of the viewport in the creator. This class is only available in the creator.</Description>
-</ClassDef>

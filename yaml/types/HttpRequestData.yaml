@@ -1,0 +1,41 @@
+Name: HttpRequestData
+BaseType: null
+Properties:
+  - Name: URL
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The target endpoint of the HTTP request.
+  - Name: Method
+    Type: HttpRequestMethodEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The HTTP method used for the request.
+  - Name: Body
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The payload sent with the request.
+  - Name: Headers
+    Type: table
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: A table of HTTP headers to include with the request, represented as
+      key-value pairs.
+Methods:
+  - Name: New
+    ReturnType: HttpRequestData
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates and returns a new instance of `HttpRequestData`
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: HttpRequestData represents the data required to construct an HTTP request

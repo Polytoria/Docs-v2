@@ -1,0 +1,14 @@
+Name: HttpRequestMethod
+InternalName: HttpRequestMethodEnum
+Options:
+  - Name: Get
+    Description: ""
+  - Name: Post
+    Description: ""
+  - Name: Put
+    Description: ""
+  - Name: Delete
+    Description: ""
+  - Name: Patch
+    Description: ""
+Description: Missing Documentation

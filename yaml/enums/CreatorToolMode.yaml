@@ -1,0 +1,16 @@
+Name: CreatorToolMode
+InternalName: ToolModeEnum
+Options:
+  - Name: Select
+    Description: ""
+  - Name: Move
+    Description: ""
+  - Name: Rotate
+    Description: ""
+  - Name: Scale
+    Description: ""
+  - Name: Paint
+    Description: ""
+  - Name: Brush
+    Description: ""
+Description: Missing Documentation

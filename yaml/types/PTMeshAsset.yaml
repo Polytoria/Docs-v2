@@ -1,0 +1,15 @@
+Name: PTMeshAsset
+BaseType: MeshAsset
+Properties:
+  - Name: AssetID
+    Type: number
+    IsAccessibleByScripts: false
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Asset ID of this mesh
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: A mesh asset that's loaded from Polytoria.

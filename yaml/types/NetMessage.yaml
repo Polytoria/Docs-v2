@@ -1,0 +1,225 @@
+Name: NetMessage
+BaseType: null
+Properties: []
+Methods:
+  - Name: AddString
+    ReturnType: nil
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: value
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Adds a string value to the message with the specified key.
+  - Name: AddInt
+    ReturnType: nil
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: value
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Adds an integer value to the message with the specified key.
+  - Name: AddBool
+    ReturnType: nil
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: value
+        Type: boolean
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Adds a boolean value to the message with the specified key.
+  - Name: AddNumber
+    ReturnType: nil
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: value
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Adds a number value to the message with the specified key.
+  - Name: AddVector2
+    ReturnType: nil
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: value
+        Type: Vector2
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Adds a Vector2 value to the message with the specified key.
+  - Name: AddVector3
+    ReturnType: nil
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: value
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Adds a Vector3 value to the message with the specified key.
+  - Name: AddColor
+    ReturnType: nil
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: value
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Adds a Color value to the message with the specified key.
+  - Name: AddInstance
+    ReturnType: nil
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: value
+        Type: Instance
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Adds an Instance value to the message with the specified key.
+  - Name: GetString
+    ReturnType: string
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets a string value from the message with the specified key.
+  - Name: GetInt
+    ReturnType: number
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets an integer value from the message with the specified key.
+  - Name: GetNumber
+    ReturnType: number
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets a number value from the message with the specified key.
+  - Name: GetBool
+    ReturnType: boolean
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets a boolean value from the message with the specified key.
+  - Name: GetVector2
+    ReturnType: Vector2
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets a Vector2 value from the message with the specified key.
+  - Name: GetVector3
+    ReturnType: Vector3
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets a Vector3 value from the message with the specified key.
+  - Name: GetColor
+    ReturnType: Color
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets a Color value from the message with the specified key.
+  - Name: GetInstance
+    ReturnType: Instance
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets an Instance value from the message with the specified key.
+  - Name: New
+    ReturnType: NetMessage
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a new NetMessage instance.
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: Represents a network message used for communication between clients
+  and servers.

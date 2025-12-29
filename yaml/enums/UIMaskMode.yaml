@@ -1,0 +1,10 @@
+Name: UIMaskMode
+InternalName: MaskModeEnum
+Options:
+  - Name: Disabled
+    Description: ""
+  - Name: ClipOnly
+    Description: ""
+  - Name: ClipAndDraw
+    Description: ""
+Description: Missing Documentation

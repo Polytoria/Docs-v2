@@ -1,0 +1,27 @@
+Name: InputActionAxis
+BaseType: InputAction
+Properties:
+  - Name: Negative
+    Type: InputButtonCollection
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: Positive
+    Type: InputButtonCollection
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: Value
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: InputActionAxis is a class that represents input action of axis type.

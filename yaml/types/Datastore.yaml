@@ -1,0 +1,56 @@
+Name: Datastore
+BaseType: null
+Properties:
+  - Name: Key
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The key identifying this Datastore connection.
+Methods:
+  - Name: GetAsync
+    ReturnType: any
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Retrieves a value from the datastore asynchronously using the
+      specified key.
+  - Name: SetAsync
+    ReturnType: nil
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: value
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Stores a value in the datastore asynchronously using the specified key.
+  - Name: RemoveAsync
+    ReturnType: nil
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Removes a value from the datastore asynchronously using the specified key.
+Events:
+  - Name: Loaded
+    Arguments: ""
+    Description: Fires when this datastore has been loaded
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: Datastore is an object that represent datastore connection.

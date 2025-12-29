@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>VehicleSeat</Name>
-  <BaseType>Seat</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>true</IsInstantiatable>
-  <Description>A seat for Vehicle</Description>
-</ClassDef>

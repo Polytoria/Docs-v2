@@ -1,0 +1,91 @@
+Name: PlacesService
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: NewServerAsync
+    ReturnType: string
+    Parameters:
+      - Name: placePath
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Request a new server with data
+  - Name: NewServerAsync
+    ReturnType: string
+    Parameters:
+      - Name: data
+        Type: NewServerRequestData
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Request a new server with data
+  - Name: JoinPlaceAsync
+    ReturnType: nil
+    Parameters:
+      - Name: plr
+        Type: Player
+        IsOptional: false
+        DefaultValue: ""
+      - Name: to
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Join a player to a public server of the specified place
+  - Name: JoinPlacePartyAsync
+    ReturnType: nil
+    Parameters:
+      - Name: plrs
+        Type: table
+        IsOptional: false
+        DefaultValue: ""
+      - Name: to
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Join a party of player to a public server of the specified place
+  - Name: JoinPrivateAsync
+    ReturnType: nil
+    Parameters:
+      - Name: plr
+        Type: Player
+        IsOptional: false
+        DefaultValue: ""
+      - Name: accessID
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Join a player to a private server of the specified place
+  - Name: JoinPrivatePartyAsync
+    ReturnType: nil
+    Parameters:
+      - Name: players
+        Type: table
+        IsOptional: false
+        DefaultValue: ""
+      - Name: accessID
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Join a party of player to a private server of the specified place
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: PlacesService is a service that is used to join players to other places

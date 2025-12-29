@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>ClientScript</Name>
-  <BaseType>Script</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>true</IsInstantiatable>
-  <Description>ClientScript is a script that runs locally for each player. It can only see what the player can see.</Description>
-</ClassDef>

@@ -1,0 +1,15 @@
+Name: Truss
+BaseType: Part
+Properties:
+  - Name: ClimbSpeed
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The speed at which the player can climb the truss.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Trusses are parts that can be climbed by the player.

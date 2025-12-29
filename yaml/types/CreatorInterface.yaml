@@ -1,0 +1,64 @@
+Name: CreatorInterface
+BaseType: null
+Properties:
+  - Name: ToolMode
+    Type: ToolModeEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: TargetPartColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: TargetPartMaterial
+    Type: PartMaterialEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: MoveSnapEnabled
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: MoveSnapping
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: UserMoveSnapping
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: RotateSnapEnabled
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: RotateSnapping
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: UserRotateSnapping
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: CreatorInterface represent the user interface of the creator. This
+  class is only available in the creator.

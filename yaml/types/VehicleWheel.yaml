@@ -1,0 +1,27 @@
+Name: VehicleWheel
+BaseType: Dynamic
+Properties:
+  - Name: UseForTraction
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines if this wheel should be used for traction.
+  - Name: UseForSteering
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines if this wheel should be used for steering.
+  - Name: Radius
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the radius for this wheel.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: A wheel for the vehicle

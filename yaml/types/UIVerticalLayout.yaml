@@ -1,0 +1,9 @@
+Name: UIVerticalLayout
+BaseType: UIHVLayout
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: UIVerticalLayout is a class that aligns all of its children vertically.

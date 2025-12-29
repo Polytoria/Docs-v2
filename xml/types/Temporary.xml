@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>Temporary</Name>
-  <BaseType>Hidden</BaseType>
-  <IsStatic>true</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>A temporary container. All class that were instantiated from `Instance.New` will have this class as their first parent.</Description>
-</ClassDef>

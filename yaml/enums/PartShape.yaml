@@ -1,0 +1,24 @@
+Name: PartShape
+InternalName: ShapeEnum
+Options:
+  - Name: Brick
+    Description: ""
+  - Name: Sphere
+    Description: ""
+  - Name: Cylinder
+    Description: ""
+  - Name: Cone
+    Description: ""
+  - Name: Wedge
+    Description: ""
+  - Name: Corner
+    Description: ""
+  - Name: Bevel
+    Description: ""
+  - Name: Concave
+    Description: ""
+  - Name: Truss
+    Description: ""
+  - Name: Frame
+    Description: ""
+Description: Missing Documentation

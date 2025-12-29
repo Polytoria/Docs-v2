@@ -1,0 +1,10 @@
+Name: PhysicalModel
+BaseType: Physical
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: PhysicalModel is a object that represent a group of objects, that's
+  affected by physics.

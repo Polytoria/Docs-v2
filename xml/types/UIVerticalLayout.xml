@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>UIVerticalLayout</Name>
-  <BaseType>UIHVLayout</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>true</IsInstantiatable>
-  <Description>UIVerticalLayout is a class that aligns all of its children vertically.</Description>
-</ClassDef>

@@ -1,0 +1,48 @@
+Name: ChatService
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: BroadcastMessage
+    ReturnType: nil
+    Parameters:
+      - Name: msg
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Sends a chat message to all players.
+  - Name: UnicastMessage
+    ReturnType: nil
+    Parameters:
+      - Name: msg
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: plr
+        Type: Player
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Sends a chat message to a specific player.
+Events:
+  - Name: NewChatMessage
+    Arguments:
+      - Name: sender
+        Type: Player
+      - Name: message
+        Type: string
+    Description: Fires when new chat message has been received from player
+  - Name: MessageReceived
+    Arguments:
+      Name: message
+      Type: string
+    Description: Fires when new message has been received from either
+      `BroadcastMessage` or `UnicastMessage`
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: Chat is a static class used for various actions regarding the chat.

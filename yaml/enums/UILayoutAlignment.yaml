@@ -1,0 +1,10 @@
+Name: UILayoutAlignment
+InternalName: UILayoutAlignmentEnum
+Options:
+  - Name: Left
+    Description: ""
+  - Name: Center
+    Description: ""
+  - Name: Right
+    Description: ""
+Description: Missing Documentation

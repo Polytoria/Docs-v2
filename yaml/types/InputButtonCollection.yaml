@@ -1,0 +1,31 @@
+Name: InputButtonCollection
+BaseType: null
+Properties: []
+Methods:
+  - Name: AddButton
+    ReturnType: nil
+    Parameters:
+      - Name: btn
+        Type: InputButton
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: RemoveButton
+    ReturnType: nil
+    Parameters:
+      - Name: btn
+        Type: InputButton
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: A collection of Input Buttons

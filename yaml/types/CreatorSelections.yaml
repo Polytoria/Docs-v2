@@ -1,0 +1,152 @@
+Name: CreatorSelections
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: Select
+    ReturnType: nil
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: SelectChild
+    ReturnType: nil
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: Deselect
+    ReturnType: nil
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: SelectOnly
+    ReturnType: nil
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: DeselectAll
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: GroupInstances
+    ReturnType: Dynamic
+    Parameters:
+      - Name: instances
+        Type: table
+        IsOptional: false
+        DefaultValue: ""
+      - Name: asPhysical
+        Type: boolean
+        IsOptional: true
+        DefaultValue: "False"
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: UngroupModel
+    ReturnType: table
+    Parameters:
+      - Name: model
+        Type: Instance
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: UngroupModels
+    ReturnType: table
+    Parameters:
+      - Name: models
+        Type: table
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: DuplicateInstances
+    ReturnType: table
+    Parameters:
+      - Name: instances
+        Type: table
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: GroupSelected
+    ReturnType: nil
+    Parameters:
+      - Name: asPhysical
+        Type: boolean
+        IsOptional: true
+        DefaultValue: "False"
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: UngroupSelected
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: DeleteSelected
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: DuplicateSelected
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: HasSelected
+    ReturnType: boolean
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: CreatorSelections is an object that manages selections in the game
+  instance. This class is only available in the creator.

@@ -1,0 +1,16 @@
+Name: Accessory
+BaseType: Dynamic
+Properties:
+  - Name: TargetAttachment
+    Type: CharacterAttachmentEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Specifies the character attachment point
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Accessory represents a attachable object that can be equipped by a
+  CharacterModel.

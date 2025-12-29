@@ -1,0 +1,15 @@
+Name: BuiltInFontAsset
+BaseType: FontAsset
+Properties:
+  - Name: FontPreset
+    Type: BuiltInTextFontPresetEnum
+    IsAccessibleByScripts: false
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Target font to use
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Font asset that's built-in with the client

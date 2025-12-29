@@ -1,0 +1,103 @@
+Name: NetworkedObject
+BaseType: null
+Properties:
+  - Name: Name
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: ClassName
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: Shared
+    Type: ScriptSharedTable
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: NetworkedObjectID
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: ObjectID
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: ExistInNetwork
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+Methods:
+  - Name: IsA
+    ReturnType: boolean
+    Parameters:
+      - Name: className
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: Clone
+    ReturnType: NetworkedObject
+    Parameters:
+      - Name: parent
+        Type: NetworkedObject
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: Destroy
+    ReturnType: nil
+    Parameters:
+      - Name: time
+        Type: number
+        IsOptional: true
+        DefaultValue: "0"
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: Delete
+    ReturnType: nil
+    Parameters:
+      - Name: time
+        Type: number
+        IsOptional: true
+        DefaultValue: "0"
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+Events:
+  - Name: PropertyChanged
+    Arguments:
+      Name: propertyName
+      Type: string
+    Description: Missing Documentation
+  - Name: Renamed
+    Arguments: ""
+    Description: Missing Documentation
+  - Name: TreeEntered
+    Arguments: ""
+    Description: Missing Documentation
+  - Name: TreeExited
+    Arguments: ""
+    Description: Missing Documentation
+IsStatic: false
+IsAbstract: true
+IsInstantiatable: false
+Description: Missing Documentation

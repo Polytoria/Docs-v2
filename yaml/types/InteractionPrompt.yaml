@@ -1,0 +1,48 @@
+Name: InteractionPrompt
+BaseType: Dynamic
+Properties:
+  - Name: Title
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: SubTitle
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: HoldDuration
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: Key
+    Type: KeyCodeEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: UseDefaultUI
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
+Methods: []
+Events:
+  - Name: Triggered
+    Arguments: ""
+    Description: Missing Documentation
+  - Name: TriggerStarted
+    Arguments: ""
+    Description: Missing Documentation
+  - Name: TriggerReleased
+    Arguments: ""
+    Description: Missing Documentation
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: WIP class, not functional yet

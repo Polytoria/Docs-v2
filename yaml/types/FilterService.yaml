@@ -1,0 +1,20 @@
+Name: FilterService
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: Filter
+    ReturnType: string
+    Parameters:
+      - Name: input
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Filter a string
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: FilterService is a service which processes and filter user inputs

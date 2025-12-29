@@ -1,0 +1,9 @@
+Name: InputAction
+BaseType: null
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: Base class for input action

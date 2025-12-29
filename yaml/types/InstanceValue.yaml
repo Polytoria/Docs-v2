@@ -1,0 +1,15 @@
+Name: InstanceValue
+BaseType: ValueBase
+Properties:
+  - Name: Value
+    Type: Instance
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The value of this object.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: InstanceValue is an object that holds an Instance value.

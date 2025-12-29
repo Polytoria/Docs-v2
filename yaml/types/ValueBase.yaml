@@ -1,0 +1,12 @@
+Name: ValueBase
+BaseType: Instance
+Properties: []
+Methods: []
+Events:
+  - Name: Changed
+    Arguments: ""
+    Description: Fires when value has been changed
+IsStatic: false
+IsAbstract: true
+IsInstantiatable: false
+Description: ValueBase is an abstract base class for objects that hold a value.

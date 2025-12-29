@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>InputAction</Name>
-  <BaseType/>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>Base class for input action</Description>
-</ClassDef>

@@ -1,0 +1,268 @@
+Name: TweenObject
+BaseType: null
+Properties:
+  - Name: Looped
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines if this tween is looped
+  - Name: Parallel
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines if this tween will run all the tweens in parallel
+  - Name: SpeedScale
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the speed scale of this tween
+  - Name: IsRunning
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Returns whether or not this tween is running
+  - Name: ElapsedTime
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Returns the elapsed time of this tween
+Methods:
+  - Name: SetDirection
+    ReturnType: TweenObject
+    Parameters:
+      - Name: dir
+        Type: TweenDirectionEnum
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Set the direction of this tween. This function returns a
+      `TweenObject` which means you can stack it with other functions.
+  - Name: SetTrans
+    ReturnType: TweenObject
+    Parameters:
+      - Name: trans
+        Type: TweenTransitionEnum
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Set the transition of this tween. This function returns a
+      `TweenObject` which means you can stack it with other functions.
+  - Name: TweenPosition
+    ReturnType: nil
+    Parameters:
+      - Name: target
+        Type: Dynamic
+        IsOptional: false
+        DefaultValue: ""
+      - Name: destination
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: time
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Tweens the position of a Dynamic.
+  - Name: TweenRotation
+    ReturnType: nil
+    Parameters:
+      - Name: target
+        Type: Dynamic
+        IsOptional: false
+        DefaultValue: ""
+      - Name: destination
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: time
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Tweens the rotation of a Dynamic.
+  - Name: TweenSize
+    ReturnType: nil
+    Parameters:
+      - Name: target
+        Type: Dynamic
+        IsOptional: false
+        DefaultValue: ""
+      - Name: destination
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: time
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Tweens the size of a Dynamic.
+  - Name: TweenColor
+    ReturnType: nil
+    Parameters:
+      - Name: from
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+      - Name: to
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+      - Name: time
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: callback
+        Type: function
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Tweens a color between two specified values.
+  - Name: TweenNumber
+    ReturnType: nil
+    Parameters:
+      - Name: from
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: to
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: time
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: callback
+        Type: function
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Tweens a number between two specified values.
+  - Name: TweenVector2
+    ReturnType: nil
+    Parameters:
+      - Name: from
+        Type: Vector2
+        IsOptional: false
+        DefaultValue: ""
+      - Name: to
+        Type: Vector2
+        IsOptional: false
+        DefaultValue: ""
+      - Name: time
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: callback
+        Type: function
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Tweens a Vector2 between two specified values.
+  - Name: TweenVector3
+    ReturnType: nil
+    Parameters:
+      - Name: from
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: to
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: time
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: callback
+        Type: function
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Tweens a Vector3 between two specified values.
+  - Name: Play
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Play this tween
+  - Name: Pause
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Pause this tween
+  - Name: Stop
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Stop this tween
+  - Name: Interval
+    ReturnType: nil
+    Parameters:
+      - Name: sec
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Creates a delay in the tween.
+  - Name: Chain
+    ReturnType: TweenObject
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Chain a tween if parallel is set to true
+  - Name: Cancel
+    ReturnType: nil
+    Parameters:
+      - Name: callFinsihed
+        Type: boolean
+        IsOptional: true
+        DefaultValue: "False"
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Cancel this tween
+Events:
+  - Name: Finished
+    Arguments: ""
+    Description: Fires when this tween has finished
+  - Name: Canceled
+    Arguments: ""
+    Description: Fires when this tween has been canceled
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: An object that represents tween

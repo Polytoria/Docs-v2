@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>LightingModifier</Name>
-  <BaseType>Instance</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>true</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>Base class for lighting modifiers</Description>
-</ClassDef>

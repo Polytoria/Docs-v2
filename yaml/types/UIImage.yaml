@@ -1,0 +1,33 @@
+Name: UIImage
+BaseType: UIField
+Properties:
+  - Name: Image
+    Type: ImageAsset
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The image asset used for the image.
+  - Name: Color
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The color applied to the image.
+  - Name: StretchMode
+    Type: ImageStretchModeEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines how the image is stretched within the view.
+  - Name: Loading
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates whether the image is currently loading.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: UIImage is a class that can be used to display images.

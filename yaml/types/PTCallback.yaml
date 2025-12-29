@@ -1,0 +1,10 @@
+Name: PTCallback
+BaseType: null
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: A function that doesn't expect a return value. This will sometimes
+  be referred as `function`

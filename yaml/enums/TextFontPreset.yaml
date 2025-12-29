@@ -1,0 +1,28 @@
+Name: TextFontPreset
+InternalName: BuiltInTextFontPresetEnum
+Options:
+  - Name: SourceSans
+    Description: ""
+  - Name: PressStart2P
+    Description: ""
+  - Name: Montserrat
+    Description: ""
+  - Name: RobotoMono
+    Description: ""
+  - Name: Rubik
+    Description: ""
+  - Name: Poppins
+    Description: ""
+  - Name: Domine
+    Description: ""
+  - Name: Fredoka
+    Description: ""
+  - Name: ComicNeue
+    Description: ""
+  - Name: Orbitron
+    Description: ""
+  - Name: Papyrus
+    Description: ""
+  - Name: ComicSansMS
+    Description: ""
+Description: Missing Documentation

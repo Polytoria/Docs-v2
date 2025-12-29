@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>ScriptSharedTable</Name>
-  <BaseType/>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>Shared table of object. This class provides a table which any scripts can modify.</Description>
-</ClassDef>

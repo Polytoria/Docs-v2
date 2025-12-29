@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>MeshAsset</Name>
-  <BaseType>ResourceAsset</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>true</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>Base class for mesh assets</Description>
-</ClassDef>

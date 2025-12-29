@@ -1,0 +1,10 @@
+Name: HorizontalAlignment
+InternalName: TextHorizontalAlignmentEnum
+Options:
+  - Name: Left
+    Description: ""
+  - Name: Center
+    Description: ""
+  - Name: Right
+    Description: ""
+Description: Missing Documentation

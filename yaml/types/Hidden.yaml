@@ -1,0 +1,9 @@
+Name: Hidden
+BaseType: Instance
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: Hidden is a object used for hiding instances.

@@ -1,0 +1,66 @@
+Name: Players
+BaseType: Instance
+Properties:
+  - Name: LocalPlayer
+    Type: Player
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The player who is currently playing the game.
+  - Name: PlayerCollisionEnabled
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not collisions between players are enabled.
+  - Name: PlayersCount
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The number of players currently in the game.
+Methods:
+  - Name: GetPlayers
+    ReturnType: table
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Returns a table containing all the players currently in the game.
+  - Name: GetPlayer
+    ReturnType: Player
+    Parameters:
+      - Name: username
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Returns the player with the specified username.
+  - Name: GetPlayerByID
+    ReturnType: Player
+    Parameters:
+      - Name: userID
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Returns the player with the specified user ID.
+Events:
+  - Name: PlayerAdded
+    Arguments:
+      Name: player
+      Type: Player
+    Description: Fires when player has connected
+  - Name: PlayerRemoved
+    Arguments:
+      Name: player
+      Type: Player
+    Description: Fires when player has disconnected
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: Players is the container class for all Player instances.

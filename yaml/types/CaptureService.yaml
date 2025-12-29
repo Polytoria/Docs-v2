@@ -1,0 +1,77 @@
+Name: CaptureService
+BaseType: Instance
+Properties:
+  - Name: OnCooldown
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Returns whenever the capture is on cooldown.
+  - Name: CanCapture
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines if user/scripts can take a picture.
+  - Name: DefaultCaptureOverlay
+    Type: UIField
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Default capture overlay for all captures
+  - Name: SpectatorAttach
+    Type: Dynamic
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Attaches a spectator camera at dynamic for use with spectator mode.
+Methods:
+  - Name: TakePhotoAtDynamic
+    ReturnType: nil
+    Parameters:
+      - Name: dyn
+        Type: Dynamic
+        IsOptional: false
+        DefaultValue: ""
+      - Name: photoSize
+        Type: Vector2
+        IsOptional: true
+        DefaultValue: null
+      - Name: overlay
+        Type: UIField
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Take a photo at dynamic
+  - Name: TakePhotoAt
+    ReturnType: nil
+    Parameters:
+      - Name: pos
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: rot
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: photoSize
+        Type: Vector2
+        IsOptional: true
+        DefaultValue: null
+      - Name: overlay
+        Type: UIField
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Take photo at `pos` for position and `rot` for rotation, optional
+      `photoSize` defines the size, and optional UI `overlay` can be passed to
+      include it in the result photo.
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: Service for capturing photos

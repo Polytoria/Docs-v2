@@ -1,0 +1,10 @@
+Name: VerticalAlignment
+InternalName: TextVerticalAlignmentEnum
+Options:
+  - Name: Top
+    Description: ""
+  - Name: Middle
+    Description: ""
+  - Name: Bottom
+    Description: ""
+Description: Missing Documentation

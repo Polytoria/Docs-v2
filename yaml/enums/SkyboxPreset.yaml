@@ -1,0 +1,46 @@
+Name: SkyboxPreset
+InternalName: SkyboxEnum
+Options:
+  - Name: Day1
+    Description: ""
+  - Name: Day2
+    Description: ""
+  - Name: Day3
+    Description: ""
+  - Name: Day4
+    Description: ""
+  - Name: Day5
+    Description: ""
+  - Name: Day6
+    Description: ""
+  - Name: Day7
+    Description: ""
+  - Name: Morning1
+    Description: ""
+  - Name: Morning2
+    Description: ""
+  - Name: Morning3
+    Description: ""
+  - Name: Morning4
+    Description: ""
+  - Name: Night1
+    Description: ""
+  - Name: Night2
+    Description: ""
+  - Name: Night3
+    Description: ""
+  - Name: Night4
+    Description: ""
+  - Name: Night5
+    Description: ""
+  - Name: Sunset1
+    Description: ""
+  - Name: Sunset2
+    Description: ""
+  - Name: Sunset3
+    Description: ""
+  - Name: Sunset4
+    Description: ""
+  - Name: Sunset5
+    Description: ""
+Description: Missing Documentation

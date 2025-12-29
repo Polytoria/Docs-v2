@@ -1,0 +1,9 @@
+Name: Inventory
+BaseType: Hidden
+Properties: []
+Methods: []
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: Missing Documentation

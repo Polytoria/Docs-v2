@@ -1,0 +1,26 @@
+Name: CharacterAttachment
+InternalName: CharacterAttachmentEnum
+Options:
+  - Name: Head
+    Description: ""
+  - Name: Torso
+    Description: ""
+  - Name: ShoulderRight
+    Description: ""
+  - Name: ShoulderLeft
+    Description: ""
+  - Name: Waist
+    Description: ""
+  - Name: LegLeft
+    Description: ""
+  - Name: LegRight
+    Description: ""
+  - Name: FootLeft
+    Description: ""
+  - Name: FootRight
+    Description: ""
+  - Name: HandLeft
+    Description: ""
+  - Name: HandRight
+    Description: ""
+Description: Missing Documentation

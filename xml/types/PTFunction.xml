@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>PTFunction</Name>
-  <BaseType/>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>A function that expects a return value. This will sometimes be referred as `function`</Description>
-</ClassDef>

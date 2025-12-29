@@ -1,0 +1,182 @@
+Name: Player
+BaseType: NPC
+Properties:
+  - Name: UserID
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The unique ID of the player.
+  - Name: CanMove
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the player can move.
+  - Name: SprintSpeed
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the sprinting speed of the player.
+  - Name: Stamina
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the current stamina of the player.
+  - Name: MaxStamina
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the maximum stamina of the player.
+  - Name: UseStamina
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the player uses stamina.
+  - Name: StaminaRegen
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the rate at which the player's stamina regenerates.
+  - Name: StaminaBurn
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the rate at which the player's stamina depletes while sprinting.
+  - Name: RespawnTime
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the time the player has to wait before respawning.
+  - Name: UseHeadTurning
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the player uses head turning.
+  - Name: UseBubbleChat
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the player uses bubble chat.
+  - Name: AutoLoadAppearance
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the player's appearance is automatically loaded.
+  - Name: NetworkPing
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The amount of network latency (ping) the player is experiencing.
+  - Name: IsAdmin
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Determines whether the player is an administrator.
+  - Name: IsCreator
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Determines whether the player is the creator of the game.
+  - Name: ChatColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the chat color of the player.
+  - Name: IsLocal
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Determines whether the player is the local player.
+  - Name: IsClimbing
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Determines whether the player is currently climbing.
+  - Name: ClimbingTruss
+    Type: Truss
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Determines the truss the player is currently climbing.
+  - Name: UserPlatform
+    Type: ClientPlatformEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Determines the platform the player is using.
+  - Name: Inventory
+    Type: Inventory
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The inventory of the player.
+Methods:
+  - Name: Jump
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Makes the player jump.
+  - Name: Kick
+    ReturnType: nil
+    Parameters:
+      - Name: reason
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Kicks the player from the game with the specified reason.
+  - Name: UnequipTool
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Unequips the currently equipped tool of the player.
+  - Name: Respawn
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Respawns the player.
+  - Name: ResetAppearance
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Resets the player's appearance to the default.
+Events:
+  - Name: Chatted
+    Arguments:
+      Name: message
+      Type: string
+    Description: Fires when this player chats
+  - Name: Respawned
+    Arguments: ""
+    Description: Fires when this player has respawned
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: Player represents a user playing the game.

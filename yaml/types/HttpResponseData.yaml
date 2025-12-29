@@ -1,0 +1,34 @@
+Name: HttpResponseData
+BaseType: null
+Properties:
+  - Name: Success
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates whether the HTTP request completed successfully.
+  - Name: StatusCode
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The HTTP status code returned by the server.
+  - Name: Headers
+    Type: table
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: A table containing the HTTP response headers returned by the
+      server, represented as key-value pairs.
+  - Name: Body
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The response payload returned by the server as a string buffer.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: HttpResponseData represents the result of an HTTP request.

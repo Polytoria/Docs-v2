@@ -1,0 +1,86 @@
+Name: UITextInput
+BaseType: UIView
+Properties:
+  - Name: Text
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The text of the label.
+  - Name: TextColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The color of the text.
+  - Name: JustifyText
+    Type: TextHorizontalAlignmentEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines how text is justified.
+  - Name: FontSize
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The font size of the label.
+  - Name: IsMultiline
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the text input supports multiple lines.
+  - Name: Placeholder
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The placeholder text displayed when the input is empty.
+  - Name: PlaceholderColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The color of the placeholder text.
+  - Name: ReadonlyColor
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The color of the text when the input is read-only.
+  - Name: IsReadOnly
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the text input is read-only.
+  - Name: FontAsset
+    Type: FontAsset
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The font asset used for the text.
+Methods:
+  - Name: Focus
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Forces the local player to focus on the text input.
+Events:
+  - Name: Submitted
+    Arguments:
+      Name: text
+      Type: string
+    Description: Fires when user submitted the text
+  - Name: Changed
+    Arguments:
+      Name: text
+      Type: string
+    Description: Fires when user changed the text
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: UITextInput is a class that allows the user to enter text.

@@ -1,0 +1,9 @@
+Name: Folder
+BaseType: Instance
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Folder is similar to a model, used for storing objects in the place.

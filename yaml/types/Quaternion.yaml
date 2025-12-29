@@ -1,0 +1,315 @@
+Name: Quaternion
+BaseType: null
+Properties:
+  - Name: X
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The X component of the quaternion.
+  - Name: Y
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The Y component of the quaternion.
+  - Name: Z
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The Z component of the quaternion.
+  - Name: W
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The W component of the quaternion.
+  - Name: Identity
+    Type: Quaternion
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The identity rotation.
+Methods:
+  - Name: New
+    ReturnType: Quaternion
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a new Quaternion object with the specified components.
+  - Name: New
+    ReturnType: Quaternion
+    Parameters:
+      - Name: x
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: y
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: z
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: w
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a new Quaternion object with the specified components.
+  - Name: Angle
+    ReturnType: Quaternion
+    Parameters:
+      - Name: a
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Calculates the angle between two quaternions.
+  - Name: AngleAxis
+    ReturnType: Quaternion
+    Parameters:
+      - Name: angle
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: axis
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a rotation which rotates angle degrees around axis.
+  - Name: Dot
+    ReturnType: Quaternion
+    Parameters:
+      - Name: a
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Calculates the dot product of two quaternions.
+  - Name: Euler
+    ReturnType: Quaternion
+    Parameters:
+      - Name: x
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: y
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: z
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a quaternion from Euler angles specified by a Vector3.
+  - Name: Euler
+    ReturnType: Quaternion
+    Parameters:
+      - Name: euler
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a quaternion from Euler angles specified by a Vector3.
+  - Name: ToEuler
+    ReturnType: Vector3
+    Parameters:
+      - Name: euler
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Converts a quaternion to Euler angles represented as a Vector3.
+  - Name: FromToRotation
+    ReturnType: Quaternion
+    Parameters:
+      - Name: fromDirection
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: toDirection
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a rotation which rotates angle degrees around axis.
+  - Name: Inverse
+    ReturnType: Quaternion
+    Parameters:
+      - Name: rotation
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Calculates the inverse of a quaternion.
+  - Name: Lerp
+    ReturnType: Quaternion
+    Parameters:
+      - Name: a
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: t
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Linearly interpolates between two quaternions.
+  - Name: LerpUnclamped
+    ReturnType: Quaternion
+    Parameters:
+      - Name: a
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: t
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Linearly interpolates between two quaternions without clamping the
+      interpolant.
+  - Name: LookRotation
+    ReturnType: Quaternion
+    Parameters:
+      - Name: forward
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a rotation with the specified forward and upwards directions.
+  - Name: LookRotation
+    ReturnType: Quaternion
+    Parameters:
+      - Name: forward
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: upwards
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a rotation with the specified forward and upwards directions.
+  - Name: Normalize
+    ReturnType: Quaternion
+    Parameters:
+      - Name: quaternion
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Normalizes the given quaternion.
+  - Name: RotateTowards
+    ReturnType: Quaternion
+    Parameters:
+      - Name: from
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: to
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: maxDegreesDelta
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Rotates a rotation from towards to by maxDegreesDelta.
+  - Name: Slerp
+    ReturnType: Quaternion
+    Parameters:
+      - Name: a
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: t
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Spherically interpolates between two quaternions.
+  - Name: SlerpUnclamped
+    ReturnType: Quaternion
+    Parameters:
+      - Name: a
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: t
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Spherically interpolates between two quaternions without clamping
+      the interpolant.
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: Represents a quaternion used for rotations.

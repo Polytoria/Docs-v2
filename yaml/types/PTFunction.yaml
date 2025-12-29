@@ -1,0 +1,10 @@
+Name: PTFunction
+BaseType: null
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: A function that expects a return value. This will sometimes be
+  referred as `function`

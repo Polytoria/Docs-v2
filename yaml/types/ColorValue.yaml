@@ -1,0 +1,15 @@
+Name: ColorValue
+BaseType: ValueBase
+Properties:
+  - Name: Value
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The value of this object.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: ColorValue is an object that holds a Color value.

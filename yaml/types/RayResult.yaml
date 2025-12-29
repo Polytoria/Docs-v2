@@ -1,0 +1,45 @@
+Name: RayResult
+BaseType: ValueType
+Properties:
+  - Name: Origin
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The origin point of the ray.
+  - Name: Direction
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The direction vector of the ray.
+  - Name: Position
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The position where the ray hit an object.
+  - Name: Normal
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The surface normal at the point where the ray hit.
+  - Name: Distance
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The distance from the ray's origin to the hit point.
+  - Name: Instance
+    Type: Instance
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The instance that was hit by the ray.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: false
+Description: RayResult is a data type that contains data about a raycast result.

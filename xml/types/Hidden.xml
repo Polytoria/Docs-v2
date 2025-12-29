@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>Hidden</Name>
-  <BaseType>Instance</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>Hidden is a object used for hiding instances.</Description>
-</ClassDef>

@@ -1,0 +1,45 @@
+Name: Vehicle
+BaseType: PhysicalModel
+Properties:
+  - Name: MaxSpeed
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the forward force limit in kg/s.
+  - Name: SteerLimit
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the steering limit in degrees.
+  - Name: Force
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the forward force in kg/s.
+  - Name: Brake
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the break amount in kg/s.
+  - Name: Steering
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the steering angle in degrees
+  - Name: Driver
+    Type: Player
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the current driver of this vehicle.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Vehicle class represents a vehicle that can be driven by a player

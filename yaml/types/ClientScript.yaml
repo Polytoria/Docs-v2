@@ -1,0 +1,10 @@
+Name: ClientScript
+BaseType: Script
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: ClientScript is a script that runs locally for each player. It can
+  only see what the player can see.

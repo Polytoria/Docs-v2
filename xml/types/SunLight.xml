@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>SunLight</Name>
-  <BaseType>Light</BaseType>
-  <IsStatic>true</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>false</IsInstantiatable>
-  <Description>SunLight is the main directional light source representing the sun in the game world.</Description>
-</ClassDef>

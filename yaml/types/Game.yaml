@@ -1,0 +1,49 @@
+Name: Game
+BaseType: Instance
+Properties:
+  - Name: IsLocalTest
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Missing Documentation
+  - Name: GameID
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The ID of the current Polytoria place.
+  - Name: ServerID
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The server ID of the current instance.
+  - Name: UpTime
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The uptime of this game in seconds.
+  - Name: InstanceCount
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: The total number of instances currently loaded.
+Methods: []
+Events:
+  - Name: Ready
+    Arguments: ""
+    Description: Fires when the game is ready
+  - Name: Rendered
+    Arguments:
+      Name: delta
+      Type: number
+    Description: Fires every frame after the place has been rendered. The `delta`
+      parameter is the time between the last frame and the current.
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: Game is the root object in the Polytoria instance tree. It is the
+  object from which everything is descended.

@@ -1,0 +1,261 @@
+Name: Camera
+BaseType: Dynamic
+Properties:
+  - Name: Mode
+    Type: CameraModeEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines or returns the camera's current mode.
+  - Name: FOV
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines or returns the camera's field of view.
+  - Name: ClipThroughWalls
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not the camera should clip through walls.
+  - Name: MinDistance
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The camera's minimum distance from the player in Follow mode.
+  - Name: MaxDistance
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines camera's maximum distance from the player in Follow mode.
+  - Name: Distance
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the distance between the camera and the player when the
+      camera is in Follow mode.
+  - Name: ScrollSensitivity
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the scroll move speed of the camera.
+  - Name: Orthographic
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not the camera should render in orthographic
+      (2D) mode or not (3D).
+  - Name: FollowLerp
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether or not to use lerping in Follow mode.
+  - Name: LerpSpeed
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the lerp speed of the camera when lerping is enabled.
+  - Name: OrthographicSize
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the half-size of the camera when in orthographic mode.
+  - Name: PositionOffset
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the camera's offset from its position.
+  - Name: RotationOffset
+    Type: Vector3
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the camera's offset from its rotation.
+  - Name: IsFirstPerson
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Returns whether or not the camera is in first person.
+  - Name: CanLock
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determine if camera can be ctrl locked.
+  - Name: SensitivityMultiplier
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Multipler for camera sensitivity
+  - Name: Sensitivity
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Current sensitivity of the camera
+  - Name: HorizontalSpeed
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the horizontal movement speed of the camera in Follow mode.
+  - Name: VerticalSpeed
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the vertical move speed of the camera.
+  - Name: ScrollLerpSpeed
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines the lerp amount when scrolling
+  - Name: CtrlLocked
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determine if camera is in Ctrl lock mode
+  - Name: AlwaysLocked
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determine if camera should always be in locked mode
+  - Name: Target
+    Type: Dynamic
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The target of Follow mode
+Methods:
+  - Name: ViewportPointToRay
+    ReturnType: RayResult
+    Parameters:
+      - Name: pos
+        Type: Vector2
+        IsOptional: false
+        DefaultValue: ""
+      - Name: ignoreList
+        Type: table
+        IsOptional: true
+        DefaultValue: null
+      - Name: maxDistance
+        Type: number
+        IsOptional: true
+        DefaultValue: "10000"
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Cast a ray from the camera at the specified ViewportPoint (Vector3
+      with components with values in range of 0 - 1 describing how far a point
+      is to to right and to the top of the screen) into the game world
+  - Name: ScreenPointToRay
+    ReturnType: RayResult
+    Parameters:
+      - Name: pos
+        Type: Vector2
+        IsOptional: false
+        DefaultValue: ""
+      - Name: ignoreList
+        Type: table
+        IsOptional: true
+        DefaultValue: null
+      - Name: maxDistance
+        Type: number
+        IsOptional: true
+        DefaultValue: "10000"
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Cast a ray from the camera at screen point into the game world
+  - Name: ViewportToScreenPoint
+    ReturnType: Vector2
+    Parameters:
+      - Name: pos
+        Type: Vector2
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Transforms `pos` from viewport space into screen space.
+  - Name: ViewportToWorldPoint
+    ReturnType: Vector3
+    Parameters:
+      - Name: pos
+        Type: Vector2
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Transforms `pos` from viewport space into world space.
+  - Name: WorldToViewportPoint
+    ReturnType: Vector2
+    Parameters:
+      - Name: pos
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Transforms `pos` from world space into viewport space.
+  - Name: WorldToScreenPoint
+    ReturnType: Vector2
+    Parameters:
+      - Name: pos
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Transforms `pos` from world space into screen space.
+  - Name: ScreenToViewportPoint
+    ReturnType: Vector2
+    Parameters:
+      - Name: pos
+        Type: Vector2
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Transforms `pos` from screen space into viewport space.
+  - Name: ScreenToWorldPoint
+    ReturnType: Vector3
+    Parameters:
+      - Name: pos
+        Type: Vector2
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Transforms `pos` from screen space into world space.
+Events:
+  - Name: FirstPersonEntered
+    Arguments: ""
+    Description: Fires when camera has entered first person
+  - Name: FirstPersonExited
+    Arguments: ""
+    Description: Fires when camera has exited first person
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Camera is a class that represents the local player's camera.

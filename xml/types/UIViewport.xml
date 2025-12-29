@@ -1,9 +1,0 @@
-<?xml?>
-<ClassDef>
-  <Name>UIViewport</Name>
-  <BaseType>UIField</BaseType>
-  <IsStatic>false</IsStatic>
-  <IsAbstract>false</IsAbstract>
-  <IsInstantiatable>true</IsInstantiatable>
-  <Description>Missing Documentation</Description>
-</ClassDef>

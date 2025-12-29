@@ -1,0 +1,102 @@
+Name: Mesh
+BaseType: Entity
+Properties:
+  - Name: Asset
+    Type: MeshAsset
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The mesh asset used by this Mesh.
+  - Name: IncludeOffset
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Whether to keep the offset of the mesh or recenter it.
+  - Name: CollisionType
+    Type: CollisionTypeEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The type of collision shape to apply to the mesh.
+  - Name: PlayAnimationOnStart
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Whether to play the mesh's animation automatically when the mesh is loaded.
+  - Name: UsePartColor
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Whether to use the color of the part this mesh is attached to.
+  - Name: Color
+    Type: Color
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: The color of the mesh.
+  - Name: CastShadows
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Whether the mesh casts shadows.
+  - Name: CurrentAnimation
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates the name of the current animation playing on the mesh.
+  - Name: IsAnimationPlaying
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates whether an animation is currently playing on the mesh.
+Methods:
+  - Name: PlayAnimation
+    ReturnType: nil
+    Parameters:
+      - Name: animationName
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: speed
+        Type: number
+        IsOptional: true
+        DefaultValue: "1"
+      - Name: loop
+        Type: boolean
+        IsOptional: true
+        DefaultValue: "True"
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Plays the specified animation on the mesh.
+  - Name: StopAnimation
+    ReturnType: nil
+    Parameters:
+      - Name: animationName
+        Type: string
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Stops the specified animation on the mesh.
+  - Name: GetAnimations
+    ReturnType: table
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Gets a list of all animations available on the mesh.
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+Description: Represents a part that can have custom mesh applied to it, the mesh
+  may be from the Polytoria Store (Hats, Tools and Heads) or user-uploaded
+  meshes.

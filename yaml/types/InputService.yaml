@@ -1,0 +1,183 @@
+Name: InputService
+BaseType: Instance
+Properties:
+  - Name: IsWindowFocused
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates whether the game window is currently focused.
+  - Name: IsTouchscreen
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates whether the input device is a touchscreen.
+  - Name: IsGameFocused
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates whether the game is currently focused.
+  - Name: IsInputFocused
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates whether an input is currently focused.
+  - Name: IsGamepadConnected
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates whether a gamepad is currently connected.
+  - Name: IsMenuOpened
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates whether the game menu is currently opened.
+  - Name: CursorLocked
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the cursor is currently locked.
+  - Name: CursorVisible
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Determines whether the cursor is currently visible.
+  - Name: MousePosition
+    Type: Vector2
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates the current position of the mouse cursor.
+  - Name: ScreenWidth
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates the width of the screen.
+  - Name: ScreenHeight
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    Description: Indicates the height of the screen.
+Methods:
+  - Name: GetMouseWorldPosition
+    ReturnType: Vector3
+    Parameters:
+      - Name: ignoreList
+        Type: table
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Returns the 3D world-space position corresponding to the current
+      mouse cursor location.
+  - Name: GetVector2
+    ReturnType: InputActionVector2
+    Parameters:
+      - Name: actionName
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: GetButton
+    ReturnType: InputActionButton
+    Parameters:
+      - Name: actionName
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Returns true if the specified button is being held down.
+  - Name: GetAxis
+    ReturnType: InputActionAxis
+    Parameters:
+      - Name: actionName
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Returns the value of the specified axis.
+  - Name: BindButton
+    ReturnType: InputActionButton
+    Parameters:
+      - Name: name
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: BindAxis
+    ReturnType: InputActionAxis
+    Parameters:
+      - Name: name
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: BindVector2
+    ReturnType: InputActionVector2
+    Parameters:
+      - Name: name
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+Events:
+  - Name: GameFocused
+    Arguments: ""
+    Description: Fires when the game has been focused
+  - Name: GameUnfocused
+    Arguments: ""
+    Description: Fires when the game has been unfocused
+  - Name: GamepadConnected
+    Arguments: ""
+    Description: Fires when gamepad is connected
+  - Name: GamepadDisconnected
+    Arguments: ""
+    Description: Fires when gamepad has been disconnected
+  - Name: KeyDown
+    Arguments:
+      Name: keycode
+      Type: KeyCodeEnum
+    Description: Fires when key has been pressed
+  - Name: KeyUp
+    Arguments:
+      Name: keycode
+      Type: KeyCodeEnum
+    Description: Fires when key has been released
+  - Name: AxisValueChanged
+    Arguments:
+      - Name: keycode
+        Type: KeyCodeEnum
+      - Name: value
+        Type: float
+    Description: Fires when analog input has been changed
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+Description: InputService is a class used for retrieving user input data, such
+  as the mouse and keyboard.
