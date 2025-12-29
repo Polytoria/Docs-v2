@@ -14,7 +14,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Attempts to get a Datastore object from the Datastore service.</Description>
   </Methods>
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>

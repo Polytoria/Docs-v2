@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The key identifying this Datastore connection.</Description>
   </Properties>
   <Methods>
     <Name>GetAsync</Name>
@@ -22,7 +22,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Retrieves a value from the datastore asynchronously using the specified key.</Description>
   </Methods>
   <Methods>
     <Name>SetAsync</Name>
@@ -42,7 +42,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Stores a value in the datastore asynchronously using the specified key.</Description>
   </Methods>
   <Methods>
     <Name>RemoveAsync</Name>
@@ -56,7 +56,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Removes a value from the datastore asynchronously using the specified key.</Description>
   </Methods>
   <Events>
     <Name>Loaded</Name>

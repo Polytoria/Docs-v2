@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The position of the object.</Description>
   </Properties>
   <Properties>
     <Name>Rotation</Name>
@@ -16,7 +16,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The rotation of the object.</Description>
   </Properties>
   <Properties>
     <Name>Size</Name>
@@ -24,7 +24,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The size of the object.</Description>
   </Properties>
   <Properties>
     <Name>LocalPosition</Name>
@@ -32,7 +32,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The position of the object relative to its parent.</Description>
   </Properties>
   <Properties>
     <Name>LocalRotation</Name>
@@ -40,7 +40,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The rotation of the object relative to its parent.</Description>
   </Properties>
   <Properties>
     <Name>LocalSize</Name>
@@ -48,7 +48,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The size of the object relative to its parent.</Description>
   </Properties>
   <Properties>
     <Name>Quaternion</Name>
@@ -56,7 +56,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The rotation of the object represented as a quaternion.</Description>
   </Properties>
   <Properties>
     <Name>Locked</Name>
@@ -64,7 +64,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines whether the object can be selected in the Creator.</Description>
   </Properties>
   <Properties>
     <Name>Forward</Name>
@@ -72,7 +72,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The forward direction vector of the object.</Description>
   </Properties>
   <Properties>
     <Name>Right</Name>
@@ -80,7 +80,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The right direction vector of the object.</Description>
   </Properties>
   <Properties>
     <Name>Up</Name>
@@ -88,7 +88,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>true</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The up direction vector of the object.</Description>
   </Properties>
   <Methods>
     <Name>LookAt</Name>
@@ -102,7 +102,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Orients the object to look at a target.</Description>
   </Methods>
   <Methods>
     <Name>LookAt</Name>
@@ -122,7 +122,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Orients the object to look at a target with a specified up vector.</Description>
   </Methods>
   <Methods>
     <Name>MovePosition</Name>
@@ -164,7 +164,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Moves the transform in the direction and distance of translation.</Description>
   </Methods>
   <Methods>
     <Name>RotateAround</Name>
@@ -190,7 +190,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Rotates the object around a point by the specified Euler angles.</Description>
   </Methods>
   <Methods>
     <Name>Rotate</Name>
@@ -204,7 +204,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Rotates the object by the specified Euler angles.</Description>
   </Methods>
   <Methods>
     <Name>InverseTransformPoint</Name>
@@ -218,7 +218,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Transforms a point from world space to local space.</Description>
   </Methods>
   <Methods>
     <Name>TransformPoint</Name>
@@ -232,7 +232,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Transforms a point from local space to world space.</Description>
   </Methods>
   <Methods>
     <Name>InverseTransformDirection</Name>
@@ -246,7 +246,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Transforms a direction from world space to local space.</Description>
   </Methods>
   <Methods>
     <Name>TransformDirection</Name>
@@ -260,7 +260,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Transforms a direction from local space to world space.</Description>
   </Methods>
   <Methods>
     <Name>InverseTransformVector</Name>
@@ -274,7 +274,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Transforms a vector from world space to local space.</Description>
   </Methods>
   <Methods>
     <Name>InverseTransformPosition</Name>
@@ -288,7 +288,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Transforms a position from world space to local space.</Description>
   </Methods>
   <Methods>
     <Name>GetBounds</Name>
@@ -296,7 +296,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Gets the bounding box of the object.</Description>
   </Methods>
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
