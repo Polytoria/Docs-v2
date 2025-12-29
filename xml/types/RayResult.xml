@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The origin point of the ray.</Description>
   </Properties>
   <Properties>
     <Name>Direction</Name>
@@ -16,7 +16,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The direction vector of the ray.</Description>
   </Properties>
   <Properties>
     <Name>Position</Name>
@@ -24,7 +24,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The position where the ray hit an object.</Description>
   </Properties>
   <Properties>
     <Name>Normal</Name>
@@ -32,7 +32,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The surface normal at the point where the ray hit.</Description>
   </Properties>
   <Properties>
     <Name>Distance</Name>
@@ -40,7 +40,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The distance from the ray's origin to the hit point.</Description>
   </Properties>
   <Properties>
     <Name>Instance</Name>
@@ -48,10 +48,10 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The instance that was hit by the ray.</Description>
   </Properties>
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>RayResult is a data type that contains data about a raycast result.</Description>
 </ClassDef>
