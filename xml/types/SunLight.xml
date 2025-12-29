@@ -5,5 +5,5 @@
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>SunLight is the main directional light source representing the sun in the game world.</Description>
 </ClassDef>

@@ -5,5 +5,5 @@
   <IsStatic>true</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>ScriptService is a service used for storing scripts and local scripts. It is also responsible for managing their execution within the game.</Description>
 </ClassDef>

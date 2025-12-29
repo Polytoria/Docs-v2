@@ -5,5 +5,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>true</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Sky is an abstract base class representing the sky in the game world.</Description>
 </ClassDef>

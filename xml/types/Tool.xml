@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines whether the tool can be dropped by the player.</Description>
   </Properties>
   <Properties>
     <Name>Holder</Name>
@@ -16,7 +16,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines who is currently holding this tool.</Description>
   </Properties>
   <Methods>
     <Name>Activate</Name>
@@ -24,7 +24,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Activates the tool, similarly to pressing the mouse button.</Description>
   </Methods>
   <Methods>
     <Name>Deactivate</Name>
@@ -32,7 +32,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Deactivates the tool, similarly to releasing the mouse button.</Description>
   </Methods>
   <Methods>
     <Name>PlayAnimation</Name>
@@ -46,7 +46,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Plays the specified animation on the holder of the tool.</Description>
   </Methods>
   <Events>
     <Name>Equipped</Name>
@@ -71,5 +71,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>true</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Tools are objects that can be held by the player.</Description>
 </ClassDef>

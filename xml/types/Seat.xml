@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Indicates who is currently occupying the seat.</Description>
   </Properties>
   <Properties>
     <Name>CanNPCSit</Name>
@@ -16,7 +16,7 @@
     <IsAccessibleByScripts>true</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Determines whether NPCs are allowed to sit on this seat or only players.</Description>
   </Properties>
   <Events>
     <Name>Sat</Name>
@@ -24,7 +24,7 @@
       <Name>occupant</Name>
       <Type>NPC</Type>
     </Arguments>
-    <Description>Missing Documentation</Description>
+    <Description>Fires when an occupant sits on the seat.</Description>
   </Events>
   <Events>
     <Name>Vacated</Name>
@@ -32,10 +32,10 @@
       <Name>occupant</Name>
       <Type>NPC</Type>
     </Arguments>
-    <Description>Missing Documentation</Description>
+    <Description>Fires when an occupant leaves the seat.</Description>
   </Events>
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>true</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Seats are parts the player can sit on.</Description>
 </ClassDef>

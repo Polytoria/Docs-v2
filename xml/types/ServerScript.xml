@@ -5,5 +5,5 @@
   <IsStatic>false</IsStatic>
   <IsAbstract>false</IsAbstract>
   <IsInstantiatable>true</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>ServerScript is a script that runs on the server.</Description>
 </ClassDef>

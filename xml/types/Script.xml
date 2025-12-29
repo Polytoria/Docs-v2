@@ -8,7 +8,7 @@
     <IsAccessibleByScripts>false</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>The source code of the script as a string.</Description>
   </Properties>
   <Properties>
     <Name>LinkedScript</Name>
@@ -16,7 +16,7 @@
     <IsAccessibleByScripts>false</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>A linked script asset associated with this script.</Description>
   </Properties>
   <Properties>
     <Name>Compatibility</Name>
@@ -24,7 +24,7 @@
     <IsAccessibleByScripts>false</IsAccessibleByScripts>
     <IsReadOnly>false</IsReadOnly>
     <IsObsolete>false</IsObsolete>
-    <Description>Missing Documentation</Description>
+    <Description>Indicates whether the script is running in compatibility mode.</Description>
   </Properties>
   <Methods>
     <Name>Call</Name>
@@ -44,7 +44,7 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Calls a function in the script with the given arguments.</Description>
   </Methods>
   <Methods>
     <Name>CallAsync</Name>
@@ -64,10 +64,10 @@
     <IsAsync>false</IsAsync>
     <IsObsolete>false</IsObsolete>
     <IsStatic>false</IsStatic>
-    <Description>Missing Documentation</Description>
+    <Description>Calls a function in the script asynchronously with the given arguments.</Description>
   </Methods>
   <IsStatic>false</IsStatic>
   <IsAbstract>true</IsAbstract>
   <IsInstantiatable>false</IsInstantiatable>
-  <Description>Missing Documentation</Description>
+  <Description>Scripts are abstract base classes representing Lua code that can be executed in the game.</Description>
 </ClassDef>
