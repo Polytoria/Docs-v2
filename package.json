@@ -15,5 +15,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "fast-xml-parser": "^5.3.3",
+    "yaml": "^2.8.2"
+  }
 }
