@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "npm run gen && mkdocs serve",
     "build": "npm run gen && mkdocs build",
+    "setup": "npm i && npm run gen && mkdocs build",
     "gen": "node autogen/yamlgen.js && node autogen/mdgen.js"
   },
   "keywords": [],
