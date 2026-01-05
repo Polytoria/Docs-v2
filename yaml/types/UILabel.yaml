@@ -60,4 +60,5 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: UILabel is a class that can be used to display text.

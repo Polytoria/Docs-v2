@@ -68,7 +68,8 @@ for (const yamlFile of yamlFiles) {
     appendLine("")
 
     if (c.IsStatic) {
-        appendLine(`{{ staticclass(${c.Name.replace("Service", "")}) }}`)
+        appendLine("")
+        appendLine(`{{ staticclass(${c.StaticAlias ? `"${c.StaticAlias}"` : ""}) }}`)
         appendLine("")
     }
 

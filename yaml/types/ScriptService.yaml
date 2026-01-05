@@ -6,5 +6,6 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: ScriptService
 Description: ScriptService is a service used for storing scripts and local
   scripts. It is also responsible for managing their execution within the game.

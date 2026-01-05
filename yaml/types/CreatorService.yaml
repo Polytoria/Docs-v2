@@ -36,5 +36,6 @@ Events:
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Creator
 Description: CreatorService is the class that manages the creator. This class is
   only available in the creator.

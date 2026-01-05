@@ -6,5 +6,6 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: A function that doesn't expect a return value. This will sometimes
   be referred as `function`

@@ -17,4 +17,5 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Filter
 Description: FilterService is a service which processes and filter user inputs

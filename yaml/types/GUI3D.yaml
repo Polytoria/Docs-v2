@@ -31,4 +31,5 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: GUI3D is a class that allows GUI to be displayed in a 3D space.

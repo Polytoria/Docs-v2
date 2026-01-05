@@ -63,4 +63,5 @@ Events:
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Players
 Description: Players is the container class for all Player instances.

@@ -1,4 +1,4 @@
-Name: AssetService
+Name: AssetsService
 BaseType: Instance
 Properties: []
 Methods:
@@ -50,4 +50,5 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
-Description: Service for managing assets
+StaticAlias: Assets
+Description: Service for managing/creating assets

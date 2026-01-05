@@ -139,4 +139,5 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: PolytorianModel is a CharacterModel that represent default Polytoria Character.

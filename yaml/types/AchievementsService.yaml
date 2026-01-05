@@ -93,4 +93,5 @@ Events:
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Achievements
 Description: Service for managing achievements

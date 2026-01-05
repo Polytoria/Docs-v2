@@ -28,4 +28,5 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: Seats are parts the player can sit on.

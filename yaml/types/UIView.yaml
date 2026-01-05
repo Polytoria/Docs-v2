@@ -30,4 +30,5 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: UIView is a class that displays a rectangle in your place's UI.

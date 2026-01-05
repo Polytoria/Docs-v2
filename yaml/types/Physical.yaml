@@ -84,4 +84,5 @@ Events:
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false
+StaticAlias: null
 Description: Physical represents an object affected by physics in the world.

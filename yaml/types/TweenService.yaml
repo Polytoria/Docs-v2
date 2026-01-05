@@ -16,4 +16,5 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Tween
 Description: TweenService is a service for managing tweens

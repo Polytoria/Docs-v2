@@ -179,4 +179,5 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: Player represents a user playing the game.

@@ -83,4 +83,5 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: UITextInput is a class that allows the user to enter text.

@@ -110,5 +110,6 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: PlayerDefaults
 Description: PlayerDefaults is a service used for storing the default values of
   the  Player when created.

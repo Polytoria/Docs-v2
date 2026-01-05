@@ -39,5 +39,6 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Insert
 Description: Insert is a class used for inserting user-generated models into
   your game via scripts.

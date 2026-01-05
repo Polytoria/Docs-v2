@@ -93,10 +93,18 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Gets a list of all animations available on the mesh.
+  - Name: GetAnimationInfo
+    ReturnType: table
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: Represents a part that can have custom mesh applied to it, the mesh
   may be from the Polytoria Store (Hats, Tools and Heads) or user-uploaded
   meshes.

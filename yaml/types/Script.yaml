@@ -7,6 +7,12 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     Description: The source code of the script as a string.
+  - Name: IsEnabled
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    Description: Missing Documentation
   - Name: LinkedScript
     Type: FileLinkAsset
     IsAccessibleByScripts: false
@@ -54,5 +60,6 @@ Events: []
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false
+StaticAlias: null
 Description: Scripts are abstract base classes representing Lua code that can be
   executed in the game.

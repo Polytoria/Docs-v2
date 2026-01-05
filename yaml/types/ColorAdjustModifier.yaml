@@ -30,5 +30,6 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: ColorAdjustModifier is a LightingModifier that allows the
   adjustment of lighting

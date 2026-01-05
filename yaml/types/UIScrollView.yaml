@@ -18,4 +18,5 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: UIScrollView is a class that allows the user to scroll content within a view.

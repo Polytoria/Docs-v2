@@ -65,6 +65,17 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Finds a child of this instance by class name.
+  - Name: FindChildByIndex
+    ReturnType: Instance
+    Parameters:
+      - Name: index
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
   - Name: MoveChild
     ReturnType: nil
     Parameters:
@@ -233,5 +244,6 @@ Events:
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false
+StaticAlias: null
 Description: Instance is the base class of all classes. Every class derives from
   it and has all properties, events and functions Instance has.

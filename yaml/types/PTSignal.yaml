@@ -46,4 +46,5 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: A signal which scripts can subscribe to

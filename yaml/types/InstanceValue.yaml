@@ -12,4 +12,5 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: InstanceValue is an object that holds an Instance value.

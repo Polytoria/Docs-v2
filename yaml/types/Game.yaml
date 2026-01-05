@@ -45,5 +45,6 @@ Events:
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: Game is the root object in the Polytoria instance tree. It is the
   object from which everything is descended.

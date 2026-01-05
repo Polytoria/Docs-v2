@@ -139,5 +139,6 @@ Events: []
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false
+StaticAlias: null
 Description: Entity represents a physics object that's related to building
   blocks (inherited by Part and Mesh)
