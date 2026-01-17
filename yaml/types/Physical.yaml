@@ -6,24 +6,28 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether this object is affected by physics.
   - Name: CanCollide
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether this object can collide with other objects.
   - Name: Velocity
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the linear velocity of this object.
   - Name: AngularVelocity
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the angular velocity of this object.
 Methods:
   - Name: SetNetworkAuthority
@@ -37,6 +41,13 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Sets the network authority of this object to the specified player.
+  - Name: GetTouching
+    ReturnType: table
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
   - Name: MovePosition
     ReturnType: nil
     Parameters:
@@ -84,4 +95,5 @@ Events:
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false
+StaticAlias: null
 Description: Physical represents an object affected by physics in the world.

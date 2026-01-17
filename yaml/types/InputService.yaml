@@ -6,66 +6,77 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the game window is currently focused.
   - Name: IsTouchscreen
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the input device is a touchscreen.
   - Name: IsGameFocused
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the game is currently focused.
   - Name: IsInputFocused
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether an input is currently focused.
   - Name: IsGamepadConnected
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether a gamepad is currently connected.
   - Name: IsMenuOpened
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the game menu is currently opened.
   - Name: CursorLocked
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether the cursor is currently locked.
   - Name: CursorVisible
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether the cursor is currently visible.
   - Name: MousePosition
     Type: Vector2
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates the current position of the mouse cursor.
   - Name: ScreenWidth
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates the width of the screen.
   - Name: ScreenHeight
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates the height of the screen.
 Methods:
   - Name: GetMouseWorldPosition
@@ -179,5 +190,6 @@ Events:
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Input
 Description: InputService is a class used for retrieving user input data, such
   as the mouse and keyboard.

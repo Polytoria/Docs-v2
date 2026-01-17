@@ -6,4 +6,5 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: Inventory is a container for Tools, equippable by player.

@@ -6,30 +6,35 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The X component of the quaternion.
   - Name: Y
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The Y component of the quaternion.
   - Name: Z
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The Z component of the quaternion.
   - Name: W
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The W component of the quaternion.
   - Name: Identity
     Type: Quaternion
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: true
     Description: The identity rotation.
 Methods:
   - Name: New
@@ -62,6 +67,77 @@ Methods:
     IsObsolete: false
     IsStatic: true
     Description: Creates a new Quaternion object with the specified components.
+  - Name: __add
+    ReturnType: Quaternion
+    Parameters:
+      - Name: a
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __sub
+    ReturnType: Quaternion
+    Parameters:
+      - Name: a
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __mul
+    ReturnType: any
+    Parameters:
+      - Name: a
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __eq
+    ReturnType: boolean
+    Parameters:
+      - Name: a
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __tostring
+    ReturnType: string
+    Parameters:
+      - Name: v
+        Type: Quaternion
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
   - Name: Angle
     ReturnType: Quaternion
     Parameters:
@@ -312,4 +388,5 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: Represents a quaternion used for rotations.

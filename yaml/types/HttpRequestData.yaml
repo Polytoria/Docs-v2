@@ -6,24 +6,28 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The target endpoint of the HTTP request.
   - Name: Method
     Type: HttpRequestMethodEnum
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The HTTP method used for the request.
   - Name: Body
     Type: string
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The payload sent with the request.
   - Name: Headers
     Type: table
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: A table of HTTP headers to include with the request, represented as
       key-value pairs.
 Methods:
@@ -38,4 +42,5 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: HttpRequestData represents the data required to construct an HTTP request

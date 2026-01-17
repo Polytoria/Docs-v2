@@ -6,16 +6,19 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Asset ID of this image
   - Name: ImageType
     Type: ImageTypeEnum
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Image type of this image
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: An image asset that's loaded from Polytoria.

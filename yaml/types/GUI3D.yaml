@@ -6,24 +6,28 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the canvas size for this GUI
   - Name: Shaded
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines if this GUI3D should be affected by lighting
   - Name: FaceCamera
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines if this GUI3D always face the camera?
   - Name: Transparent
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines if the background should be transparent. Recommended to
       be set to false if transparent background is not needed.
 Methods: []
@@ -31,4 +35,5 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: GUI3D is a class that allows GUI to be displayed in a 3D space.

@@ -6,30 +6,35 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines if this tween is looped
   - Name: Parallel
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines if this tween will run all the tweens in parallel
   - Name: SpeedScale
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the speed scale of this tween
   - Name: IsRunning
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns whether or not this tween is running
   - Name: ElapsedTime
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns the elapsed time of this tween
 Methods:
   - Name: SetDirection
@@ -265,4 +270,5 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: An object that represents tween

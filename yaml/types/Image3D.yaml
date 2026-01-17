@@ -6,46 +6,54 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Specifies the image of the decal.
   - Name: TextureScale
     Type: Vector2
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The scale of the texture on the decal.
   - Name: TextureOffset
     Type: Vector2
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The offset of the texture on the decal.
   - Name: Color
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the color of the decal.
   - Name: CastShadows
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether or not the decal should cast shadows.
   - Name: Shaded
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether or not the decal should be affected by lighting.
   - Name: FaceCamera
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether or not the decal should always face the camera.
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: Decals are objects that can have an image texture and are placed in the world.

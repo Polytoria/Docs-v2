@@ -6,24 +6,28 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns whenever the capture is on cooldown.
   - Name: CanCapture
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines if user/scripts can take a picture.
   - Name: DefaultCaptureOverlay
     Type: UIField
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Default capture overlay for all captures
   - Name: SpectatorAttach
     Type: Dynamic
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Attaches a spectator camera at dynamic for use with spectator mode.
 Methods:
   - Name: TakePhotoAtDynamic
@@ -74,4 +78,5 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Capture
 Description: Service for capturing photos

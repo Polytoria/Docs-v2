@@ -6,11 +6,13 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The range of the point light's illumination.
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: PointLight is a type of light that emits light in all directions
   from a single point.

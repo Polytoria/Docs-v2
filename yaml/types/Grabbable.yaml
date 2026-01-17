@@ -6,30 +6,35 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the force used to drag this object.
   - Name: MaxRange
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the max range that this object can be dragged.
   - Name: PermissionMode
     Type: GrabbablePermissionModeEnum
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the permission mode for this grabber
   - Name: Dragger
     Type: Player
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns the current dragger
   - Name: PermissionPredicate
     Type: function
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: >-
       A predicate function deciding whenever this player can grab this object.
       `PermissionMode` must be set to `GrabbablePermissionMode.Scripted`
@@ -59,5 +64,6 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: Grabbable represents a object that can be dragged by user. It can
   be parented to Physical to give user ability to drag that object.

@@ -6,6 +6,7 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Key code for this button
 Methods:
   - Name: New
@@ -26,8 +27,24 @@ Methods:
     IsObsolete: false
     IsStatic: true
     Description: Create new button of this keycode
+  - Name: __eq
+    ReturnType: boolean
+    Parameters:
+      - Name: a
+        Type: InputButton
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: InputButton
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: InputButton is a class that represents a button KeyCode

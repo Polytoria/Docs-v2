@@ -6,18 +6,21 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether the tool can be dropped by the player.
   - Name: IconImage
     Type: ImageAsset
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The icon for this tool, appears in inventory.
   - Name: Holder
     Type: NPC
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines who is currently holding this tool.
 Methods:
   - Name: Activate
@@ -63,4 +66,5 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: Tools are objects that can be held by the player.

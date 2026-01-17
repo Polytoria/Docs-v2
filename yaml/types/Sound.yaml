@@ -6,24 +6,28 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The audio asset to be played by the sound.
   - Name: Volume
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The volume level of the sound.
   - Name: Pitch
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The pitch level of the sound.
   - Name: Autoplay
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether the sound should start playing automatically
       when loaded.
   - Name: Loop
@@ -31,42 +35,56 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether the sound should loop when it reaches the end.
   - Name: PlayInWorld
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether the sound should be played in the 3D world space.
+  - Name: Paused
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determines if this sound is paused
   - Name: MaxDistance
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The maximum distance at which the sound can be heard.
   - Name: Time
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Indicates the current playback position of the sound in seconds.
   - Name: Playing
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the sound is currently playing.
   - Name: Loading
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the sound is currently loading.
   - Name: Length
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The total length of the sound in seconds.
 Methods:
   - Name: Play
@@ -88,6 +106,13 @@ Methods:
     IsStatic: false
     Description: Plays the sound once at the specified volume without affecting the
       current playback.
+  - Name: Pause
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Pause the sound if it is currently playing.
   - Name: Stop
     ReturnType: nil
     Parameters: []
@@ -102,4 +127,5 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: Sounds are objects that can be placed in the world and play audio.

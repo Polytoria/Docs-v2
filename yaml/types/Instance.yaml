@@ -6,12 +6,14 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Defines the parent of this instance in the hierarchy.
   - Name: EditableChildren
     Type: boolean
     IsAccessibleByScripts: false
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determine if children is editable, this is to be used if this
       instance is a Linked model. Only used in creator.
   - Name: Tags
@@ -19,6 +21,7 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Tags associated with this instance.
 Methods:
   - Name: GetDescendants
@@ -65,6 +68,28 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Finds a child of this instance by class name.
+  - Name: FindAncestorByClass
+    ReturnType: Instance
+    Parameters:
+      - Name: className
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: FindChildByIndex
+    ReturnType: Instance
+    Parameters:
+      - Name: index
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
   - Name: MoveChild
     ReturnType: nil
     Parameters:
@@ -208,6 +233,28 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Sets the parent of this instance.
+  - Name: __index
+    ReturnType: any
+    Parameters:
+      - Name: indexer
+        Type: any
+        IsOptional: false
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: __newindex
+    ReturnType: nil
+    Parameters:
+      - Name: indexer
+        Type: any
+        IsOptional: false
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
 Events:
   - Name: ChildAdded
     Arguments:
@@ -233,5 +280,6 @@ Events:
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false
+StaticAlias: null
 Description: Instance is the base class of all classes. Every class derives from
   it and has all properties, events and functions Instance has.

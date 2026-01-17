@@ -6,4 +6,5 @@ Events: []
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false
+StaticAlias: null
 Description: Sky is an abstract base class representing the sky in the game world.

@@ -6,4 +6,5 @@ Events: []
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false
+StaticAlias: null
 Description: Abstract class for audio

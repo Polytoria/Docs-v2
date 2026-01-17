@@ -1,24 +1,24 @@
-Name: GUI
-BaseType: Instance
+Name: MeshAnimationInfo
+BaseType: null
 Properties:
-  - Name: Visible
-    Type: boolean
+  - Name: Name
+    Type: string
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
     Description: Missing Documentation
-  - Name: ZIndex
+  - Name: Length
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
     Description: Missing Documentation
-  - Name: AbsoluteSize
-    Type: Vector2
+  - Name: IsPlaying
+    Type: boolean
     IsAccessibleByScripts: true
-    IsReadOnly: true
+    IsReadOnly: false
     IsObsolete: false
     IsStatic: false
     Description: Missing Documentation
@@ -26,6 +26,6 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiatable: false
 StaticAlias: null
-Description: GUI is a class that is used to create a GUI.
+Description: Missing Documentation

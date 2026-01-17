@@ -6,29 +6,34 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determine the brightness adjustment
   - Name: Contrast
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determine the contrast adjustment
   - Name: Saturation
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determine the saturation adjustment
   - Name: TintColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determine the tint color
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: ColorAdjustModifier is a LightingModifier that allows the
   adjustment of lighting

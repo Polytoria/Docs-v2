@@ -6,6 +6,7 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: ModuleScripts are specialized scripts to hold data that can be
   accessed by other scripts using the require() function. It is important to
   define and return a table in a ModuleScript. When the place starts, the server

@@ -108,4 +108,5 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Http
 Description: Http is a service used for HTTP communications and requests.

@@ -6,18 +6,21 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The player who is currently playing the game.
   - Name: PlayerCollisionEnabled
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether or not collisions between players are enabled.
   - Name: PlayersCount
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The number of players currently in the game.
 Methods:
   - Name: GetPlayers
@@ -63,4 +66,5 @@ Events:
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Players
 Description: Players is the container class for all Player instances.

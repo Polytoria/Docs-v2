@@ -6,120 +6,140 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The offset to the seat at which the NPC is positioned when sitting.
   - Name: Health
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The current health of the NPC.
   - Name: MaxHealth
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The maximum health of the NPC.
   - Name: JumpPower
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the jump power of the NPC.
   - Name: WalkSpeed
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the walking speed of the NPC.
   - Name: UseNametag
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether the NPC uses a nametag.
   - Name: NametagOffset
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the offset position of the NPC's nametag.
   - Name: DisplayName
     Type: string
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the display name of the NPC.
   - Name: JumpSound
     Type: Sound
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the sound played when the NPC jumps.
   - Name: IsSitting
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the NPC is currently sitting.
   - Name: IsDead
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the NPC is currently dead.
   - Name: HoldingTool
     Type: Tool
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates the tool currently held by the NPC.
   - Name: SittingIn
     Type: Seat
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates the seat in which the NPC is currently sitting.
   - Name: Character
     Type: CharacterModel
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The character model associated with the NPC.
   - Name: MoveTarget
     Type: Dynamic
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the instance the NPC should walk towards.
   - Name: OnGround
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the NPC is currently on the ground.
   - Name: OnCeiling
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the NPC is currently on the ceiling.
   - Name: NavDestinationDistance
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates the distance to the navigation destination.
   - Name: NavDestinationReached
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the NPC has reached its navigation destination.
   - Name: NavDestinationValid
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the navigation destination is valid.
 Methods:
   - Name: Kill
@@ -247,6 +267,7 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: NPC (non-player character) is an object similar to a  Player but
   that can be controlled by code. Like players, it can walk and jump, and its
   body part colors can be customized.

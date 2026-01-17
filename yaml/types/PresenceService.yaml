@@ -6,12 +6,14 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Current activity status.
   - Name: CoverImage
     Type: PTImageAsset
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Activity cover image.
 Methods:
   - Name: ResetTimer
@@ -25,5 +27,6 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Presence
 Description: PresenceService is a service that allows scripts to set the active
   status of the player. Which will be used to display in supported integrations.

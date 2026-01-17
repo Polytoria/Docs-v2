@@ -1,11 +1,12 @@
 Name: ColorSeries
-BaseType: ValueType
+BaseType: null
 Properties:
   - Name: PointCount
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns the point count of this color series
 Methods:
   - Name: New
@@ -30,6 +31,13 @@ Methods:
     IsObsolete: false
     IsStatic: true
     Description: Create color series by this color range
+  - Name: Clear
+    ReturnType: nil
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
   - Name: SetColor
     ReturnType: nil
     Parameters:
@@ -108,5 +116,6 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: Color series is a data type that represents a collection of color
   and points, also known as gradient.

@@ -6,17 +6,20 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The spacing between child elements in the layout.
   - Name: ChildAlignment
     Type: UILayoutAlignmentEnum
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the alignment of child elements within the layout.
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false
+StaticAlias: null
 Description: UIHVLayout is an abstract class that provides horizontal and
   vertical layout functionality for UI elements.

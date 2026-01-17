@@ -6,59 +6,69 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns the target tool mode
   - Name: TargetPartColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns the target part color
   - Name: TargetPartMaterial
     Type: PartMaterialEnum
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns the target part material
   - Name: MoveSnapEnabled
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns the move snapping value
   - Name: MoveSnapping
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns whenever the move snapping is enabled by the user
   - Name: UserMoveSnapping
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns the move snapping value defined by the user
   - Name: RotateSnapEnabled
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns whenever the rotate snapping is enabled by the user
   - Name: RotateSnapping
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns the rotate snapping value
   - Name: UserRotateSnapping
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns the rotate snapping value defined by the user
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: CreatorInterface represent the user interface of the creator. This
   class is only available in the creator.

@@ -6,24 +6,28 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Name of this object
   - Name: ClassName
     Type: string
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Class name of this object
   - Name: Shared
     Type: ScriptSharedTable
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: A shared table accessible by scripts.
   - Name: NetworkedObjectID
     Type: string
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns networked ID of this object. Networked ID are always unique
       per network session.
   - Name: ObjectID
@@ -31,12 +35,14 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns object ID of this object. Object ID originates from the .poly file.
   - Name: ExistInNetwork
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns true if this object exists in network, false if this object
       is spawned by the local client.
 Methods:
@@ -85,6 +91,32 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Deletes the instance (same as Destroy method)
+  - Name: __tostring
+    ReturnType: string
+    Parameters:
+      - Name: obj
+        Type: NetworkedObject
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __eq
+    ReturnType: boolean
+    Parameters:
+      - Name: a
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
 Events:
   - Name: PropertyChanged
     Arguments:
@@ -103,5 +135,6 @@ Events:
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false
+StaticAlias: null
 Description: NetworkedObject is a base class for all object that's synchronized
   by the network.

@@ -68,5 +68,6 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: CreatorSelections is an object that manages selections in the game
   instance. This class is only available in the creator.

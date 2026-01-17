@@ -6,72 +6,98 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The offset of the UI element in pixels.
   - Name: PositionRelative
     Type: Vector2
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The position of the UI element relative to its parent.
   - Name: Rotation
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The rotation of the UI element in degrees.
   - Name: SizeOffset
     Type: Vector2
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The size offset of the UI element in pixels.
   - Name: SizeRelative
     Type: Vector2
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The size of the UI element relative to its parent.
   - Name: ClipDescendants
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether the UI element clips its descendants.
   - Name: PivotPoint
     Type: Vector2
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The pivot point of the UI element.
   - Name: Scale
     Type: Vector2
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The scale of the UI element.
   - Name: Visible
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether the UI element is visible.
   - Name: MaskMode
     Type: MaskModeEnum
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the mask mode of the UI element.
+  - Name: IgnoreMouse
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: If true, this UI field can grab the UI focus via cursor.
+  - Name: ZIndex
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: The Z-Index layer value
   - Name: AbsoluteSize
     Type: Vector2
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The absolute size of the UI element in pixels.
   - Name: IsVisibleInTree
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the UI element is visible in the UI hierarchy.
 Methods: []
 Events:
@@ -96,4 +122,5 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: UIField is the abstract base class of all UI classes.

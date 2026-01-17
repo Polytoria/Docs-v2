@@ -6,66 +6,84 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The position of the object.
   - Name: Rotation
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The rotation of the object.
   - Name: Size
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The size of the object.
   - Name: LocalPosition
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The position of the object relative to its parent.
   - Name: LocalRotation
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The rotation of the object relative to its parent.
   - Name: LocalSize
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The size of the object relative to its parent.
   - Name: Quaternion
     Type: Quaternion
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The rotation of the object represented as a quaternion.
+  - Name: LocalQuaternion
+    Type: Quaternion
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
   - Name: Locked
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether the object can be selected in the Creator.
   - Name: Forward
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The forward direction vector of the object.
   - Name: Right
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The right direction vector of the object.
   - Name: Up
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The up direction vector of the object.
 Methods:
   - Name: LookAt
@@ -212,5 +230,6 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: Dynamic is the base class where all objects with a position,
   rotation and scale derive from.

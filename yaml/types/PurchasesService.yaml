@@ -37,4 +37,5 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Purchases
 Description: Service responsible for handling in-game purchases and ownership verification.

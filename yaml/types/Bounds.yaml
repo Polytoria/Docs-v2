@@ -6,36 +6,42 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates the center point of the bounds.
   - Name: Size
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the size of the bounds.
   - Name: Extents
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates the extents of the bounds.
   - Name: Start
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The origin point
   - Name: End
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The ending point
   - Name: Volume
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates the volume of the bounds.
 Methods:
   - Name: New
@@ -60,6 +66,32 @@ Methods:
     IsObsolete: false
     IsStatic: true
     Description: Creates a new Bounds object with the specified position and size.
+  - Name: __eq
+    ReturnType: boolean
+    Parameters:
+      - Name: a
+        Type: Bounds
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Bounds
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __tostring
+    ReturnType: string
+    Parameters:
+      - Name: v
+        Type: Bounds
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
   - Name: ClosestPoint
     ReturnType: Vector3
     Parameters:
@@ -188,4 +220,5 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: Represents a bounding box in 3D space.

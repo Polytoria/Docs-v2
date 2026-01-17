@@ -88,4 +88,5 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: Places
 Description: PlacesService is a service that is used to join players to other places

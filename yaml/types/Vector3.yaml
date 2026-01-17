@@ -6,84 +6,98 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The X component of the vector.
   - Name: Y
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The Y component of the vector.
   - Name: Z
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The Z component of the vector.
   - Name: Forward
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: true
     Description: Shorthand for Vector3.New(0, 0, -1).
   - Name: Back
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: true
     Description: Shorthand for Vector3.New(0, 0, 1).
   - Name: Down
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: true
     Description: Shorthand for Vector3.New(0, -1, 0).
   - Name: Left
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: true
     Description: Shorthand for Vector3.New(-1, 0, 0).
   - Name: One
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: true
     Description: Shorthand for Vector3.New(1, 1, 1).
   - Name: Zero
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: true
     Description: Shorthand for Vector3.New(0, 0, 0).
   - Name: Right
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: true
     Description: Shorthand for Vector3.New(1, 0, 0).
   - Name: Up
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: true
     Description: Shorthand for Vector3.New(0, 1, 0).
   - Name: Magnitude
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The length of the vector.
   - Name: Normalized
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The normalized version of the vector.
   - Name: SqrMagnitude
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The squared length of the vector.
 Methods:
   - Name: New
@@ -154,6 +168,174 @@ Methods:
     IsStatic: true
     Description: Returns a new Vector3 with the given Vector2 components and a z
       component of 0.
+  - Name: __add
+    ReturnType: Vector3
+    Parameters:
+      - Name: a
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __sub
+    ReturnType: Vector3
+    Parameters:
+      - Name: a
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __mul
+    ReturnType: any
+    Parameters:
+      - Name: a
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __div
+    ReturnType: Vector3
+    Parameters:
+      - Name: a
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __mod
+    ReturnType: Vector3
+    Parameters:
+      - Name: a
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __unm
+    ReturnType: Vector3
+    Parameters:
+      - Name: a
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __pow
+    ReturnType: Vector3
+    Parameters:
+      - Name: a
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __eq
+    ReturnType: boolean
+    Parameters:
+      - Name: a
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __lt
+    ReturnType: boolean
+    Parameters:
+      - Name: a
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __le
+    ReturnType: boolean
+    Parameters:
+      - Name: a
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __len
+    ReturnType: number
+    Parameters:
+      - Name: a
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __tostring
+    ReturnType: string
+    Parameters:
+      - Name: v
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
   - Name: Angle
     ReturnType: number
     Parameters:
@@ -367,4 +549,5 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: Vector3 is a 3D vector with an x, y and z component.

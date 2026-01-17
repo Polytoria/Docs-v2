@@ -6,58 +6,68 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The text of the label.
   - Name: TextColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The color of the text.
   - Name: OutlineWidth
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The width of the text outline.
   - Name: OutlineColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The color of the text outline.
   - Name: HorizontalAlignment
     Type: TextHorizontalAlignmentEnum
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the horizontal alignment of the text.
   - Name: VerticalAlignment
     Type: TextVerticalAlignmentEnum
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines the vertical alignment of the text.
   - Name: FontSize
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The font size of the text.
   - Name: UseRichText
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Determines whether the text uses rich text formatting.
   - Name: FontAsset
     Type: FontAsset
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The font asset used for the text.
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: UILabel is a class that can be used to display text.

@@ -6,6 +6,7 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The key identifying this Datastore connection.
 Methods:
   - Name: GetAsync
@@ -53,4 +54,5 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: Datastore is an object that represent datastore connection.

@@ -24,6 +24,17 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Disconnect a function from this signal
+  - Name: __tostring
+    ReturnType: string
+    Parameters:
+      - Name: signal
+        Type: PTSignal
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
   - Name: Wait
     ReturnType: any
     Parameters: []
@@ -46,4 +57,5 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: A signal which scripts can subscribe to

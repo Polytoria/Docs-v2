@@ -6,24 +6,28 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Red color component
   - Name: G
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Green color component
   - Name: B
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Blue color component
   - Name: A
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Alpha (opacity) color component
 Methods:
   - Name: New
@@ -86,6 +90,77 @@ Methods:
     IsObsolete: false
     IsStatic: true
     Description: Creates a new Color with the set R, G, B and A values
+  - Name: __add
+    ReturnType: Color
+    Parameters:
+      - Name: a
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __sub
+    ReturnType: Color
+    Parameters:
+      - Name: a
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __mul
+    ReturnType: any
+    Parameters:
+      - Name: a
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __eq
+    ReturnType: boolean
+    Parameters:
+      - Name: a
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+      - Name: b
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
+  - Name: __tostring
+    ReturnType: string
+    Parameters:
+      - Name: v
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Missing Documentation
   - Name: Random
     ReturnType: Color
     Parameters: []
@@ -127,6 +202,7 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: >-
   Color is a data type that represents a color.
     

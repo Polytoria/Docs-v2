@@ -61,5 +61,6 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: IO
 Description: Class for interacting with IO in project, only usable with scripts
   with the respective permission.

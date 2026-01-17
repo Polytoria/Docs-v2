@@ -6,30 +6,35 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns true if this current session is being tested locally
   - Name: GameID
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The ID of the current Polytoria place.
   - Name: ServerID
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The server ID of the current instance.
   - Name: UpTime
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The uptime of this game in seconds.
   - Name: InstanceCount
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The total number of instances currently loaded.
 Methods: []
 Events:
@@ -45,5 +50,6 @@ Events:
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: game
 Description: Game is the root object in the Polytoria instance tree. It is the
   object from which everything is descended.

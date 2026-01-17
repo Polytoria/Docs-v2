@@ -6,12 +6,14 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Collection of button inputs.
   - Name: IsPressed
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Returns true if any of the button in the collection is currently
       being pressed.
   - Name: Weight
@@ -19,6 +21,7 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Returns the current analog input of the button.
 Methods: []
 Events:
@@ -31,4 +34,5 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: InputActionButton is a class that represents input action of button type.

@@ -6,35 +6,41 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The size of the sun in the sky.
   - Name: SkyTint
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The tint color of the sky.
   - Name: HorizonColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The color of the horizon in the sky.
   - Name: GroundColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The color of the ground in the sky.
   - Name: Exposure
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The exposure level of the sky.
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: ProceduralSky is a type of sky that generates its appearance
   procedurally based on the position of the sun and its properties.

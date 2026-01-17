@@ -6,72 +6,84 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The head color
   - Name: TorsoColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The torso color
   - Name: LeftArmColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The left arm color
   - Name: RightArmColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The right arm color
   - Name: LeftLegColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The left leg color
   - Name: RightLegColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The right leg color
   - Name: FaceImage
     Type: ImageAsset
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The face image to use
   - Name: ShirtImage
     Type: ImageAsset
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The shirt image to use
   - Name: PantsImage
     Type: ImageAsset
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The pants image to use
   - Name: TorsoMesh
     Type: MeshAsset
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The torso mesh to use
   - Name: Ragdolling
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns true if this character is ragdolling
   - Name: RagdollPosition
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns the current global ragdoll position, if ragdoll haven't
       starts yet. Returns `Vector3.Zero`
   - Name: RagdollRotation
@@ -79,6 +91,7 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Returns the current global ragdoll rotation, if ragdoll haven't
       starts yet. Returns `Vector3.Zero`
 Methods:
@@ -129,6 +142,73 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Clear current appearance.
+  - Name: SetBoneOverrideTo
+    ReturnType: nil
+    Parameters:
+      - Name: attachment
+        Type: CharacterAttachmentEnum
+        IsOptional: false
+        DefaultValue: ""
+      - Name: to
+        Type: boolean
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Set Bone override mode
+  - Name: SetBoneOverridePosition
+    ReturnType: nil
+    Parameters:
+      - Name: attachment
+        Type: CharacterAttachmentEnum
+        IsOptional: false
+        DefaultValue: ""
+      - Name: pos
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Set bone override position
+  - Name: SetBoneOverrideRotation
+    ReturnType: nil
+    Parameters:
+      - Name: attachment
+        Type: CharacterAttachmentEnum
+        IsOptional: false
+        DefaultValue: ""
+      - Name: euler
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Set bone override rotation
+  - Name: GetBoneOverridePosition
+    ReturnType: Vector3
+    Parameters:
+      - Name: attachment
+        Type: CharacterAttachmentEnum
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Get bone override position
+  - Name: GetBoneOverrideRotation
+    ReturnType: Vector3
+    Parameters:
+      - Name: attachment
+        Type: CharacterAttachmentEnum
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Get bone override rotation
 Events:
   - Name: RagdollStarted
     Arguments: ""
@@ -139,4 +219,5 @@ Events:
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
+StaticAlias: null
 Description: PolytorianModel is a CharacterModel that represent default Polytoria Character.

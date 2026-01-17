@@ -6,34 +6,40 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Collection of up inputs.
   - Name: Down
     Type: InputButtonCollection
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Collection of down inputs.
   - Name: Left
     Type: InputButtonCollection
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Collection of left inputs.
   - Name: Right
     Type: InputButtonCollection
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Collection of right inputs.
   - Name: Value
     Type: Vector2
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The value of this input
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: InputActionVector2 is a class that represents input action of Vector2 type.

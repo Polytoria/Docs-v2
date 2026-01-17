@@ -46,5 +46,6 @@ Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: CreatorHistory is a class that manages history (undo-redo) of this
   game instance. This class is only available in the creator.

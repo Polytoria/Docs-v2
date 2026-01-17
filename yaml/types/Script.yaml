@@ -6,18 +6,28 @@ Properties:
     IsAccessibleByScripts: false
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: The source code of the script as a string.
+  - Name: IsEnabled
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determine if this script should run, can be set to false in runtime to stop running script when it yields.
   - Name: LinkedScript
     Type: FileLinkAsset
     IsAccessibleByScripts: false
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: A linked script asset associated with this script.
   - Name: Compatibility
     Type: boolean
     IsAccessibleByScripts: false
     IsReadOnly: false
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the script is running in compatibility mode.
 Methods:
   - Name: Call
@@ -54,5 +64,6 @@ Events: []
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false
+StaticAlias: null
 Description: Scripts are abstract base classes representing Lua code that can be
   executed in the game.

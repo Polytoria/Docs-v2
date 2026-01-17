@@ -6,18 +6,21 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: Indicates whether the HTTP request completed successfully.
   - Name: StatusCode
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The HTTP status code returned by the server.
   - Name: Headers
     Type: table
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: A table containing the HTTP response headers returned by the
       server, represented as key-value pairs.
   - Name: Body
@@ -25,10 +28,12 @@ Properties:
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
+    IsStatic: false
     Description: The response payload returned by the server as a string buffer.
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
+StaticAlias: null
 Description: HttpResponseData represents the result of an HTTP request.

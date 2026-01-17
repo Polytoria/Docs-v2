@@ -1,0 +1,54 @@
+Name: AssetsService
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: NewAsset
+    ReturnType: BaseAsset
+    Parameters:
+      - Name: assetClassName
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: NewPTImage
+    ReturnType: PTImageAsset
+    Parameters:
+      - Name: imgID
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: NewPTAudio
+    ReturnType: PTAudioAsset
+    Parameters:
+      - Name: audioID
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: NewPTMesh
+    ReturnType: PTMeshAsset
+    Parameters:
+      - Name: assetID
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+StaticAlias: Assets
+Description: Missing Documentation
