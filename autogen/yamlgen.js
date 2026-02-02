@@ -121,6 +121,9 @@ for (const c of data.Classes) {
     // Add methods
     for (const m of c.Methods) {
         if (m.IsObsolete) continue
+
+        // Ignore metamethods
+        if (m.Name.startsWith("__")) continue
         obj.Methods.push({
             ...m,
             Description: existingDescriptions.Methods[m.Name] || "Missing Documentation"

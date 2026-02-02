@@ -262,28 +262,6 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Sets the parent of this instance.
-  - Name: __index
-    ReturnType: any
-    Parameters:
-      - Name: indexer
-        Type: any
-        IsOptional: false
-        DefaultValue: null
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: false
-    Description: Missing Documentation
-  - Name: __newindex
-    ReturnType: nil
-    Parameters:
-      - Name: indexer
-        Type: any
-        IsOptional: false
-        DefaultValue: null
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: false
-    Description: Missing Documentation
 Events:
   - Name: ChildAdded
     Arguments:

@@ -66,32 +66,6 @@ Methods:
     IsObsolete: false
     IsStatic: true
     Description: Creates a new Bounds object with the specified position and size.
-  - Name: __eq
-    ReturnType: boolean
-    Parameters:
-      - Name: a
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
-      - Name: b
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    Description: Missing Documentation
-  - Name: __tostring
-    ReturnType: string
-    Parameters:
-      - Name: v
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    Description: Missing Documentation
   - Name: ClosestPoint
     ReturnType: Vector3
     Parameters:

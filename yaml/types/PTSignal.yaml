@@ -24,17 +24,6 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Disconnect a function from this signal
-  - Name: __tostring
-    ReturnType: string
-    Parameters:
-      - Name: _
-        Type: PTSignal
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    Description: Missing Documentation
   - Name: Wait
     ReturnType: any
     Parameters: []

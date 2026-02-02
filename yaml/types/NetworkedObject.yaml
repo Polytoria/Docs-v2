@@ -91,32 +91,6 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Deletes the instance (same as Destroy method)
-  - Name: __tostring
-    ReturnType: string
-    Parameters:
-      - Name: obj
-        Type: NetworkedObject
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    Description: Missing Documentation
-  - Name: __eq
-    ReturnType: boolean
-    Parameters:
-      - Name: a
-        Type: any
-        IsOptional: false
-        DefaultValue: ""
-      - Name: b
-        Type: any
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    Description: Missing Documentation
 Events:
   - Name: PropertyChanged
     Arguments:

@@ -27,21 +27,6 @@ Methods:
     IsObsolete: false
     IsStatic: true
     Description: Create new button of this keycode
-  - Name: __eq
-    ReturnType: boolean
-    Parameters:
-      - Name: a
-        Type: InputButton
-        IsOptional: false
-        DefaultValue: ""
-      - Name: b
-        Type: InputButton
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

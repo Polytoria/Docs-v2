@@ -42,32 +42,6 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Missing Documentation
-  - Name: __index
-    ReturnType: any
-    Parameters:
-      - Name: index
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: false
-    Description: Missing Documentation
-  - Name: __newindex
-    ReturnType: nil
-    Parameters:
-      - Name: index
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: val
-        Type: any
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: false
-    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false
