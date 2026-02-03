@@ -1,6 +1,6 @@
 # Polytoria 2.0 Documentation
 
-Welcome to the **Polytoria 2.0** documentation repository.
+Welcome to the **[Polytoria](https://polytoria.com) 2.0** documentation repository.
 
 This repository serves as the authoritative reference for Polytoria 2.0's **Instances** and **Enums**. Its goal is to provide clear, structured, and up-to-date documentation for developers building games, systems, and tools on the Polytoria platform, using Polytoria's godot-based engine.
 
@@ -17,10 +17,9 @@ Basic programming knowledge is assumed.
 
 ---
 
-## Contribution Guidelines
+## Contributing
 
 Contributions are welcome, especially for:
-
 * Correcting inaccuracies
 * Expanding incomplete Instance or Enum documentation
 * Improving clarity or consistency
@@ -28,11 +27,18 @@ Contributions are welcome, especially for:
 * Creating/contributing to cohesive and interactive tutorials
 
 When contributing:
-
 * Keep language technical and neutral
 * Follow existing formatting and structure
 * Avoid speculative or undocumented behavior
 * Follow Polytoria's community guidelines
+
+## How To Contribute
+
+This repository can be forked, allowing any user to commit changes to their own repository before submitting a pull request for Polytoria staff members to review before accepting it to their own repository, similarly to how Polytoria 2.0's godot engine repository works.
+* Once forked, you should have access to [pip](https://pypi.org/project/pip/) to install everything from [requirements.txt]("./requirements.txt"). For building your repository, make sure you have [nodejs](https://nodejs.org/en/download).
+* Once the requirements are installed, you may edit anything within [yaml]("./yaml") to your liking.
+### This mkdocs based repository uses automated documentation with [autogen/mdgen.js]("./autogen/mdgen.js")
+* Before testing your fork or committing changes for your repository, you need to run `node autogen/mdgen.js` before running `mkdocs serve`, unlike Polytoria 1.0's engine documentation repository.
 
 ---
 

@@ -95,6 +95,17 @@ for (const yamlFile of yamlFiles) {
         appendLine("")
     }
 
+    if (c.APIexclusive == true) {
+        appendLine("")
+        appendLine("{{ serverexclusive() }}")
+        appendLine("")
+    }
+    if (c.APIexclusive == false) {
+        appendLine("")
+        appendLine("{{ clientexclusive() }}")
+        appendLine("")
+    }
+
     if (c.IsAbstract) {
         appendLine("{{ abstract() }}")
         appendLine("")
