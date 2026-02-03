@@ -30,6 +30,7 @@ Methods:
         IsOptional: false
         DefaultValue: ""
     IsAsync: true
+    APIexclusive: true
     IsObsolete: false
     IsStatic: false
     Description: Award achievement to the user asynchronously.
@@ -54,6 +55,7 @@ Events:
       Name: achievementID
       Type: number
     Description: Fires when the local player got an achievement
+    APIexclusive: false
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false

@@ -197,6 +197,7 @@ Methods:
     Description: Sends a PATCH request to the specified url, and return the response as buffer.
 Events: []
 IsStatic: true
+APIexclusive: true
 IsAbstract: false
 IsInstantiatable: false
 StaticAlias: Http

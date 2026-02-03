@@ -43,6 +43,7 @@ Methods:
     IsStatic: false
     Description: Clear all keys with the suffix
 Events: []
+NoNetwork: true
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false

@@ -22,6 +22,7 @@ Methods:
         Type: any
         IsOptional: true
         DefaultValue: null
+    APIexclusive: false
     IsAsync: false
     IsObsolete: false
     IsStatic: false
@@ -37,6 +38,7 @@ Methods:
         Type: Player
         IsOptional: true
         DefaultValue: null
+    APIexclusive: true
     IsAsync: false
     IsObsolete: false
     IsStatic: false
@@ -48,6 +50,7 @@ Methods:
         Type: NetMessage
         IsOptional: true
         DefaultValue: null
+    APIexclusive: true
     IsAsync: false
     IsObsolete: false
     IsStatic: false
@@ -60,11 +63,13 @@ Events:
       - Name: msg
         Type: NetMessage
     Description: Fires when server receives message from client
+    APIexclusive: true
   - Name: InvokedClient
     Arguments:
       - Name: msg
         Type: NetMessage
     Description: Fires when client receives message from server
+    APIexclusive: false
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

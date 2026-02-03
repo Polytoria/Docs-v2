@@ -32,7 +32,7 @@ Properties:
   - Name: End
     Type: Vector3
     IsAccessibleByScripts: true
-    IsReadOnly: false
+    IsReadOnly: true
     IsObsolete: false
     IsStatic: false
     Description: The ending point

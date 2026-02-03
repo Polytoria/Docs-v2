@@ -18,7 +18,8 @@ Properties:
   - Name: Shared
     Type: ScriptSharedTable
     IsAccessibleByScripts: true
-    IsReadOnly: true
+    NoNetwork: true
+    IsReadOnly: false
     IsObsolete: false
     IsStatic: false
     Description: A shared table accessible by scripts.

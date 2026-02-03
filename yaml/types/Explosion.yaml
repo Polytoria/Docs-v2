@@ -48,7 +48,7 @@ Properties:
       ```
 Methods: []
 Events:
-  - Name: Hitted
+  - Name: Touched
     Arguments:
       Name: hit
       Type: Instance
