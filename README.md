@@ -44,7 +44,8 @@ Alternatively, install nodejs with pip using `pip install nodejs-bin`
 * Once the requirements are installed, you may edit anything within [main/yaml](yaml) to your liking.
 ### This mkdocs based repository uses automated documentation with [main/autogen/mdgen.js](autogen/mdgen.js)
 * Before testing your fork or committing changes for your repository, you need to run `node autogen/mdgen.js`. Afterwards you man run `mkdocs serve` to review your changes, unlike Polytoria 1.0's engine documentation repository, wherein which you only had to use mkdocs serve.
-    If `require("yaml")` in [main/autogen/mdgen.js](autogen/mdgen.js) errors inexplainably, be sure you have ran `npm install` in your terminal.
+
+If `require("yaml")` in [main/autogen/mdgen.js](autogen/mdgen.js) errors inexplainably, be sure you have ran `npm install` in your terminal.
 
 * Editing tutorials/asset files does not require you to autogen the documentation, you may directly access and edit them in [docs](docs)
 
