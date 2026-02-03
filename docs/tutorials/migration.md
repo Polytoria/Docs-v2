@@ -15,7 +15,7 @@ This is the biggest compatibility breaking change for 2.0. The transition from L
 
 ## Unique Names
 
-Each instances should now have it's own unique name, this is by design and allows for faster lookups. If you want to identify objects with t
+Each instances should now have it's own unique name, this is by design and allows for faster lookups. If you want to identify objects with tags.
 
 ## Capitalization
 
