@@ -5,7 +5,7 @@ const yaml = require("yaml")
 // Constants
 const YAML_API_PATH = path.join(__dirname, "../", "yaml", "types")
 const YAML_ENUM_PATH = path.join(__dirname, "../", "yaml", "enums")
-const FLAGS = ['APIexclusive', 'NoSync', 'NoNetwork']
+const FLAGS = ['ServerExclusive', 'NoSync', 'NoNetwork']
 
 function ensureDirectoryExists(dirPath) {
     if (!fs.existsSync(dirPath)) {

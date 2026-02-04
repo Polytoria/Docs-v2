@@ -51,7 +51,7 @@ If `require("yaml")` in [main/autogen/mdgen.js](autogen/mdgen.js) errors inexpla
 
 ## How yaml Values Work
 You don't need to include most of them if you're setting their value to false, however some utilize the false value, here's the one's that do:
-* APIexclusive. If true, it describes the object as "server-exclusive", and if false, it describes the object as "client-exclusive".
+* ServerExclusive. If true, it describes the object as "server-exclusive", and if false, it describes the object as "client-exclusive".
 * IsInstantiatable. If false, it describes the object as unable to be replicated with `Instance.New()`.
 
 ---

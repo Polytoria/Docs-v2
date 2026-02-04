@@ -91,4 +91,4 @@ IsInstantiatable: false
 StaticAlias: Places
 Description: WIP Class, PlacesService is a service that is used to join players
   to other places. This class is currently unavailable in public servers.
-APIexclusive: true
+ServerExclusive: true

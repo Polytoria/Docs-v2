@@ -22,7 +22,7 @@ Properties:
       end
 
       ```
-    APIexclusive: false
+    ServerExclusive: false
 Methods:
   - Name: BroadcastMessage
     ReturnType: nil

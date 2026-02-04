@@ -26,7 +26,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Sends a message to the server.
-    APIexclusive: false
+    ServerExclusive: false
   - Name: InvokeClient
     ReturnType: nil
     Parameters:
@@ -42,7 +42,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Sends a message to a specific client.
-    APIexclusive: true
+    ServerExclusive: true
   - Name: InvokeClients
     ReturnType: nil
     Parameters:
@@ -54,7 +54,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Sends a message to all connected clients.
-    APIexclusive: true
+    ServerExclusive: true
 Events:
   - Name: InvokedServer
     Arguments:
@@ -63,13 +63,13 @@ Events:
       - Name: msg
         Type: NetMessage
     Description: Fires when server receives message from client
-    APIexclusive: true
+    ServerExclusive: true
   - Name: InvokedClient
     Arguments:
       - Name: msg
         Type: NetMessage
     Description: Fires when client receives message from server
-    APIexclusive: false
+    ServerExclusive: false
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

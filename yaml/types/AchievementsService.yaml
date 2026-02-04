@@ -33,7 +33,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Award achievement to the target user asynchronously.
-    APIexclusive: true
+    ServerExclusive: true
   - Name: HasAchievementAsync
     ReturnType: boolean
     Parameters:
@@ -55,7 +55,7 @@ Events:
       Name: achievementID
       Type: number
     Description: Fires when the local player got an achievement
-    APIexclusive: false
+    ServerExclusive: false
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false

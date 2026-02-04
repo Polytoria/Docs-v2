@@ -68,9 +68,9 @@ for (const yamlFile of yamlFiles) {
             appendLine(`\n{{ staticclass(${data.StaticAlias ? `"${data.StaticAlias}"` : ""}) }}\n`)
         }
 
-        if (data.APIexclusive == true) {
+        if (data.ServerExclusive === true) {
             appendLine("{{ serverexclusive() }}\n")
-        } else {
+        } else if (data.ServerExclusive === false) {
             appendLine("{{ clientexclusive() }}\n")
         }
 

@@ -61,4 +61,4 @@ IsAbstract: false
 IsInstantiatable: false
 StaticAlias: null
 Description: Datastore is an object that represent datastore connection.
-APIexclusive: true
+ServerExclusive: true

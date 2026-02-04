@@ -120,7 +120,7 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Determines whether the player is the local player.
-    APIexclusive: false
+    ServerExclusive: false
   - Name: IsClimbing
     Type: boolean
     IsAccessibleByScripts: true
@@ -168,7 +168,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Kicks the player from the game with the specified reason.
-    APIexclusive: true
+    ServerExclusive: true
   - Name: UnequipTool
     ReturnType: nil
     Parameters: []
@@ -183,7 +183,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Respawns the player.
-    APIexclusive: true
+    ServerExclusive: true
   - Name: ResetAppearance
     ReturnType: nil
     Parameters: []

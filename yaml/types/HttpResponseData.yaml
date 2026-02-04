@@ -44,4 +44,4 @@ IsAbstract: false
 IsInstantiatable: false
 StaticAlias: null
 Description: HttpResponseData represents the result of an HTTP request.
-APIexclusive: true
+ServerExclusive: true
