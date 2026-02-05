@@ -3,7 +3,7 @@ BaseType: BaseAsset
 Properties:
   - Name: LinkedID
     Type: string
-    IsAccessibleByScripts: false
+    IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false

@@ -30,3 +30,4 @@ IsInstantiatable: false
 StaticAlias: Preferences
 Description: PreferencesService is a service that allows scripts to access some
   of the user preferences
+ServerExclusive: false

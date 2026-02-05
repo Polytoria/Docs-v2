@@ -56,7 +56,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines the visibility radius of the NPC's nametag. 
+    Description: Determines the visibility radius of the NPC's nametag.
   - Name: DisplayName
     Type: string
     IsAccessibleByScripts: true

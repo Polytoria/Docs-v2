@@ -12,7 +12,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Create new asset with the class name
+    Description: Load new asset with the class name
   - Name: NewPTImage
     ReturnType: PTImageAsset
     Parameters:
@@ -23,7 +23,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Create new image from Polytoria with the target ID
+    Description: Load new image from Polytoria with the target ID
   - Name: NewPTAudio
     ReturnType: PTAudioAsset
     Parameters:
@@ -34,7 +34,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Create new audio from Polytoria with the target ID
+    Description: Load new audio from Polytoria with the target ID
   - Name: NewPTMesh
     ReturnType: PTMeshAsset
     Parameters:
@@ -45,7 +45,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Create new mesh from Polytoria with the target ID
+    Description: Load new mesh from Polytoria with the target ID
   - Name: GetFileLinkByPath
     ReturnType: FileLinkAsset
     Parameters:
@@ -73,4 +73,4 @@ IsStatic: true
 IsAbstract: false
 IsInstantiatable: false
 StaticAlias: Assets
-Description: Service for managing/creating assets
+Description: Service for managing/loading assets

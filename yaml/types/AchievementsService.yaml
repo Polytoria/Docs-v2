@@ -7,7 +7,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determine if achievement sound effect should play when user
+    Description: Determine if the achievement sound effect should play when user
       receives an achievement
   - Name: NotifyAchievements
     Type: boolean
@@ -32,7 +32,8 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Award achievement to the user asynchronously.
+    Description: Award achievement to the target user asynchronously.
+    ServerExclusive: true
   - Name: HasAchievementAsync
     ReturnType: boolean
     Parameters:
@@ -47,13 +48,14 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Check if player of ID has the achievement, asynchronously.
+    Description: Check if the target user has the achievement, asynchronously.
 Events:
   - Name: GotAchievement
     Arguments:
       Name: achievementID
       Type: number
     Description: Fires when the local player got an achievement
+    ServerExclusive: false
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false

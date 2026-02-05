@@ -30,3 +30,4 @@ IsInstantiatable: false
 StaticAlias: null
 Description: NewServerRequestData represents the request data for a new server
   instance, to be used with PlacesService.
+ServerExclusive: true

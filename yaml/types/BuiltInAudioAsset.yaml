@@ -3,7 +3,7 @@ BaseType: AudioAsset
 Properties:
   - Name: AudioPreset
     Type: BuiltInAudioPresetEnum
-    IsAccessibleByScripts: false
+    IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false

@@ -8,8 +8,8 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: >
-      A callback function that filters chat messages before they are displayed
-      to players.
+      A callback function that filters chat messages before they are processed
+      by the server, and displayed to other players.
 
       ```lua
 
@@ -22,6 +22,7 @@ Properties:
       end
 
       ```
+    ServerExclusive: false
 Methods:
   - Name: BroadcastMessage
     ReturnType: nil

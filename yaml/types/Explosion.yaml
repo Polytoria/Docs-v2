@@ -48,11 +48,9 @@ Properties:
       ```
 Methods: []
 Events:
-  - Name: Hitted
-    Arguments:
-      Name: hit
-      Type: Instance
-    Description: Fires when this explosion affects a hit
+  - Name: Touched
+    Arguments: ""
+    Description: Missing Documentation
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

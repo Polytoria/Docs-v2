@@ -28,21 +28,21 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The camera's minimum distance from the player in Follow mode.
+    Description: The camera's minimum distance from the target in Follow mode.
   - Name: MaxDistance
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines camera's maximum distance from the player in Follow mode.
+    Description: Determines camera's maximum distance from the target in Follow mode.
   - Name: Distance
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines the distance between the camera and the player when the
+    Description: Determines the distance between the camera and the target when the
       camera is in Follow mode.
   - Name: ScrollSensitivity
     Type: number
@@ -185,7 +185,7 @@ Methods:
     IsStatic: false
     Description: Cast a ray from the camera at the specified ViewportPoint (Vector3
       with components with values in range of 0 - 1 describing how far a point
-      is to to right and to the top of the screen) into the game world
+      is to to right and to the top of the screen) into the game's Environment
   - Name: ScreenPointToRay
     ReturnType: RayResult
     Parameters:
@@ -204,7 +204,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Cast a ray from the camera at screen point into the game world
+    Description: Cast a ray from the camera at screen point into the game's Environment
   - Name: ViewportToScreenPoint
     ReturnType: Vector2
     Parameters:
@@ -226,7 +226,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Transforms `pos` from viewport space into world space.
+    Description: Transforms `pos` from viewport space into Environment space.
   - Name: WorldToViewportPoint
     ReturnType: Vector2
     Parameters:
@@ -237,7 +237,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Transforms `pos` from world space into viewport space.
+    Description: Transforms `pos` from Environment space into viewport space.
   - Name: WorldToScreenPoint
     ReturnType: Vector2
     Parameters:
@@ -248,7 +248,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Transforms `pos` from world space into screen space.
+    Description: Transforms `pos` from Environment space into screen space.
   - Name: ScreenToViewportPoint
     ReturnType: Vector2
     Parameters:
@@ -270,7 +270,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Transforms `pos` from screen space into world space.
+    Description: Transforms `pos` from screen space into Environment space.
 Events:
   - Name: FirstPersonEntered
     Arguments: ""

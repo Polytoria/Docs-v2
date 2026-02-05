@@ -30,4 +30,4 @@ IsAbstract: false
 IsInstantiatable: true
 StaticAlias: null
 Description: BodyPosition are objects that apply a force to their parent until
-  it moves toward the target position.
+  they reach the target position.

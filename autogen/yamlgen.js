@@ -2,183 +2,235 @@ const fs = require("fs")
 const path = require("path")
 const yaml = require("yaml")
 
-const yamlAPIPath = path.join(__dirname, "../", "yaml", "types")
-const yamlEnumPath = path.join(__dirname, "../", "yaml", "enums")
+// Constants
+const YAML_API_PATH = path.join(__dirname, "../", "yaml", "types")
+const YAML_ENUM_PATH = path.join(__dirname, "../", "yaml", "enums")
+const FLAGS = ['ServerExclusive', 'NoSync', 'NoNetwork']
 
-if (!fs.existsSync(yamlAPIPath)) {
-    fs.mkdirSync(yamlAPIPath, { recursive: true })
+function ensureDirectoryExists(dirPath) {
+    if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath, { recursive: true })
+    }
 }
 
-if (!fs.existsSync(yamlEnumPath)) {
-    fs.mkdirSync(yamlEnumPath, { recursive: true })
+function loadYamlFile(filePath) {
+    if (!fs.existsSync(filePath)) {
+        return null
+    }
+    const content = fs.readFileSync(filePath, "utf-8")
+    return yaml.parse(content)
 }
 
-const data = JSON.parse(fs.readFileSync("def.json", "utf-8"))
+function saveYamlFile(filePath, data) {
+    fs.writeFileSync(filePath, yaml.stringify(data))
+}
 
-// Track current classes and enums
-const currentClasses = new Set(data.Classes.map(c => c.Name))
-const currentEnums = new Set(data.Enums.map(e => e.Name))
+function cleanupObsoleteFiles(dirPath, currentItems, itemType) {
+    if (!fs.existsSync(dirPath)) return
 
-// Clean up removed classes
-if (fs.existsSync(yamlAPIPath)) {
-    const existingFiles = fs.readdirSync(yamlAPIPath)
+    const existingFiles = fs.readdirSync(dirPath)
     for (const file of existingFiles) {
-        if (file.endsWith('.yaml')) {
-            const className = path.basename(file, '.yaml')
-            if (!currentClasses.has(className)) {
-                const filePath = path.join(yamlAPIPath, file)
-                fs.unlinkSync(filePath)
-                console.log(`Removed obsolete class: ${className}`)
-            }
+        if (!file.endsWith('.yaml')) continue
+
+        const itemName = path.basename(file, '.yaml')
+        if (!currentItems.has(itemName)) {
+            fs.unlinkSync(path.join(dirPath, file))
+            console.log(`Removed obsolete ${itemType}: ${itemName}`)
         }
     }
 }
 
-// Clean up removed enums
-if (fs.existsSync(yamlEnumPath)) {
-    const existingFiles = fs.readdirSync(yamlEnumPath)
-    for (const file of existingFiles) {
-        if (file.endsWith('.yaml')) {
-            const enumName = path.basename(file, '.yaml')
-            if (!currentEnums.has(enumName)) {
-                const filePath = path.join(yamlEnumPath, file)
-                fs.unlinkSync(filePath)
-                console.log(`Removed obsolete enum: ${enumName}`)
-            }
+function extractFlags(item) {
+    const flags = {}
+    FLAGS.forEach(flag => {
+        if (item[flag] !== undefined) {
+            flags[flag] = item[flag]
         }
+    })
+    return flags
+}
+
+function applyFlags(target, flags) {
+    FLAGS.forEach(flag => {
+        if (flags[flag] !== undefined) {
+            target[flag] = flags[flag]
+        }
+    })
+}
+
+function buildLookupMap(items, extractFn) {
+    const map = {}
+    const itemsArray = Array.isArray(items) ? items : [items]
+
+    itemsArray.forEach(item => {
+        if (item.Name) {
+            map[item.Name] = extractFn(item)
+        }
+    })
+
+    return map
+}
+
+function loadExistingClassData(filePath) {
+    const existingData = loadYamlFile(filePath)
+
+    if (!existingData) {
+        return {
+            description: "Missing Documentation",
+            flags: {},
+            properties: {},
+            methods: {},
+            events: {}
+        }
+    }
+
+    return {
+        description: existingData.Description || "Missing Documentation",
+        flags: extractFlags(existingData),
+        properties: buildLookupMap(existingData.Properties || [], prop => ({
+            description: prop.Description || "",
+            flags: extractFlags(prop)
+        })),
+        methods: buildLookupMap(existingData.Methods || [], method => ({
+            description: method.Description || "",
+            flags: extractFlags(method)
+        })),
+        events: buildLookupMap(existingData.Events || [], event => ({
+            description: event.Description || "",
+            arguments: event.Arguments || "",
+            flags: extractFlags(event)
+        }))
     }
 }
 
-// Process Classes
-for (const c of data.Classes) {
-    let yamlPath = path.join(yamlAPIPath, c.Name + ".yaml")
+function processProperty(prop, existingData) {
+    const existing = existingData.properties[prop.Name] || {}
+    const propObj = {
+        ...prop,
+        Description: existing.description || "Missing Documentation"
+    }
+    applyFlags(propObj, existing.flags || {})
+    return propObj
+}
 
-    let obj = {
-        ...c,
+function processMethod(method, existingData) {
+    const existing = existingData.methods[method.Name] || {}
+    const methodObj = {
+        ...method,
+        Description: existing.description || "Missing Documentation"
+    }
+    applyFlags(methodObj, existing.flags || {})
+    return methodObj
+}
+
+function processEvent(event, existingData) {
+    const existing = existingData.events[event.Name] || {}
+    const eventObj = {
+        ...event,
+        Description: existing.description || "Missing Documentation",
+        Arguments: existing.arguments || ""
+    }
+    applyFlags(eventObj, existing.flags || {})
+    return eventObj
+}
+
+function processClass(classData) {
+    const yamlPath = path.join(YAML_API_PATH, classData.Name + ".yaml")
+    const existingData = loadExistingClassData(yamlPath)
+
+    const obj = {
+        ...classData,
+        Description: existingData.description,
         Properties: [],
         Methods: [],
-        Events: [],
+        Events: []
     }
 
-    // Load existing data if file exists
-    let existingDescriptions = { Properties: {}, Methods: {}, Events: {} };
-    let existingArguments = { Events: {} };
-    let existingClassDescription = "Missing Documentation";
+    // Apply root-level flags
+    applyFlags(obj, existingData.flags)
 
-    if (fs.existsSync(yamlPath)) {
-        const existingYaml = fs.readFileSync(yamlPath, "utf-8");
-        const existingData = yaml.parse(existingYaml);
-
-        // Preserve existing class description
-        if (existingData.Description) {
-            existingClassDescription = existingData.Description;
-        }
-
-        // Build lookup maps for existing descriptions
-        if (existingData.Properties) {
-            const props = Array.isArray(existingData.Properties)
-                ? existingData.Properties
-                : [existingData.Properties];
-            props.forEach(p => {
-                if (p.Name) existingDescriptions.Properties[p.Name] = p.Description || "";
-            });
-        }
-
-        if (existingData.Methods) {
-            const methods = Array.isArray(existingData.Methods)
-                ? existingData.Methods
-                : [existingData.Methods];
-            methods.forEach(m => {
-                if (m.Name) existingDescriptions.Methods[m.Name] = m.Description || "";
-            });
-        }
-
-        if (existingData.Events) {
-            const events = Array.isArray(existingData.Events)
-                ? existingData.Events
-                : [existingData.Events];
-            events.forEach(e => {
-                if (e.Name) {
-                    existingDescriptions.Events[e.Name] = e.Description || "";
-                    existingArguments.Events[e.Name] = e.Arguments || "";
-                }
-            });
-        }
-    }
-
-    // Add class description
-    obj.Description = existingClassDescription;
-
-    // Add properties
-    for (const prop of c.Properties) {
+    // Process properties
+    for (const prop of classData.Properties) {
         if (prop.IsObsolete) continue
-        obj.Properties.push({
-            ...prop,
-            Description: existingDescriptions.Properties[prop.Name] || "Missing Documentation"
-        })
+        obj.Properties.push(processProperty(prop, existingData))
     }
 
-    // Add methods
-    for (const m of c.Methods) {
-        if (m.IsObsolete) continue
-
-        // Ignore metamethods
-        if (m.Name.startsWith("__")) continue
-        obj.Methods.push({
-            ...m,
-            Description: existingDescriptions.Methods[m.Name] || "Missing Documentation"
-        })
+    // Process methods
+    for (const method of classData.Methods) {
+        if (method.IsObsolete) continue
+        if (method.Name.startsWith("__")) continue // Ignore metamethods
+        obj.Methods.push(processMethod(method, existingData))
     }
 
-    // Add events
-    for (const e of c.Events) {
-        obj.Events.push({
-            ...e,
-            Description: existingDescriptions.Events[e.Name] || "Missing Documentation",
-            Arguments: existingArguments.Events[e.Name] || ""
-        })
+    // Process events
+    for (const event of classData.Events) {
+        obj.Events.push(processEvent(event, existingData))
     }
 
-    fs.writeFileSync(yamlPath, yaml.stringify(obj))
+    saveYamlFile(yamlPath, obj)
 }
 
-// Process Enums
-for (const e of data.Enums) {
-    let yamlPath = path.join(yamlEnumPath, e.Name + ".yaml")
+function loadExistingEnumData(filePath) {
+    const existingData = loadYamlFile(filePath)
 
-    let obj = {
-        ...e,
+    if (!existingData) {
+        return {
+            description: "",
+            options: {}
+        }
+    }
+
+    return {
+        description: existingData.Description || "",
+        options: buildLookupMap(existingData.Options || [], option => ({
+            description: option.Description || ""
+        }))
+    }
+}
+
+function processEnum(enumData) {
+    const yamlPath = path.join(YAML_ENUM_PATH, enumData.Name + ".yaml")
+    const existingData = loadExistingEnumData(yamlPath)
+
+    const obj = {
+        ...enumData,
+        Description: existingData.description,
         Options: []
     }
 
-    let existingDescriptions = {};
-    let existingEnumDescription = "";
-    if (fs.existsSync(yamlPath)) {
-        const existingYaml = fs.readFileSync(yamlPath, "utf-8");
-        const existingData = yaml.parse(existingYaml);
-
-        existingEnumDescription = existingData.Description || "";
-
-        if (existingData.Options) {
-            const options = Array.isArray(existingData.Options)
-                ? existingData.Options
-                : [existingData.Options];
-            options.forEach(o => {
-                if (o.Name) existingDescriptions[o.Name] = o.Description || "";
-            });
-        }
-    }
-
-    // Add enum description
-    obj.Description = existingEnumDescription || "";
-
-    // Add options
-    for (const option of e.Options) {
+    // Process options
+    for (const option of enumData.Options) {
+        const existing = existingData.options[option] || {}
         obj.Options.push({
             Name: option,
-            Description: existingDescriptions[option] || ""
+            Description: existing.description || ""
         })
     }
 
-    fs.writeFileSync(yamlPath, yaml.stringify(obj))
+    saveYamlFile(yamlPath, obj)
 }
+
+function main() {
+    // Ensure directories exist
+    ensureDirectoryExists(YAML_API_PATH)
+    ensureDirectoryExists(YAML_ENUM_PATH)
+
+    // Load source data
+    const data = JSON.parse(fs.readFileSync("def.json", "utf-8"))
+
+    // Track current items
+    const currentClasses = new Set(data.Classes.map(c => c.Name))
+    const currentEnums = new Set(data.Enums.map(e => e.Name))
+
+    // Clean up obsolete files
+    cleanupObsoleteFiles(YAML_API_PATH, currentClasses, "class")
+    cleanupObsoleteFiles(YAML_ENUM_PATH, currentEnums, "enum")
+
+    // Process all classes
+    data.Classes.forEach(processClass)
+
+    // Process all enums
+    data.Enums.forEach(processEnum)
+}
+
+main()

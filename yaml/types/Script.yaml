@@ -3,7 +3,7 @@ BaseType: Instance
 Properties:
   - Name: Source
     Type: string
-    IsAccessibleByScripts: true
+    IsAccessibleByScripts: false
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
@@ -14,7 +14,9 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determine if this script should be enabled. Note that setting it to false during runtime won't stop the script immediately, rather it would stop any running threads when it hits any yield function.
+    Description: Determine if this script should be enabled. Note that setting it to
+      false during runtime won't stop the script immediately, rather it would
+      stop any running threads when it hits any yield function.
   - Name: LinkedScript
     Type: FileLinkAsset
     IsAccessibleByScripts: false

@@ -3,7 +3,7 @@ BaseType: MeshAsset
 Properties:
   - Name: AssetID
     Type: number
-    IsAccessibleByScripts: false
+    IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false

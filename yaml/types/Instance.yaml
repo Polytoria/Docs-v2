@@ -29,7 +29,8 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines if this instance should be saved during the saving process. Useful for addons that wants to create a temporary instance.
+    Description: Determines if this instance should be saved during the saving
+      process. Useful for addons that wants to create a temporary instance.
 Methods:
   - Name: GetDescendants
     ReturnType: "{ Instance }"

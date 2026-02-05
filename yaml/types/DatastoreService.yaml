@@ -20,3 +20,4 @@ IsInstantiatable: false
 StaticAlias: Datastore
 Description: Datastore (not to be confused with the Datastore data type) is a
   service used for storing data between place sessions.
+ServerExclusive: true

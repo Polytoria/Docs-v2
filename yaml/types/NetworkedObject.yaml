@@ -22,6 +22,7 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: A shared table accessible by scripts.
+    NoNetwork: true
   - Name: NetworkedObjectID
     Type: string
     IsAccessibleByScripts: true

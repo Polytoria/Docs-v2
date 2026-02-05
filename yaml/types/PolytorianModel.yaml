@@ -171,7 +171,8 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: EXPERIMENTAL !! Set animation override, if set to true. will disable the character animation entirely
+    Description: EXPERIMENTAL !! Set animation override, if set to true. will
+      disable the character animation entirely
   - Name: SetBoneOverridePosition
     ReturnType: nil
     Parameters:

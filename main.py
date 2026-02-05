@@ -154,6 +154,13 @@ def define_env(env):
 </div>""" % (getClassLink("Script"))
 
     @env.macro
+    def nonetwork():
+        return """<div data-search-exclude markdown>
+!!! failure "Not networked!"
+    The server and client do not communicate with each other when changes are made to this, information is not passed through networking!
+</div>"""
+
+    @env.macro
     def readonly():
         return "!!! warning \"This property is read-only and cannot be modified.\""
 

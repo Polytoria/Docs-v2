@@ -14,5 +14,5 @@ IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
 StaticAlias: null
-Description: Accessory represents a attachable object that can be equipped by a
+Description: Accessory represents an attachable object that can be equipped by a
   CharacterModel.

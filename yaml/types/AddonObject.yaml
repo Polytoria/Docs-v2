@@ -49,7 +49,7 @@ Events:
   - Name: CleanupReceived
     Arguments: ""
     Description: Fires when cleanup has been requested by the creator, this is
-      usually fires when updating the addon.
+      usually fired when updating the addon.
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false

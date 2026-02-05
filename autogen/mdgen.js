@@ -63,6 +63,37 @@ for (const yamlFile of yamlFiles) {
     function appendLine(str) {
         mk += str + "\n"
     }
+    function typeCheck(data) {
+        if (data.IsStatic && data.StaticAlias) {
+            appendLine(`\n{{ staticclass(${data.StaticAlias ? `"${data.StaticAlias}"` : ""}) }}\n`)
+        }
+
+        if (data.ServerExclusive === true) {
+            appendLine("{{ serverexclusive() }}\n")
+        } else if (data.ServerExclusive === false) {
+            appendLine("{{ clientexclusive() }}\n")
+        }
+
+        if (data.IsAbstract) {
+            appendLine("{{ abstract() }}\n")
+        }
+
+        if (data.IsReadOnly) {
+            appendLine("{{ readonly() }}\n")
+        }
+
+        if (data.NoSync) {
+            appendLine("{{ nosync() }}\n")
+        }
+
+        if (data.NoNetwork) {
+            appendLine("{{ nonetwork() }}\n")
+        }
+
+        if (data.IsInstantiatable == false) {
+            appendLine("{{ notnewable() }}\n")
+        }
+    }
 
     appendLine("---")
     appendLine("title: " + c.Name)
@@ -72,8 +103,7 @@ for (const yamlFile of yamlFiles) {
     } else {
         appendLine("icon: polytoria/Unknown")
     }
-    appendLine("---")
-    appendLine("")
+    appendLine("---\n")
     if (emojiExists) {
         appendLine(`# :polytoria-${c.Name}: ` + c.Name)
     } else {
@@ -81,87 +111,74 @@ for (const yamlFile of yamlFiles) {
     }
 
     if (c.BaseType) {
-        appendLine("")
-        appendLine(`{{ inherits("${c.BaseType}") }}`)
+        appendLine(`\n{{ inherits("${c.BaseType}") }}`)
     }
 
     appendLine("")
     appendLine(c.Description)
     appendLine("")
 
-    if (c.IsStatic) {
-        appendLine("")
-        appendLine(`{{ staticclass(${c.StaticAlias ? `"${c.StaticAlias}"` : ""}) }}`)
-        appendLine("")
-    }
-
-    if (c.IsAbstract) {
-        appendLine("{{ abstract() }}")
-        appendLine("")
-    }
-
-    if (!c.IsInstantiatable) {
-        appendLine("{{ notnewable() }}")
-        appendLine("")
-    }
+    typeCheck(c)
 
     const properties = c.Properties ? (Array.isArray(c.Properties) ? c.Properties : [c.Properties]) : [];
 
     if (properties.length > 0) {
-        appendLine("")
-        appendLine("## Properties")
-        appendLine("")
+        appendLine("\n## Properties\n")
     }
 
+    let i = 0
     for (const prop of properties) {
-        appendLine(`### ${prop.Name}:${prop.Type} { property }`)
-        appendLine(``)
+        i += 1
+        if (i != 1) { appendLine(`---`) }
+        appendLine(`### ${prop.Name}:${prop.Type} { property }\n`)
         appendLine(prop.Description || "Missing documentation!")
+        typeCheck(prop)
         appendLine(``)
     }
 
     const methods = c.Methods ? (Array.isArray(c.Methods) ? c.Methods : [c.Methods]) : [];
 
     if (methods.length > 0) {
-        appendLine("")
-        appendLine("## Methods")
-        appendLine("")
+        if (properties.length > 0) { appendLine(`---`) }
+        appendLine("\n## Methods\n")
     }
+    i = 0
     for (const m of methods) {
         if (m.IsObsolete) continue
         let params = []
-
+        i += 1
         const parameters = m.Parameters ? (Array.isArray(m.Parameters) ? m.Parameters : [m.Parameters]) : [];
         for (const p of parameters) {
             params.push(`${p.Name};${p.Type}${p.IsOptional ? "?" : ""}`)
         }
 
-        appendLine(`### ${m.Name}(${params.join(",")}):${m.ReturnType || "void"} { method }`)
-        appendLine(``)
+        if (i != 1) { appendLine(`---`) }
+        appendLine(`### ${m.Name}(${params.join(",")}):${m.ReturnType || "void"} { method }\n`)
         appendLine(m.Description || "Missing documentation!")
         appendLine(``)
+        typeCheck(m)
     }
 
     const events = c.Events ? (Array.isArray(c.Events) ? c.Events : [c.Events]) : [];
 
     if (events.length > 0) {
-        appendLine("")
-        appendLine("## Events")
-        appendLine("")
+        if (methods.length > 0 || properties.length > 0) { appendLine(`---`) }
+        appendLine("\n## Events\n")
     }
-
+    i = 0
     for (const e of events) {
         let args = []
-
+        i += 1
         const aargs = e.Arguments ? (Array.isArray(e.Arguments) ? e.Arguments : [e.Arguments]) : [];
         for (const arg of aargs) {
             args.push(`${arg.Name};${arg.Type}`)
         }
 
-        appendLine(`### ${e.Name}(${args.join(",")}) { event }`)
-        appendLine(``)
+        if (i != 1) { appendLine(`---`) }
+        appendLine(`### ${e.Name}(${args.join(",")}) { event }\n`)
         appendLine(e.Description || "")
         appendLine(``)
+        typeCheck(e)
     }
 
     fs.writeFileSync(mdPath, mk)
@@ -189,8 +206,7 @@ for (const yamlFile of yamlEnumFiles) {
     appendLine("title: " + e.Name)
     appendLine("description: " + (e.Description && e.Description !== "Missing Documentation" ? e.Description : ""))
     appendLine("icon: polytoria/Enum")
-    appendLine("---")
-    appendLine("")
+    appendLine("---\n")
     appendLine("# " + e.Name)
     appendLine("")
 

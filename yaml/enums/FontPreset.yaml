@@ -1,4 +1,4 @@
-Name: TextFontPreset
+Name: FontPreset
 InternalName: BuiltInTextFontPresetEnum
 Options:
   - Name: SourceSans
