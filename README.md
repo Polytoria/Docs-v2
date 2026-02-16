@@ -1,28 +1,35 @@
 # Polytoria 2.0 Scripting Documentary
-> "Kickstart your Ideas To Reality"
 
-Polytoria simplifies your multiplayer game development. Easy to get started for beginners, and welcoming from advanced developers.
+> "Kick-start your ideas to reality."
+
+Polytoria simplifies your multiplayer game development.
+
+It is easy to get started for beginners, and welcoming for advanced developers.
 
 ## Installation Instructions
 ### Requirements
-1. Install [Node.js](https://nodejs.org) and [Python](https://python.org)
-2. Install [GIt](https://git-scm.com/)
+[Node.js](https://nodejs.org)
+[Python](https://python.org)
+[Git](https://git-scm.com)
 ### Installation
-1. Clone the repo
-```bash
-git clone https://github.com/Polytoria/Docs-v2.git
-```
-2. Install the dependencies with pip
-```bash
-pip install -r requirements.txt
-```
-3. Install Node.js dependencies with npm
-```bash
-npm install
-```
-4. Start the server
-```bash
-mkdocs serve
-```
-5. Open your browser and navigate to url, shown in terminal (usually `http://127.0.0.1:8000/`)
-
+1. Clone the repo with Git,
+   ```bash
+   git clone https://github.com/Polytoria/Docs-v2.git
+   ```
+2. Cd into the repo,
+   ```bash
+   cd ./Docs-v2
+   ```
+3. Install Python dependencies with pip,
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Install Node.js dependencies with npm,
+   ```bash
+   npm install
+   ```
+5. Start the server with MkDocs,
+   ```bash
+   mkdocs serve
+   ```
+6. Open your browser and navigate to the URL, shown inside the terminal (usually `http://127.0.0.1:8000/`).
