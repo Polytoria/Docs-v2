@@ -1,4 +1,16 @@
+# Python-generated files
+*.pyc
 __pycache__
+build
+dist
+*.egg-info
+
+# Virtual environments
+venv
+.venv
+.python-version
+
+# Javascript files
 node_modules
 def.json
 

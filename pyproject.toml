@@ -1,0 +1,11 @@
+[project]
+name = "docs-2"
+version = "1.0.0"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mkdocs-macros-plugin>=1.5.0",
+    "mkdocs-material>=9.7.1",
+    "mkdocs-minify-html-plugin>=0.3.9",
+    "mkdocs-nav-weight>=0.3.0",
+]
