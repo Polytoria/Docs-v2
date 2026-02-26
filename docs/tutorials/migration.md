@@ -11,11 +11,11 @@ Tutorial on how to migrate to 2.0
 
 ## Lua 5.2 -> Luau
 
-This is the biggest compatibility breaking change for 2.0. The transition from Lua 5.2 (Moonsharp) to Luau. One of the big change being the now non-available `goto` statements. Which you'll have to switch to `continue` statement instead.
+This is the biggest compatibility breaking change for 2.0. The transition from Lua 5.2 (MoonSharp) to Luau. One of the big changes is the now unavailable `goto` statements. Which you'll have to switch to the `continue` statement instead.
 
 ## Unique Names
 
-Each instances should now have it's own unique name. This is by design and allows for faster lookups. If you want to identify objects with the same instance type, use tags.
+Each instance should now have it's own unique name. This is by design and allows for faster lookups. If you want to identify objects with the same instance type, use tags.
 
 ## Capitalization
 
@@ -70,7 +70,7 @@ You may notice that these functions now require the Async suffix, which brings u
 
 ## Async functions
 
-Some functions will now be required to be async in non compatibility mode. These include but not limited to: Http requests, Datastore data retrieving, Insert via InsertService etc.
+Some functions will now be required to be async in non compatibility mode. These include, but are not limited to, HTTP requests, Datastore data retrieval, inserts via InsertSzervice, etc.
 
 Example HTTP Request made with 2.0:
 
