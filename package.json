@@ -7,9 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "node autogen/mdgen.js && mkdocs serve",
-    "build": "npm run gen && mkdocs build",
-    "setup": "npm i && node autogen/mdgen.js && mkdocs build",
+    "dev": "node autogen/mdgen.js && uv run mkdocs serve",
+    "build": "npm run gen && uv run mkdocs build",
+    "setup": "npm i && node autogen/mdgen.js && uv run mkdocs build",
     "gen": "node autogen/yamlgen.js && node autogen/mdgen.js"
   },
   "keywords": [],
