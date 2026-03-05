@@ -273,11 +273,13 @@ Methods:
     Description: Transforms `pos` from screen space into world space.
 Events:
   - Name: FirstPersonEntered
-    Arguments: ""
+    Parameters: null
     Description: Fires when camera has entered first person
-  - Name: FirstPersonExited
     Arguments: ""
+  - Name: FirstPersonExited
+    Parameters: null
     Description: Fires when camera has exited first person
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

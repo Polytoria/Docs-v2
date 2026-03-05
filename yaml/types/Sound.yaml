@@ -122,8 +122,9 @@ Methods:
     Description: Stops the sound if it is currently playing.
 Events:
   - Name: Loaded
-    Arguments: ""
+    Parameters: null
     Description: Fires when this sound has loaded
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

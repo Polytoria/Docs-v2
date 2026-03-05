@@ -15,17 +15,17 @@ This is the biggest compatibility breaking change for 2.0. The transition from L
 
 ## Unique Names
 
-Each instances should now have it's own unique name, this is by design and allows for faster lookups. If you want to identify objects with the same instance type, use tags.
+Each instances should now have it's own unique name. This is by design and allows for faster lookups. If you want to identify objects with the same instance type, use tags.
 
 ## Capitalization
 
-Functions including `_update` and `_fixedUpdate` has been capitalized. Use `_Update` and `_FixedUpdate`
+Functions including `_update` and `_fixedUpdate` have been capitalized. Use `_Update` and `_FixedUpdate`
 
-Fields like `Vector3.new` `Vector3.x` has also been capitalized to `Vector3.New`, `Vector3.X`
+Fields like `Vector3.new` `Vector3.x` have also been capitalized to `Vector3.New`, `Vector3.X`
 
 ## Enum Table
 
-Enums should be accessed from the global `Enums` table. for example:
+Enums should be accessed from the global `Enums` table, for example:
 
 ```lua
 Enums.PartMaterial.Brick
@@ -53,7 +53,7 @@ print("Tween Finished!")
 
 ## Particles
 
-Particles has been revamped in 2.0.
+Particles have been revamped in 2.0.
 
 ## Datastore retrieving
 
@@ -66,11 +66,11 @@ local coins: number = ds:GetAsync("coins")
 print(coins)
 ```
 
-You may notice that these function now require Async suffix, which brings us to:
+You may notice that these functions now require the Async suffix, which brings us to:
 
 ## Async functions
 
-Some function will now be required to be async in non compatibility mode. These include but not limited to: Http requests, Datastore data retrieving, Insert via InsertService etc.
+Some functions will now be required to be async in non compatibility mode. These include but not limited to: Http requests, Datastore data retrieving, Insert via InsertService etc.
 
 Example HTTP Request made with 2.0:
 

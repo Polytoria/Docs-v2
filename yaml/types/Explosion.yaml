@@ -31,7 +31,7 @@ Properties:
     IsStatic: false
     Description: Damage that is affected to player
   - Name: AffectPredicate
-    Type: function
+    Type: () -> ()
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
@@ -48,11 +48,14 @@ Properties:
       ```
 Methods: []
 Events:
-  - Name: Hitted
-    Arguments:
-      Name: hit
-      Type: Instance
-    Description: Fires when this explosion affects a hit
+  - Name: Touched
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when this explosion affects an instance
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

@@ -159,38 +159,69 @@ Methods:
     Description: Bind new Vector2 Input Action
 Events:
   - Name: GameFocused
-    Arguments: ""
+    Parameters: null
     Description: Fires when the game has been focused
+    Arguments: ""
   - Name: GameUnfocused
-    Arguments: ""
+    Parameters: null
     Description: Fires when the game has been unfocused
+    Arguments: ""
   - Name: GamepadConnected
-    Arguments: ""
+    Parameters: null
     Description: Fires when gamepad is connected
-  - Name: GamepadDisconnected
     Arguments: ""
+  - Name: GamepadDisconnected
+    Parameters: null
     Description: Fires when gamepad has been disconnected
+    Arguments: ""
   - Name: KeyDown
-    Arguments:
-      - Name: keycode
+    Parameters:
+      - Name: keyCodeEnum
         Type: KeyCodeEnum
-      - Name: gameFocused
+        IsOptional: false
+        DefaultValue: null
+      - Name: boolean
         Type: boolean
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when key has been pressed
-  - Name: KeyUp
     Arguments:
       - Name: keycode
         Type: KeyCodeEnum
       - Name: gameFocused
         Type: boolean
+  - Name: KeyUp
+    Parameters:
+      - Name: keyCodeEnum
+        Type: KeyCodeEnum
+        IsOptional: false
+        DefaultValue: null
+      - Name: boolean
+        Type: boolean
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when key has been released
+    Arguments:
+      - Name: keycode
+        Type: KeyCodeEnum
+      - Name: gameFocused
+        Type: boolean
   - Name: AxisValueChanged
+    Parameters:
+      - Name: keyCodeEnum
+        Type: KeyCodeEnum
+        IsOptional: false
+        DefaultValue: null
+      - Name: number
+        Type: number
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when analog input has been changed
     Arguments:
       - Name: keycode
         Type: KeyCodeEnum
       - Name: value
         Type: number
-    Description: Fires when analog input has been changed
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false

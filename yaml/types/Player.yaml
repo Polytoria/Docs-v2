@@ -85,6 +85,20 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Determines whether the player's appearance is automatically loaded.
+  - Name: AllowAnimationWhileMoving
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: If true, animation will not stop when player starts moving
+  - Name: Team
+    Type: Team
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Player's assigned team
   - Name: NetworkPing
     Type: number
     IsAccessibleByScripts: true
@@ -190,13 +204,39 @@ Methods:
     Description: Resets the player's appearance to the default.
 Events:
   - Name: Chatted
+    Parameters:
+      - Name: string
+        Type: string
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when this player chats
     Arguments:
       Name: message
       Type: string
-    Description: Fires when this player chats
-  - Name: Respawned
+  - Name: StatChanged
+    Parameters:
+      - Name: stat
+        Type: Stat
+        IsOptional: false
+        DefaultValue: null
+      - Name: any
+        Type: any
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when stat value has changed
     Arguments: ""
+  - Name: TeamChanged
+    Parameters:
+      - Name: team
+        Type: Team
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when player has been assigned a team
+    Arguments: ""
+  - Name: Respawned
+    Parameters: null
     Description: Fires when this player has respawned
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false

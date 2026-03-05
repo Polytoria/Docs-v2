@@ -1,0 +1,10 @@
+Name: UIContainer
+BaseType: UIField
+Properties: []
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: true
+IsInstantiatable: false
+StaticAlias: null
+Description: Missing Documentation

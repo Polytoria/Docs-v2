@@ -64,6 +64,13 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: The font asset used for the text.
+  - Name: TextTrimming
+    Type: TextTrimmingEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
 Methods: []
 Events: []
 IsStatic: false

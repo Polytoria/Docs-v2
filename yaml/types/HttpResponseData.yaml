@@ -36,7 +36,7 @@ Properties:
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: The response payload returned by the server as a buffer. 
+    Description: The response payload returned by the server as a buffer.
 Methods: []
 Events: []
 IsStatic: false

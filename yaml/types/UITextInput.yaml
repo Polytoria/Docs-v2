@@ -81,21 +81,33 @@ Methods:
     Description: Forces the local player to focus on the text input.
 Events:
   - Name: Submitted
-    Arguments:
-      Name: text
-      Type: string
+    Parameters:
+      - Name: string
+        Type: string
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when user submitted the text
-  - Name: Changed
     Arguments:
       Name: text
       Type: string
+  - Name: Changed
+    Parameters:
+      - Name: string
+        Type: string
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when user changed the text
+    Arguments:
+      Name: text
+      Type: string
   - Name: FocusEnter
-    Arguments: ""
+    Parameters: null
     Description: Fires when user focuses on this input field
-  - Name: FocusExit
     Arguments: ""
+  - Name: FocusExit
+    Parameters: null
     Description: Fires when user defocused from this input field
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

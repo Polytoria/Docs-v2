@@ -3,13 +3,15 @@ InternalName: CharacterAttachmentEnum
 Options:
   - Name: Head
     Description: ""
+  - Name: Neck
+    Description: ""
   - Name: Torso
+    Description: ""
+  - Name: Waist
     Description: ""
   - Name: ShoulderRight
     Description: ""
   - Name: ShoulderLeft
-    Description: ""
-  - Name: Waist
     Description: ""
   - Name: LegLeft
     Description: ""

@@ -1,4 +1,4 @@
-Name: UIVerticalLayout
+Name: UIFlowLayout
 BaseType: UIHVLayout
 Properties: []
 Methods: []
@@ -7,4 +7,4 @@ IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
 StaticAlias: null
-Description: UIVerticalLayout is a class that aligns all of its children vertically.
+Description: Missing Documentation

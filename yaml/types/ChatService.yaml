@@ -2,7 +2,7 @@ Name: ChatService
 BaseType: Instance
 Properties:
   - Name: ChatPredicate
-    Type: function
+    Type: () -> ()
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
@@ -51,21 +51,36 @@ Methods:
     Description: Sends a chat message to a specific player.
 Events:
   - Name: NewChatMessage
+    Parameters:
+      - Name: player
+        Type: Player
+        IsOptional: false
+        DefaultValue: null
+      - Name: string
+        Type: string
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when new chat message has been received from player
     Arguments:
       - Name: sender
         Type: Player
       - Name: message
         Type: string
-    Description: Fires when new chat message has been received from player
   - Name: MessageReceived
+    Parameters:
+      - Name: string
+        Type: string
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when new message has been received from either
+      `BroadcastMessage` or `UnicastMessage`
     Arguments:
       Name: message
       Type: string
-    Description: Fires when new message has been received from either
-      `BroadcastMessage` or `UnicastMessage`
   - Name: MessageDeclined
-    Arguments: ""
+    Parameters: null
     Description: Fires when message has been declined by the server
+    Arguments: ""
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false

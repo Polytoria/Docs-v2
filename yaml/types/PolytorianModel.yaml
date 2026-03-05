@@ -71,6 +71,13 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: The torso mesh to use
+  - Name: UseLegacyAnimations
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determines whether this character should be using the legacy animations.
   - Name: Ragdolling
     Type: boolean
     IsAccessibleByScripts: true
@@ -171,7 +178,8 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: EXPERIMENTAL !! Set animation override, if set to true. will disable the character animation entirely
+    Description: EXPERIMENTAL !! Set animation override, if set to true. will
+      disable the character animation entirely
   - Name: SetBoneOverridePosition
     ReturnType: nil
     Parameters:
@@ -226,11 +234,13 @@ Methods:
     Description: EXPERIMENTAL !! Get bone override rotation
 Events:
   - Name: RagdollStarted
-    Arguments: ""
+    Parameters: null
     Description: Fires when ragdoll has been started
-  - Name: RagdollStopped
     Arguments: ""
+  - Name: RagdollStopped
+    Parameters: null
     Description: Fires when ragdoll has been stopped
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

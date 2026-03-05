@@ -1,5 +1,5 @@
-Name: PTMeshAsset
-BaseType: MeshAsset
+Name: PTMeshAnimationAsset
+BaseType: AnimationAsset
 Properties:
   - Name: AssetID
     Type: number
@@ -7,11 +7,12 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Asset ID of this mesh
+    Description: Asset ID for this mesh animation
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
 StaticAlias: null
-Description: A mesh asset that's loaded from Polytoria.
+Description: PTMeshAnimationAsset is an animation asset where animation is
+  loaded from Polytoria mesh.

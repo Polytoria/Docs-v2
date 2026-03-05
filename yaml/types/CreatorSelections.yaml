@@ -73,11 +73,21 @@ Methods:
     Description: Check if instance has been selected
 Events:
   - Name: Selected
-    Arguments: ""
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when an instance has been selected
-  - Name: Deselected
     Arguments: ""
+  - Name: Deselected
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when an instance has been deselected
+    Arguments: ""
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false

@@ -118,7 +118,8 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Sends a GET request to the specified url, and return the response as buffer.
+    Description: Sends a GET request to the specified url, and return the response
+      as buffer.
   - Name: PostBufferAsync
     ReturnType: buffer
     Parameters:
@@ -137,7 +138,8 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Sends a POST request to the specified url, and return the response as buffer.
+    Description: Sends a POST request to the specified url, and return the response
+      as buffer.
   - Name: PutBufferAsync
     ReturnType: buffer
     Parameters:
@@ -156,7 +158,8 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Sends a PUT request to the specified url, and return the response as buffer.
+    Description: Sends a PUT request to the specified url, and return the response
+      as buffer.
   - Name: DeleteBufferAsync
     ReturnType: buffer
     Parameters:
@@ -175,7 +178,8 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Sends a DELETE request to the specified url, and return the response as buffer.
+    Description: Sends a DELETE request to the specified url, and return the
+      response as buffer.
   - Name: PatchBufferAsync
     ReturnType: buffer
     Parameters:
@@ -194,7 +198,8 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Sends a PATCH request to the specified url, and return the response as buffer.
+    Description: Sends a PATCH request to the specified url, and return the response
+      as buffer.
 Events: []
 IsStatic: true
 IsAbstract: false

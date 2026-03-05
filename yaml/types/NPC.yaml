@@ -56,7 +56,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines the visibility radius of the NPC's nametag. 
+    Description: Determines the visibility radius of the NPC's nametag.
   - Name: DisplayName
     Type: string
     IsAccessibleByScripts: true
@@ -263,14 +263,17 @@ Methods:
     Description: Heals the NPC by a specified amount.
 Events:
   - Name: Died
-    Arguments: ""
+    Parameters: null
     Description: Triggered when the NPC dies.
+    Arguments: ""
   - Name: Landed
-    Arguments: ""
+    Parameters: null
     Description: Triggered when the NPC lands on the ground after a jump or fall.
-  - Name: NavFinished
     Arguments: ""
+  - Name: NavFinished
+    Parameters: null
     Description: Triggered when the NPC finishes navigating to a destination.
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

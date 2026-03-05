@@ -54,17 +54,31 @@ Methods:
     Description: Sends a message to all connected clients.
 Events:
   - Name: InvokedServer
+    Parameters:
+      - Name: player
+        Type: Player
+        IsOptional: false
+        DefaultValue: null
+      - Name: netMessage
+        Type: NetMessage
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when server receives message from client
     Arguments:
       - Name: sender
         Type: Player
       - Name: msg
         Type: NetMessage
-    Description: Fires when server receives message from client
   - Name: InvokedClient
+    Parameters:
+      - Name: netMessage
+        Type: NetMessage
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when client receives message from server
     Arguments:
       - Name: msg
         Type: NetMessage
-    Description: Fires when client receives message from server
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

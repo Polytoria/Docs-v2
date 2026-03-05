@@ -1,5 +1,5 @@
-Name: Animation
-BaseType: Instance
+Name: UIHFlow
+BaseType: UIFlowLayout
 Properties: []
 Methods: []
 Events: []
@@ -7,4 +7,4 @@ IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
 StaticAlias: null
-Description: WIP class
+Description: Missing Documentation

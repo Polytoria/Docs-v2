@@ -93,19 +93,27 @@ Methods:
     Description: Deletes the instance (same as Destroy method)
 Events:
   - Name: PropertyChanged
+    Parameters:
+      - Name: string
+        Type: string
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when a property of this object has changed
     Arguments:
       Name: propertyName
       Type: string
-    Description: Fires when a property of this object has changed
   - Name: Renamed
-    Arguments: ""
+    Parameters: null
     Description: Fires when this object has been renamed
+    Arguments: ""
   - Name: TreeEntered
-    Arguments: ""
+    Parameters: null
     Description: Fires when object enters the tree
-  - Name: TreeExited
     Arguments: ""
+  - Name: TreeExited
+    Parameters: null
     Description: Fires when object exit the tree (via reparent or delete)
+    Arguments: ""
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false

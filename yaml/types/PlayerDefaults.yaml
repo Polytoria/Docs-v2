@@ -114,6 +114,13 @@ Properties:
     IsStatic: false
     Description: Determines whether the player's appearance is automatically loaded
       by default.
+  - Name: UseLegacyAnimations
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determines whether player should be using the legacy animations.
 Methods:
   - Name: LoadDefaults
     ReturnType: nil

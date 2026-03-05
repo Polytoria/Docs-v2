@@ -118,8 +118,9 @@ Methods:
     Description: Get the animation info
 Events:
   - Name: Loaded
-    Arguments: ""
+    Parameters: null
     Description: Fires when this mesh has been loaded.
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

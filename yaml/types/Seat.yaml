@@ -18,15 +18,25 @@ Properties:
 Methods: []
 Events:
   - Name: Sat
-    Arguments:
-      Name: occupant
-      Type: NPC
+    Parameters:
+      - Name: npc
+        Type: NPC
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when an occupant sits on the seat.
-  - Name: Vacated
     Arguments:
       Name: occupant
       Type: NPC
+  - Name: Vacated
+    Parameters:
+      - Name: npc
+        Type: NPC
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when an occupant leaves the seat.
+    Arguments:
+      Name: occupant
+      Type: NPC
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

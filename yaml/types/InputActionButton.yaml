@@ -26,11 +26,13 @@ Properties:
 Methods: []
 Events:
   - Name: Pressed
-    Arguments: ""
+    Parameters: null
     Description: Fires when this button has been pressed
-  - Name: Released
     Arguments: ""
+  - Name: Released
+    Parameters: null
     Description: Fires when this button has been released
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false

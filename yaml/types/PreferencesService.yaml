@@ -18,12 +18,21 @@ Properties:
 Methods: []
 Events:
   - Name: SettingChanged
+    Parameters:
+      - Name: string
+        Type: string
+        IsOptional: false
+        DefaultValue: null
+      - Name: any
+        Type: any
+        IsOptional: false
+        DefaultValue: null
+    Description: Fired when a user preference setting is changed.
     Arguments:
       - Name: settingName
         Type: string
       - Name: setTo
         Type: any
-    Description: Fired when a user preference setting is changed.
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false

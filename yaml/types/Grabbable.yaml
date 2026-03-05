@@ -37,7 +37,7 @@ Properties:
     IsStatic: false
     Description: Returns the current dragger
   - Name: PermissionPredicate
-    Type: function
+    Type: () -> ()
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
@@ -61,13 +61,23 @@ Properties:
 Methods: []
 Events:
   - Name: Grabbed
+    Parameters:
+      - Name: player
+        Type: Player
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when this object has been grabbed
     Arguments:
       Name: grabber
       Type: Player
-    Description: Fires when this object has been grabbed
   - Name: Released
-    Arguments: ""
+    Parameters:
+      - Name: player
+        Type: Player
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when this object has been released
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

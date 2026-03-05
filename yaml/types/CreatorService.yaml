@@ -25,11 +25,13 @@ Properties:
 Methods: []
 Events:
   - Name: LocalTestStarted
-    Arguments: ""
+    Parameters: null
     Description: Fires when local testing starts
-  - Name: LocalTestStopped
     Arguments: ""
+  - Name: LocalTestStopped
+    Parameters: null
     Description: Fires when local testing ends
+    Arguments: ""
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false

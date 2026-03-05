@@ -15,6 +15,14 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Determines whether or not collisions between players are enabled.
+  - Name: UseServerAuthority
+    Type: boolean
+    IsAccessibleByScripts: false
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determines whether or not server should trust the client for
+      adjusting player's properties. Enabling this is recommended.
   - Name: PlayersCount
     Type: number
     IsAccessibleByScripts: true
@@ -54,15 +62,25 @@ Methods:
     Description: Returns the player with the specified user ID.
 Events:
   - Name: PlayerAdded
-    Arguments:
-      Name: player
-      Type: Player
+    Parameters:
+      - Name: player
+        Type: Player
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when player has connected
-  - Name: PlayerRemoved
     Arguments:
       Name: player
       Type: Player
+  - Name: PlayerRemoved
+    Parameters:
+      - Name: player
+        Type: Player
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when player has disconnected
+    Arguments:
+      Name: player
+      Type: Player
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false

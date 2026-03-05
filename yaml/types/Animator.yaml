@@ -1,7 +1,29 @@
 Name: Animator
 BaseType: Instance
-Properties: []
+Properties:
+  - Name: CurrentAnimation
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determines the currently playing animation name
 Methods:
+  - Name: ImportAnimationAsset
+    ReturnType: nil
+    Parameters:
+      - Name: key
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: asset
+        Type: AnimationAsset
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Import animation asset
   - Name: PlayAnimation
     ReturnType: nil
     Parameters:
@@ -13,7 +35,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Play animation
-  - Name: PlayOneshotAnimation
+  - Name: PlayOneShotAnimation
     ReturnType: nil
     Parameters:
       - Name: animationKey
@@ -23,7 +45,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Play oneshot animation
+    Description: Play one-shot animation
   - Name: StopAnimation
     ReturnType: nil
     Parameters: []
@@ -31,13 +53,13 @@ Methods:
     IsObsolete: false
     IsStatic: false
     Description: Stop current animation
-  - Name: StopOneshotAnimation
+  - Name: StopOneShotAnimation
     ReturnType: nil
     Parameters: []
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Abort current oneshot animation
+    Description: Stop one-shot animation
 Events: []
 IsStatic: false
 IsAbstract: false

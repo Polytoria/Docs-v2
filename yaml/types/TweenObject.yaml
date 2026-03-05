@@ -134,7 +134,7 @@ Methods:
         IsOptional: false
         DefaultValue: ""
       - Name: callback
-        Type: function
+        Type: () -> ()
         IsOptional: false
         DefaultValue: ""
     IsAsync: false
@@ -157,7 +157,7 @@ Methods:
         IsOptional: false
         DefaultValue: ""
       - Name: callback
-        Type: function
+        Type: () -> ()
         IsOptional: false
         DefaultValue: ""
     IsAsync: false
@@ -180,7 +180,7 @@ Methods:
         IsOptional: false
         DefaultValue: ""
       - Name: callback
-        Type: function
+        Type: () -> ()
         IsOptional: false
         DefaultValue: ""
     IsAsync: false
@@ -203,7 +203,7 @@ Methods:
         IsOptional: false
         DefaultValue: ""
       - Name: callback
-        Type: function
+        Type: () -> ()
         IsOptional: false
         DefaultValue: ""
     IsAsync: false
@@ -226,7 +226,7 @@ Methods:
         IsOptional: false
         DefaultValue: ""
       - Name: callback
-        Type: function
+        Type: () -> ()
         IsOptional: false
         DefaultValue: ""
     IsAsync: false
@@ -285,11 +285,13 @@ Methods:
     Description: Cancel this tween
 Events:
   - Name: Finished
-    Arguments: ""
+    Parameters: null
     Description: Fires when this tween has finished
-  - Name: Canceled
     Arguments: ""
+  - Name: Canceled
+    Parameters: null
     Description: Fires when this tween has been canceled
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false

@@ -1,4 +1,4 @@
-Name: UIHorizontalLayout
+Name: UIHLayout
 BaseType: UIHVLayout
 Properties: []
 Methods: []
@@ -7,4 +7,4 @@ IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
 StaticAlias: null
-Description: UIHorizontalLayout is a class that aligns all of its children horizontally.
+Description: Missing Documentation

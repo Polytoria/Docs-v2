@@ -15,6 +15,13 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Determine if this marker should appear on top of everything else in 3D
+  - Name: VisibleInDev
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determines if this marker should be visible in development
 Methods: []
 Events: []
 IsStatic: false

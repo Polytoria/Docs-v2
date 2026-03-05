@@ -1,0 +1,87 @@
+Name: Stat
+BaseType: Instance
+Properties:
+  - Name: DisplayName
+    Type: string
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+Methods:
+  - Name: GetDisplayName
+    ReturnType: string
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: Set
+    ReturnType: nil
+    Parameters:
+      - Name: player
+        Type: Player
+        IsOptional: false
+        DefaultValue: ""
+      - Name: val
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: Set
+    ReturnType: nil
+    Parameters:
+      - Name: player
+        Type: Player
+        IsOptional: false
+        DefaultValue: ""
+      - Name: val
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: Get
+    ReturnType: any
+    Parameters:
+      - Name: player
+        Type: Player
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: GetTotalForTeam
+    ReturnType: number
+    Parameters:
+      - Name: team
+        Type: Team
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: GetDisplayValue
+    ReturnType: string
+    Parameters:
+      - Name: plr
+        Type: Player
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiatable: true
+StaticAlias: null
+Description: Missing Documentation

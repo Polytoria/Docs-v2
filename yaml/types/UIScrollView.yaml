@@ -1,5 +1,5 @@
 Name: UIScrollView
-BaseType: UIField
+BaseType: UIContainer
 Properties:
   - Name: HorizontalScrollMode
     Type: ScrollModeEnum

@@ -47,9 +47,10 @@ Methods:
     Description: Create a new tool item with text.
 Events:
   - Name: CleanupReceived
-    Arguments: ""
+    Parameters: null
     Description: Fires when cleanup has been requested by the creator, this is
       usually fires when updating the addon.
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false

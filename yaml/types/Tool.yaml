@@ -50,19 +50,23 @@ Methods:
     Description: Plays the specified animation on the holder of the tool.
 Events:
   - Name: Equipped
-    Arguments: ""
+    Parameters: null
     Description: Fires when this tool has been equipped
+    Arguments: ""
   - Name: Unequipped
-    Arguments: ""
+    Parameters: null
     Description: Fires when this tool has been unequipped
-  - Name: Activated
     Arguments: ""
+  - Name: Activated
+    Parameters: null
     Description: Fires when this tool has been activated (via mouse press or
       `Tool:Activate`)
-  - Name: Deactivated
     Arguments: ""
+  - Name: Deactivated
+    Parameters: null
     Description: Fires when this tool has been deactivated (via mouse release or
       `Tool:Deactivate`)
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

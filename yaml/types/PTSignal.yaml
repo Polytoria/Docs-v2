@@ -3,10 +3,10 @@ BaseType: null
 Properties: []
 Methods:
   - Name: Connect
-    ReturnType: nil
+    ReturnType: PTSignalConnection
     Parameters:
       - Name: action
-        Type: function
+        Type: () -> ()
         IsOptional: false
         DefaultValue: ""
     IsAsync: false
@@ -17,7 +17,7 @@ Methods:
     ReturnType: nil
     Parameters:
       - Name: action
-        Type: function
+        Type: () -> ()
         IsOptional: false
         DefaultValue: ""
     IsAsync: false
@@ -35,7 +35,7 @@ Methods:
     ReturnType: nil
     Parameters:
       - Name: action
-        Type: function
+        Type: () -> ()
         IsOptional: false
         DefaultValue: ""
     IsAsync: false

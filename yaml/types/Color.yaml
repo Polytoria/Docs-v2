@@ -108,6 +108,29 @@ Methods:
     IsObsolete: false
     IsStatic: true
     Description: Creates a new Color from the specified hex value.
+  - Name: FromHSV
+    ReturnType: Color
+    Parameters:
+      - Name: h
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: s
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: v
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: a
+        Type: number
+        IsOptional: true
+        DefaultValue: "1"
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a new Color from the specified HSV value.
   - Name: Lerp
     ReturnType: Color
     Parameters:

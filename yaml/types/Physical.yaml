@@ -72,26 +72,43 @@ Methods:
     Description: Rotates the part while keeping physics in mind.
 Events:
   - Name: Touched
-    Arguments:
-      Name: hit
-      Type: Physical
+    Parameters:
+      - Name: physical
+        Type: Physical
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when this object has collide with other object
-  - Name: TouchEnded
     Arguments:
       Name: hit
       Type: Physical
+  - Name: TouchEnded
+    Parameters:
+      - Name: physical
+        Type: Physical
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when this object has stopped colliding with other object
+    Arguments:
+      Name: hit
+      Type: Physical
   - Name: MouseEnter
-    Arguments: ""
+    Parameters: null
     Description: Fires when cursor is hovered on this object. Only fired locally
-  - Name: MouseExit
     Arguments: ""
+  - Name: MouseExit
+    Parameters: null
     Description: Fires when cursor leaves this object. Only fired locally
+    Arguments: ""
   - Name: Clicked
+    Parameters:
+      - Name: player
+        Type: Player
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when this object has been clicked by a player
     Arguments:
       Name: player
       Type: Player
-    Description: Fires when this object has been clicked by a player
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false

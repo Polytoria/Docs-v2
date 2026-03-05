@@ -1,0 +1,18 @@
+Name: AnimationAsset
+BaseType: ResourceAsset
+Properties:
+  - Name: AnimationType
+    Type: MeshAnimationTypeEnum
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Animation type for this animation, this will be applied to all
+      animations under this asset
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: true
+IsInstantiatable: false
+StaticAlias: null
+Description: Animation source

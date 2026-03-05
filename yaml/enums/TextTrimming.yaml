@@ -1,0 +1,14 @@
+Name: TextTrimming
+InternalName: TextTrimmingEnum
+Options:
+  - Name: None
+    Description: ""
+  - Name: Character
+    Description: ""
+  - Name: Word
+    Description: ""
+  - Name: CharacterEllipsis
+    Description: ""
+  - Name: WordEllipsis
+    Description: ""
+Description: ""

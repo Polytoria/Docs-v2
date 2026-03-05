@@ -4,8 +4,9 @@ Properties: []
 Methods: []
 Events:
   - Name: Clicked
-    Arguments: ""
+    Parameters: null
     Description: Fires when user click on this button
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

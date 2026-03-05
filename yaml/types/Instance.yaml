@@ -29,7 +29,8 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines if this instance should be saved during the saving process. Useful for addons that wants to create a temporary instance.
+    Description: Determines if this instance should be saved during the saving
+      process. Useful for addons that wants to create a temporary instance.
 Methods:
   - Name: GetDescendants
     ReturnType: "{ Instance }"
@@ -264,26 +265,46 @@ Methods:
     Description: Sets the parent of this instance.
 Events:
   - Name: ChildAdded
-    Arguments:
-      Name: child
-      Type: Instance
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when child has been added to this instance
-  - Name: ChildRemoved
     Arguments:
       Name: child
       Type: Instance
+  - Name: ChildRemoved
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when child has been removed from this instance (either via
       reparent or delete)
+    Arguments:
+      Name: child
+      Type: Instance
   - Name: ChildDeleting
-    Arguments:
-      Name: child
-      Type: Instance
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when child is being deleted from this instance
-  - Name: ChildDeleted
     Arguments:
       Name: child
       Type: Instance
+  - Name: ChildDeleted
+    Parameters:
+      - Name: instance
+        Type: Instance
+        IsOptional: false
+        DefaultValue: null
     Description: Fires when child has been deleted from this instance
+    Arguments:
+      Name: child
+      Type: Instance
 IsStatic: false
 IsAbstract: true
 IsInstantiatable: false

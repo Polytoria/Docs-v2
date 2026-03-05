@@ -15,10 +15,11 @@ Methods:
     Description: Invoke this event with parameters
 Events:
   - Name: Invoked
+    Parameters: null
+    Description: Fires when this event has been invoked
     Arguments:
       Name: ...
       Type: any
-    Description: Fires when this event has been invoked
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true

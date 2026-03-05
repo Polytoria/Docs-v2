@@ -3,21 +3,21 @@ BaseType: FontAsset
 Properties:
   - Name: FontPreset
     Type: BuiltInTextFontPresetEnum
-    IsAccessibleByScripts: false
+    IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
     Description: Target font to use
   - Name: FontWeight
     Type: FontWeightEnum
-    IsAccessibleByScripts: false
+    IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
     Description: Font weight for this font
   - Name: FontStyle
     Type: FontStyleEnum
-    IsAccessibleByScripts: false
+    IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false

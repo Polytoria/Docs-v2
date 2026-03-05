@@ -1,0 +1,17 @@
+Name: Stats
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: GetStats
+    ReturnType: "{ Stat }"
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+StaticAlias: Stats
+Description: Missing Documentation

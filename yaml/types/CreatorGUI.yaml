@@ -1,11 +1,11 @@
 Name: CreatorGUI
-BaseType: PlayerGUI
+BaseType: Instance
 Properties: []
 Methods: []
 Events: []
-IsStatic: true
+IsStatic: false
 IsAbstract: false
 IsInstantiatable: false
-StaticAlias: PlayerGUI
+StaticAlias: null
 Description: CreatorGUI is an object that allows GUI to overlay on top of the
   viewport in the creator. This class is only available in the creator.

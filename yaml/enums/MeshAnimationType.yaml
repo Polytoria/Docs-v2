@@ -1,0 +1,14 @@
+Name: MeshAnimationType
+InternalName: MeshAnimationTypeEnum
+Options:
+  - Name: Normal
+    Description: ""
+  - Name: Looped
+    Description: ""
+  - Name: PingPong
+    Description: ""
+  - Name: OneShot
+    Description: ""
+  - Name: OneShotImpluse
+    Description: ""
+Description: ""

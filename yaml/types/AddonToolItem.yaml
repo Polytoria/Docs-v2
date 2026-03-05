@@ -4,8 +4,9 @@ Properties: []
 Methods: []
 Events:
   - Name: Pressed
-    Arguments: ""
+    Parameters: null
     Description: Fires when this tool item has been pressed
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: false

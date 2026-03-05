@@ -46,14 +46,20 @@ Properties:
 Methods: []
 Events:
   - Name: Ready
-    Arguments: ""
+    Parameters: null
     Description: Fires when the game is ready
+    Arguments: ""
   - Name: Rendered
+    Parameters:
+      - Name: number
+        Type: number
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires every frame after the place has been rendered. The `delta`
+      parameter is the time between the last frame and the current.
     Arguments:
       Name: delta
       Type: number
-    Description: Fires every frame after the place has been rendered. The `delta`
-      parameter is the time between the last frame and the current.
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false

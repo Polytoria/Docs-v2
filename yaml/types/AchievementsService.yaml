@@ -50,10 +50,15 @@ Methods:
     Description: Check if player of ID has the achievement, asynchronously.
 Events:
   - Name: GotAchievement
+    Parameters:
+      - Name: number
+        Type: number
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when the local player got an achievement
     Arguments:
       Name: achievementID
       Type: number
-    Description: Fires when the local player got an achievement
 IsStatic: true
 IsAbstract: false
 IsInstantiatable: false

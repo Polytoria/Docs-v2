@@ -1,0 +1,17 @@
+Name: Teams
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: GetTeams
+    ReturnType: "{ Team }"
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiatable: false
+StaticAlias: Teams
+Description: Missing Documentation

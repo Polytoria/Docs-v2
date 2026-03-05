@@ -1,13 +1,6 @@
 Name: GUI3D
 BaseType: Dynamic
 Properties:
-  - Name: CanvasSize
-    Type: Vector2
-    IsAccessibleByScripts: true
-    IsReadOnly: false
-    IsObsolete: false
-    IsStatic: false
-    Description: Determines the canvas size for this GUI
   - Name: Shaded
     Type: boolean
     IsAccessibleByScripts: true
@@ -30,6 +23,13 @@ Properties:
     IsStatic: false
     Description: Determines if the background should be transparent. Recommended to
       be set to false if transparent background is not needed.
+  - Name: AbsoluteSize
+    Type: Vector2
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Absolute size of this GUI3D
 Methods: []
 Events: []
 IsStatic: false

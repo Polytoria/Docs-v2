@@ -109,23 +109,29 @@ Properties:
 Methods: []
 Events:
   - Name: MouseEnter
-    Arguments: ""
+    Parameters: null
     Description: Fires when user's cursor hovers on this UI
+    Arguments: ""
   - Name: MouseExit
-    Arguments: ""
+    Parameters: null
     Description: Fires when user's cursor leaves this UI
+    Arguments: ""
   - Name: MouseDown
-    Arguments: ""
+    Parameters: null
     Description: Fires when user hold down mouse on this UI
+    Arguments: ""
   - Name: MouseUp
-    Arguments: ""
+    Parameters: null
     Description: Fires when user release mouse on this UI
+    Arguments: ""
   - Name: TransformChanged
-    Arguments: ""
+    Parameters: null
     Description: Fires when this UI transform has been changed
-  - Name: VisibilityChanged
     Arguments: ""
+  - Name: VisibilityChanged
+    Parameters: null
     Description: Fires when this UI visibility has been changed
+    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiatable: true
