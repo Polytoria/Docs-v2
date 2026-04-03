@@ -5,7 +5,7 @@ Options:
     Description: ""
   - Name: AssetThumbnail
     Description: ""
-  - Name: PlaceThumbnail
+  - Name: WorldThumbnail
     Description: ""
   - Name: UserAvatar
     Description: ""

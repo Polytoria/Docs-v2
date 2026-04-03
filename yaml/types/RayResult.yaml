@@ -47,6 +47,6 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: RayResult is a data type that contains data about a raycast result.

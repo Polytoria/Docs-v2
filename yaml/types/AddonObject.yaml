@@ -53,7 +53,7 @@ Events:
     Arguments: ""
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: AddonObject represents an addon in the creator. This object serves
   as the main interface for addon developers to interact with the addon system.

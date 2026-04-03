@@ -12,6 +12,6 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: A mesh asset that's loaded from Polytoria.

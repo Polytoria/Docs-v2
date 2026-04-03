@@ -81,7 +81,7 @@ Events:
         Type: NetMessage
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: NetworkEvents are events that can be called to communicate between
   server and client. NetMessages are the class used for sharing data between

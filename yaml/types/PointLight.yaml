@@ -12,7 +12,7 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: PointLight is a type of light that emits light in all directions
   from a single point.

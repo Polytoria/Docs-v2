@@ -30,6 +30,6 @@ Methods:
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: InputButton is a class that represents a button KeyCode

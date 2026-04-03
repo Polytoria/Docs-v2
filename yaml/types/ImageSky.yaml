@@ -47,7 +47,7 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: ImageSky is a class that is used to set a custom image skybox in
   the world. You can set the images used for the individual sides of the skybox

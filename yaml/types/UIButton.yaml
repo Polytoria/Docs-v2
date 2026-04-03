@@ -9,6 +9,6 @@ Events:
     Arguments: ""
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: UIButton is a class that represents a clickable button UI element.

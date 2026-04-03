@@ -224,7 +224,7 @@ Events:
         Type: number
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: Input
 Description: InputService is a class used for retrieving user input data, such
   as the mouse and keyboard.

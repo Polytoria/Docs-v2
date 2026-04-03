@@ -9,6 +9,6 @@ Events:
     Arguments: ""
 IsStatic: false
 IsAbstract: true
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: ValueBase is an abstract base class for objects that hold a value.

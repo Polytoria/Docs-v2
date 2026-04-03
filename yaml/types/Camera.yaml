@@ -282,6 +282,6 @@ Events:
     Arguments: ""
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: Camera is a class that represents the local player's camera.

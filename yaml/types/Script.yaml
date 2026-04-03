@@ -76,7 +76,7 @@ Methods:
 Events: []
 IsStatic: false
 IsAbstract: true
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: Scripts are abstract base classes representing Lua code that can be
   executed in the game.

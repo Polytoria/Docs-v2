@@ -246,7 +246,7 @@ Methods:
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: Represents a network message used for communication between clients
   and servers.

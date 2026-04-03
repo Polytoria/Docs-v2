@@ -9,21 +9,6 @@ Properties:
     IsStatic: false
     Description: Determines the currently playing animation name
 Methods:
-  - Name: ImportAnimationAsset
-    ReturnType: nil
-    Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: asset
-        Type: AnimationAsset
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: false
-    Description: Import animation asset
   - Name: PlayAnimation
     ReturnType: nil
     Parameters:
@@ -63,6 +48,6 @@ Methods:
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: WIP class

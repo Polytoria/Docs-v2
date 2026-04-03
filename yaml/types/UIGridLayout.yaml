@@ -19,6 +19,6 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: true
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: Missing Documentation

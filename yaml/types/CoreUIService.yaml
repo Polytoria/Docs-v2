@@ -69,6 +69,6 @@ Methods: []
 Events: []
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: CoreUI
 Description: CoreUI is a static class that allows for the toggling of certain core GUI.

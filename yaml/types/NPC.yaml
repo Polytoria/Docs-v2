@@ -113,20 +113,20 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Determines the instance the NPC should walk towards.
-  - Name: OnGround
+  - Name: IsOnGround
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Indicates whether the NPC is currently on the ground.
-  - Name: OnCeiling
+    Description: Missing Documentation
+  - Name: IsOnCeiling
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Indicates whether the NPC is currently on the ceiling.
+    Description: Missing Documentation
   - Name: NavDestinationDistance
     Type: number
     IsAccessibleByScripts: true
@@ -276,7 +276,7 @@ Events:
     Arguments: ""
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: NPC (non-player character) is an object similar to a  Player but
   that can be controlled by code. Like players, it can walk and jump, and its

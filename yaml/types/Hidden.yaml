@@ -5,6 +5,6 @@ Methods: []
 Events: []
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: Hidden
 Description: Hidden is a object used for hiding instances.

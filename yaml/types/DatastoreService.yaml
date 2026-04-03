@@ -16,7 +16,7 @@ Methods:
 Events: []
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: Datastore
 Description: Datastore (not to be confused with the Datastore data type) is a
   service used for storing data between place sessions.

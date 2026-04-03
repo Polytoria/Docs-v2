@@ -316,6 +316,6 @@ Methods:
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: Represents a quaternion used for rotations.

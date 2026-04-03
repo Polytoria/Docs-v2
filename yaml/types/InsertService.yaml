@@ -2,6 +2,31 @@ Name: InsertService
 BaseType: Instance
 Properties: []
 Methods:
+  - Name: DefaultNPC
+    ReturnType: NPC
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: InitializeDefaultNPC
+    ReturnType: nil
+    Parameters:
+      - Name: npc
+        Type: NPC
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: DefaultCharacter
+    ReturnType: PolytorianModel
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
   - Name: ModelAsync
     ReturnType: Instance
     Parameters:
@@ -38,7 +63,7 @@ Methods:
 Events: []
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: Insert
 Description: Insert is a class used for inserting user-generated models into
   your game via scripts.

@@ -5,6 +5,6 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: Folder is similar to a model, used for storing objects in the place.

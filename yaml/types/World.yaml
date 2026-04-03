@@ -1,4 +1,4 @@
-Name: Game
+Name: World
 BaseType: Instance
 Properties:
   - Name: IsLocalTest
@@ -7,62 +7,61 @@ Properties:
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Returns true if this current session is being tested locally
-  - Name: GameID
+    Description: Missing Documentation
+  - Name: IsLegacyWorld
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+  - Name: WorldID
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: The ID of the current Polytoria place.
+    Description: Missing Documentation
   - Name: ServerID
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: The server ID of the current instance.
+    Description: Missing Documentation
   - Name: UpTime
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: The uptime of this game in seconds.
+    Description: Missing Documentation
   - Name: ServerTime
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: A synchronized clock that represents the server's current time.
+    Description: Missing Documentation
   - Name: InstanceCount
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: The total number of instances currently loaded.
+    Description: Missing Documentation
 Methods: []
 Events:
-  - Name: Ready
-    Parameters: null
-    Description: Fires when the game is ready
-    Arguments: ""
   - Name: Rendered
     Parameters:
       - Name: number
         Type: number
         IsOptional: false
         DefaultValue: null
-    Description: Fires every frame after the place has been rendered. The `delta`
-      parameter is the time between the last frame and the current.
-    Arguments:
-      Name: delta
-      Type: number
+    Description: Missing Documentation
+    Arguments: ""
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
-StaticAlias: game
-Description: Game is the root object in the Polytoria instance tree. It is the
-  object from which everything is descended.
+IsInstantiable: false
+StaticAlias: world
+Description: Missing Documentation

@@ -116,7 +116,7 @@ Events:
     Arguments: ""
 IsStatic: false
 IsAbstract: true
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: NetworkedObject is a base class for all object that's synchronized
   by the network.

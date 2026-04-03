@@ -26,7 +26,7 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: Marker3D is a object that allows marking a specific point in world.
   This will hint an axis gizmo in local test and creator.

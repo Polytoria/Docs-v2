@@ -380,6 +380,6 @@ Methods:
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: Vector3 is a 3D vector with an x, y and z component.

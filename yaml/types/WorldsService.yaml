@@ -1,4 +1,4 @@
-Name: PlacesService
+Name: WorldsService
 BaseType: Instance
 Properties: []
 Methods:
@@ -12,7 +12,7 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Request a new server with data
+    Description: Missing Documentation
   - Name: NewServerAsync
     ReturnType: string
     Parameters:
@@ -23,7 +23,7 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Request a new server with data
+    Description: Missing Documentation
   - Name: JoinPlaceAsync
     ReturnType: nil
     Parameters:
@@ -38,7 +38,7 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Join a player to a public server of the specified place
+    Description: Missing Documentation
   - Name: JoinPlacePartyAsync
     ReturnType: nil
     Parameters:
@@ -53,7 +53,7 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Join a party of player to a public server of the specified place
+    Description: Missing Documentation
   - Name: JoinPrivateAsync
     ReturnType: nil
     Parameters:
@@ -68,7 +68,7 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Join a player to a private server of the specified place
+    Description: Missing Documentation
   - Name: JoinPrivatePartyAsync
     ReturnType: nil
     Parameters:
@@ -83,11 +83,10 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Join a party of player to a private server of the specified place
+    Description: Missing Documentation
 Events: []
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
-StaticAlias: Places
-Description: WIP Class, PlacesService is a service that is used to join players
-  to other places. This class is currently unavailable in public servers.
+IsInstantiable: false
+StaticAlias: Worlds
+Description: Missing Documentation

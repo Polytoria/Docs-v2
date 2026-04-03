@@ -5,6 +5,6 @@ Methods: []
 Events: []
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: PlayerGUI
 Description: PlayerGUI is a class that contains all custom GUIs.

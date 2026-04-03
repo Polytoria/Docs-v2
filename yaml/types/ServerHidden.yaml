@@ -5,7 +5,7 @@ Methods: []
 Events: []
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: ServerHidden
 Description: ServerHidden, similar to Hidden, is a container for objects that
   are meant to be hidden. Unlike Hidden, ServerHidden won't replicate its

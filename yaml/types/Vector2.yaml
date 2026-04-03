@@ -304,6 +304,6 @@ Methods:
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: Vector2 is a 2D vector with an x and y component.

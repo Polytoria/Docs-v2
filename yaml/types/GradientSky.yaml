@@ -89,6 +89,6 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: GradientSky is a class that is used to set a gradient skybox in the world.

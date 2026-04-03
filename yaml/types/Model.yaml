@@ -5,7 +5,7 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: Model is an instance that can hold other instances, and which
   transform affects its children.

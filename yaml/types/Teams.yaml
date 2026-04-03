@@ -12,6 +12,6 @@ Methods:
 Events: []
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: Teams
 Description: Missing Documentation

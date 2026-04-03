@@ -71,10 +71,17 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Missing Documentation
+  - Name: TextWrapped
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: UILabel is a class that can be used to display text.

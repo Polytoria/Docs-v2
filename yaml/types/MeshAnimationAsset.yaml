@@ -1,4 +1,4 @@
-Name: AnimationAsset
+Name: MeshAnimationAsset
 BaseType: ResourceAsset
 Properties:
   - Name: AnimationType
@@ -7,12 +7,11 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Animation type for this animation, this will be applied to all
-      animations under this asset
+    Description: Missing Documentation
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: true
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
-Description: Animation source
+Description: Missing Documentation

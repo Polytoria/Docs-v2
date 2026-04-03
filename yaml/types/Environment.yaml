@@ -146,7 +146,7 @@ Methods:
 Events: []
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: Environment
 Description: Environment is the primary object intended for storing active
   objects in the place.

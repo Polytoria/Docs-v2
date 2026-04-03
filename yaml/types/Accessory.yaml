@@ -12,7 +12,7 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: Accessory represents a attachable object that can be equipped by a
   CharacterModel.

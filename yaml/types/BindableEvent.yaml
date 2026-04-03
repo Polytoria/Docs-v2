@@ -22,7 +22,7 @@ Events:
       Type: any
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: BindableEvent are events that can be called to communicate between
   scripts in the same boundary.

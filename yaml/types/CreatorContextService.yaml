@@ -5,7 +5,7 @@ Methods: []
 Events: []
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: CreatorContext
 Description: CreatorContextService is a service that manage per game specific
   tools, such as Selections and History. This class is only available in the

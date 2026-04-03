@@ -47,7 +47,7 @@ Methods:
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: NumberRange is a data type that represents a range between two
   numbers, defined by a minimum and maximum value.

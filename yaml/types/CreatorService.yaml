@@ -9,7 +9,7 @@ Properties:
     IsStatic: true
     Description: The interface
   - Name: CurrentGame
-    Type: Game
+    Type: World
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
@@ -34,7 +34,7 @@ Events:
     Arguments: ""
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: Creator
 Description: CreatorService is the class that manages the creator. This class is
   only available in the creator.

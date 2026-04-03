@@ -15,6 +15,13 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Determines the max range that this object can be dragged.
+  - Name: MaxGrabbableRange
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
   - Name: UseDragForce
     Type: boolean
     IsAccessibleByScripts: true
@@ -80,7 +87,7 @@ Events:
     Arguments: ""
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: Grabbable represents a object that can be dragged by user. It can
   be parented to Physical to give user ability to drag that object.

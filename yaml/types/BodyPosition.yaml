@@ -27,7 +27,7 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: BodyPosition are objects that apply a force to their parent until
   it moves toward the target position.

@@ -77,6 +77,6 @@ Methods:
 Events: []
 IsStatic: true
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: Capture
 Description: Service for capturing photos

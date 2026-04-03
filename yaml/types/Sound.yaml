@@ -127,6 +127,6 @@ Events:
     Arguments: ""
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: Sounds are objects that can be placed in the world and play audio.

@@ -71,10 +71,17 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Determines whether the text should be parsed as rich text.
+  - Name: Shaded
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: Text3D is a class that represents 3D text in the game world.

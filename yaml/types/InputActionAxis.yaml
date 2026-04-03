@@ -26,6 +26,6 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: InputActionAxis is a class that represents input action of axis type.

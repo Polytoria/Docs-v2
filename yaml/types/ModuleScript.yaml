@@ -5,7 +5,7 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: ModuleScripts are specialized scripts to hold data that can be
   accessed by other scripts using the require() function. It is important to

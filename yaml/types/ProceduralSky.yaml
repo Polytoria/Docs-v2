@@ -40,7 +40,7 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: ProceduralSky is a type of sky that generates its appearance
   procedurally based on the position of the sun and its properties.

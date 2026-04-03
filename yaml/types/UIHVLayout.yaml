@@ -19,7 +19,7 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: true
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: UIHVLayout is an abstract class that provides horizontal and
   vertical layout functionality for UI elements.

@@ -144,7 +144,7 @@ Methods:
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: Color series is a data type that represents a collection of color
   and points, also known as gradient.

@@ -19,7 +19,7 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: SpotLight is a source of light emitting in a specific direction and
   angle that can be placed in the world.

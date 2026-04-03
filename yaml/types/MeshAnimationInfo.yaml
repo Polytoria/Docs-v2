@@ -26,6 +26,6 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: false
+IsInstantiable: false
 StaticAlias: null
 Description: MeshAnimationInfo contains the animation information for meshes.

@@ -47,7 +47,7 @@ Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: GradientImageAsset is a class that provides gradient image that can
   be dynamically changed.

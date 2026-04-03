@@ -163,7 +163,7 @@ Methods:
 Events: []
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: Dynamic is the base class where all objects with a position,
   rotation and scale derive from.

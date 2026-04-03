@@ -1,17 +1,17 @@
-Name: Vector2Value
-BaseType: ValueBase
+Name: Clothing
+BaseType: Instance
 Properties:
-  - Name: Value
-    Type: Vector2
+  - Name: Image
+    Type: ImageAsset
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The value of this object.
+    Description: Missing Documentation
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true
 StaticAlias: null
-Description: Vector2Value is an object that holds a Vector2 value.
+Description: Missing Documentation

@@ -58,7 +58,7 @@ Events:
     Arguments: ""
 IsStatic: false
 IsAbstract: false
-IsInstantiatable: true
+IsInstantiable: true
 StaticAlias: null
 Description: Explosion is a deadly explosion killing players and applying force
   to parts at the given position.
