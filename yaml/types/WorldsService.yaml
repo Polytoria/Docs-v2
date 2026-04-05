@@ -12,7 +12,7 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Request a new server of world path
   - Name: NewServerAsync
     ReturnType: string
     Parameters:
@@ -23,7 +23,7 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Request a new server with data
   - Name: JoinPlaceAsync
     ReturnType: nil
     Parameters:
@@ -38,7 +38,7 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Join a player to a public server of the specified world
   - Name: JoinPlacePartyAsync
     ReturnType: nil
     Parameters:
@@ -53,7 +53,7 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Join a party of player to a public server of the specified world
   - Name: JoinPrivateAsync
     ReturnType: nil
     Parameters:
@@ -68,7 +68,7 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Join a player to a private server of the specified world
   - Name: JoinPrivatePartyAsync
     ReturnType: nil
     Parameters:
@@ -83,10 +83,11 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Join a party of player to a private server of the specified world
 Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiable: false
 StaticAlias: Worlds
-Description: Missing Documentation
+Description: \!! WIP Class, WorldsService is a service that is used to join players
+  to other worlds. This class is currently unavailable in public servers. **This is not recommended for use at this time.**

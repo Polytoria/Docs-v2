@@ -119,14 +119,14 @@ Properties:
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Indicates if NPC is standing on ground.
   - Name: IsOnCeiling
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Indicates if NPC is on the ceiling.
   - Name: NavDestinationDistance
     Type: number
     IsAccessibleByScripts: true

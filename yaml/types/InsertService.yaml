@@ -8,7 +8,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Inserts a Default NPC
   - Name: InitializeDefaultNPC
     ReturnType: nil
     Parameters:
@@ -19,14 +19,14 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Initialize default NPC with the DefaultCharacter and sounds
   - Name: DefaultCharacter
     ReturnType: PolytorianModel
     Parameters: []
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Inserts a Default PolytorianModel
   - Name: ModelAsync
     ReturnType: Instance
     Parameters:

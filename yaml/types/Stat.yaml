@@ -7,7 +7,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: The display name for this stat.
 Methods:
   - Name: GetDisplayName
     ReturnType: string
@@ -15,7 +15,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Returns the display name of the stat. If DisplayName is specified, it returns DisplayName; otherwise, it returns Name.
   - Name: Set
     ReturnType: nil
     Parameters:
@@ -30,7 +30,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Set the value stat of player to number
   - Name: Set
     ReturnType: nil
     Parameters:
@@ -45,7 +45,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Set the value stat of player to string
   - Name: Get
     ReturnType: any
     Parameters:
@@ -56,7 +56,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Get the value stat of player
   - Name: GetTotalForTeam
     ReturnType: number
     Parameters:
@@ -67,7 +67,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Get the total value for team
   - Name: GetDisplayValue
     ReturnType: string
     Parameters:
@@ -78,10 +78,10 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Gets the display value for a player. If the value is a number, it is automatically converted to K/M/S format (e.g., 1K+, 12.3K+).
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true
 StaticAlias: null
-Description: Missing Documentation
+Description: Stat is an object that represents a player stat to which players can be assigned to have their own number or string values.

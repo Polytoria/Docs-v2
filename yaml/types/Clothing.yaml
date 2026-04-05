@@ -7,11 +7,11 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: The clothing texture to use
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true
 StaticAlias: null
-Description: Missing Documentation
+Description: Clothing represents a clothing that can be applied to a PolytorianModel

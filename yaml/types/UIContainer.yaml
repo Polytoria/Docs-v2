@@ -7,4 +7,4 @@ IsStatic: false
 IsAbstract: true
 IsInstantiable: false
 StaticAlias: null
-Description: Missing Documentation
+Description: Base class for all UI containers

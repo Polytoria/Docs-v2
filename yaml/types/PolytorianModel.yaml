@@ -56,7 +56,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: The body mesh to use, the mesh must be in Polytoria Body rig format.
   - Name: Ragdolling
     Type: boolean
     IsAccessibleByScripts: true

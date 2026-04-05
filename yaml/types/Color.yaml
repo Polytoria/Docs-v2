@@ -118,7 +118,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: true
-    Description: Missing Documentation
+    Description: Converts a Color value to its hexadecimal string representation.
   - Name: FromHSV
     ReturnType: Color
     Parameters:

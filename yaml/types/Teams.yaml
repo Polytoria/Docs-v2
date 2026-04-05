@@ -8,10 +8,10 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Get all the teams
 Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiable: false
 StaticAlias: Teams
-Description: Missing Documentation
+Description: Teams is a collection of Team objects used to manage player teams.

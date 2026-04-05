@@ -77,7 +77,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines whether the text should be affected by lighting.
 Methods: []
 Events: []
 IsStatic: false

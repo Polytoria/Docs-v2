@@ -7,4 +7,4 @@ IsStatic: false
 IsAbstract: false
 IsInstantiable: true
 StaticAlias: null
-Description: Missing Documentation
+Description: UIVLayout is a class that aligns all of its children vertically.

@@ -7,4 +7,4 @@ IsStatic: false
 IsAbstract: false
 IsInstantiable: true
 StaticAlias: null
-Description: Missing Documentation
+Description: UIVFlow is a class that aligns all of it's children vertically and wraps them around at the borders.
