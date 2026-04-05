@@ -7,18 +7,18 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: The spacing between each item.
   - Name: Columns
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: The number of columns for this grid layout.
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: true
 IsInstantiable: false
 StaticAlias: null
-Description: Missing Documentation
+Description: UIGridLayout is a class that arranges all of it's children in a grid layout

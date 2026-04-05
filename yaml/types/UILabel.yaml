@@ -70,14 +70,14 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Text trimming mode for this label.
   - Name: TextWrapped
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines if the text should be wrapped at borders.
 Methods: []
 Events: []
 IsStatic: false

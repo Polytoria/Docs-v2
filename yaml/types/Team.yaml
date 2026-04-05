@@ -7,14 +7,14 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Display name for this team
   - Name: Color
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Color for this team
 Methods:
   - Name: GetDisplayName
     ReturnType: string
@@ -22,17 +22,17 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Returns the display name of the team. If DisplayName is specified, it returns DisplayName; otherwise, it returns Name.
   - Name: GetPlayers
     ReturnType: "{ Player }"
     Parameters: []
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Get all players assigned to this team.
 Events: []
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true
 StaticAlias: null
-Description: Missing Documentation
+Description: Team is an object that represents a player team to which players can be assigned.

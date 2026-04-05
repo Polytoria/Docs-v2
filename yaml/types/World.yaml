@@ -7,49 +7,49 @@ Properties:
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Returns true if this current session is being tested locally
   - Name: IsLegacyWorld
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Returns true if this world is being ran from a 1.0 world file.
   - Name: WorldID
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: The ID of the current Polytoria world.
   - Name: ServerID
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: The server ID of the current instance.
   - Name: UpTime
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: The uptime of this game in seconds.
   - Name: ServerTime
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: A synchronized clock that represents the server's current time.
   - Name: InstanceCount
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: The total number of instances currently loaded.
 Methods: []
 Events:
   - Name: Rendered
@@ -58,10 +58,12 @@ Events:
         Type: number
         IsOptional: false
         DefaultValue: null
-    Description: Missing Documentation
+    Description: Fires every frame after the world has been rendered. The `delta`
+      parameter is the time between the last frame and the current.
     Arguments: ""
 IsStatic: true
 IsAbstract: false
 IsInstantiable: false
 StaticAlias: world
-Description: Missing Documentation
+Description: World is the root object in the Polytoria instance tree. It is the
+  object from which everything is descended.

@@ -8,10 +8,10 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Get all Stat objects
 Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiable: false
 StaticAlias: Stats
-Description: Missing Documentation
+Description: Stats is a collection of Stat objects used to manage player stats.

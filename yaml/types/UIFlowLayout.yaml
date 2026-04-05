@@ -7,4 +7,4 @@ IsStatic: false
 IsAbstract: false
 IsInstantiable: true
 StaticAlias: null
-Description: Missing Documentation
+Description: UIFlowLayout is a class that aligns all of it's children horizontally or vertically and wraps them around at the borders.

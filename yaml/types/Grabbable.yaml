@@ -14,14 +14,14 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines the max range that this object can be dragged.
+    Description: Determines how far this object can be dragged.
   - Name: MaxGrabbableRange
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the max range that this object can be grabbed from.
   - Name: UseDragForce
     Type: boolean
     IsAccessibleByScripts: true

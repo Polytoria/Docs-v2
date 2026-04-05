@@ -7,11 +7,11 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Animation type of this mesh
 Methods: []
 Events: []
 IsStatic: false
 IsAbstract: true
 IsInstantiable: false
 StaticAlias: null
-Description: Missing Documentation
+Description: \!! WIP Class, Base class for animation loaded from meshes
