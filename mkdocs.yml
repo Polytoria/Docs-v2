@@ -8,6 +8,7 @@ theme:
     - navigation.expand
     - navigation.instant
     - navigation.path
+    - navigation.indexes
     - content.code.annotate
     - content.code.copy
     - header.autohide
