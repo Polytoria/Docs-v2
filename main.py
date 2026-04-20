@@ -17,7 +17,7 @@ def getClassLink(className):
                     filePath = filePath[len(search_path):]
                     filePath = filePath[:-3]
                     
-                    return "[%s](/api/%s)" % (className, filePath)
+                    return "[%s](/api/%s/)" % (className, filePath)
     
     return "?"
 
