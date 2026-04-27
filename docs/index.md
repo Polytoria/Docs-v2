@@ -10,8 +10,10 @@ Welcome to the documentation for Polytoria 2.0!
 <div data-search-exclude markdown>
 
 !!! warning "Warning!"
-    This is a documentation for Polytoria 2.0 which is currently in beta, if you're looking for current documentation, please visit <a href="https://docs.polytoria.com">docs.polytoria.com</a>
+    This is documentation for Polytoria 2.0, currently in beta. For current documentation, visit <a href="https://docs.polytoria.com">docs.polytoria.com</a>
 
 </div>
+## Quick Links
 
-Jump to [APIs](/api/types/Accessory/) to view all APIs available.
+- [Migration Guide](/tutorials/migration/) - Moving from 1.0 to 2.0
+- [APIs](/api/types/Accessory/) to view all APIs available.

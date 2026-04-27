@@ -7,15 +7,15 @@ description: Guide on how you can migrate your place to 2.0
 
 # Migrating to 2.0
 
-Tutorial on how to migrate to 2.0
+A tutorial on how to migrate to 2.0
 
 ## Lua 5.2 -> Luau
 
-This is the biggest compatibility breaking change for 2.0. The transition from Lua 5.2 (Moonsharp) to Luau. One of the big change being the now non-available `goto` statements. Which you'll have to switch to `continue` statement instead.
+This is the biggest compatibility breaking change for 2.0. The transition from Lua 5.2 (Moonsharp) to Luau. One of the big changes being the now unavailable `goto` statements, which you'll have to switch to the `continue` statement instead.
 
 ## Unique Names
 
-Each instances should now have it's own unique name. This is by design and allows for faster lookups. If you want to identify objects with the same instance type, use tags.
+Each instance should now have its own unique name. This is by design and allows for faster lookups. If you want to identify objects with the same instance type, use tags.
 
 ## Capitalization
 
@@ -33,7 +33,7 @@ Enums.PartMaterial.Brick
 
 ## Renames
 
-Some existing classes from 1.0 has been renamed in 2.0, including:
+Some existing classes from 1.0 have been renamed in 2.0, including:
 
 - Game -> World (`game` keyword has been replaced with `world`)¹
 
@@ -78,7 +78,7 @@ You may notice that these functions now require the Async suffix, which brings u
 
 ## Async functions
 
-Some functions will now be required to be async in non compatibility mode. These include but not limited to: Http requests, Datastore data retrieving, Insert via InsertService etc.
+Some functions will now be required to be async in non-compatibility mode. These include but are not limited to: HTTP requests, Datastore data retrieving, Insert via InsertService, etc.
 
 Example HTTP Request made with 2.0:
 
@@ -107,7 +107,7 @@ print(coins)
 
 ## UIField Rotation
 
-UIField rotation now respect it's parent's rotation chain, instead of always global in 1.0.
+UIField rotation now respects its parent's rotation chain, instead of always being global in 1.0.
 
 ## NPC & Characters Creation
 
