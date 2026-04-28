@@ -1,6 +1,6 @@
 Name: Particles
 BaseType: Dynamic
-Category: effects
+Category: Effects & Utilities
 Properties:
   - Name: Playing
     Type: boolean

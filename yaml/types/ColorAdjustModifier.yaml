@@ -1,6 +1,6 @@
 Name: ColorAdjustModifier
 BaseType: LightingModifier
-Category: effects
+Category: Effects & Utilities
 Properties:
   - Name: Brightness
     Type: number

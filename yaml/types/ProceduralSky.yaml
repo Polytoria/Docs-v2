@@ -1,5 +1,6 @@
 Name: ProceduralSky
 BaseType: Sky
+Category: Effects & Utilities
 Properties:
   - Name: SunSize
     Type: number

@@ -1,5 +1,6 @@
 Name: SpotLight
 BaseType: Light
+Category: Effects & Utilities
 Properties:
   - Name: Range
     Type: number
