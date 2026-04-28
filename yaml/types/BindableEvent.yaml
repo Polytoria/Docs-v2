@@ -1,5 +1,6 @@
 Name: BindableEvent
 BaseType: Instance
+Category: networking
 Properties: []
 Methods:
   - Name: Invoke

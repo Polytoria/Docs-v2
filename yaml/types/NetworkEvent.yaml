@@ -1,5 +1,6 @@
 Name: NetworkEvent
 BaseType: Instance
+Category: networking
 Properties:
   - Name: Reliable
     Type: boolean
