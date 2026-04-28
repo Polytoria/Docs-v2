@@ -1,5 +1,6 @@
 Name: InputActionButton
 BaseType: InputAction
+Category: input
 Properties:
   - Name: Buttons
     Type: InputButtonCollection

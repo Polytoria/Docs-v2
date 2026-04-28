@@ -1,5 +1,6 @@
 Name: InputActionVector2
 BaseType: InputAction
+Category: input
 Properties:
   - Name: Up
     Type: InputButtonCollection
