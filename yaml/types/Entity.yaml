@@ -1,5 +1,6 @@
 Name: Entity
 BaseType: Physical
+Category: physics
 Properties:
   - Name: Color
     Type: Color
