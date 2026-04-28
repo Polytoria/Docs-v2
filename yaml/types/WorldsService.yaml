@@ -1,5 +1,6 @@
 Name: WorldsService
 BaseType: Instance
+Category: services
 Properties: []
 Methods:
   - Name: NewServerAsync

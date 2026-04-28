@@ -1,5 +1,6 @@
 Name: PurchasesService
 BaseType: Instance
+Category: services
 Properties: []
 Methods:
   - Name: PromptAsync

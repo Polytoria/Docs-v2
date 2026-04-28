@@ -1,5 +1,6 @@
 Name: ChatService
 BaseType: Instance
+Category: services
 Properties:
   - Name: ChatPredicate
     Type: () -> ()
