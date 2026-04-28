@@ -6,6 +6,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.expand
+    - navigation.indexes
     - navigation.instant
     - navigation.path
     - content.code.annotate

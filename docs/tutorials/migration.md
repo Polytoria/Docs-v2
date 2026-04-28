@@ -1,6 +1,7 @@
 ---
 title: Migrating to 2.0
 description: Guide on how you can migrate your place to 2.0
+weight: -1
 ---
 
 !! WORK IN PROGRESS !!
