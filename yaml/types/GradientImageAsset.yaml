@@ -1,5 +1,6 @@
 Name: GradientImageAsset
 BaseType: ImageAsset
+Category: assets
 Properties:
   - Name: Series
     Type: ColorSeries

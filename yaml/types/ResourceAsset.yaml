@@ -1,5 +1,6 @@
 Name: ResourceAsset
 BaseType: BaseAsset
+Category: assets
 Properties: []
 Methods: []
 Events: []

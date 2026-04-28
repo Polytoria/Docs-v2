@@ -1,5 +1,6 @@
 Name: FileLinkAsset
 BaseType: BaseAsset
+Category: assets
 Properties:
   - Name: LinkedID
     Type: string
