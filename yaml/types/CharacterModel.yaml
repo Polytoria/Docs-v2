@@ -1,5 +1,6 @@
 Name: CharacterModel
 BaseType: Dynamic
+Category: world
 Properties:
   - Name: Animator
     Type: Animator
