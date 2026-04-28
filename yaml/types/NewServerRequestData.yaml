@@ -1,5 +1,6 @@
 Name: NewServerRequestData
 BaseType: null
+Category: misc
 Properties:
   - Name: PlacePath
     Type: string

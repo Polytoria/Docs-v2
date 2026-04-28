@@ -1,5 +1,6 @@
 Name: Light
 BaseType: Dynamic
+Category: misc
 Properties:
   - Name: Color
     Type: Color
