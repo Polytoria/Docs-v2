@@ -6,7 +6,9 @@ weight: -8
 
 # Handling Player Input
 
-Input Actions let you read what the player is doing without hard-coding specific keys. You set up the actions in the Input Manager, then read them in your scripts.
+Input Actions let you read what the player is doing without hard-coding specific keys. You set up the actions in the Input Manager, then read them in your ClientScripts.
+
+> **Note:** Input can only be read in ClientScripts. ServerScripts cannot access player input directly.
 
 Open the **Input Manager** from the **Edit** menu:
 

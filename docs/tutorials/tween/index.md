@@ -6,7 +6,9 @@ weight: -2
 
 # Tweening
 
-Tweens let you animate properties over time instead of changing them instantly. You create a `TweenObject`, tell it what to animate, and then play it.
+Tweens let you animate properties over time instead of changing them instantly. You create a `TweenObject` and tell it what to animate.
+
+> **Note:** Tweens automatically start playing on the next frame, so calling `tween:Play()` is not required.
 
 ---
 
@@ -20,8 +22,6 @@ local tween = Tween:NewTween()
 
 -- Move the part up by 10 units over 2 seconds
 tween:TweenPosition(part, part.Position + Vector3.New(0, 10, 0), 2)
-tween:Play()
-
 tween.Finished:Wait()
 print("Done!")
 ```
@@ -40,8 +40,6 @@ local tween = Tween:NewTween()
 
 -- Rotate the part 90 degrees on the Y axis over 1 second
 tween:TweenRotation(part, Vector3.New(0, 90, 0), 1)
-tween:Play()
-
 tween.Finished:Wait()
 print("Done!")
 ```
@@ -58,8 +56,6 @@ local tween = Tween:NewTween()
 
 -- Make the part twice as big over 1.5 seconds
 tween:TweenSize(part, Vector3.New(4, 4, 4), 1.5)
-tween:Play()
-
 tween.Finished:Wait()
 print("Done!")
 ```
@@ -79,7 +75,6 @@ tween:TweenColor(Color.New(1, 0, 0), Color.New(0, 1, 0), 2, function(color)
     part.Color = color
 end)
 
-tween:Play()
 tween.Finished:Wait()
 print("Done!")
 ```
@@ -99,8 +94,6 @@ tween:SetTrans(Enums.TweenTransition.Sine)
 tween:SetDirection(Enums.TweenDirection.InOut)
 
 tween:TweenPosition(part, part.Position + Vector3.New(0, 10, 0), 2)
-tween:Play()
-
 tween.Finished:Wait()
 print("Done!")
 ```
@@ -119,7 +112,6 @@ local tween = Tween:NewTween()
 tween.Looped = true
 
 tween:TweenPosition(part, part.Position + Vector3.New(0, 5, 0), 1)
-tween:Play()
 
 -- Let it loop for 5 seconds
 wait(5)
@@ -143,8 +135,6 @@ local tween = Tween:NewTween()
 tween:TweenVector3(startPos, startPos + Vector3.New(0, 5, 0), 1, function(val)
     part.Position = val
 end)
-tween:Play()
-
 tween.Finished:Wait()
 
 -- Move back down
@@ -152,8 +142,6 @@ tween:Stop()
 tween:TweenVector3(part.Position, startPos, 1, function(val)
     part.Position = val
 end)
-tween:Play()
-
 tween.Finished:Wait()
 print("Done!")
 ```
@@ -173,7 +161,6 @@ tween:TweenNumber(0, 10, 2, function(value)
     light.Brightness = value
 end)
 
-tween:Play()
 tween.Finished:Wait()
 print("Done!")
 ```

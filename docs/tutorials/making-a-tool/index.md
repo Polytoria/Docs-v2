@@ -82,7 +82,7 @@ A simple tool that pushes a specifc part when you click.
 1. Create a `Tool` named `BoopStick`.
 2. Add a `Part` inside it for the handle.
 3. Create a `NetworkEvent` named `BoopEvent` inside `Hidden`.
-4. Place a unachored `Part` named `Target` in the Environment.
+4. Place a unanchored `Part` named `Target` in the Environment.
 
 **ClientScript** (inside BoopStick):
 

@@ -71,12 +71,13 @@ end)
 
 ```lua
 local event = Hidden:WaitChild("DoorEvent")
-local interact = Input:GetButton("Interact")
 
-interact.Pressed:Connect(function()
-    local msg = NetMessage:New()
-    msg:AddString("action", "toggle")
-    event:InvokeServer(msg)
+Input.KeyDown:Connect(function(keyCode, gameFocused)
+    if keyCode == Enums.KeyCode.E then
+        local msg = NetMessage:New()
+        msg:AddString("action", "toggle")
+        event:InvokeServer(msg)
+    end
 end)
 ```
 
@@ -99,7 +100,7 @@ event.InvokedServer:Connect(function(sender: Player, msg: NetMessage)
 end)
 ```
 
-Walk up to the door and press Interact. It should open. Press it again and it closes.
+Walk up to the door and press **E**. It should open. Press it again and it closes.
 
 ![Door closed](image-1.png)
 
