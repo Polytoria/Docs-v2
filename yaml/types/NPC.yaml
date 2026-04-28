@@ -1,5 +1,6 @@
 Name: NPC
 BaseType: Physical
+Category: world
 Properties:
   - Name: SeatOffset
     Type: Vector3

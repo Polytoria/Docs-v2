@@ -1,5 +1,6 @@
 Name: Truss
 BaseType: Part
+Category: world
 Properties:
   - Name: ClimbSpeed
     Type: number

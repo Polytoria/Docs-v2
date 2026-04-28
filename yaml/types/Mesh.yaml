@@ -1,5 +1,6 @@
 Name: Mesh
 BaseType: Entity
+Category: world
 Properties:
   - Name: Asset
     Type: MeshAsset

@@ -1,5 +1,6 @@
 Name: Tool
 BaseType: PhysicalModel
+Category: world
 Properties:
   - Name: Droppable
     Type: boolean

@@ -1,5 +1,6 @@
 Name: Dynamic
 BaseType: Instance
+Category: world
 Properties:
   - Name: Position
     Type: Vector3
