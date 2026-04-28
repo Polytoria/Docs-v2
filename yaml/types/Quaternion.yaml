@@ -1,5 +1,6 @@
 Name: Quaternion
 BaseType: null
+Category: types
 Properties:
   - Name: X
     Type: number

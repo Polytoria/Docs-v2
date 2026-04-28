@@ -1,5 +1,6 @@
 Name: Bounds
 BaseType: null
+Category: types
 Properties:
   - Name: Center
     Type: Vector3
