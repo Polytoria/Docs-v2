@@ -1,5 +1,6 @@
 Name: Teams
 BaseType: Instance
+Category: game
 Properties: []
 Methods:
   - Name: GetTeams

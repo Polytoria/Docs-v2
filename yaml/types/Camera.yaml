@@ -1,5 +1,6 @@
 Name: Camera
 BaseType: Dynamic
+Category: game
 Properties:
   - Name: Mode
     Type: CameraModeEnum

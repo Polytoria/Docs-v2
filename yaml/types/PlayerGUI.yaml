@@ -1,5 +1,6 @@
 Name: PlayerGUI
 BaseType: Instance
+Category: game
 Properties: []
 Methods: []
 Events: []

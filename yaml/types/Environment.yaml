@@ -1,5 +1,6 @@
 Name: Environment
 BaseType: Instance
+Category: game
 Properties:
   - Name: CurrentCamera
     Type: Camera
