@@ -1,5 +1,6 @@
 Name: DatastoreService
 BaseType: Instance
+Category: services
 Properties: []
 Methods:
   - Name: GetDatastore

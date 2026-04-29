@@ -1,5 +1,6 @@
 Name: MeshAnimationAsset
 BaseType: ResourceAsset
+Category: assets
 Properties:
   - Name: AnimationType
     Type: MeshAnimationTypeEnum

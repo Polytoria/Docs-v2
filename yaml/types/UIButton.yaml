@@ -1,5 +1,6 @@
 Name: UIButton
 BaseType: UILabel
+Category: ui
 Properties: []
 Methods: []
 Events:

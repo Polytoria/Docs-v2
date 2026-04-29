@@ -1,5 +1,6 @@
 Name: PresenceService
 BaseType: Instance
+Category: services
 Properties:
   - Name: State
     Type: string

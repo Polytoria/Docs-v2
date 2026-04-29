@@ -1,5 +1,6 @@
 Name: UIViewport
 BaseType: UIField
+Category: ui
 Properties: []
 Methods: []
 Events: []

@@ -1,5 +1,6 @@
 Name: GUI
 BaseType: Instance
+Category: ui
 Properties:
   - Name: Visible
     Type: boolean

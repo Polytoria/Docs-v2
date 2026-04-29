@@ -1,5 +1,6 @@
 Name: Datastore
 BaseType: null
+Category: scripting
 Properties:
   - Name: Key
     Type: string

@@ -1,5 +1,6 @@
 Name: CoreUIService
 BaseType: Instance
+Category: services
 Properties:
   - Name: UseUserCard
     Type: boolean

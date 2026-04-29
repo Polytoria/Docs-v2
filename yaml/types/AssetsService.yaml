@@ -1,5 +1,6 @@
 Name: AssetsService
 BaseType: Instance
+Category: services
 Properties: []
 Methods:
   - Name: GetFileLinkByPath

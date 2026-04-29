@@ -1,5 +1,6 @@
 Name: CreatorInterface
 BaseType: null
+Category: addons
 Properties:
   - Name: ToolMode
     Type: ToolModeEnum

@@ -1,5 +1,6 @@
 Name: SocialService
 BaseType: Instance
+Category: services
 Properties: []
 Methods: []
 Events: []

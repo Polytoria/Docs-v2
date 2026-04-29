@@ -1,5 +1,6 @@
 Name: InputButton
 BaseType: null
+Category: input
 Properties:
   - Name: KeyCode
     Type: KeyCodeEnum

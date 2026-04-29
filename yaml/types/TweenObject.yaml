@@ -1,5 +1,6 @@
 Name: TweenObject
 BaseType: null
+Category: misc
 Properties:
   - Name: Looped
     Type: boolean

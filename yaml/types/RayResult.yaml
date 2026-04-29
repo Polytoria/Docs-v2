@@ -1,5 +1,6 @@
 Name: RayResult
 BaseType: null
+Category: types
 Properties:
   - Name: Origin
     Type: Vector3

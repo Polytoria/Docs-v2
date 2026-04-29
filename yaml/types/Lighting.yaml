@@ -1,5 +1,6 @@
 Name: Lighting
 BaseType: Instance
+Category: game
 Properties:
   - Name: Skybox
     Type: SkyboxEnum

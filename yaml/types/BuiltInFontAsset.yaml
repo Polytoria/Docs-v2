@@ -1,5 +1,6 @@
 Name: BuiltInFontAsset
 BaseType: FontAsset
+Category: assets
 Properties:
   - Name: FontPreset
     Type: BuiltInTextFontPresetEnum

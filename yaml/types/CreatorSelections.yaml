@@ -1,5 +1,6 @@
 Name: CreatorSelections
 BaseType: Instance
+Category: addons
 Properties: []
 Methods:
   - Name: Select

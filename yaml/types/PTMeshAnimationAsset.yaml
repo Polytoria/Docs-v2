@@ -1,5 +1,6 @@
 Name: PTMeshAnimationAsset
 BaseType: MeshAnimationAsset
+Category: assets
 Properties:
   - Name: AssetID
     Type: number

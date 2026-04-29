@@ -1,5 +1,6 @@
 Name: Inventory
 BaseType: HiddenBase
+Category: game
 Properties: []
 Methods: []
 Events: []

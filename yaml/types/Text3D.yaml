@@ -1,5 +1,6 @@
 Name: Text3D
 BaseType: Dynamic
+Category: world
 Properties:
   - Name: Text
     Type: string

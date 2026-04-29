@@ -1,5 +1,6 @@
 Name: ValueBase
 BaseType: Instance
+Category: values
 Properties: []
 Methods: []
 Events:

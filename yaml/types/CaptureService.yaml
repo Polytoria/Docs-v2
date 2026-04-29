@@ -1,5 +1,6 @@
 Name: CaptureService
 BaseType: Instance
+Category: services
 Properties:
   - Name: OnCooldown
     Type: boolean

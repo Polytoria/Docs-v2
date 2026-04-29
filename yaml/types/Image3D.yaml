@@ -1,5 +1,6 @@
 Name: Image3D
 BaseType: Dynamic
+Category: world
 Properties:
   - Name: Image
     Type: ImageAsset

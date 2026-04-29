@@ -1,5 +1,6 @@
 Name: AudioAsset
 BaseType: ResourceAsset
+Category: assets
 Properties: []
 Methods: []
 Events: []

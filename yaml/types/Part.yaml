@@ -1,5 +1,6 @@
 Name: Part
 BaseType: Entity
+Category: world
 Properties:
   - Name: Shape
     Type: ShapeEnum

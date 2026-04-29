@@ -1,5 +1,6 @@
 Name: GUI3D
 BaseType: Dynamic
+Category: ui
 Properties:
   - Name: Shaded
     Type: boolean

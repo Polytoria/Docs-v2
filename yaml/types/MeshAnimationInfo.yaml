@@ -1,5 +1,6 @@
 Name: MeshAnimationInfo
 BaseType: null
+Category: misc
 Properties:
   - Name: Name
     Type: string
