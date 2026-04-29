@@ -22,7 +22,7 @@ Pack your data into a `NetMessage`, then send it:
 
 ```lua
 -- ClientScript
-local event = Hidden:WaitChild("DoorEvent")
+local event = Hidden.DoorEvent
 local msg = NetMessage:New()
 msg:AddString("action", "open")
 event:InvokeServer(msg)
@@ -32,7 +32,7 @@ On the server, listen with `InvokedServer`:
 
 ```lua
 -- ServerScript
-local event = Hidden:WaitChild("DoorEvent")
+local event = Hidden.DoorEvent
 
 event.InvokedServer:Connect(function(sender: Player, msg: NetMessage)
     local action = msg:GetString("action")
@@ -70,21 +70,22 @@ end)
 **ClientScript** (in a `ClientScript`):
 
 ```lua
-local event = Hidden:WaitChild("DoorEvent")
-local interact = Input:GetButton("Interact")
+local event = Hidden.DoorEvent
 
-interact.Pressed:Connect(function()
-    local msg = NetMessage:New()
-    msg:AddString("action", "toggle")
-    event:InvokeServer(msg)
+Input.KeyDown:Connect(function(keyCode, gameFocused)
+    if keyCode == Enums.KeyCode.E then
+        local msg = NetMessage:New()
+        msg:AddString("action", "toggle")
+        event:InvokeServer(msg)
+    end
 end)
 ```
 
 **ServerScript** (in `ScriptService`):
 
 ```lua
-local event = Hidden:WaitChild("DoorEvent")
-local door = Environment:WaitChild("Door")
+local event = Hidden.DoorEvent
+local door = Environment.Door
 
 local isOpen = false
 
@@ -99,7 +100,7 @@ event.InvokedServer:Connect(function(sender: Player, msg: NetMessage)
 end)
 ```
 
-Walk up to the door and press Interact. It should open. Press it again and it closes.
+Walk up to the door and press **E**. It should open. Press it again and it closes.
 
 ![Door closed](image-1.png)
 

@@ -21,13 +21,11 @@ local ds = Datastore:GetDatastore("PlayerCoins")
 `GetAsync` fetches a value. Wrap it in `pcall` because network requests can fail. Provide a default if there's no data yet:
 
 ```lua
-local ds = Datastore:GetDatastore("PlayerCoins")
-
 Players.PlayerAdded:Connect(function(player)
-    local userKey = tostring(player.UserID)
+    local ds = Datastore:GetDatastore(tostring(player.UserID))
 
     local success, coins = pcall(function()
-        return ds:GetAsync(userKey)
+        return ds:GetAsync("Coins")
     end)
 
     if success and coins ~= nil then
@@ -44,14 +42,12 @@ end)
 `SetAsync` saves a value. Same deal — use `pcall`:
 
 ```lua
-local ds = Datastore:GetDatastore("PlayerCoins")
-
 Players.PlayerAdded:Connect(function(player)
-    local userKey = tostring(player.UserID)
+    local ds = Datastore:GetDatastore(tostring(player.UserID))
     local coins = 100
 
     local success = pcall(function()
-        ds:SetAsync(userKey, coins)
+        ds:SetAsync("Coins", coins)
     end)
 
     if success then
@@ -72,12 +68,11 @@ The standard setup is:
 **ServerScript** (in `ScriptService`):
 
 ```lua
-local ds = Datastore:GetDatastore("PlayerCoins")
-
 local function loadPlayer(player: Player)
     local key = tostring(player.UserID)
+    local ds = Datastore:GetDatastore(key)
     local success, coins = pcall(function()
-        return ds:GetAsync(key)
+        return ds:GetAsync("Coins")
     end)
 
     local coinValue = Instance.New("IntValue", player)
@@ -88,9 +83,10 @@ end
 local function savePlayer(player: Player)
     local key = tostring(player.UserID)
     local coins = player:WaitChild("Coins").Value
+    local ds = Datastore:GetDatastore(key)
 
     pcall(function()
-        ds:SetAsync(key, coins)
+        ds:SetAsync("Coins", coins)
     end)
 end
 
@@ -104,8 +100,9 @@ Datastore functions are async. If you need to load or save multiple things at on
 
 ```lua
 spawn(function()
+    local ds = Datastore:GetDatastore("Player1")
     local success, coins = pcall(function()
-        return ds:GetAsync("Player1")
+        return ds:GetAsync("Coins")
     end)
     if success then
         print("Player1 coins:", coins)
@@ -113,8 +110,9 @@ spawn(function()
 end)
 
 spawn(function()
+    local ds = Datastore:GetDatastore("Player2")
     local success, coins = pcall(function()
-        return ds:GetAsync("Player2")
+        return ds:GetAsync("Coins")
     end)
     if success then
         print("Player2 coins:", coins)

@@ -13,6 +13,7 @@ Linked models serve as reusable objects in your worlds.
 Simply drag your model into a folder inside the file browser. And there you have it, a linked model! Linked model will have the link icon appear in the explorer.
 
 ![Linked model in file browser](image.png)
+![Linked model in explorer](image-4.png)
 
 ## Editing the Linked model
 

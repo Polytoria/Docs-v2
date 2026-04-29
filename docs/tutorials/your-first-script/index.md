@@ -6,7 +6,7 @@ weight: -10
 
 # Your First Script
 
-This tutorial covers inserting a script and writing your first lines of code. If you already know how to add a script, skip ahead to [The Script Editor](#hello-polytoria).
+This tutorial covers inserting a script and writing your first lines of code in [Luau](https://luau.org/). If you already know how to add a script, skip ahead to [The Script Editor](#hello-polytoria).
 
 ## Inserting a Script
 
@@ -96,7 +96,7 @@ Put it all together. Create a `Part` in the Environment, insert a `ServerScript`
 local part: Part = script.Parent
 
 part.Touched:Connect(function(hit: Physical)
-    part.Color = Color.New(math.random(), math.random(), math.random())
+    part.Color = Color.Random()
     print(part.Name .. " changed color!")
 end)
 ```

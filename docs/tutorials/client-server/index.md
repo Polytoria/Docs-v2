@@ -13,20 +13,23 @@ Create a Part named `ColorButton` and put a `ClientScript` inside it:
 local button: Part = script.Parent
 
 button.Touched:Connect(function(hit: Physical)
-    button.Color = Color.New(math.random(), math.random(), math.random())
+    button.Color = Color.Random()
 end)
 ```
 
 Run the game with two clients. Touch the button on one client, then look at the other. The colors do not match. The script ran on both machines independently. The server does not know what color either client picked.
 
-Now delete the `ClientScript` and create a `ServerScript` in `ScriptService`:
+![Launch multiple clients](image.png)
+> **Note:** it's right click on the play test button.
+
+Now delete the `ClientScript` and create a `ServerScript`:
 
 ```lua
 -- ServerScript (in ScriptService)
 local button = Environment:WaitChild("ColorButton")
 
 button.Touched:Connect(function(hit: Physical)
-    button.Color = Color.New(math.random(), math.random(), math.random())
+    button.Color = Color.Random()
 end)
 ```
 
