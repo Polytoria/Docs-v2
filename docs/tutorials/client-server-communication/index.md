@@ -22,7 +22,7 @@ Pack your data into a `NetMessage`, then send it:
 
 ```lua
 -- ClientScript
-local event = Hidden:WaitChild("DoorEvent")
+local event = Hidden.DoorEvent
 local msg = NetMessage:New()
 msg:AddString("action", "open")
 event:InvokeServer(msg)
@@ -32,7 +32,7 @@ On the server, listen with `InvokedServer`:
 
 ```lua
 -- ServerScript
-local event = Hidden:WaitChild("DoorEvent")
+local event = Hidden.DoorEvent
 
 event.InvokedServer:Connect(function(sender: Player, msg: NetMessage)
     local action = msg:GetString("action")
@@ -70,7 +70,7 @@ end)
 **ClientScript** (in a `ClientScript`):
 
 ```lua
-local event = Hidden:WaitChild("DoorEvent")
+local event = Hidden.DoorEvent
 
 Input.KeyDown:Connect(function(keyCode, gameFocused)
     if keyCode == Enums.KeyCode.E then
@@ -84,8 +84,8 @@ end)
 **ServerScript** (in `ScriptService`):
 
 ```lua
-local event = Hidden:WaitChild("DoorEvent")
-local door = Environment:WaitChild("Door")
+local event = Hidden.DoorEvent
+local door = Environment.Door
 
 local isOpen = false
 
