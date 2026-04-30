@@ -1,6 +1,6 @@
 Name: Sound
 BaseType: Dynamic
-Category: Effects & Utilities
+Category: elements
 Properties:
   - Name: Audio
     Type: AudioAsset

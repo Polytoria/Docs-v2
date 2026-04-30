@@ -1,6 +1,6 @@
 Name: ImageSky
 BaseType: Sky
-Category: Effects & Utilities
+Category: lighting
 Properties:
   - Name: TopImage
     Type: ImageAsset

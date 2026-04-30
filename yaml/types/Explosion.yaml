@@ -1,6 +1,6 @@
 Name: Explosion
 BaseType: Dynamic
-Category: Effects & Utilities
+Category: effects
 Properties:
   - Name: Radius
     Type: number

@@ -1,6 +1,6 @@
 Name: PointLight
 BaseType: Light
-Category: Effects & Utilities
+Category: lighting
 Properties:
   - Name: Range
     Type: number
