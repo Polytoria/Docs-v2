@@ -1,5 +1,6 @@
 Name: Animator
 BaseType: Instance
+Category: world
 Properties:
   - Name: CurrentAnimation
     Type: string

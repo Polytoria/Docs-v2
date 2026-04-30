@@ -1,5 +1,6 @@
 Name: UIView
 BaseType: UIField
+Category: ui
 Properties:
   - Name: BorderColor
     Type: Color

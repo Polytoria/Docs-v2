@@ -1,5 +1,6 @@
 Name: CreatorService
 BaseType: null
+Category: services
 Properties:
   - Name: Interface
     Type: CreatorInterface

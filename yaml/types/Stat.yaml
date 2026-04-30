@@ -1,5 +1,6 @@
 Name: Stat
 BaseType: Instance
+Category: game
 Properties:
   - Name: DisplayName
     Type: string

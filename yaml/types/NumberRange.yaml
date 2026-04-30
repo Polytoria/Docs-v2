@@ -1,5 +1,6 @@
 Name: NumberRange
 BaseType: null
+Category: types
 Properties:
   - Name: Min
     Type: number

@@ -1,5 +1,6 @@
 Name: StringValue
 BaseType: ValueBase
+Category: values
 Properties:
   - Name: Value
     Type: string

@@ -1,5 +1,6 @@
 Name: Player
 BaseType: NPC
+Category: game
 Properties:
   - Name: UserID
     Type: number

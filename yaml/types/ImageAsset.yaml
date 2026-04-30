@@ -1,5 +1,6 @@
 Name: ImageAsset
 BaseType: ResourceAsset
+Category: assets
 Properties: []
 Methods: []
 Events: []

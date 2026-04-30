@@ -1,5 +1,6 @@
 Name: PTMeshAsset
 BaseType: MeshAsset
+Category: assets
 Properties:
   - Name: AssetID
     Type: number

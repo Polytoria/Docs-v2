@@ -1,5 +1,6 @@
 Name: PolytorianModel
 BaseType: CharacterModel
+Category: world
 Properties:
   - Name: HeadColor
     Type: Color

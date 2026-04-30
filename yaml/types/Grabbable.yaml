@@ -1,5 +1,6 @@
 Name: Grabbable
 BaseType: Instance
+Category: physics
 Properties:
   - Name: Force
     Type: number

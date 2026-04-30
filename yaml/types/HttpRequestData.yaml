@@ -1,5 +1,6 @@
 Name: HttpRequestData
 BaseType: null
+Category: types
 Properties:
   - Name: URL
     Type: string

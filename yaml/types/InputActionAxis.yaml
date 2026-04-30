@@ -1,5 +1,6 @@
 Name: InputActionAxis
 BaseType: InputAction
+Category: input
 Properties:
   - Name: Negative
     Type: InputButtonCollection

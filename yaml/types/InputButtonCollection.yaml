@@ -1,5 +1,6 @@
 Name: InputButtonCollection
 BaseType: null
+Category: input
 Properties: []
 Methods:
   - Name: AddButton

@@ -55,7 +55,18 @@ for (const yamlFile of yamlFiles) {
 
     const c = yaml.parse(yamlContent);
     const className = path.basename(yamlFile, '.yaml')
-    let mdPath = path.join(mdAPIPath, className + ".md")
+
+    let mdPath
+    if (c.Category) {
+        const catDir = path.join(mdAPIPath, c.Category)
+        if (!fs.existsSync(catDir)) {
+            fs.mkdirSync(catDir, { recursive: true })
+        }
+        mdPath = path.join(catDir, className + ".md")
+    } else {
+        mdPath = path.join(mdAPIPath, className + ".md")
+    }
+
     let mk = ""
     const iconPath = path.join(iconDataPath, c.Name + ".svg")
     const emojiExists = fs.existsSync(iconPath)

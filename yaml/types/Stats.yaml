@@ -1,5 +1,6 @@
 Name: Stats
 BaseType: Instance
+Category: game
 Properties: []
 Methods:
   - Name: GetStats

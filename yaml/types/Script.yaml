@@ -1,5 +1,6 @@
 Name: Script
 BaseType: Instance
+Category: scripting
 Properties:
   - Name: Source
     Type: string

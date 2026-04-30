@@ -1,5 +1,6 @@
 Name: NewServerRequestData
 BaseType: null
+Category: misc
 Properties:
   - Name: PlacePath
     Type: string
@@ -29,4 +30,4 @@ IsAbstract: false
 IsInstantiable: false
 StaticAlias: null
 Description: NewServerRequestData represents the request data for a new server
-  instance, to be used with PlacesService.
+  instance, to be used with WorldsService.

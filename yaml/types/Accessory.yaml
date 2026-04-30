@@ -1,5 +1,6 @@
 Name: Accessory
 BaseType: Dynamic
+Category: world
 Properties:
   - Name: TargetAttachment
     Type: CharacterAttachmentEnum

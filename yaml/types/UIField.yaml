@@ -1,5 +1,6 @@
 Name: UIField
 BaseType: Instance
+Category: ui
 Properties:
   - Name: PositionOffset
     Type: Vector2

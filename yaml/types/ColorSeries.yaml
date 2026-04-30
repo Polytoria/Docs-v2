@@ -1,5 +1,6 @@
 Name: ColorSeries
 BaseType: null
+Category: types
 Properties:
   - Name: PointCount
     Type: number

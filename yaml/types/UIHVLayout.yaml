@@ -1,5 +1,6 @@
 Name: UIHVLayout
 BaseType: UIContainer
+Category: ui
 Properties:
   - Name: Spacing
     Type: number

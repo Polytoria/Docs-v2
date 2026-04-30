@@ -1,5 +1,6 @@
 Name: PTAudioAsset
 BaseType: AudioAsset
+Category: assets
 Properties:
   - Name: AudioID
     Type: number

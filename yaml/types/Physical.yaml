@@ -1,5 +1,6 @@
 Name: Physical
 BaseType: Dynamic
+Category: physics
 Properties:
   - Name: Anchored
     Type: boolean

@@ -1,5 +1,6 @@
 Name: Seat
 BaseType: Part
+Category: world
 Properties:
   - Name: Occupant
     Type: NPC

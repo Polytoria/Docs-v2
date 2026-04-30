@@ -1,5 +1,6 @@
 Name: ScriptSharedTable
 BaseType: null
+Category: scripting
 Properties: []
 Methods:
   - Name: Clear

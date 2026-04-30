@@ -1,5 +1,6 @@
 Name: AddonToolItem
 BaseType: null
+Category: addons
 Properties: []
 Methods: []
 Events:

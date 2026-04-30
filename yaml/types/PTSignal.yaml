@@ -1,5 +1,6 @@
 Name: PTSignal
 BaseType: null
+Category: scripting
 Properties: []
 Methods:
   - Name: Connect

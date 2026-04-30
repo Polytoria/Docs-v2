@@ -1,5 +1,6 @@
 Name: MissingInstance
 BaseType: Instance
+Category: misc
 Properties: []
 Methods: []
 Events: []

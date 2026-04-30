@@ -1,5 +1,6 @@
 Name: AddonObject
 BaseType: null
+Category: addons
 Properties:
   - Name: Identifier
     Type: string

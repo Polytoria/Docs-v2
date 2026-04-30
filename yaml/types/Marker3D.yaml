@@ -1,5 +1,6 @@
 Name: Marker3D
 BaseType: Dynamic
+Category: world
 Properties:
   - Name: Length
     Type: number

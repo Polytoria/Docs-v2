@@ -1,5 +1,6 @@
 Name: CreatorHistory
 BaseType: Instance
+Category: addons
 Properties: []
 Methods:
   - Name: NewAction

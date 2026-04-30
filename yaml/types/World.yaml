@@ -1,5 +1,6 @@
 Name: World
 BaseType: Instance
+Category: world
 Properties:
   - Name: IsLocalTest
     Type: boolean

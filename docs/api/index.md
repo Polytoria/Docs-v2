@@ -1,7 +1,8 @@
 ---
 title: APIs
 weight: 2
-empty: true
 ---
 
 # APIs
+
+Browse the Polytoria 2.0 scripting API reference.

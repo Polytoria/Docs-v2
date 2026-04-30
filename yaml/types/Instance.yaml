@@ -1,5 +1,6 @@
 Name: Instance
 BaseType: NetworkedObject
+Category: misc
 Properties:
   - Name: Parent
     Type: Instance

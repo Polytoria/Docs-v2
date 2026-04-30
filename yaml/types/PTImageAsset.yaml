@@ -1,5 +1,6 @@
 Name: PTImageAsset
 BaseType: ImageAsset
+Category: assets
 Properties:
   - Name: ImageID
     Type: number

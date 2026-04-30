@@ -1,5 +1,6 @@
 Name: IOService
 BaseType: Instance
+Category: services
 Properties: []
 Methods:
   - Name: ReadBytesFromPath

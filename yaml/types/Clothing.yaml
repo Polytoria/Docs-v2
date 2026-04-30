@@ -1,5 +1,6 @@
 Name: Clothing
 BaseType: Instance
+Category: world
 Properties:
   - Name: Image
     Type: ImageAsset

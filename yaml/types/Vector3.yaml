@@ -1,5 +1,6 @@
 Name: Vector3
 BaseType: null
+Category: types
 Properties:
   - Name: X
     Type: number

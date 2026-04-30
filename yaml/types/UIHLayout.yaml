@@ -1,5 +1,6 @@
 Name: UIHLayout
 BaseType: UIHVLayout
+Category: ui
 Properties: []
 Methods: []
 Events: []

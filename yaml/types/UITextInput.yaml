@@ -1,5 +1,6 @@
 Name: UITextInput
 BaseType: UIView
+Category: ui
 Properties:
   - Name: Text
     Type: string

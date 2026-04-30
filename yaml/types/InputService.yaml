@@ -1,5 +1,6 @@
 Name: InputService
 BaseType: Instance
+Category: services
 Properties:
   - Name: IsWindowFocused
     Type: boolean

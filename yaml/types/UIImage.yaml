@@ -1,5 +1,6 @@
 Name: UIImage
 BaseType: UIField
+Category: ui
 Properties:
   - Name: Image
     Type: ImageAsset

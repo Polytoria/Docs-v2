@@ -1,5 +1,6 @@
 Name: NetMessage
 BaseType: null
+Category: networking
 Properties: []
 Methods:
   - Name: AddString

@@ -1,5 +1,6 @@
 Name: BaseAsset
 BaseType: NetworkedObject
+Category: assets
 Properties: []
 Methods: []
 Events: []

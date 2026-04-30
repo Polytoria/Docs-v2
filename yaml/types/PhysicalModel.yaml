@@ -1,5 +1,6 @@
 Name: PhysicalModel
 BaseType: Physical
+Category: physics
 Properties: []
 Methods: []
 Events: []
