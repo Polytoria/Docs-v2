@@ -37,6 +37,7 @@ npm install
 ```
 
 5. Build & Start the mkdocs Server
+> Note: Do not run "mkdocs serve" standalone.
 ```bash
 npm run dev
 ```
