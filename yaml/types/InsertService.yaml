@@ -62,7 +62,7 @@ Methods:
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Insert a new tool with the specified ID
+    Description: Inserts a new tool with the specified ID
 Events: []
 IsStatic: true
 IsAbstract: false

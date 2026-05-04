@@ -137,7 +137,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Bind new Button Input Action
+    Description: Bind a new Button Input Action
   - Name: BindAxis
     ReturnType: InputActionAxis
     Parameters:

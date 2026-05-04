@@ -9,14 +9,14 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The name of this animation.
+    Description: The name of this animation
   - Name: Length
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The length of this animation.
+    Description: The length of this animation
   - Name: IsPlaying
     Type: boolean
     IsAccessibleByScripts: true

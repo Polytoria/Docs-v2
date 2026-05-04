@@ -10,7 +10,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines the current camera which player is using to view
+    Description: Determines the current camera which the player is using to view the world.
   - Name: Gravity
     Type: Vector3
     IsAccessibleByScripts: true

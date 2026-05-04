@@ -15,7 +15,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Read the buffer file from path
+    Description: Reads the buffer file from the given path.
   - Name: ReadTextFromPath
     ReturnType: string
     Parameters:
@@ -26,7 +26,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Read the text file data from path
+    Description: Reads the text file data from the given path.
   - Name: WriteBytesToPath
     ReturnType: nil
     Parameters:
@@ -41,7 +41,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Write buffer data to file in the project
+    Description: Writes buffer data to the file in the project.
   - Name: WriteTextToPath
     ReturnType: nil
     Parameters:
@@ -56,14 +56,14 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Write the text file data to path
+    Description: Writes the text file data to the path.
   - Name: ListProjectFiles
     ReturnType: "{ string }"
     Parameters: []
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: List all files in the project
+    Description: Lists all files in the project.
   - Name: ReadBytesFromID
     ReturnType: buffer
     Parameters:
@@ -74,7 +74,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Read the file data from linked ID
+    Description: Reads the file data from the linked ID.
   - Name: GetPathFromID
     ReturnType: string
     Parameters:
@@ -85,7 +85,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Get the file path from linked ID
+    Description: Gets the file path from the linked ID.
 Events: []
 IsStatic: true
 IsAbstract: false

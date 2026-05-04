@@ -10,7 +10,7 @@ Properties:
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Returns the point count of this color series
+    Description: Returns the point count of this color series.
 Methods:
   - Name: New
     ReturnType: ColorSeries
@@ -18,7 +18,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: true
-    Description: Create color series by this color range
+    Description: Creates a color series from a color range
   - Name: New
     ReturnType: ColorSeries
     Parameters:
@@ -33,7 +33,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: true
-    Description: Create color series by this color range
+    Description: Creates a color series from a color range
   - Name: Clear
     ReturnType: nil
     Parameters: []
@@ -132,7 +132,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Add color point to the series with offset
+    Description: Add color point to the series with an offset.
   - Name: Lerp
     ReturnType: Color
     Parameters:

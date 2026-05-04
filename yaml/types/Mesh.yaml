@@ -119,7 +119,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Get the animation info
+    Description: Gets the animation info.
 Events:
   - Name: Loaded
     Parameters: null

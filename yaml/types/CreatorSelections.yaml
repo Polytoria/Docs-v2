@@ -15,7 +15,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Select a instance
+    Description: Select an instance
   - Name: SelectChild
     ReturnType: nil
     Parameters:

@@ -133,7 +133,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Find child by it's index (index for this function starts from 0)
+    Description: Find child by its index (index for this function starts from 0)
   - Name: MoveChild
     ReturnType: nil
     Parameters:

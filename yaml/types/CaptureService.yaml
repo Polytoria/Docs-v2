@@ -9,7 +9,7 @@ Properties:
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Returns whenever the capture is on cooldown.
+    Description: Returns whether the capture is on cooldown.
   - Name: CanCapture
     Type: boolean
     IsAccessibleByScripts: true

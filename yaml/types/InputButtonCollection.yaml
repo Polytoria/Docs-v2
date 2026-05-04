@@ -14,7 +14,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Add new input button
+    Description: Adds a new input button.
   - Name: RemoveButton
     ReturnType: nil
     Parameters:
@@ -25,7 +25,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Remove existing input button
+    Description: Removes existing input button.
 Events: []
 IsStatic: false
 IsAbstract: false

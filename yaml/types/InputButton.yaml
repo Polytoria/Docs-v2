@@ -17,7 +17,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: true
-    Description: Create new button of this keycode
+    Description: Creates a new button with this keycode.
   - Name: New
     ReturnType: InputButton
     Parameters:
@@ -28,7 +28,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: true
-    Description: Create new button of this keycode
+    Description: Creates a new button with this keycode.
 Events: []
 IsStatic: false
 IsAbstract: false

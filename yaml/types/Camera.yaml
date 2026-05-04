@@ -209,7 +209,7 @@ Methods:
     IsStatic: false
     Description: Cast a ray from the camera at the specified ViewportPoint (Vector2
       with components with values in range of 0 - 1 describing how far a point
-      is to to right and to the top of the screen) into the game world
+      is to the right and to the top of the screen) into the game world
   - Name: ScreenPointToRay
     ReturnType: RayResult
     Parameters:

@@ -53,7 +53,7 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: >-
-      A predicate function deciding whenever this player can grab this object.
+      A predicate function deciding whether this player can grab this object.
       `PermissionMode` must be set to `GrabbablePermissionMode.Scripted`
 
 

@@ -32,7 +32,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Damage that is affected to player
+    Description: Damage that is applied to the player
   - Name: AffectPredicate
     Type: () -> ()
     IsAccessibleByScripts: true
@@ -40,7 +40,7 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: |-
-      A predicate function deciding whenever this part should be accepted or not
+      A predicate function deciding whether this part should be accepted or not
           
       Example usage:
       ```lua

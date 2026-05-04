@@ -9,14 +9,14 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines if this GUI3D should be affected by lighting
+    Description: Determines if this GUI3D should be affected by lighting.
   - Name: FaceCamera
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines if this GUI3D always face the camera?
+    Description: Determines if this GUI3D always faces the camera.
   - Name: Transparent
     Type: boolean
     IsAccessibleByScripts: true

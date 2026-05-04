@@ -16,7 +16,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Returns true if any of the button in the collection is currently
+    Description: Returns true if any of the buttons in the collection is currently
       being pressed.
   - Name: Weight
     Type: number
