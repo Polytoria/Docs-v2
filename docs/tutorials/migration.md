@@ -38,7 +38,7 @@ Some existing classes from 1.0 have been renamed in 2.0, including:
 
 - Game -> World (`game` keyword has been replaced with `world`)¹
 
-¹`game` keyword will still be accessible by scripts, but won't be suggested in autocompletion
+¹`game` keyword will still be accessible by scripts, but won't be suggested in autocompletion.
 
 ## Tweening
 
@@ -112,7 +112,7 @@ UIField rotation now respects its parent's rotation chain, instead of always bei
 
 ## NPC & Characters Creation
 
-NPC and Character are now separated, to insert default character. Use `Insert:DefaultNPC()`
+NPC and Character are now separated. To insert a default character, use `Insert:DefaultNPC()`
 
 ```lua
 local npc = Insert:DefaultNPC()

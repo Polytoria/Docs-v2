@@ -37,7 +37,7 @@ Run again. This time, touching the button changes the color for everyone, becaus
 
 ## Why This Matters
 
-Client changes are local only. That is fine for UI, camera effects, and anything that only that player needs to see. Server changes are seen by everyone. Use a `ServerScript` for anything that affects the whole game, like scores, positions, and game rules and datastores.
+Client changes are local only. That is fine for UI, camera effects, and anything that only that player needs to see. Server changes are seen by everyone. Use a `ServerScript` for anything that affects the whole game, like scores, positions, game rules, and datastores.
 
 ---
 

@@ -105,4 +105,4 @@ Run the game and walk into the part. It should flash a random color every time s
 
 ---
 
-That's the basics. read [Client vs Server](../client-server/index.md).
+That's the basics. Read [Client vs Server](../client-server/index.md).
