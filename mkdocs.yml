@@ -55,7 +55,8 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
-
+  - sane_lists
+  
   - toc:
       permalink: true
 
