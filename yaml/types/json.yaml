@@ -1,0 +1,39 @@
+Name: json
+Description: json is a module which allows for scripts to interface with JSON data representation by converting it to a table and vice versa.
+Category: services
+BaseType: Instance
+Properties: []
+Methods:
+  - Name: serialize
+    ReturnType: string
+    Parameters:
+      - Name: value
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Converts a Luau table into a JSON string.
+  - Name: parse
+    ReturnType: any
+    Parameters:
+      - Name: raw
+        Type: string
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Parses a JSON string back into a Luau table.
+  - Name: null
+    ReturnType: string
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    Description: Creates a JSON null value for use in serialization.
+Events: []
+IsStatic: true
+IsAbstract: false
+IsInstantiable: false
