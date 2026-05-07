@@ -23,8 +23,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines whether or not server should trust the client for
-      adjusting player's properties. Enabling this is recommended.
+    Description: Determines whether or not the server should trust the client for adjusting the player's properties. Enabling this is recommended.
   - Name: PlayersCount
     Type: number
     IsAccessibleByScripts: true
@@ -69,7 +68,7 @@ Events:
         Type: Player
         IsOptional: false
         DefaultValue: null
-    Description: Fires when player has connected
+    Description: Fires when a player has been connected.
     Arguments:
       Name: player
       Type: Player
@@ -79,7 +78,7 @@ Events:
         Type: Player
         IsOptional: false
         DefaultValue: null
-    Description: Fires when player has disconnected
+    Description: Fires when a player has been disconnected.
     Arguments:
       Name: player
       Type: Player

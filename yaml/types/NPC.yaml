@@ -130,14 +130,14 @@ Properties:
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Indicates if NPC is standing on ground.
+    Description: Indicates if the NPC is standing on the ground.
   - Name: IsOnCeiling
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Indicates if NPC is on the ceiling.
+    Description: Indicates if the NPC is on the ceiling.
   - Name: NavDestinationDistance
     Type: number
     IsAccessibleByScripts: true
@@ -170,7 +170,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Move this NPC while respecting collisions.
+    Description: Moves this NPC while respecting collisions.
   - Name: Kill
     ReturnType: nil
     Parameters: []
@@ -184,7 +184,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Try to detect stairs and step up. Returns true if the NPC has stepped up.
+    Description: Tries to detect stairs and step up. Returns true if the NPC has stepped up.
   - Name: Jump
     ReturnType: nil
     Parameters: []

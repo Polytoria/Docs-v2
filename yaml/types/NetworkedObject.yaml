@@ -1,5 +1,5 @@
 Name: NetworkedObject
-Description: NetworkedObject is a base class for all object that's synchronized
+Description: NetworkedObject is a base class for every object that are synchronized
   by the network.
 Category: networking
 BaseType: null

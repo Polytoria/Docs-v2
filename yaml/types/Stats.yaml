@@ -10,7 +10,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Get all Stat objects
+    Description: Gets all Stat objects.
 Events: []
 IsStatic: true
 IsAbstract: false

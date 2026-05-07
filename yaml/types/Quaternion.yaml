@@ -98,7 +98,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: true
-    Description: Creates a rotation which rotates angle degrees around axis.
+    Description: Creates a rotation which rotates `angle` degrees around `axis`.
   - Name: Dot
     ReturnType: number
     Parameters:
@@ -169,7 +169,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: true
-    Description: Creates a rotation which rotates angle degrees around axis.
+    Description: Creates a rotation which rotates `fromDirection` to `toDirection`.
   - Name: Inverse
     ReturnType: Quaternion
     Parameters:
@@ -218,8 +218,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: true
-    Description: Linearly interpolates between two quaternions without clamping the
-      interpolant.
+    Description: Linearly interpolates between two quaternions without clamping the interpolant.
   - Name: LookRotation
     ReturnType: Quaternion
     Parameters:
@@ -275,7 +274,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: true
-    Description: Rotates a rotation from towards to by maxDegreesDelta.
+    Description: Rotates a rotation `from` towards `to` by `maxDegreesDelta`.
   - Name: Slerp
     ReturnType: Quaternion
     Parameters:
@@ -313,8 +312,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: true
-    Description: Spherically interpolates between two quaternions without clamping
-      the interpolant.
+    Description: Spherically interpolates between two quaternions without clamping the interpolant.
 Events: []
 IsStatic: false
 IsAbstract: false

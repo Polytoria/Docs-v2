@@ -1,6 +1,5 @@
 Name: Stat
-Description: Stat is an object that represents a player stat to which players
-  can be assigned to have their own number or string values.
+Description: Stat is an object that represents a player stat to which players can be assigned to have their own number or string values.
 Category: game
 BaseType: Instance
 Properties:
@@ -18,8 +17,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Returns the display name of the stat. If DisplayName is specified,
-      it returns DisplayName; otherwise, it returns Name.
+    Description: Returns the display name of the stat. If DisplayName is specified, it returns DisplayName; otherwise, it returns Name.
   - Name: Set
     ReturnType: nil
     Parameters:
@@ -34,7 +32,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Set the value stat of player to string
+    Description: Sets the value of the stat for the player to a number.
   - Name: Set
     ReturnType: nil
     Parameters:
@@ -49,7 +47,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Set the value stat of player to string
+    Description: Sets the value of the stat for the player to a string.
   - Name: Get
     ReturnType: any
     Parameters:
@@ -60,7 +58,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Get the value stat of player
+    Description: Gets the value of the stat for the player.
   - Name: GetTotalForTeam
     ReturnType: number
     Parameters:
@@ -71,7 +69,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Get the total value for team
+    Description: Gets the total value for the team.
   - Name: GetDisplayValue
     ReturnType: string
     Parameters:
@@ -82,8 +80,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Gets the display value for a player. If the value is a number, it
-      is automatically converted to K/M/S format (e.g., 1K+, 12.3K+).
+    Description: Gets the display value for a player. If the value is a number, it is automatically converted to K/M/S format (e.g., 1K+, 12.3K+).
 Events: []
 IsStatic: false
 IsAbstract: false

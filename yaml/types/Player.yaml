@@ -93,21 +93,21 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: If true, animation will not stop when player starts moving
+    Description: If true, animation will not stop when the player starts moving.
   - Name: Team
     Type: Team
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Player's assigned team
+    Description: The player's assigned team.
   - Name: MovementMode
     Type: PlayerMovementModeEnum
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determine the movement mode for the player.
+    Description: Determines the movement mode for the player.
   - Name: NetworkPing
     Type: number
     IsAccessibleByScripts: true
@@ -218,7 +218,7 @@ Events:
         Type: string
         IsOptional: false
         DefaultValue: null
-    Description: Fires when this player chats
+    Description: Fires when this player chats.
     Arguments:
       Name: message
       Type: string
@@ -232,7 +232,7 @@ Events:
         Type: any
         IsOptional: false
         DefaultValue: null
-    Description: Fires when stat value has changed
+    Description: Fires when a stat value has changed.
     Arguments: ""
   - Name: TeamChanged
     Parameters:
@@ -240,11 +240,11 @@ Events:
         Type: Team
         IsOptional: false
         DefaultValue: null
-    Description: Fires when player has been assigned a team
+    Description: Fires when a player has been assigned a team.
     Arguments: ""
   - Name: Respawned
     Parameters: null
-    Description: Fires when this player has respawned
+    Description: Fires when this player has respawned.
     Arguments: ""
 IsStatic: false
 IsAbstract: false

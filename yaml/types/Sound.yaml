@@ -30,8 +30,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines whether the sound should start playing automatically
-      when loaded.
+    Description: Determines whether the sound should start playing automatically when loaded.
   - Name: Loop
     Type: boolean
     IsAccessibleByScripts: true
@@ -52,7 +51,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines whether the sound should be paused
+    Description: Determines whether the sound should be paused.
   - Name: MaxDistance
     Type: number
     IsAccessibleByScripts: true
@@ -106,15 +105,14 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Plays the sound once at the specified volume without affecting the
-      current playback.
+    Description: Plays the sound once at the specified volume without affecting the current playback.
   - Name: Pause
     ReturnType: nil
     Parameters: []
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Pause the sound if it is currently playing.
+    Description: Pauses the sound if it is currently playing.
   - Name: Stop
     ReturnType: nil
     Parameters: []
@@ -125,7 +123,7 @@ Methods:
 Events:
   - Name: Loaded
     Parameters: null
-    Description: Fires when this sound has loaded
+    Description: Fires when this sound has loaded.
     Arguments: ""
 IsStatic: false
 IsAbstract: false

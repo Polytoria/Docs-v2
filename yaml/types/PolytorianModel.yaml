@@ -1,5 +1,5 @@
 Name: PolytorianModel
-Description: PolytorianModel is a CharacterModel that represent default Polytoria Character.
+Description: PolytorianModel is a CharacterModel that represents the default Polytoria Character.
 Category: world
 BaseType: CharacterModel
 Properties:
@@ -9,79 +9,77 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The head color
+    Description: The head color.
   - Name: TorsoColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The torso color
+    Description: The torso color.
   - Name: LeftArmColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The left arm color
+    Description: The left arm color.
   - Name: RightArmColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The right arm color
+    Description: The right arm color.
   - Name: LeftLegColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The left leg color
+    Description: The left leg color.
   - Name: RightLegColor
     Type: Color
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The right leg color
+    Description: The right leg color.
   - Name: FaceImage
     Type: ImageAsset
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The face image to use
+    Description: The face image to use.
   - Name: BodyMesh
     Type: MeshAsset
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The body mesh to use, the mesh must be in Polytoria Body rig format.
+    Description: The body mesh to use. The mesh must be in Polytoria Body rig format.
   - Name: Ragdolling
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Returns true if this character is ragdolling
+    Description: Returns true if this character is ragdolling.
   - Name: RagdollPosition
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Returns the current global ragdoll position, if ragdoll haven't
-      starts yet. Returns `Vector3.Zero`
+    Description: Returns the current global ragdoll position. If ragdoll hasn't started yet, returns `Vector3.Zero`.
   - Name: RagdollRotation
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Returns the current global ragdoll rotation, if ragdoll haven't
-      starts yet. Returns `Vector3.Zero`
+    Description: Returns the current global ragdoll rotation. If ragdoll hasn't started yet, returns `Vector3.Zero`.
 Methods:
   - Name: StartRagdoll
     ReturnType: nil
@@ -93,14 +91,14 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Start ragdoll
+    Description: Starts ragdoll.
   - Name: StopRagdoll
     ReturnType: nil
     Parameters: []
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Stop ragdoll
+    Description: Stops ragdoll.
   - Name: GetAttachment
     ReturnType: Dynamic
     Parameters:
@@ -111,7 +109,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Get an attachment from this character.
+    Description: Gets an attachment from this character.
   - Name: LoadAppearance
     ReturnType: nil
     Parameters:
@@ -126,22 +124,22 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Load an appearance.
+    Description: Loads an appearance.
   - Name: ClearAppearance
     ReturnType: nil
     Parameters: []
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Clear current appearance.
+    Description: Clears the current appearance.
 Events:
   - Name: RagdollStarted
     Parameters: null
-    Description: Fires when ragdoll has been started
+    Description: Fires when ragdoll has been started.
     Arguments: ""
   - Name: RagdollStopped
     Parameters: null
-    Description: Fires when ragdoll has been stopped
+    Description: Fires when ragdoll has been stopped.
     Arguments: ""
 IsStatic: false
 IsAbstract: false

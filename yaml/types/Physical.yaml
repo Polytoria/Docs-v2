@@ -49,7 +49,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Get all objects that's currently in contact with this object.
+    Description: Get all objects that are currently in contact with this object.
   - Name: MovePosition
     ReturnType: nil
     Parameters:
@@ -86,7 +86,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Add force to this physical
+    Description: Adds force to this physical.
   - Name: AddTorque
     ReturnType: nil
     Parameters:
@@ -101,7 +101,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Add torque to this physical
+    Description: Adds torque to this physical.
   - Name: AddForceAtPosition
     ReturnType: nil
     Parameters:
@@ -120,7 +120,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Add force at position to this physical
+    Description: Adds force at position to this physical
   - Name: AddRelativeForce
     ReturnType: nil
     Parameters:
@@ -135,7 +135,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Add relative force to this physical
+    Description: Adds relative force to this physical.
   - Name: AddRelativeTorque
     ReturnType: nil
     Parameters:
@@ -150,7 +150,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Add relative torque to this physical
+    Description: Adds relative torque to this physical.
 Events:
   - Name: Touched
     Parameters:
@@ -158,7 +158,7 @@ Events:
         Type: Physical
         IsOptional: false
         DefaultValue: null
-    Description: Fires when this object has collide with other object
+    Description: Fires when this object has collided with other objects.
     Arguments:
       Name: hit
       Type: Physical
@@ -168,7 +168,7 @@ Events:
         Type: Physical
         IsOptional: false
         DefaultValue: null
-    Description: Fires when this object has stopped colliding with other object
+    Description: Fires when this object has stopped colliding with other objects.
     Arguments:
       Name: hit
       Type: Physical
@@ -186,7 +186,7 @@ Events:
         Type: Player
         IsOptional: false
         DefaultValue: null
-    Description: Fires when this object has been clicked by a player
+    Description: Fires when this object has been clicked by a player.
     Arguments:
       Name: player
       Type: Player

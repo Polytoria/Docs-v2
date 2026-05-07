@@ -1,6 +1,5 @@
 Name: PreferencesService
-Description: PreferencesService is a service that allows scripts to access some
-  of the user preferences
+Description: PreferencesService is a service that allows scripts to access some of the user preferences.
 Category: services
 BaseType: Instance
 Properties:
@@ -30,7 +29,7 @@ Events:
         Type: any
         IsOptional: false
         DefaultValue: null
-    Description: Fired when a user preference setting is changed.
+    Description: Fires when a user preference setting is changed.
     Arguments:
       - Name: settingName
         Type: string

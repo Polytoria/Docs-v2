@@ -1,5 +1,5 @@
 Name: PTSignal
-Description: A signal which scripts can subscribe to
+Description: A signal which scripts can subscribe to.
 Category: scripting
 BaseType: null
 Properties: []
@@ -14,7 +14,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Connect a function to this signal
+    Description: Connects a function to this signal.
   - Name: Disconnect
     ReturnType: nil
     Parameters:
@@ -25,14 +25,14 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Disconnect a function from this signal
+    Description: Disconnects a function from this signal.
   - Name: Wait
     ReturnType: any
     Parameters: []
     IsAsync: true
     IsObsolete: false
     IsStatic: false
-    Description: Wait until this signal's emitted
+    Description: Waits until this signal is emitted.
   - Name: Once
     ReturnType: nil
     Parameters:
@@ -43,7 +43,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Listen to this signal only once
+    Description: Listens to this signal only once.
 Events: []
 IsStatic: false
 IsAbstract: false

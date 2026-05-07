@@ -1,6 +1,5 @@
 Name: PointLight
-Description: PointLight is a type of light that emits light in all directions
-  from a single point.
+Description: PointLight is a type of light that emits light in all directions from a single point.
 Category: lighting
 BaseType: Light
 Properties:

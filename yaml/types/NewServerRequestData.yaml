@@ -17,7 +17,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: How much player slot should the new server allocates for.
+    Description: How many player slots the new server should allocate for.
 Methods:
   - Name: New
     ReturnType: NewServerRequestData
