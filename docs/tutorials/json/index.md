@@ -43,22 +43,6 @@ print(data.score)  -- 1500
 print(data.alive)  -- true
 ```
 
-## Null values
-
-`json.null()` lets you put an explicit `null` in the output instead of just leaving the key out.
-
-```lua
-local profile = {
-    name  = "Polytoria",
-    coins = 1500,
-    guild = json.null(),
-}
-
-local encoded = json.serialize(profile)
-print(encoded)
--- {"guild":"{}","name":"Polytoria","coins":1500}
-```
-
 ## Nested data
 
 Nested tables and arrays.
