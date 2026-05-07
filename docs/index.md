@@ -16,4 +16,4 @@ Welcome to the documentation for Polytoria 2.0!
 ## Quick Links
 
 - [Migration Guide](/tutorials/migration/) - Moving from 1.0 to 2.0
-- [APIs](/api/) to view all APIs available.
+- [APIs](/api/) to view all available APIs.

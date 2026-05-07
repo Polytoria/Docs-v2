@@ -10,14 +10,14 @@ Linked models serve as reusable objects in your worlds.
 
 ## Creating a Linked model
 
-Simply drag your model into a folder inside the file browser. And there you have it, a linked model! Linked model will have the link icon appear in the explorer.
+Simply drag your model into a folder inside the file browser. And there you have it, a linked model! The linked model will have the link icon appear in the explorer.
 
 ![Linked model in file browser](image.png)
 ![Linked model in explorer](image-4.png)
 
 ## Editing the Linked model
 
-To edit a linked model, on explorer, right click on the model, then press "Edit Model". The model will be expandable and its children will appear in yellow.
+To edit a linked model, right click the model in the Explorer, then press "Edit Model". The model will be expandable and its children will appear in yellow.
 
 ![Edit model option](image-1.png)
 
@@ -31,4 +31,4 @@ After you finished editing the model, right click on the model, then click "Save
 
 ## Current Limitations
 
-- Root of the linked model's properties will not save during this time. For example if you make NPC a linked model, things like Health will not be saved and will be overridden by the world file.
+- The root of a linked model's properties will not save during this time. For example, if you make an NPC a linked model, things like Health will not be saved and will be overridden by the world file.

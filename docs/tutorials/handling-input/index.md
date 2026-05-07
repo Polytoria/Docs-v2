@@ -79,7 +79,7 @@ end)
 
 Run the game and left-click anywhere. Your character will jump to that spot.
 
-> **Note:** For security reasons its recommend to handle this type of stuff using server scripts. [Client-Server Communication](../client-server-communication/index.md).
+> **Note:** For security reasons, its recommended to handle this kind of thing using server scripts. [Client-Server Communication](../client-server-communication/index.md).
 
 ---
 

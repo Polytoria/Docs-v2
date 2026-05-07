@@ -6,7 +6,7 @@ weight: -3
 
 # About Tags
 
-Tags are a set of strings which you can use to identify each instance. For example, you may identify an object as "coin". You can do so by adding a tag to the object. One instance can have multiple tags
+Tags are a set of strings which you can use to identify each instance. For example, you may identify an object as "coin". You can do so by adding a tag to the object. One instance can have multiple tags.
 
 ## Adding tags via Creator
 

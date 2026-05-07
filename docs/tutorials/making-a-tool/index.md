@@ -77,7 +77,7 @@ end)
 
 ## Mini Project: The Boop Stick
 
-A simple tool that pushes a specifc part when you click.
+A simple tool that pushes a specific part when you click.
 
 1. Create a `Tool` named `BoopStick`.
 2. Add a `Part` inside it for the handle.
