@@ -6,13 +6,8 @@ icon: polytoria/json
 
 # :polytoria-json: json
 
-{{ inherits("Instance") }}
-
 json is a module which allows for scripts to interface with JSON data representation by converting it to a table and vice versa.
 
-{{ staticclass() }}
-
-{{ notnewable() }}
 
 ## Methods
 
