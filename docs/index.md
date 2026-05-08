@@ -17,3 +17,4 @@ Welcome to the documentation for Polytoria 2.0!
 
 - [Migration Guide](/tutorials/migration/) - Moving from 1.0 to 2.0
 - [APIs](/api/) to view all available APIs.
+- [Luau Documentation](https://luau.org) to read more on Luau
