@@ -120,7 +120,7 @@ Methods:
     IsAsync: false
     IsObsolete: false
     IsStatic: false
-    Description: Adds force at position to this physical
+    Description: Adds force at position to this physical.
   - Name: AddRelativeForce
     ReturnType: nil
     Parameters:
