@@ -206,4 +206,5 @@ Events: []
 IsStatic: true
 IsAbstract: false
 IsInstantiable: false
+HttpWarning: true
 StaticAlias: Http

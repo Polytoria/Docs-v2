@@ -120,6 +120,13 @@ def define_env(env):
 </div>"""
 
     @env.macro
+    def httpwarning():
+        return """<div data-search-exclude markdown>
+!!! warning "Request limit"
+    Each server has a rate limit of 90 requests per minute.
+</div>"""
+
+    @env.macro
     def service():
         return """<div data-search-exclude markdown>
 !!! example "Service Object"
@@ -142,6 +149,7 @@ def define_env(env):
 
     Additionally, it cannot be created in the creator menu or with `Instance.New()`.
 </div>"""
+
 
     @env.macro
     def serverexclusive():
