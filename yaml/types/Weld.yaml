@@ -1,0 +1,32 @@
+Name: Weld
+Description: Weld represents a physics object to link two objects together.
+Category: physics
+BaseType: Instance
+Properties:
+  - Name: Part0
+    Type: Instance
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Used to define the first object to link with second object.
+  - Name: Part1
+    Type: Instance
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Used to define the second object to link with first object.
+  - Name: Enabled
+    Type: Bool
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determine if the two parts can currently link together or not.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiable: true
+StaticAlias: null
