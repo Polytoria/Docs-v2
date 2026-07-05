@@ -1,0 +1,27 @@
+Name: HookService
+Description: Missing Documentation
+Category: services
+BaseType: Instance
+Properties: []
+Methods: []
+Events:
+  - Name: Updated
+    Parameters:
+      - Name: number
+        Type: number
+        IsOptional: false
+        DefaultValue: null
+    Description: Missing Documentation
+    Arguments: ""
+  - Name: PreRendered
+    Parameters: null
+    Description: Missing Documentation
+    Arguments: ""
+  - Name: PostRendered
+    Parameters: null
+    Description: Missing Documentation
+    Arguments: ""
+IsStatic: true
+IsAbstract: false
+IsInstantiable: false
+StaticAlias: Hooks

@@ -115,6 +115,13 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Determine the movement mode for the player.
+  - Name: RotationMode
+    Type: PlayerRotationMode
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
   - Name: NetworkPing
     Type: number
     IsAccessibleByScripts: true

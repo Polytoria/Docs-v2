@@ -147,6 +147,14 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Stops the sound if it is currently playing.
+  - Name: GetPeakVolume
+    ReturnType: number
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    IsSemiStatic: false
+    Description: Missing Documentation
 Events:
   - Name: Loaded
     Parameters: null

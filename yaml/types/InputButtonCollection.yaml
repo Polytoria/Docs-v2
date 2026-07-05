@@ -28,6 +28,14 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Removes existing input button.
+  - Name: GetButtons
+    ReturnType: "{ InputButton }"
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: false
+    IsSemiStatic: false
+    Description: Gets all input buttons.
 Events: []
 IsStatic: false
 IsAbstract: false

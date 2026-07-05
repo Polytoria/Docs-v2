@@ -1,0 +1,38 @@
+Name: Variant
+Description: Missing Documentation
+Category: types
+BaseType: null
+Properties:
+  - Name: Value
+    Type: any
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Missing Documentation
+Methods:
+  - Name: New
+    ReturnType: Variant
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Missing Documentation
+  - Name: New
+    ReturnType: Variant
+    Parameters:
+      - Name: value
+        Type: any
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Missing Documentation
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiable: false
+StaticAlias: null
