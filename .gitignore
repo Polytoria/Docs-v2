@@ -5,6 +5,11 @@ def.json
 docs/api/types/*
 docs/api/enums/*
 
+venv/
+
+.DS_Store
+
+
 !docs/api/types/index.md
 !docs/api/enums/index.md
 

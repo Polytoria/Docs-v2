@@ -121,7 +121,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Get all objects that's currently in contact with this object.
+    Description: Get all objects that are currently in contact with this object.
   - Name: MovePosition
     ReturnType: nil
     Parameters:
@@ -133,7 +133,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Moves the part to the specified position while keeping physics in mind.
+    Description: Moves the part by the specified vector while keeping physics in mind.
   - Name: MoveRotation
     ReturnType: nil
     Parameters:
@@ -145,7 +145,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Rotates the part while keeping physics in mind.
+    Description: Rotates the part by the specified Euler angles while keeping physics in mind.
   - Name: AddForce
     ReturnType: nil
     Parameters:

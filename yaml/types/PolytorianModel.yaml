@@ -1,5 +1,5 @@
 Name: PolytorianModel
-Description: PolytorianModel is a CharacterModel that represent default Polytoria Character.
+Description: a PolytorianModel is a CharacterModel that represents the default Polytoria Character.
 Category: world
 BaseType: CharacterModel
 Properties:
@@ -58,30 +58,28 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: The body mesh to use, the mesh must be in Polytoria Body rig format.
+    Description: The body mesh to use. The mesh must be in Polytoria Body rig format.
   - Name: Ragdolling
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Returns true if this character is ragdolling
+    Description: Returns true if this character is ragdolling.
   - Name: RagdollPosition
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Returns the current global ragdoll position, if ragdoll haven't
-      starts yet. Returns `Vector3.Zero`
+    Description: Returns the current global ragdoll position. If not ragdolling, Returns `Vector3.Zero`.
   - Name: RagdollRotation
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Returns the current global ragdoll rotation, if ragdoll haven't
-      starts yet. Returns `Vector3.Zero`
+    Description: Returns the current global ragdoll rotation. If not ragdolling, Returns `Vector3.Zero`.
 Methods:
   - Name: StartRagdoll
     ReturnType: nil
@@ -142,11 +140,11 @@ Methods:
 Events:
   - Name: RagdollStarted
     Parameters: null
-    Description: Fires when ragdoll has been started
+    Description: Fires when ragdoll starts.
     Arguments: ""
   - Name: RagdollStopped
     Parameters: null
-    Description: Fires when ragdoll has been stopped
+    Description: Fires when ragdoll stops.
     Arguments: ""
 IsStatic: false
 IsAbstract: false

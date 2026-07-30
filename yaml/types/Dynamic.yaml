@@ -148,7 +148,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Rotates the object around a point by the specified Euler angles.
+    Description: Rotates the object around a point and axis by the specified angle.
   - Name: Rotate
     ReturnType: nil
     Parameters:

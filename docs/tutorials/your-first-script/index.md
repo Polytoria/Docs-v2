@@ -90,7 +90,7 @@ end)
 
 ## Mini Project: Color Changing Part
 
-Put it all together. Create a `Part` in the Environment, insert a `ServerScript` inside it, and paste this:
+Put it all together. Create a `Part` in the environment, insert a `ServerScript` inside it, and paste this:
 
 ```lua
 local part: Part = script.Parent

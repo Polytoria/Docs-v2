@@ -1,6 +1,9 @@
 site_name: Polytoria 2.0 Documentation
 copyright: Copyright &copy; 2019 - 2026 Polytoria
 site_url: https://v2docs.polytoria.com
+repo_url: https://github.com/Polytoria/polytoria-game
+repo_name: Polytoria/polytoria-game
+edit_uri: https://github.com/Polytoria/Docs-v2/
 theme:
   features:
     - navigation.tabs
@@ -17,6 +20,7 @@ theme:
   name: material
   custom_dir: docs/theme
   logo: assets/logo.svg
+  favicon: assets/logo-dark.svg
   font:
     text: Rubik
   palette:
