@@ -17,6 +17,13 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Determines the ZIndex (layer) of the GUI.
+  - Name: AvoidCoreUI
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: When enabled, the GUI space will not include the top inset.
 Methods: []
 Events: []
 IsStatic: false

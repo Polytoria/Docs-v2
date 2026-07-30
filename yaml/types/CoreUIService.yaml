@@ -3,6 +3,13 @@ Description: CoreUI is a static class that allows for the toggling of certain co
 Category: services
 BaseType: Instance
 Properties:
+  - Name: TopInset
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    IsStatic: true
+    Description: Determines the top inset of the UI.
   - Name: CtrlLockCursor
     Type: CtrlLockCursor
     IsAccessibleByScripts: true

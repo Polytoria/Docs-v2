@@ -309,6 +309,42 @@ Events:
     Parameters: null
     Description: Triggered when the NPC dies.
     Arguments: ""
+  - Name: HealthChanged
+    Parameters:
+      - Name: number
+        Type: number
+        IsOptional: false
+        DefaultValue: null
+      - Name: number
+        Type: number
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when the NPC's health changes.
+    Arguments: ""
+  - Name: Jumped
+    Parameters: null
+    Description: Fires when the NPC jumps.
+    Arguments: ""
+  - Name: LeftGround
+    Parameters: null
+    Description: Fires when the NPC is no longer on ground.
+    Arguments: ""
+  - Name: Seated
+    Parameters:
+      - Name: seat
+        Type: Seat
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when the NPC sits on a seat.
+    Arguments: ""
+  - Name: Unseated
+    Parameters:
+      - Name: seat
+        Type: Seat
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when the NPC exits from a seart.
+    Arguments: ""
   - Name: Landed
     Parameters: null
     Description: Triggered when the NPC lands on the ground after a jump or fall.

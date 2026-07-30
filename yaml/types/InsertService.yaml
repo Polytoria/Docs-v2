@@ -45,6 +45,18 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Inserts a model with the specified ID.
+  - Name: ClothingAsync
+    ReturnType: Clothing
+    Parameters:
+      - Name: id
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: true
+    IsObsolete: false
+    IsStatic: false
+    IsSemiStatic: false
+    Description: Inserts clothing with the specified ID.
   - Name: AccessoryAsync
     ReturnType: Accessory
     Parameters:

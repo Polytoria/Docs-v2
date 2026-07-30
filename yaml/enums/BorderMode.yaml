@@ -1,0 +1,10 @@
+Name: BorderMode
+InternalName: BorderModeEnum
+Options:
+  - Name: Inset
+    Description: ""
+  - Name: Middle
+    Description: ""
+  - Name: Outline
+    Description: ""
+Description: ""

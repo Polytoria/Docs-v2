@@ -10,6 +10,13 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: The speed at which the player can climb the truss.
+  - Name: Climbable
+    Type: boolean
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determines whether the truss is climbable.
 Methods: []
 Events: []
 IsStatic: false

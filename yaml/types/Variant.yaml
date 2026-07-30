@@ -1,5 +1,5 @@
 Name: Variant
-Description: Missing Documentation
+Description: Variant is a container that can store any type of value.
 Category: types
 BaseType: null
 Properties:
@@ -9,7 +9,7 @@ Properties:
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: The value of the variant.
 Methods:
   - Name: New
     ReturnType: Variant
@@ -18,7 +18,7 @@ Methods:
     IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Returns a new Variant
   - Name: New
     ReturnType: Variant
     Parameters:
@@ -30,7 +30,7 @@ Methods:
     IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Returns a new Variant
 Events: []
 IsStatic: false
 IsAbstract: false
