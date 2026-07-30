@@ -1,0 +1,12 @@
+Name: PlayerRotationMode
+InternalName: PlayerRotationModeEnum
+Options:
+  - Name: Automatic
+    Description: ""
+  - Name: CameraLocked
+    Description: ""
+  - Name: Movement
+    Description: ""
+  - Name: MovementCtrlLockOnly
+    Description: ""
+Description: ""

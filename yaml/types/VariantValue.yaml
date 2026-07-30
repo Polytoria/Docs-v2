@@ -1,0 +1,18 @@
+Name: VariantValue
+Description: VariantValue is an object that holds a Variant value.
+Category: values
+BaseType: ValueBase
+Properties:
+  - Name: Value
+    Type: Variant
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: The value of this object.
+Methods: []
+Events: []
+IsStatic: false
+IsAbstract: false
+IsInstantiable: true
+StaticAlias: null

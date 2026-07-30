@@ -1,0 +1,43 @@
+Name: HookService
+Description: HookService is a collection of events that fire periodically.
+Category: services
+BaseType: Instance
+Properties: []
+Methods: []
+Events:
+  - Name: Updated
+    Parameters:
+      - Name: number
+        Type: number
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires every frame.
+    Arguments: ""
+  - Name: PreRendered
+    Parameters:
+      - Name: number
+        Type: number
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires before the world is rendered.
+    Arguments: ""
+  - Name: PostRendered
+    Parameters:
+      - Name: number
+        Type: number
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires after the world is rendered.
+    Arguments: ""
+  - Name: PhysicsUpdated
+    Parameters:
+      - Name: number
+        Type: number
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires on a physics update.
+    Arguments: ""
+IsStatic: true
+IsAbstract: false
+IsInstantiable: false
+StaticAlias: Hooks

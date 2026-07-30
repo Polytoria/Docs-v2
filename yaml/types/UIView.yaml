@@ -17,6 +17,13 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Determines the color of the UI.
+  - Name: BorderMode
+    Type: BorderMode
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determines where borders are placed.
   - Name: BorderWidth
     Type: number
     IsAccessibleByScripts: true

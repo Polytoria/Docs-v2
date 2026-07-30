@@ -353,6 +353,22 @@ Events:
     Arguments:
       Name: child
       Type: Instance
+  - Name: TagAdded
+    Parameters:
+      - Name: string
+        Type: string
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when given a tag.
+    Arguments: ""
+  - Name: TagRemoved
+    Parameters:
+      - Name: string
+        Type: string
+        IsOptional: false
+        DefaultValue: null
+    Description: Fires when a tag is removed.
+    Arguments: ""
 IsStatic: false
 IsAbstract: true
 IsInstantiable: false
