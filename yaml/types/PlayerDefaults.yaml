@@ -4,6 +4,13 @@ Description: PlayerDefaults is a service used for storing the default values of
 Category: game
 BaseType: HiddenBase
 Properties:
+  - Name: CameraHeight
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: The default vertical offset of the player's camera.
   - Name: MaxHealth
     Type: number
     IsAccessibleByScripts: true
