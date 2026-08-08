@@ -15,6 +15,9 @@ This guide walks you through how to run Polytoria Creator locally for developmen
 
 ![Enable Multiple Instances](image-2.png)
 
+!!! tip "Tip! About .tscn file"
+    If you using entry.tscn then follow these steps: Project --> Project Settings --> Application --> Run and paste into this textbox: `res://scenes/creator/creator.tscn`
+
 3. Set the Feature Tags to `creator`
 
 ![Feature Tags to creator](image-1.png)
