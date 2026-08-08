@@ -17,6 +17,13 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Determines whether the player can move.
+  - Name: WalkSpeed
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Determines the walking speed of the player.  
   - Name: SprintSpeed
     Type: number
     IsAccessibleByScripts: true
