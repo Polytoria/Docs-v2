@@ -14,7 +14,7 @@ A tutorial on how to migrate to 2.0
 
 This is the biggest compatibility breaking change for 2.0. The transition from Lua 5.2 (Moonsharp) to Luau. One of the big changes being the now unavailable `goto` statements, which you'll have to switch to the `continue` statement instead.
 
-For more info on the differences between Luau and Lua 5.2, visit https://luau.org/compatibility/
+For more info on the differences between Luau and Lua 5.2, visit [https://luau.org/compatibility/](https://luau.org/compatibility/)
 
 ## Unique Names
 
