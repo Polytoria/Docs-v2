@@ -16,7 +16,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines whether or not collisions between players are enabled.
+    Description: Determines whether or not collisions between players are enabled. PlayerCollisionEnabled property is able to edit second reserved collision layer, which is used for collisions between players.
   - Name: UseServerAuthority
     Type: boolean
     IsAccessibleByScripts: false

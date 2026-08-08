@@ -30,7 +30,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines whether or not the camera should clip through walls.
+    Description: Determines whether or not the camera should clip through walls. ClipThroughWalls detects 6th reserved collision layer, which is used to detect camera clipping.
   - Name: MinDistance
     Type: number
     IsAccessibleByScripts: true
