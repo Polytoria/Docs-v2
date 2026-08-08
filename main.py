@@ -105,7 +105,7 @@ def define_env(env):
     def notnewable():
         return """<div data-search-exclude markdown>
 
-!!! warning "Not newable"
+??? warning "Not newable"
     This object cannot be created by scripts using `Instance.New()`.
 
     </div>"""
@@ -113,7 +113,7 @@ def define_env(env):
     @env.macro
     def abstract():
         return """<div data-search-exclude markdown>
-!!! danger "Abstract Object"
+??? danger "Abstract Object"
     This object exists only to serve as a foundation for other objects. It cannot be accessed directly, but its properties are documented below.
 
     Additionally, it cannot be created in the creator menu or with `Instance.New()`.
@@ -130,14 +130,14 @@ def define_env(env):
     def staticclass(className = ""):
         if className != "":
             return """<div data-search-exclude markdown>
-!!! tip "Static Class"
+??? tip "Static Class"
     This object is a static class. It can be accessed like this: `%s`.
 
     Additionally, it cannot be created in the creator menu or with `Instance.New()`.
 </div>""" % (className)
         else:
             return """<div data-search-exclude markdown>
-!!! tip "Static Class"
+??? tip "Static Class"
     This object is a static class.
 
     Additionally, it cannot be created in the creator menu or with `Instance.New()`.
