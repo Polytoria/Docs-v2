@@ -101,7 +101,7 @@ Methods:
   - Name: HideFor
     ReturnType: nil
     Parameters:
-      - Name: plr
+      - Name: player
         Type: Player
         IsOptional: false
         DefaultValue: ""
@@ -113,7 +113,7 @@ Methods:
   - Name: ShowFor
     ReturnType: nil
     Parameters:
-      - Name: plr
+      - Name: player
         Type: Player
         IsOptional: false
         DefaultValue: ""
@@ -130,7 +130,9 @@ Events:
         IsOptional: false
         DefaultValue: null
     Description: Fires when prompt is interacted with
-    Arguments: ""
+    Arguments: 
+      Name: player
+      Type: Player
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true
