@@ -4,27 +4,48 @@ Category: ui
 BaseType: Instance
 Properties:
   - Name: Visible
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether the GUI is visible or not.
   - Name: ZIndex
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the ZIndex (layer) of the GUI.
   - Name: AvoidCoreUI
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: When enabled, the GUI space will not include the top inset.
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: GUI
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

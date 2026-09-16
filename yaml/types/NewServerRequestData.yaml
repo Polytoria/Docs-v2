@@ -5,27 +5,33 @@ Category: misc
 BaseType: null
 Properties:
   - Name: WorldPath
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Target world path.
   - Name: MaxPlayers
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: How much player slot should the new server allocates for.
 Methods:
   - Name: New
-    ReturnType: NewServerRequestData
+    Returns:
+      - Name: NewServerRequestData
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new `NewServerRequestData`
 Events: []
 IsStatic: false

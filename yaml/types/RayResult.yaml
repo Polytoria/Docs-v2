@@ -4,46 +4,58 @@ Category: types
 BaseType: null
 Properties:
   - Name: Origin
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The origin point of the ray.
   - Name: Direction
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The direction vector of the ray.
   - Name: Position
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The position where the ray hit an object.
   - Name: Normal
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The surface normal at the point where the ray hit.
   - Name: Distance
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The distance from the ray's origin to the hit point.
   - Name: Instance
-    Type: Instance
+    Type:
+      Name: Instance
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The instance that was hit by the ray.
 Methods: []
 Events: []

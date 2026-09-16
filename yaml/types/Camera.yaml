@@ -4,337 +4,461 @@ Category: game
 BaseType: Dynamic
 Properties:
   - Name: Forward
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The forward direction vector of the camera.
   - Name: Mode
-    Type: CameraMode
+    Type:
+      Name: CameraMode
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines or returns the camera's current mode.
   - Name: FOV
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines or returns the camera's field of view.
   - Name: ClipThroughWalls
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether or not the camera should clip through walls.
   - Name: MinDistance
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The camera's minimum distance from the target in Follow mode.
   - Name: MaxDistance
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines camera's maximum distance from the target in Follow mode.
   - Name: Distance
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the distance between the camera and the target when the
       camera is in Follow mode.
   - Name: ScrollSensitivity
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the scroll move speed of the camera.
   - Name: Orthographic
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether or not the camera should render in orthographic
       (2D) mode or not (3D).
   - Name: FollowLerp
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether or not to use lerping in Follow mode.
   - Name: LerpSpeed
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the lerp speed of the camera when lerping is enabled.
   - Name: OrthographicSize
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the half-size of the camera when in orthographic mode.
   - Name: Near
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the minimum distance from the camera for objects to render.
   - Name: Far
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the maximum distance from the camera for objects to render.
   - Name: PositionOffset
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the camera's offset from its position.
-  - Name: RotationOffset
-    Type: Vector3
+  - Name: QuaternionOffset
+    Type:
+      Name: Quaternion
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: RotationOffset
+    Type:
+      Name: Vector3
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the camera's offset from its rotation.
   - Name: IsFirstPerson
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Returns whether or not the camera is in first person.
   - Name: CanLock
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determine if camera can be ctrl locked.
   - Name: SensitivityMultiplier
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Multipler for camera sensitivity
   - Name: Sensitivity
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Current sensitivity of the camera
   - Name: HorizontalSpeed
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the horizontal movement speed of the camera in Follow mode.
   - Name: VerticalSpeed
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the vertical move speed of the camera.
   - Name: ScrollLerpSpeed
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the lerp amount when scrolling
   - Name: CtrlLocked
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determine if camera is in Ctrl lock mode
   - Name: AlwaysLocked
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determine if camera should always be in locked mode
   - Name: Target
-    Type: Dynamic
+    Type:
+      Name: Dynamic
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The target of Follow mode
 Methods:
   - Name: IsPositionInView
-    ReturnType: boolean
-    Parameters:
-      - Name: pos
-        Type: Vector3
+    Returns:
+      - Name: boolean
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: pos
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Check if position is in the camera's view.
   - Name: IsPositionBehind
-    ReturnType: boolean
-    Parameters:
-      - Name: pos
-        Type: Vector3
+    Returns:
+      - Name: boolean
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: pos
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Check if position is behind the camera's view.
   - Name: ViewportPointToRay
-    ReturnType: RayResult
+    Returns:
+      - Name: RayResult
+        IsOptional: true
     Parameters:
-      - Name: pos
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: ignoreList
-        Type: "{ Instance }"
-        IsOptional: true
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: pos
         DefaultValue: null
-      - Name: maxDistance
-        Type: number
-        IsOptional: true
+      - Type:
+          ElementType:
+            Name: Instance
+            IsOptional: false
+          Name: Array
+          IsOptional: true
+        Name: ignoreList
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: maxDistance
         DefaultValue: "10000"
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: passthroughMask
+        DefaultValue: "0"
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Cast a ray from the camera at the specified ViewportPoint (Vector2
       with components with values in range of 0 - 1 describing how far a point
       is to the right and to the top of the screen) into the game world
   - Name: ScreenPointToRay
-    ReturnType: RayResult
+    Returns:
+      - Name: RayResult
+        IsOptional: true
     Parameters:
-      - Name: pos
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: ignoreList
-        Type: "{ Instance }"
-        IsOptional: true
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: pos
         DefaultValue: null
-      - Name: maxDistance
-        Type: number
-        IsOptional: true
+      - Type:
+          ElementType:
+            Name: Instance
+            IsOptional: false
+          Name: Array
+          IsOptional: true
+        Name: ignoreList
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: maxDistance
         DefaultValue: "10000"
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: passthroughMask
+        DefaultValue: "0"
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Cast a ray from the camera at screen point into the game world
   - Name: ViewportToScreenPoint
-    ReturnType: Vector2
-    Parameters:
-      - Name: pos
-        Type: Vector2
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: pos
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Transforms `pos` from viewport space into screen space.
   - Name: ViewportToWorldPoint
-    ReturnType: Vector3
-    Parameters:
-      - Name: pos
-        Type: Vector2
+    Returns:
+      - Name: Vector3
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: pos
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Transforms `pos` from viewport space into world space.
   - Name: WorldToViewportPoint
-    ReturnType: Vector2
-    Parameters:
-      - Name: pos
-        Type: Vector3
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: pos
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Transforms `pos` from world space into viewport space.
   - Name: WorldToScreenPoint
-    ReturnType: Vector2
-    Parameters:
-      - Name: pos
-        Type: Vector3
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: pos
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Transforms `pos` from world space into screen space.
   - Name: ScreenToViewportPoint
-    ReturnType: Vector2
-    Parameters:
-      - Name: pos
-        Type: Vector2
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: pos
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Transforms `pos` from screen space into viewport space.
   - Name: ScreenToWorldPoint
-    ReturnType: Vector3
-    Parameters:
-      - Name: pos
-        Type: Vector2
+    Returns:
+      - Name: Vector3
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: pos
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Transforms `pos` from screen space into world space.
+  - Name: New
+    Returns:
+      - Name: Camera
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events:
   - Name: FirstPersonEntered
-    Parameters: null
+    Parameters: []
     Description: Fires when camera has entered first person
-    Arguments: ""
   - Name: FirstPersonExited
-    Parameters: null
+    Parameters: []
     Description: Fires when camera has exited first person
-    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true

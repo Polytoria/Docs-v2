@@ -5,156 +5,192 @@ Category: types
 BaseType: null
 Properties:
   - Name: PointCount
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Returns the point count of this number series.
 Methods:
   - Name: New
-    ReturnType: NumberSeries
+    Returns:
+      - Name: NumberSeries
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a number series from a range.
   - Name: New
-    ReturnType: NumberSeries
+    Returns:
+      - Name: NumberSeries
+        IsOptional: false
     Parameters:
-      - Name: min
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: max
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: min
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: max
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a number series from a range.
   - Name: Clear
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Clear this NumberSeries
   - Name: SetValue
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: point
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: point
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sets the value at the specified point in the number series.
   - Name: RemovePoint
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: point
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: point
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Removes the point at the specified index from the number series.
   - Name: GetOffsets
-    ReturnType: "{ number }"
+    Returns:
+      - ElementType:
+          Name: number
+          IsOptional: false
+        Name: Array
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Get all offsets
   - Name: GetValues
-    ReturnType: "{ number }"
+    Returns:
+      - ElementType:
+          Name: number
+          IsOptional: false
+        Name: Array
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Get all numbers
   - Name: SetOffset
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: point
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: offset
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: point
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: offset
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sets the offset at the specified point in the number series.
   - Name: GetValue
-    ReturnType: number
-    Parameters:
-      - Name: point
-        Type: number
+    Returns:
+      - Name: number
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: point
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets the value at the specified point in the number series.
   - Name: GetOffset
-    ReturnType: number
-    Parameters:
-      - Name: point
-        Type: number
+    Returns:
+      - Name: number
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: point
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets the offset at the specified point in the number series.
   - Name: AddPoint
-    ReturnType: number
+    Returns:
+      - Name: number
+        IsOptional: false
     Parameters:
-      - Name: offset
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: offset
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Add number point to the series with an offset.
   - Name: Lerp
-    ReturnType: number
-    Parameters:
-      - Name: t
-        Type: number
+    Returns:
+      - Name: number
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: t
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Interpolates between numbers in the series based on the parameter t.
 Events: []
 IsStatic: false

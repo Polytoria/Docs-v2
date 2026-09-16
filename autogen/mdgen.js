@@ -69,6 +69,38 @@ for (const yamlFile of yamlFiles) {
 }
 
 // Second pass, generate md files
+function luaifyType(type) {
+    let result = type.Name
+    switch (result)
+    {
+        case "Tuple":
+            result = `...${luaifyType(type.ElementType)}`
+            break
+        case "function":
+            result = `(${type.Parameters.map(luaifyParam)}) -> (${type.Returns.map(luaifyType)})`
+            break
+        case "Array":
+            result = `{ ${luaifyType(type.ElementType)} }`
+            break
+        case "Dictionary":
+            result = `{ [${luaifyType(type.KeyType)}]: ${luaifyType(type.ValueType)} }`
+            break
+    }
+    return type.IsOptional ? result + "?" : result
+}
+
+function luaifyParam(param) {
+    const name = param.Name
+    const luaType = luaifyType(param.Type)
+    if (param.Type !== "Tuple" && name) return `${name}: ${luaType}`
+
+    return luaType
+}
+
+function formatParam(param) {
+    return `${param.Name ?? ""};${luaifyType(param.Type)}`
+}
+
 for (const yamlFile of yamlFiles) {
     const className = path.basename(yamlFile, '.yaml')
     const c = classDataMap[className]
@@ -141,62 +173,47 @@ for (const yamlFile of yamlFiles) {
     }
 
     const properties = c.Properties ? (Array.isArray(c.Properties) ? c.Properties : [c.Properties]) : [];
-
     if (properties.length > 0) {
         appendLine("")
         appendLine("## Properties")
         appendLine("")
-    }
-
-    for (const prop of properties) {
-        appendLine(`### ${prop.Name}:${prop.Type} { property }`)
-        appendLine(``)
-        appendLine(prop.Description || "Missing documentation!")
-        appendLine(``)
+        for (const prop of properties) {
+            appendLine(`### ${prop.Name}:${luaifyType(prop.Type)} { property }`)
+            appendLine("")
+            appendLine(prop.Description || "Missing documentation!")
+            appendLine("")
+        }
     }
 
     const methods = c.Methods ? (Array.isArray(c.Methods) ? c.Methods : [c.Methods]) : [];
-
     if (methods.length > 0) {
         appendLine("")
         appendLine("## Methods")
         appendLine("")
-    }
-    for (const m of methods) {
-        if (m.IsObsolete) continue
-        let params = []
-
-        const parameters = m.Parameters ? (Array.isArray(m.Parameters) ? m.Parameters : [m.Parameters]) : [];
-        for (const p of parameters) {
-            params.push(`${p.Name};${p.Type}${p.IsOptional ? "?" : ""}`)
+        for (const m of methods) {
+            const params = m.Parameters.map(formatParam);
+            const returns = m.Returns.map(luaifyType)
+    
+            appendLine(`### ${m.Name}(${params.join(",")}):(${returns.join(",")}) { method }`)
+            appendLine("")
+            appendLine(m.Description || "Missing documentation!")
+            appendLine("")
         }
-
-        appendLine(`### ${m.Name}(${params.join(",")}):${m.ReturnType || "void"} { method }`)
-        appendLine(``)
-        appendLine(m.Description || "Missing documentation!")
-        appendLine(``)
     }
 
     const events = c.Events ? (Array.isArray(c.Events) ? c.Events : [c.Events]) : [];
-
     if (events.length > 0) {
         appendLine("")
         appendLine("## Events")
         appendLine("")
-    }
+        for (const e of events) {
+            const params = e.Parameters.map(formatParam)
 
-    for (const e of events) {
-        let args = []
-
-        const aargs = e.Arguments ? (Array.isArray(e.Arguments) ? e.Arguments : [e.Arguments]) : [];
-        for (const arg of aargs) {
-            args.push(`${arg.Name};${arg.Type}`)
+            appendLine(`### ${e.Name}(${params.join(",")}) { event }`)
+            appendLine("")
+            appendLine(e.Description || "Missing documentation!")
+            appendLine("")
         }
-
-        appendLine(`### ${e.Name}(${args.join(",")}) { event }`)
-        appendLine(``)
-        appendLine(e.Description || "")
-        appendLine(``)
     }
 
     fs.writeFileSync(mdPath, mk)

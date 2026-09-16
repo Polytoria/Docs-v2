@@ -5,57 +5,69 @@ Category: addons
 BaseType: null
 Properties:
   - Name: Identifier
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The identifier for this addon.
   - Name: AddonName
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The display name of the addon. This name will appear in the tools menu.
   - Name: AddonIcon
-    Type: PTImageAsset
+    Type:
+      Name: PTImageAsset
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the addon icon.
 Methods:
   - Name: RequestPermissions
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: perms
-        Type: "{ AddonPermission }"
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          ElementType:
+            Name: AddonPermission
+            IsOptional: false
+          Name: Array
+          IsOptional: false
+        Name: perms
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Prompt the user to request for permissions
   - Name: CreateToolItem
-    ReturnType: AddonToolItem
-    Parameters:
-      - Name: txt
-        Type: string
+    Returns:
+      - Name: AddonToolItem
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: txt
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Create a new tool item with text.
 Events:
   - Name: CleanupReceived
-    Parameters: null
+    Parameters: []
     Description: Fires when cleanup has been requested by the creator, this is
       usually fired when updating the addon.
-    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiable: false

@@ -6,16 +6,19 @@ BaseType: Instance
 Properties: []
 Methods:
   - Name: GetDatastore
-    ReturnType: Datastore
-    Parameters:
-      - Name: key
-        Type: string
+    Returns:
+      - Name: Datastore
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Attempts to get a Datastore object from the Datastore service.
 Events: []
 IsStatic: true

@@ -4,90 +4,129 @@ Category: lighting
 BaseType: Sky
 Properties:
   - Name: SunDiscColor
-    Type: Color
+    Type:
+      Name: Color
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the color emitting off the sun.
   - Name: SunDiscMultiplier
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the multiplier of the sun.
   - Name: SunDiscExponent
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the exponent of the sun.
   - Name: SunHaloColor
-    Type: Color
+    Type:
+      Name: Color
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the color of the sun halo.
   - Name: SunHaloExponent
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the exponent of the sun halo.
   - Name: SunHaloContribution
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the contribution of the sun halo.
   - Name: HorizonLineColor
-    Type: Color
+    Type:
+      Name: Color
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the horizon line's color.
   - Name: HorizonLineExponent
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the horizon line's exponent.
   - Name: HorizonLineContribution
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines how much the horizon line contributes.
   - Name: SkyGradientTop
-    Type: Color
+    Type:
+      Name: Color
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the top color of the gradient.
   - Name: SkyGradientBottom
-    Type: Color
+    Type:
+      Name: Color
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the bottom color of the gradient.
   - Name: SkyGradientExponent
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the gradient's exponent.
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: GradientSky
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

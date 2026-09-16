@@ -5,12 +5,12 @@ BaseType: null
 Properties: []
 Methods:
   - Name: Disconnect
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Disconnect this signal
 Events: []
 IsStatic: false

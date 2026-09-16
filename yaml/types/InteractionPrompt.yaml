@@ -4,133 +4,179 @@ Category: misc
 BaseType: Physical
 Properties:
   - Name: UIMode
-    Type: UIMode
+    Type:
+      Name: UIMode
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: Enabled
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether the prompt is enabled.
   - Name: HideByDefault
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: Title
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Title text
   - Name: Subtitle
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Subtitle text
   - Name: Scale
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the size of the prompt.
   - Name: MaxDistance
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the maximum distance from the prompt to the player for
       the prompt to be visible.
   - Name: LineOfSightThreshold
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: ActivationTime
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the time for the interaction button to be held down for
       the prompt to be interacted with.
   - Name: UseParentForVisibility
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines if parent needs to be hovered over for the prompt to be visible.
   - Name: RequireFacing
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines if the player should be facing the interaction prompt
       for it to be shown.
   - Name: HiddenFor
-    Type: "{ Player }"
+    Type:
+      ElementType:
+        Name: Player
+        IsOptional: false
+      Name: Array
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Players that this interaction prompt is hidden for.
   - Name: Progress
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Progress of the prompt interaction, between 0 and 1.
 Methods:
   - Name: HideFor
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: plr
-        Type: Player
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: plr
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Hides the prompt for a player.
   - Name: ShowFor
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: plr
-        Type: Player
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: plr
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Unhides the prompt for a player.
+  - Name: New
+    Returns:
+      - Name: InteractionPrompt
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events:
   - Name: Interacted
     Parameters:
-      - Name: player
-        Type: Player
-        IsOptional: false
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: player
         DefaultValue: null
     Description: Fires when prompt is interacted with
-    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true

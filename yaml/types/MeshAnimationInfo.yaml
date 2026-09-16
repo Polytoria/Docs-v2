@@ -4,25 +4,31 @@ Category: misc
 BaseType: null
 Properties:
   - Name: Name
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The name of this animation
   - Name: Length
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The length of this animation
   - Name: IsPlaying
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates the playing state of this animation.
 Methods: []
 Events: []

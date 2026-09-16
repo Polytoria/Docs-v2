@@ -4,81 +4,101 @@ Category: world
 BaseType: RigidBody
 Properties:
   - Name: Droppable
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether the tool can be dropped by the player.
   - Name: IconImage
-    Type: ImageAsset
+    Type:
+      Name: ImageAsset
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The icon for this tool, appears in inventory.
   - Name: DropEquipCooldown
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the cooldown before a dropped tool can be picked up.
   - Name: Holder
-    Type: NPC
+    Type:
+      Name: NPC
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines who is currently holding this tool.
 Methods:
   - Name: Activate
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Activates the tool, similarly to pressing the mouse button.
   - Name: Deactivate
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Deactivates the tool, similarly to releasing the mouse button.
   - Name: PlayAnimation
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: animationName
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: animationName
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Plays the specified animation on the holder of the tool.
+  - Name: New
+    Returns:
+      - Name: Tool
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events:
   - Name: Equipped
-    Parameters: null
+    Parameters: []
     Description: Fires when this tool has been equipped
-    Arguments: ""
   - Name: Unequipped
-    Parameters: null
+    Parameters: []
     Description: Fires when this tool has been unequipped
-    Arguments: ""
   - Name: Activated
-    Parameters: null
+    Parameters: []
     Description: Fires when this tool has been activated (via mouse press or
       `Tool:Activate`)
-    Arguments: ""
   - Name: Deactivated
-    Parameters: null
+    Parameters: []
     Description: Fires when this tool has been deactivated (via mouse release or
       `Tool:Deactivate`)
-    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true

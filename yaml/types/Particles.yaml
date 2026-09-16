@@ -5,372 +5,480 @@ Category: effects
 BaseType: Dynamic
 Properties:
   - Name: Playing
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines if particles should be emitting.
   - Name: SpeedScale
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: Image
-    Type: ImageAsset
+    Type:
+      Name: ImageAsset
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The image used for the particles.
   - Name: TextureFilter
-    Type: TextureFilter
+    Type:
+      Name: TextureFilter
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the texture filter mode.
   - Name: Color
-    Type: ColorSeries
+    Type:
+      Name: ColorSeries
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The color gradient used for the particles.
   - Name: Lifetime
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the lifetime of a particle.
   - Name: Amount
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the number of particles emitted.
   - Name: Explosiveness
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: Gravity
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the gravity effect applied to the particles.
   - Name: VelocityDirection
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the velocity direction
   - Name: InitialVelocity
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the initial velocity
   - Name: StartRotation
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the starting rotation.
   - Name: AngularVelocity
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: AngularVelocityOverLifetime
-    Type: NumberSeries
+    Type:
+      Name: NumberSeries
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: LinearAcceleration
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: LinearAccelerationOverLifetime
-    Type: NumberSeries
+    Type:
+      Name: NumberSeries
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: RadialAcceleration
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: RadialAccelerationOverLifetime
-    Type: NumberSeries
+    Type:
+      Name: NumberSeries
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: TangentialAcceleration
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: TangentialAccelerationOverLifetime
-    Type: NumberSeries
+    Type:
+      Name: NumberSeries
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: OrbitalVelocity
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: OrbitalVelocityOverLifetime
-    Type: NumberSeries
+    Type:
+      Name: NumberSeries
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: Damping
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: DampingOverLifetime
-    Type: NumberSeries
+    Type:
+      Name: NumberSeries
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: ScaleOverVelocity
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: ScaleOverVelocityCurve
-    Type: NumberSeries
+    Type:
+      Name: NumberSeries
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: TurbulenceEnabled
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: TurbulenceInfluence
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: TurbulenceOverLifetime
-    Type: NumberSeries
+    Type:
+      Name: NumberSeries
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: TurbulenceNoiseScale
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: TurbulenceNoiseStrength
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: TurbulenceNoiseSpeed
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: Spread
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the spread angle of the velocity
   - Name: Flatness
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines how flat the spread angle should be
   - Name: Scale
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determine the initial scale range
   - Name: ScaleOverLifetime
-    Type: NumberSeries
+    Type:
+      Name: NumberSeries
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: HueVariation
-    Type: NumberRange
+    Type:
+      Name: NumberRange
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determine the hue variation
   - Name: BlendMode
-    Type: BlendMode
+    Type:
+      Name: BlendMode
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the blend mode of the particle.
   - Name: Shaded
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether the particles are shaded.
   - Name: EmissionShape
-    Type: ParticleEmissionShape
+    Type:
+      Name: ParticleEmissionShape
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the emission shape of this particle
   - Name: EmissionShapeScale
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the emission shape's scale
   - Name: SimulationSpace
-    Type: ParticleSimulationSpace
+    Type:
+      Name: ParticleSimulationSpace
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Whether the particles are simulated in world or local space.
   - Name: Orientation
-    Type: ParticleOrientation
+    Type:
+      Name: ParticleOrientation
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the orientation mode of this particle.
   - Name: IsPlaying
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: IsPaused
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: IsStopped
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
 Methods:
   - Name: Play
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Starts playing the particle system.
   - Name: Pause
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: Stop
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Stops playing the particle system.
   - Name: Clear
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: Emit
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: count
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: count
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Emits a specified number of particles immediately.
+  - Name: New
+    Returns:
+      - Name: Particles
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

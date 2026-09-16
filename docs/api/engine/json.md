@@ -11,18 +11,18 @@ json is a module which allows for scripts to interface with JSON data representa
 
 ## Methods
 
-### serialize(value;any):string { method }
+### serialize(value;any):(string) { method }
 
 Converts a Luau table into a JSON string.
 
-### parse(raw;string?):any { method }
+### parse(raw;string?):(any) { method }
 
 Parses a JSON string back into a Luau table.
 
-### null():JSONNull { method }
+### null():(JSONNull) { method }
 
 Creates a JSON null value for use in serialization.
 
-### isNull(value;any):boolean { method }
+### isNull(value;any):(boolean) { method }
 
 Returns if the given value is a JSON null value.

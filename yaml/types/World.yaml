@@ -5,77 +5,104 @@ Category: world
 BaseType: Instance
 Properties:
   - Name: IsLocalTest
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Returns true if this current session is being tested locally
   - Name: IsLegacyWorld
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Returns true if this world is being ran from a 1.0 world file.
   - Name: WorldID
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The ID of the current Polytoria world.
   - Name: ServerID
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The server ID of the current instance.
   - Name: UpTime
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The uptime of this game in seconds.
   - Name: ServerTime
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: A synchronized clock that represents the server's current time.
   - Name: InstanceCount
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The total number of instances currently loaded.
 Methods:
   - Name: GetNetworkedObject
-    ReturnType: NetworkedObject
-    Parameters:
-      - Name: networkID
-        Type: string
+    Returns:
+      - Name: NetworkedObject
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: networkID
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: GetFPS
+    Returns:
+      - Name: number
+        IsOptional: false
+    Parameters: []
+    IsAsync: false
+    IsStatic: false
+    IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
 Events:
   - Name: Rendered
     Parameters:
-      - Name: number
-        Type: number
-        IsOptional: false
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: delta
         DefaultValue: null
     Description: Fires every frame after the world has been rendered. The `delta`
       parameter is the time between the last frame and the current.
-    Arguments: ""
 IsStatic: true
 IsAbstract: false
 IsInstantiable: false

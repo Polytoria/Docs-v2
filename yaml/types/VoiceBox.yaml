@@ -1,21 +1,37 @@
 Name: VoiceBox
 Description: VoiceBox is an object that can output speech bubbles.
 Category: misc
-BaseType: Part
+BaseType: Dynamic
 Properties: []
 Methods:
   - Name: Speak
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: msg
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: msg
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a speech bubble with the given message
+  - Name: New
+    Returns:
+      - Name: VoiceBox
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

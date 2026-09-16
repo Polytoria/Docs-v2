@@ -5,212 +5,323 @@ BaseType: Instance
 Properties: []
 Methods:
   - Name: RequestAsync
-    ReturnType: HttpResponseData
-    Parameters:
-      - Name: data
-        Type: HttpRequestData
+    Returns:
+      - Name: HttpResponseData
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: HttpRequestData
+          IsOptional: false
+        Name: data
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Send a request using the `HttpRequestData`
   - Name: GetAsync
-    ReturnType: string
-    Parameters:
-      - Name: url
-        Type: string
+    Returns:
+      - Name: string
         IsOptional: false
-        DefaultValue: ""
-      - Name: headers
-        Type: table
-        IsOptional: true
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: url
+        DefaultValue: null
+      - Type:
+          KeyType:
+            Name: string
+            IsOptional: false
+          ValueType:
+            Name: string
+            IsOptional: false
+          Name: Dictionary
+          IsOptional: true
+        Name: headers
         DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a GET request to the specified URL.
   - Name: PostAsync
-    ReturnType: string
+    Returns:
+      - Name: string
+        IsOptional: false
     Parameters:
-      - Name: url
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: body
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: headers
-        Type: table
-        IsOptional: true
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: url
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: body
+        DefaultValue: null
+      - Type:
+          KeyType:
+            Name: string
+            IsOptional: false
+          ValueType:
+            Name: string
+            IsOptional: false
+          Name: Dictionary
+          IsOptional: true
+        Name: headers
         DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a POST request to the specified URL.
   - Name: PutAsync
-    ReturnType: string
+    Returns:
+      - Name: string
+        IsOptional: false
     Parameters:
-      - Name: url
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: body
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: headers
-        Type: table
-        IsOptional: true
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: url
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: body
+        DefaultValue: null
+      - Type:
+          KeyType:
+            Name: string
+            IsOptional: false
+          ValueType:
+            Name: string
+            IsOptional: false
+          Name: Dictionary
+          IsOptional: true
+        Name: headers
         DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a PUT request to the specified URL.
   - Name: DeleteAsync
-    ReturnType: string
+    Returns:
+      - Name: string
+        IsOptional: false
     Parameters:
-      - Name: url
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: body
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: headers
-        Type: table
-        IsOptional: true
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: url
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: body
+        DefaultValue: null
+      - Type:
+          KeyType:
+            Name: string
+            IsOptional: false
+          ValueType:
+            Name: string
+            IsOptional: false
+          Name: Dictionary
+          IsOptional: true
+        Name: headers
         DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a DELETE request to the specified url.
   - Name: PatchAsync
-    ReturnType: string
+    Returns:
+      - Name: string
+        IsOptional: false
     Parameters:
-      - Name: url
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: body
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: headers
-        Type: table
-        IsOptional: true
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: url
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: body
+        DefaultValue: null
+      - Type:
+          KeyType:
+            Name: string
+            IsOptional: false
+          ValueType:
+            Name: string
+            IsOptional: false
+          Name: Dictionary
+          IsOptional: true
+        Name: headers
         DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a PATCH request to the specified url.
   - Name: GetBufferAsync
-    ReturnType: buffer
-    Parameters:
-      - Name: url
-        Type: string
+    Returns:
+      - Name: buffer
         IsOptional: false
-        DefaultValue: ""
-      - Name: headers
-        Type: table
-        IsOptional: true
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: url
+        DefaultValue: null
+      - Type:
+          KeyType:
+            Name: string
+            IsOptional: false
+          ValueType:
+            Name: string
+            IsOptional: false
+          Name: Dictionary
+          IsOptional: true
+        Name: headers
         DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a GET request to the specified url, and return the response
       as buffer.
   - Name: PostBufferAsync
-    ReturnType: buffer
+    Returns:
+      - Name: buffer
+        IsOptional: false
     Parameters:
-      - Name: url
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: body
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: headers
-        Type: table
-        IsOptional: true
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: url
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: body
+        DefaultValue: null
+      - Type:
+          KeyType:
+            Name: string
+            IsOptional: false
+          ValueType:
+            Name: string
+            IsOptional: false
+          Name: Dictionary
+          IsOptional: true
+        Name: headers
         DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a POST request to the specified url, and return the response
       as buffer.
   - Name: PutBufferAsync
-    ReturnType: buffer
+    Returns:
+      - Name: buffer
+        IsOptional: false
     Parameters:
-      - Name: url
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: body
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: headers
-        Type: table
-        IsOptional: true
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: url
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: body
+        DefaultValue: null
+      - Type:
+          KeyType:
+            Name: string
+            IsOptional: false
+          ValueType:
+            Name: string
+            IsOptional: false
+          Name: Dictionary
+          IsOptional: true
+        Name: headers
         DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a PUT request to the specified url, and return the response
       as buffer.
   - Name: DeleteBufferAsync
-    ReturnType: buffer
+    Returns:
+      - Name: buffer
+        IsOptional: false
     Parameters:
-      - Name: url
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: body
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: headers
-        Type: table
-        IsOptional: true
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: url
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: body
+        DefaultValue: null
+      - Type:
+          KeyType:
+            Name: string
+            IsOptional: false
+          ValueType:
+            Name: string
+            IsOptional: false
+          Name: Dictionary
+          IsOptional: true
+        Name: headers
         DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a DELETE request to the specified url, and return the
       response as buffer.
   - Name: PatchBufferAsync
-    ReturnType: buffer
+    Returns:
+      - Name: buffer
+        IsOptional: false
     Parameters:
-      - Name: url
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: body
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: headers
-        Type: table
-        IsOptional: true
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: url
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: body
+        DefaultValue: null
+      - Type:
+          KeyType:
+            Name: string
+            IsOptional: false
+          ValueType:
+            Name: string
+            IsOptional: false
+          Name: Dictionary
+          IsOptional: true
+        Name: headers
         DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a PATCH request to the specified url, and return the response
       as buffer.
 Events: []

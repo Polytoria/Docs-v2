@@ -4,32 +4,39 @@ Category: types
 BaseType: null
 Properties:
   - Name: Value
-    Type: any
+    Type:
+      Name: any
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The value of the variant.
 Methods:
   - Name: New
-    ReturnType: Variant
+    Returns:
+      - Name: Variant
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns a new Variant
   - Name: New
-    ReturnType: Variant
-    Parameters:
-      - Name: value
-        Type: any
+    Returns:
+      - Name: Variant
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: any
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns a new Variant
 Events: []
 IsStatic: false

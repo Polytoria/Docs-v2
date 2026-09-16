@@ -4,37 +4,41 @@ Category: input
 BaseType: InputAction
 Properties:
   - Name: Buttons
-    Type: InputButtonCollection
+    Type:
+      Name: InputButtonCollection
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Collection of button inputs.
   - Name: IsPressed
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Returns true if any of the buttons in the collection is currently
       being pressed.
   - Name: Weight
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Returns the current analog input of the button.
 Methods: []
 Events:
   - Name: Pressed
-    Parameters: null
+    Parameters: []
     Description: Fires when this button has been pressed
-    Arguments: ""
   - Name: Released
-    Parameters: null
+    Parameters: []
     Description: Fires when this button has been released
-    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiable: false

@@ -5,48 +5,88 @@ BaseType: null
 Properties: []
 Methods:
   - Name: Connect
-    ReturnType: PTSignalConnection
-    Parameters:
-      - Name: action
-        Type: () -> ()
+    Returns:
+      - Name: PTSignalConnection
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Parameters:
+            - Type:
+                ElementType:
+                  Name: any
+                  IsOptional: false
+                Name: Tuple
+                IsOptional: false
+              Name: null
+              DefaultValue: null
+          Returns: []
+          Name: function
+          IsOptional: false
+        Name: action
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Connect a function to this signal
   - Name: Disconnect
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: action
-        Type: () -> ()
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Parameters:
+            - Type:
+                ElementType:
+                  Name: any
+                  IsOptional: false
+                Name: Tuple
+                IsOptional: false
+              Name: null
+              DefaultValue: null
+          Returns: []
+          Name: function
+          IsOptional: false
+        Name: action
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Disconnect a function from this signal
   - Name: Wait
-    ReturnType: any
+    Returns:
+      - ElementType:
+          Name: any
+          IsOptional: false
+        Name: Tuple
+        IsOptional: false
     Parameters: []
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Wait until this signal's emitted
   - Name: Once
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: action
-        Type: () -> ()
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Parameters:
+            - Type:
+                ElementType:
+                  Name: any
+                  IsOptional: false
+                Name: Tuple
+                IsOptional: false
+              Name: null
+              DefaultValue: null
+          Returns: []
+          Name: function
+          IsOptional: false
+        Name: action
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Listen to this signal only once
 Events: []
 IsStatic: false

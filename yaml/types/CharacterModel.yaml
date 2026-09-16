@@ -4,103 +4,129 @@ Category: world
 BaseType: Dynamic
 Properties:
   - Name: CurrentState
-    Type: CharacterModelState
+    Type:
+      Name: CharacterModelState
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Current state of this character.
   - Name: CurrentSpeed
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Current state animation speed of this character.
   - Name: Animator
-    Type: Animator
+    Type:
+      Name: Animator
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The animator for this character
 Methods:
   - Name: PlayIdle
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: PlayWalk
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: PlayRun
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: PlayJump
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: PlayClimb
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: SetAnimSpeed
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: speed
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: speed
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: SetState
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: newState
-        Type: CharacterModelState
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: CharacterModelState
+          IsOptional: false
+        Name: newState
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: GetAttachment
-    ReturnType: Dynamic
-    Parameters:
-      - Name: attachmentEnum
-        Type: CharacterAttachment
+    Returns:
+      - Name: Dynamic
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: CharacterAttachment
+          IsOptional: false
+        Name: attachmentEnum
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Get attachment dynamic from this character
+  - Name: New
+    Returns:
+      - Name: CharacterModel
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

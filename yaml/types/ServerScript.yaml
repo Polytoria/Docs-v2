@@ -3,7 +3,22 @@ Description: ServerScript is a script that runs on the server.
 Category: scripting
 BaseType: Script
 Properties: []
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: ServerScript
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

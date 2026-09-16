@@ -4,219 +4,274 @@ Category: types
 BaseType: null
 Properties:
   - Name: Center
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates the center point of the bounds.
   - Name: Size
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the size of the bounds.
   - Name: Extents
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates the extents of the bounds.
   - Name: Start
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The origin point
   - Name: End
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The ending point
   - Name: Volume
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates the volume of the bounds.
 Methods:
   - Name: New
-    ReturnType: Bounds
+    Returns:
+      - Name: Bounds
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new Bounds object with the specified position and size.
   - Name: New
-    ReturnType: Bounds
+    Returns:
+      - Name: Bounds
+        IsOptional: false
     Parameters:
-      - Name: position
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: size
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: position
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: size
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new Bounds object with the specified position and size.
   - Name: ClosestPoint
-    ReturnType: Vector3
+    Returns:
+      - Name: Vector3
+        IsOptional: false
     Parameters:
-      - Name: bounds
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
-      - Name: point
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Bounds
+          IsOptional: false
+        Name: bounds
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: point
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Calculates the closest point on the bounds to the specified point.
   - Name: Contains
-    ReturnType: boolean
+    Returns:
+      - Name: boolean
+        IsOptional: false
     Parameters:
-      - Name: bounds
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
-      - Name: point
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Bounds
+          IsOptional: false
+        Name: bounds
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: point
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns whether the bounds contain the specified point.
   - Name: Encapsulate
-    ReturnType: Bounds
+    Returns:
+      - Name: Bounds
+        IsOptional: false
     Parameters:
-      - Name: bounds
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
-      - Name: point
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Bounds
+          IsOptional: false
+        Name: bounds
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: point
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Expands the bounds by the specified amount.
   - Name: Expand
-    ReturnType: Bounds
+    Returns:
+      - Name: Bounds
+        IsOptional: false
     Parameters:
-      - Name: bounds
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
-      - Name: amount
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Bounds
+          IsOptional: false
+        Name: bounds
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: amount
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Expands the bounds by the specified amount.
   - Name: Intersects
-    ReturnType: boolean
+    Returns:
+      - Name: boolean
+        IsOptional: false
     Parameters:
-      - Name: bounds
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
-      - Name: other
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Bounds
+          IsOptional: false
+        Name: bounds
+        DefaultValue: null
+      - Type:
+          Name: Bounds
+          IsOptional: false
+        Name: other
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Determines whether the bounds intersect with another bounds.
   - Name: Intersection
-    ReturnType: Bounds
+    Returns:
+      - Name: Bounds
+        IsOptional: false
     Parameters:
-      - Name: bounds
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
-      - Name: other
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Bounds
+          IsOptional: false
+        Name: bounds
+        DefaultValue: null
+      - Type:
+          Name: Bounds
+          IsOptional: false
+        Name: other
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns the overlap of the two bounds.
   - Name: SetMinMax
-    ReturnType: Bounds
+    Returns:
+      - Name: Bounds
+        IsOptional: false
     Parameters:
-      - Name: bounds
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
-      - Name: min
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: max
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Bounds
+          IsOptional: false
+        Name: bounds
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: min
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: max
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Sets the minimum and maximum points of the bounds.
   - Name: Distance
-    ReturnType: number
+    Returns:
+      - Name: number
+        IsOptional: false
     Parameters:
-      - Name: bounds
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
-      - Name: point
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Bounds
+          IsOptional: false
+        Name: bounds
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: point
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Calculates the distance from the bounds to the specified point.
   - Name: SqrDistance
-    ReturnType: number
+    Returns:
+      - Name: number
+        IsOptional: false
     Parameters:
-      - Name: bounds
-        Type: Bounds
-        IsOptional: false
-        DefaultValue: ""
-      - Name: point
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Bounds
+          IsOptional: false
+        Name: bounds
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: point
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Calculates the squared distance from the bounds to the specified point.
 Events: []
 IsStatic: false

@@ -4,39 +4,49 @@ Category: input
 BaseType: InputAction
 Properties:
   - Name: Up
-    Type: InputButtonCollection
+    Type:
+      Name: InputButtonCollection
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Collection of up inputs.
   - Name: Down
-    Type: InputButtonCollection
+    Type:
+      Name: InputButtonCollection
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Collection of down inputs.
   - Name: Left
-    Type: InputButtonCollection
+    Type:
+      Name: InputButtonCollection
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Collection of left inputs.
   - Name: Right
-    Type: InputButtonCollection
+    Type:
+      Name: InputButtonCollection
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Collection of right inputs.
   - Name: Value
-    Type: Vector2
+    Type:
+      Name: Vector2
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The value of this input
 Methods: []
 Events: []

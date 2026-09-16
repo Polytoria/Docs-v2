@@ -4,65 +4,73 @@ Category: services
 BaseType: Instance
 Properties:
   - Name: UseAchievementSound
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determine if the achievement sound effect should play when user
       receives an achievement
   - Name: NotifyAchievements
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determine if achievement toast should show when user receives an
       achievement
 Methods:
   - Name: AwardAsync
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: userID
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: achievementID
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: userID
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: achievementID
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Award achievement to the target user asynchronously.
   - Name: HasAchievementAsync
-    ReturnType: boolean
+    Returns:
+      - Name: boolean
+        IsOptional: false
     Parameters:
-      - Name: userID
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: achievementID
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: userID
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: achievementID
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Check if the target user has the achievement, asynchronously.
 Events:
   - Name: GotAchievement
     Parameters:
-      - Name: number
-        Type: number
-        IsOptional: false
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: achievementID
         DefaultValue: null
     Description: Fires when the local player got an achievement
-    Arguments:
-      Name: achievementID
-      Type: number
 IsStatic: true
 IsAbstract: false
 IsInstantiable: false

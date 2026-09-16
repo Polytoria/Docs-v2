@@ -5,40 +5,62 @@ Category: physics
 BaseType: Instance
 Properties:
   - Name: TargetRotation
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the target rotation that the body applies forces to get to.
   - Name: Force
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines how much force the body applies.
   - Name: AcceptanceAngle
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines how close the body has to be to the target rotation to
       stop applying forces to it.
 Methods:
   - Name: SetQuaternion
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: quaternion
-        Type: Quaternion
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Quaternion
+          IsOptional: false
+        Name: quaternion
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sets target rotation to the given quaternion.
+  - Name: New
+    Returns:
+      - Name: BodyRotation
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

@@ -5,48 +5,75 @@ Category: assets
 BaseType: ImageAsset
 Properties:
   - Name: Series
-    Type: ColorSeries
+    Type:
+      Name: ColorSeries
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The color series for this gradient
   - Name: Width
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the width of this image
   - Name: Height
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the height of this image
   - Name: Fill
-    Type: GradientImageFill
+    Type:
+      Name: GradientImageFill
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the fill mode of the gradient
   - Name: FillFrom
-    Type: Vector2
+    Type:
+      Name: Vector2
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the starting point of the gradient
   - Name: FillTo
-    Type: Vector2
+    Type:
+      Name: Vector2
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the ending point of the gradient
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: GradientImageAsset
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

@@ -5,126 +5,140 @@ Category: networking
 BaseType: null
 Properties:
   - Name: Name
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Name of this object
   - Name: ClassName
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Class name of this object
   - Name: Shared
-    Type: ScriptSharedTable
+    Type:
+      Name: ScriptSharedTable
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: A shared table accessible by scripts.
   - Name: NetworkedObjectID
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Returns networked ID of this object. Networked ID are always unique
       per network session.
   - Name: ObjectID
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Returns object ID of this object. Object ID originates from the .poly file.
   - Name: ExistInNetwork
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Returns true if this object exists in network, false if this object
       is spawned by the local client.
 Methods:
   - Name: IsA
-    ReturnType: boolean
-    Parameters:
-      - Name: className
-        Type: string
+    Returns:
+      - Name: boolean
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: className
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns whether or not the instance is the specified class, this
       also checks for inheritance.
   - Name: Clone
-    ReturnType: NetworkedObject
+    Returns:
+      - Name: NetworkedObject
+        IsOptional: false
     Parameters:
-      - Name: parent
-        Type: NetworkedObject
-        IsOptional: true
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
         DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Clones the instance
   - Name: Destroy
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: time
-        Type: number
-        IsOptional: true
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: time
         DefaultValue: "0"
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Destroys the instance (same as Delete method)
   - Name: Delete
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: time
-        Type: number
-        IsOptional: true
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: time
         DefaultValue: "0"
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Deletes the instance (same as Destroy method)
 Events:
   - Name: PropertyChanged
     Parameters:
-      - Name: string
-        Type: string
-        IsOptional: false
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: propertyName
         DefaultValue: null
     Description: Fires when a property of this object has changed
-    Arguments:
-      Name: propertyName
-      Type: string
   - Name: Renamed
-    Parameters: null
+    Parameters: []
     Description: Fires when this object has been renamed
-    Arguments: ""
   - Name: TreeEntered
-    Parameters: null
+    Parameters: []
     Description: Fires when object enters the tree
-    Arguments: ""
   - Name: TreeExited
-    Parameters: null
+    Parameters: []
     Description: Fires when object exit the tree (via reparent or delete)
-    Arguments: ""
   - Name: Destroying
-    Parameters: null
+    Parameters: []
     Description: Fires when this object is being destroyed
-    Arguments: ""
 IsStatic: false
 IsAbstract: true
 IsInstantiable: false

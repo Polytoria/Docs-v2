@@ -4,13 +4,30 @@ Category: world
 BaseType: Instance
 Properties:
   - Name: Image
-    Type: ImageAsset
+    Type:
+      Name: ImageAsset
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The clothing texture to use
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: Clothing
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

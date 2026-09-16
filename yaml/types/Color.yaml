@@ -7,197 +7,336 @@ Category: types
 BaseType: null
 Properties:
   - Name: R
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Red color component
   - Name: G
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Green color component
   - Name: B
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Blue color component
   - Name: A
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Alpha (opacity) color component
+  - Name: Transparent
+    Type:
+      Name: Color
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsStatic: true
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: Black
+    Type:
+      Name: Color
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsStatic: true
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: Gray
+    Type:
+      Name: Color
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsStatic: true
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: White
+    Type:
+      Name: Color
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsStatic: true
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: Red
+    Type:
+      Name: Color
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsStatic: true
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: Yellow
+    Type:
+      Name: Color
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsStatic: true
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: Green
+    Type:
+      Name: Color
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsStatic: true
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: Cyan
+    Type:
+      Name: Color
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsStatic: true
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: Blue
+    Type:
+      Name: Color
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsStatic: true
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: Magenta
+    Type:
+      Name: Color
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsStatic: true
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Methods:
   - Name: New
-    ReturnType: Color
+    Returns:
+      - Name: Color
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new Color with the set R, G, B and A values
   - Name: New
-    ReturnType: Color
-    Parameters:
-      - Name: d
-        Type: number
+    Returns:
+      - Name: Color
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: d
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new Color with the set R, G, B and A values
   - Name: New
-    ReturnType: Color
+    Returns:
+      - Name: Color
+        IsOptional: false
     Parameters:
-      - Name: r
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: g
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: b
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: r
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: g
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: b
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new Color with the set R, G, B and A values
   - Name: New
-    ReturnType: Color
+    Returns:
+      - Name: Color
+        IsOptional: false
     Parameters:
-      - Name: r
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: g
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: b
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: a
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: r
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: g
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: b
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: a
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new Color with the set R, G, B and A values
   - Name: Random
-    ReturnType: Color
+    Returns:
+      - Name: Color
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns a random color with an alpha value of 1.
   - Name: FromRGB
-    ReturnType: Color
+    Returns:
+      - Name: Color
+        IsOptional: false
     Parameters:
-      - Name: r
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: g
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: b
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: a
-        Type: number
-        IsOptional: true
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: r
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: g
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: b
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: a
         DefaultValue: "1"
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new Color from the specified RGBA value.
   - Name: FromHex
-    ReturnType: Color
-    Parameters:
-      - Name: hex
-        Type: string
+    Returns:
+      - Name: Color
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: hex
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new Color from the specified hex value.
   - Name: ToHex
-    ReturnType: string
-    Parameters:
-      - Name: c
-        Type: Color
+    Returns:
+      - Name: string
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Color
+          IsOptional: false
+        Name: c
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Converts a Color value to its hexadecimal string representation.
   - Name: FromHSV
-    ReturnType: Color
+    Returns:
+      - Name: Color
+        IsOptional: false
     Parameters:
-      - Name: h
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: s
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: v
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: a
-        Type: number
-        IsOptional: true
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: h
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: s
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: v
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: a
         DefaultValue: "1"
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new Color from the specified HSV value.
   - Name: Lerp
-    ReturnType: Color
+    Returns:
+      - Name: Color
+        IsOptional: false
     Parameters:
-      - Name: a
-        Type: Color
-        IsOptional: false
-        DefaultValue: ""
-      - Name: b
-        Type: Color
-        IsOptional: false
-        DefaultValue: ""
-      - Name: t
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Color
+          IsOptional: false
+        Name: a
+        DefaultValue: null
+      - Type:
+          Name: Color
+          IsOptional: false
+        Name: b
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: t
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Linearly interpolates colors a and b by t.
 Events: []
 IsStatic: false

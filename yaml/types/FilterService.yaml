@@ -5,16 +5,19 @@ BaseType: Instance
 Properties: []
 Methods:
   - Name: Filter
-    ReturnType: string
-    Parameters:
-      - Name: input
-        Type: string
+    Returns:
+      - Name: string
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: input
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Filter a string
 Events: []
 IsStatic: true

@@ -5,79 +5,98 @@ Category: scripting
 BaseType: Instance
 Properties:
   - Name: Source
-    Type: string
-    IsAccessibleByScripts: false
-    IsReadOnly: false
-    IsObsolete: false
-    IsStatic: false
-    Description: The source code of the script as a string.
-  - Name: IsEnabled
-    Type: boolean
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
+    Description: The source code of the script as a string.
+  - Name: IsEnabled
+    Type:
+      Name: boolean
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsStatic: false
+    ObsoletionInfo: null
     Description: Determine if this script should be enabled. Note that setting it to
       false during runtime won't stop the script immediately, rather it would
       stop any running threads when it hits any yield function.
   - Name: LinkedScript
-    Type: FileLinkAsset
-    IsAccessibleByScripts: false
+    Type:
+      Name: FileLinkAsset
+      IsOptional: false
+    IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: A linked script asset associated with this script.
   - Name: Compatibility
-    Type: boolean
-    IsAccessibleByScripts: false
+    Type:
+      Name: boolean
+      IsOptional: false
+    IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether the script is running in compatibility mode.
 Methods:
   - Name: Call
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: funcName
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: args
-        Type: any
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: funcName
+        DefaultValue: null
+      - Type:
+          ElementType:
+            Name: any
+            IsOptional: false
+          Name: Tuple
+          IsOptional: false
+        Name: args
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Calls a function in the script with the given arguments.
   - Name: CallAsync
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: funcName
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: args
-        Type: any
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: funcName
+        DefaultValue: null
+      - Type:
+          ElementType:
+            Name: any
+            IsOptional: false
+          Name: Tuple
+          IsOptional: false
+        Name: args
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Calls a function in the script asynchronously with the given arguments.
   - Name: LinkWithScriptFile
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: scriptPath
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: scriptPath
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Link script with the target file path
 Events: []
 IsStatic: false

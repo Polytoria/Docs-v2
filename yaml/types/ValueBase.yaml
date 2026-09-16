@@ -6,9 +6,8 @@ Properties: []
 Methods: []
 Events:
   - Name: Changed
-    Parameters: null
+    Parameters: []
     Description: Fires when value has been changed
-    Arguments: ""
 IsStatic: false
 IsAbstract: true
 IsInstantiable: false

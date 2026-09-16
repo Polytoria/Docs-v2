@@ -4,11 +4,28 @@ Category: services
 BaseType: Instance
 Properties:
   - Name: ChatPredicate
-    Type: () -> ()
+    Type:
+      Parameters:
+        - Type:
+            ElementType:
+              Name: any
+              IsOptional: false
+            Name: Tuple
+            IsOptional: false
+          Name: null
+          DefaultValue: null
+      Returns:
+        - ElementType:
+            Name: any
+            IsOptional: false
+          Name: Tuple
+          IsOptional: false
+      Name: function
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: >
       A callback function that filters chat messages before they are processed
       by the server, and displayed to other players.
@@ -26,65 +43,62 @@ Properties:
       ```
 Methods:
   - Name: BroadcastMessage
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: msg
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: msg
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a chat message to all players.
   - Name: UnicastMessage
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: msg
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: plr
-        Type: Player
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: msg
+        DefaultValue: null
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: plr
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a chat message to a specific player.
 Events:
   - Name: NewChatMessage
     Parameters:
-      - Name: player
-        Type: Player
-        IsOptional: false
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: sender
         DefaultValue: null
-      - Name: string
-        Type: string
-        IsOptional: false
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: message
         DefaultValue: null
     Description: Fires when new chat message has been received from player
-    Arguments:
-      - Name: sender
-        Type: Player
-      - Name: message
-        Type: string
   - Name: MessageReceived
     Parameters:
-      - Name: string
-        Type: string
-        IsOptional: false
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: message
         DefaultValue: null
     Description: Fires when new message has been received from either
       `BroadcastMessage` or `UnicastMessage`
-    Arguments:
-      Name: message
-      Type: string
   - Name: MessageDeclined
-    Parameters: null
+    Parameters: []
     Description: Fires when message has been declined by the server
-    Arguments: ""
 IsStatic: true
 IsAbstract: false
 IsInstantiable: false

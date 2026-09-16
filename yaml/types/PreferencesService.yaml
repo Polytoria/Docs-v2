@@ -5,49 +5,53 @@ Category: services
 BaseType: Instance
 Properties:
   - Name: CameraSensitivity
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: UiScale
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
 Methods:
   - Name: Get
-    ReturnType: any
-    Parameters:
-      - Name: name
-        Type: string
+    Returns:
+      - Name: any
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: name
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
 Events:
   - Name: SettingChanged
     Parameters:
-      - Name: string
-        Type: string
-        IsOptional: false
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: settingName
         DefaultValue: null
-      - Name: any
-        Type: any
-        IsOptional: false
+      - Type:
+          Name: any
+          IsOptional: false
+        Name: setTo
         DefaultValue: null
     Description: Fired when a user preference setting is changed.
-    Arguments:
-      - Name: settingName
-        Type: string
-      - Name: setTo
-        Type: any
 IsStatic: true
 IsAbstract: false
 IsInstantiable: false

@@ -4,166 +4,212 @@ Category: elements
 BaseType: Dynamic
 Properties:
   - Name: Audio
-    Type: AudioAsset
+    Type:
+      Name: AudioAsset
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The audio asset to be played by the sound.
   - Name: Volume
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The volume level of the sound.
   - Name: Pitch
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The pitch level of the sound.
   - Name: Pan
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The left-right pan level of the sound.
   - Name: Autoplay
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether the sound should start playing automatically
       when loaded.
   - Name: Loop
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether the sound should loop when it reaches the end.
   - Name: LoopStart
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines what position the sound should loop back to.
   - Name: PlayInWorld
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether the sound should be played in the 3D world space.
   - Name: Paused
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether the sound should be paused
   - Name: MaxDistance
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The maximum distance at which the sound can be heard.
   - Name: AttenuationMode
-    Type: SoundAttenuationMode
+    Type:
+      Name: SoundAttenuationMode
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines how a sound should get quieter when further away.
   - Name: Time
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates the current playback position of the sound in seconds.
   - Name: Playing
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether the sound is currently playing.
   - Name: Loading
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether the sound is currently loading.
   - Name: Length
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The total length of the sound in seconds.
 Methods:
   - Name: Play
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Starts playing the sound.
   - Name: PlayOneShot
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: volume
-        Type: number
-        IsOptional: true
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: volume
         DefaultValue: "1"
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Plays the sound once at the specified volume without affecting the
       current playback.
   - Name: Pause
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Pause the sound if it is currently playing.
   - Name: Stop
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Stops the sound if it is currently playing.
   - Name: GetPeakVolume
-    ReturnType: number
+    Returns:
+      - Name: number
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: New
+    Returns:
+      - Name: Sound
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
 Events:
   - Name: Loaded
-    Parameters: null
+    Parameters: []
     Description: Fires when this sound has loaded
-    Arguments: ""
   - Name: Finished
-    Parameters: null
+    Parameters: []
     Description: Fires when this sound has finished playback
-    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true

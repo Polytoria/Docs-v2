@@ -4,13 +4,30 @@ Category: assets
 BaseType: AudioAsset
 Properties:
   - Name: AudioPreset
-    Type: BuiltInAudioPreset
+    Type:
+      Name: BuiltInAudioPreset
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The target audio to use
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: BuiltInAudioAsset
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

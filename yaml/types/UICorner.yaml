@@ -4,41 +4,66 @@ Category: ui
 BaseType: Instance
 Properties:
   - Name: CornerRadius
-    Type: UIScale
+    Type:
+      Name: UIScale
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Corner radius. When set, all specific corner radiuses are updated.
   - Name: TopLeftRadius
-    Type: UIScale
+    Type:
+      Name: UIScale
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Top left corner radius.
   - Name: TopRightRadius
-    Type: UIScale
+    Type:
+      Name: UIScale
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Top right corner radius.
   - Name: BottomLeftRadius
-    Type: UIScale
+    Type:
+      Name: UIScale
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Bottom left corner radius.
   - Name: BottomRightRadius
-    Type: UIScale
+    Type:
+      Name: UIScale
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Bottom right corner radius.
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: UICorner
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

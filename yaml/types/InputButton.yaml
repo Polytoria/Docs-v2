@@ -4,32 +4,39 @@ Category: input
 BaseType: null
 Properties:
   - Name: KeyCode
-    Type: KeyCode
+    Type:
+      Name: KeyCode
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Key code for this button
 Methods:
   - Name: New
-    ReturnType: InputButton
+    Returns:
+      - Name: InputButton
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new button with this keycode.
   - Name: New
-    ReturnType: InputButton
-    Parameters:
-      - Name: key
-        Type: KeyCode
+    Returns:
+      - Name: InputButton
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: KeyCode
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new button with this keycode.
 Events: []
 IsStatic: false

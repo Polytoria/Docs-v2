@@ -4,20 +4,39 @@ Category: ui
 BaseType: UIContainer
 Properties:
   - Name: HorizontalScrollMode
-    Type: UIScrollMode
+    Type:
+      Name: UIScrollMode
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the horizontal scroll mode of the scroll view.
   - Name: VerticalScrollMode
-    Type: UIScrollMode
+    Type:
+      Name: UIScrollMode
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the vertical scroll mode of the scroll view.
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: UIScrollView
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

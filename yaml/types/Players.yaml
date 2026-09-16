@@ -4,88 +4,103 @@ Category: game
 BaseType: Instance
 Properties:
   - Name: LocalPlayer
-    Type: Player
+    Type:
+      Name: Player
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The player who is currently playing the game.
   - Name: PlayerCollisionEnabled
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether or not collisions between players are enabled.
   - Name: UseServerAuthority
-    Type: boolean
-    IsAccessibleByScripts: false
+    Type:
+      Name: boolean
+      IsOptional: false
+    IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether or not server should trust the client for
       adjusting player's properties. Enabling this is recommended.
   - Name: PlayersCount
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The number of players currently in the game.
 Methods:
   - Name: GetPlayers
-    ReturnType: "{ Player }"
+    Returns:
+      - ElementType:
+          Name: Player
+          IsOptional: false
+        Name: Array
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns a table containing all the players currently in the game.
   - Name: GetPlayer
-    ReturnType: Player
-    Parameters:
-      - Name: username
-        Type: string
+    Returns:
+      - Name: Player
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: username
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns the player with the specified username.
   - Name: GetPlayerByID
-    ReturnType: Player
-    Parameters:
-      - Name: userID
-        Type: number
+    Returns:
+      - Name: Player
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: userID
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns the player with the specified user ID.
 Events:
   - Name: PlayerAdded
     Parameters:
-      - Name: player
-        Type: Player
-        IsOptional: false
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: player
         DefaultValue: null
     Description: Fires when player has connected
-    Arguments:
-      Name: player
-      Type: Player
   - Name: PlayerRemoved
     Parameters:
-      - Name: player
-        Type: Player
-        IsOptional: false
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: player
         DefaultValue: null
     Description: Fires when player has disconnected
-    Arguments:
-      Name: player
-      Type: Player
 IsStatic: true
 IsAbstract: false
 IsInstantiable: false

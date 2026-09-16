@@ -3,7 +3,22 @@ Description: Folder is similar to a model, used for storing objects in the place
 Category: world
 BaseType: Instance
 Properties: []
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: Folder
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

@@ -5,48 +5,59 @@ Category: types
 BaseType: null
 Properties:
   - Name: Min
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the minimum value of the range.
   - Name: Max
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the maximum value of the range.
 Methods:
   - Name: New
-    ReturnType: NumberRange
+    Returns:
+      - Name: NumberRange
+        IsOptional: false
     Parameters:
-      - Name: from
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: to
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: from
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: to
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new NumberRange object with the specified minimum and
       maximum values.
   - Name: Lerp
-    ReturnType: number
-    Parameters:
-      - Name: t
-        Type: number
+    Returns:
+      - Name: number
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: t
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Linearly interpolates between the minimum and maximum values of the
       range based on the parameter t, which is typically between 0 and 1.
 Events: []

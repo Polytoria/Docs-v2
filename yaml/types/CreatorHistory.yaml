@@ -6,48 +6,71 @@ BaseType: Instance
 Properties: []
 Methods:
   - Name: NewAction
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: title
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: title
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates new action
   - Name: AddDoCallback
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: callback
-        Type: () -> ()
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Parameters:
+            - Type:
+                ElementType:
+                  Name: any
+                  IsOptional: false
+                Name: Tuple
+                IsOptional: false
+              Name: null
+              DefaultValue: null
+          Returns: []
+          Name: function
+          IsOptional: false
+        Name: callback
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Add do callback
   - Name: AddUndoCallback
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: callback
-        Type: () -> ()
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Parameters:
+            - Type:
+                ElementType:
+                  Name: any
+                  IsOptional: false
+                Name: Tuple
+                IsOptional: false
+              Name: null
+              DefaultValue: null
+          Returns: []
+          Name: function
+          IsOptional: false
+        Name: callback
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Add undo callback
   - Name: CommitAction
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Commit the current action
 Events: []
 IsStatic: true

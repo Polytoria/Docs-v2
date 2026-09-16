@@ -6,80 +6,97 @@ BaseType: Instance
 Properties: []
 Methods:
   - Name: DefaultNPC
-    ReturnType: NPC
+    Returns:
+      - Name: NPC
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Inserts a Default NPC
   - Name: InitializeDefaultNPC
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: npc
-        Type: NPC
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: NPC
+          IsOptional: false
+        Name: npc
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Initialize default NPC with the DefaultCharacter and sounds
   - Name: DefaultCharacter
-    ReturnType: PolytorianModel
+    Returns:
+      - Name: PolytorianModel
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Inserts a Default PolytorianModel
   - Name: ModelAsync
-    ReturnType: Instance
-    Parameters:
-      - Name: id
-        Type: number
+    Returns:
+      - Name: Instance
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: id
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Inserts a model with the specified ID.
   - Name: ClothingAsync
-    ReturnType: Clothing
-    Parameters:
-      - Name: id
-        Type: number
+    Returns:
+      - Name: Clothing
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: id
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Inserts clothing with the specified ID.
   - Name: AccessoryAsync
-    ReturnType: Accessory
-    Parameters:
-      - Name: id
-        Type: number
+    Returns:
+      - Name: Accessory
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: id
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Inserts an accessory with the specified ID.
   - Name: ToolAsync
-    ReturnType: Tool
-    Parameters:
-      - Name: id
-        Type: number
+    Returns:
+      - Name: Tool
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: id
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Inserts a new tool with the specified ID
 Events: []
 IsStatic: true

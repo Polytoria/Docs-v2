@@ -3,12 +3,26 @@ Description: UIButton is a class that represents a clickable button UI element.
 Category: ui
 BaseType: UILabel
 Properties: []
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: UIButton
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events:
   - Name: Clicked
-    Parameters: null
+    Parameters: []
     Description: Fires when user click on this button
-    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true

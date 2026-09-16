@@ -4,7 +4,22 @@ Description: UIHFlow is a class that aligns all of it's children horizontally
 Category: ui
 BaseType: UIFlowLayout
 Properties: []
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: UIHFlow
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

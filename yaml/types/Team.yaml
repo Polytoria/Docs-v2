@@ -5,37 +5,63 @@ Category: game
 BaseType: Instance
 Properties:
   - Name: DisplayName
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Display name for this team
   - Name: Color
-    Type: Color
+    Type:
+      Name: Color
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Color for this team
 Methods:
   - Name: GetDisplayName
-    ReturnType: string
+    Returns:
+      - Name: string
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns the display name of the team. If DisplayName is specified,
       it returns DisplayName; otherwise, it returns Name.
   - Name: GetPlayers
-    ReturnType: "{ Player }"
+    Returns:
+      - ElementType:
+          Name: Player
+          IsOptional: false
+        Name: Array
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Get all players assigned to this team.
+  - Name: New
+    Returns:
+      - Name: Team
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

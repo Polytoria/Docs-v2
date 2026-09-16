@@ -5,16 +5,19 @@ BaseType: Instance
 Properties: []
 Methods:
   - Name: Register
-    ReturnType: AddonObject
-    Parameters:
-      - Name: identifier
-        Type: string
+    Returns:
+      - Name: AddonObject
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: identifier
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Register an addon
 Events: []
 IsStatic: true

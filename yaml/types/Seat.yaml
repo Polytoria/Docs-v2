@@ -4,55 +4,74 @@ Category: world
 BaseType: Part
 Properties:
   - Name: Occupant
-    Type: NPC
+    Type:
+      Name: NPC
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates who is currently occupying the seat.
   - Name: CanPlayerSit
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether players are allowed to sit on this seat.
   - Name: CanNPCSit
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether NPCs are allowed to sit on this seat.
   - Name: SitDirectionLocked
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: Seat
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events:
   - Name: Sat
     Parameters:
-      - Name: npc
-        Type: NPC
-        IsOptional: false
+      - Type:
+          Name: NPC
+          IsOptional: false
+        Name: occupant
         DefaultValue: null
     Description: Fires when an occupant sits on the seat.
-    Arguments:
-      Name: occupant
-      Type: NPC
   - Name: Vacated
     Parameters:
-      - Name: npc
-        Type: NPC
-        IsOptional: false
+      - Type:
+          Name: NPC
+          IsOptional: false
+        Name: occupant
         DefaultValue: null
     Description: Fires when an occupant leaves the seat.
-    Arguments:
-      Name: occupant
-      Type: NPC
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true

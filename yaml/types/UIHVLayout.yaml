@@ -5,18 +5,22 @@ Category: ui
 BaseType: UIContainer
 Properties:
   - Name: Spacing
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The spacing between child elements in the layout.
   - Name: ChildAlignment
-    Type: UILayoutAlignment
+    Type:
+      Name: UILayoutAlignment
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the alignment of child elements within the layout.
 Methods: []
 Events: []

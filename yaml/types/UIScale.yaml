@@ -5,31 +5,38 @@ Category: ui
 BaseType: null
 Properties:
   - Name: Offset
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The offset in pixels.
   - Name: Scale
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The scale relative to the parent size.
 Methods:
   - Name: Compute
-    ReturnType: number
-    Parameters:
-      - Name: parentSize
-        Type: number
+    Returns:
+      - Name: number
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: parentSize
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Calculates the pixel size of the UIScale.
 Events: []
 IsStatic: false

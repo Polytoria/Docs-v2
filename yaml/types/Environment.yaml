@@ -5,152 +5,253 @@ Category: game
 BaseType: Instance
 Properties:
   - Name: CurrentCamera
-    Type: Camera
+    Type:
+      Name: Camera
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the current camera which the player is using to view the world.
   - Name: Gravity
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The direction and strength of gravity in the world.
   - Name: PartDestroyHeight
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The height at which unanchored parts are destroyed when they fall below it.
   - Name: AutoGenerateNavMesh
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether or not to automatically build a navigation mesh
       for NPC pathfinding. This property is disabled by default so there are no
       performance issues with larger maps.
 Methods:
   - Name: Raycast
-    ReturnType: RayResult
+    Returns:
+      - Name: RayResult
+        IsOptional: true
     Parameters:
-      - Name: origin
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: direction
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: maxDistance
-        Type: number
-        IsOptional: true
-        DefaultValue: "10000"
-      - Name: ignoreList
-        Type: "{ Instance }"
-        IsOptional: true
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: origin
         DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: direction
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: maxDistance
+        DefaultValue: "10000"
+      - Type:
+          ElementType:
+            Name: Instance
+            IsOptional: false
+          Name: Array
+          IsOptional: true
+        Name: ignoreList
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: passthroughMask
+        DefaultValue: "0"
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Casts a ray from origin with a specified direction and returns a
       RayResult for the first hit object.
   - Name: RaycastAll
-    ReturnType: "{ RayResult }"
+    Returns:
+      - ElementType:
+          Name: RayResult
+          IsOptional: false
+        Name: Array
+        IsOptional: false
     Parameters:
-      - Name: origin
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: direction
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: maxDistance
-        Type: number
-        IsOptional: true
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: origin
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: direction
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: maxDistance
         DefaultValue: "1000"
-      - Name: ignoreList
-        Type: "{ Instance }"
-        IsOptional: true
+      - Type:
+          ElementType:
+            Name: Instance
+            IsOptional: false
+          Name: Array
+          IsOptional: true
+        Name: ignoreList
         DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Casts a ray from origin with a specified direction and returns a
       RayResult array for all hit objects.
-  - Name: OverlapSphere
-    ReturnType: "{ Instance }"
+  - Name: RaycastGather
+    Returns:
+      - ElementType:
+          Name: RayResult
+          IsOptional: false
+        Name: Array
+        IsOptional: false
     Parameters:
-      - Name: origin
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: radius
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: ignoreList
-        Type: "{ Instance }"
-        IsOptional: true
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: origin
         DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: direction
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: maxDistance
+        DefaultValue: "10000"
+      - Type:
+          ElementType:
+            Name: Instance
+            IsOptional: false
+          Name: Array
+          IsOptional: true
+        Name: ignoreList
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: passthroughMask
+        DefaultValue: "0"
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: OverlapSphere
+    Returns:
+      - ElementType:
+          Name: Instance
+          IsOptional: false
+        Name: Array
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: origin
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: radius
+        DefaultValue: null
+      - Type:
+          ElementType:
+            Name: Instance
+            IsOptional: false
+          Name: Array
+          IsOptional: true
+        Name: ignoreList
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: false
+    IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns a list of instances intersecting with the sphere in the
       given position and radius.
   - Name: OverlapBox
-    ReturnType: "{ Instance }"
+    Returns:
+      - ElementType:
+          Name: Instance
+          IsOptional: false
+        Name: Array
+        IsOptional: false
     Parameters:
-      - Name: pos
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: size
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: rot
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: ignoreList
-        Type: "{ Instance }"
-        IsOptional: true
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: pos
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: size
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: rot
+        DefaultValue: null
+      - Type:
+          ElementType:
+            Name: Instance
+            IsOptional: false
+          Name: Array
+          IsOptional: true
+        Name: ignoreList
         DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns a list of instances intersecting with the box in the given
       position, size and rotation.
   - Name: RebuildNavMesh
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Rebuilds the navigation mesh which determines the empty space where
       NPCs can pathfind in.
   - Name: GetPointOnNavMesh
-    ReturnType: Vector3
-    Parameters:
-      - Name: toPoint
-        Type: Vector3
+    Returns:
+      - Name: Vector3
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: toPoint
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns a point on the navigation mesh at the given position.
 Events: []
 IsStatic: true

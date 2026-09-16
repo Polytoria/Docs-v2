@@ -6,48 +6,51 @@ BaseType: null
 Properties: []
 Methods:
   - Name: Clear
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Clear the shared table
   - Name: Remove
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Remove the key from shared table
   - Name: ClearPrefix
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: prefix
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: prefix
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Clear all keys with the prefix
   - Name: ClearSuffix
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: suffix
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: suffix
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Clear all keys with the suffix
 Events: []
 IsStatic: false

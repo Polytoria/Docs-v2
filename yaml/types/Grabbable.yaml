@@ -5,53 +5,82 @@ Category: physics
 BaseType: Instance
 Properties:
   - Name: Force
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the force used to drag this object.
   - Name: MaxRange
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines how far this object can be dragged.
   - Name: MaxGrabbableRange
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the max range that this object can be grabbed from.
   - Name: UseDragForce
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines if dragging this object should affect physics.
   - Name: PermissionMode
-    Type: GrabbablePermissionMode
+    Type:
+      Name: GrabbablePermissionMode
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the permission mode for this grabber
   - Name: Dragger
-    Type: Player
+    Type:
+      Name: Player
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Returns the current dragger
   - Name: PermissionPredicate
-    Type: () -> ()
+    Type:
+      Parameters:
+        - Type:
+            ElementType:
+              Name: any
+              IsOptional: false
+            Name: Tuple
+            IsOptional: false
+          Name: null
+          DefaultValue: null
+      Returns:
+        - ElementType:
+            Name: any
+            IsOptional: false
+          Name: Tuple
+          IsOptional: false
+      Name: function
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: >-
       A predicate function deciding whether this player can grab this object.
       `PermissionMode` must be set to `GrabbablePermissionMode.Scripted`
@@ -68,26 +97,39 @@ Properties:
       end
 
       ```
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: Grabbable
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events:
   - Name: Grabbed
     Parameters:
-      - Name: player
-        Type: Player
-        IsOptional: false
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: grabber
         DefaultValue: null
     Description: Fires when this object has been grabbed
-    Arguments:
-      Name: grabber
-      Type: Player
   - Name: Released
     Parameters:
-      - Name: player
-        Type: Player
-        IsOptional: false
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: grabber
         DefaultValue: null
     Description: Fires when this object has been released
-    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true

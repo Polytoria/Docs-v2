@@ -5,13 +5,30 @@ Category: world
 BaseType: Dynamic
 Properties:
   - Name: TargetAttachment
-    Type: CharacterAttachment
+    Type:
+      Name: CharacterAttachment
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Specifies the character attachment point
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: Accessory
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

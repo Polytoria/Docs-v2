@@ -3,7 +3,22 @@ Description: UIViewport is a UI object that allows displaying 3D content on 2D U
 Category: ui
 BaseType: UIField
 Properties: []
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: UIViewport
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

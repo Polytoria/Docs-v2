@@ -5,12 +5,14 @@ BaseType: Instance
 Properties: []
 Methods:
   - Name: NewTween
-    ReturnType: TweenObject
+    Returns:
+      - Name: TweenObject
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: >-
       Creates a new tween object
           

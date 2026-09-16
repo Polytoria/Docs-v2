@@ -6,27 +6,31 @@ Category: services
 BaseType: Instance
 Properties:
   - Name: State
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Current activity status.
   - Name: CoverImage
-    Type: PTImageAsset
+    Type:
+      Name: PTImageAsset
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Activity cover image.
 Methods:
   - Name: ResetTimer
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Reset the running timer for this activity.
 Events: []
 IsStatic: true

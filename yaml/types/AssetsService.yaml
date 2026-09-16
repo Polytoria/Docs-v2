@@ -5,28 +5,34 @@ BaseType: Instance
 Properties: []
 Methods:
   - Name: GetFileLinkByPath
-    ReturnType: FileLinkAsset
-    Parameters:
-      - Name: path
-        Type: string
+    Returns:
+      - Name: FileLinkAsset
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: path
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Retrieve `FileLinkAsset` with the specified path
   - Name: GetFileLinkByID
-    ReturnType: FileLinkAsset
-    Parameters:
-      - Name: id
-        Type: string
+    Returns:
+      - Name: FileLinkAsset
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: id
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Retrieve `FileLinkAsset` with the specified ID
 Events: []
 IsStatic: true

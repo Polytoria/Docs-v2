@@ -4,7 +4,22 @@ Description: UIVFlow is a class that aligns all of it's children vertically and
 Category: ui
 BaseType: UIFlowLayout
 Properties: []
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: UIVFlow
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

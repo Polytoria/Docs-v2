@@ -7,92 +7,112 @@ BaseType: Instance
 Properties: []
 Methods:
   - Name: NewServerAsync
-    ReturnType: string
-    Parameters:
-      - Name: worldPath
-        Type: string
+    Returns:
+      - Name: string
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: worldPath
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Request a new server with data
   - Name: NewServerAsync
-    ReturnType: string
-    Parameters:
-      - Name: data
-        Type: NewServerRequestData
+    Returns:
+      - Name: string
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: NewServerRequestData
+          IsOptional: false
+        Name: data
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Request a new server with data
   - Name: JoinWorldAsync
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: plr
-        Type: Player
-        IsOptional: false
-        DefaultValue: ""
-      - Name: to
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: plr
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: to
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Join a player to a public server of the specified world
   - Name: JoinWorldPartyAsync
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: plrs
-        Type: "{ Player }"
-        IsOptional: false
-        DefaultValue: ""
-      - Name: to
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          ElementType:
+            Name: Player
+            IsOptional: false
+          Name: Array
+          IsOptional: false
+        Name: plrs
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: to
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Join a party of player to a public server of the specified world
   - Name: JoinPrivateAsync
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: plr
-        Type: Player
-        IsOptional: false
-        DefaultValue: ""
-      - Name: accessID
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: plr
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: accessID
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Join a player to a private server of the specified world
   - Name: JoinPrivatePartyAsync
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: players
-        Type: "{ Player }"
-        IsOptional: false
-        DefaultValue: ""
-      - Name: accessID
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          ElementType:
+            Name: Player
+            IsOptional: false
+          Name: Array
+          IsOptional: false
+        Name: players
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: accessID
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Join a party of player to a private server of the specified world
 Events: []
 IsStatic: true

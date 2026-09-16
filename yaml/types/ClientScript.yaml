@@ -4,7 +4,22 @@ Description: ClientScript is a script that runs locally for each player. It can
 Category: scripting
 BaseType: Script
 Properties: []
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: ClientScript
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

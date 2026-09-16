@@ -4,20 +4,39 @@ Category: assets
 BaseType: ImageAsset
 Properties:
   - Name: ImageID
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Asset ID of this image
   - Name: ImageType
-    Type: ImageType
+    Type:
+      Name: ImageType
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Image type of this image
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: PTImageAsset
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

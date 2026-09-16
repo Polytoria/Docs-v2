@@ -6,320 +6,377 @@ BaseType: null
 Properties: []
 Methods:
   - Name: AddString
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Adds a string value to the message with the specified key.
   - Name: AddInt
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Adds an integer value to the message with the specified key.
   - Name: AddBool
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: boolean
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
+      - Type:
+          Name: boolean
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Adds a boolean value to the message with the specified key.
   - Name: AddNumber
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Adds a number value to the message with the specified key.
   - Name: AddVector2
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Adds a Vector2 value to the message with the specified key.
   - Name: AddVector3
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Adds a Vector3 value to the message with the specified key.
   - Name: AddColor
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: Color
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
+      - Type:
+          Name: Color
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Adds a Color value to the message with the specified key.
   - Name: AddQuaternion
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: Quaternion
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
+      - Type:
+          Name: Quaternion
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Adds a Quaternion value to the message with the specified key.
   - Name: AddVariant
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: Variant
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
+      - Type:
+          Name: Variant
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Adds a Variant value to the message with the specified key.
   - Name: AddInstance
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: Instance
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
+      - Type:
+          Name: Instance
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Adds an Instance value to the message with the specified key.
   - Name: AddBuffer
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: buffer
-        Type: buffer
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
+      - Type:
+          Name: buffer
+          IsOptional: false
+        Name: buffer
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Adds an Buffer value to the message with the specified key.
   - Name: GetString
-    ReturnType: string
-    Parameters:
-      - Name: key
-        Type: string
+    Returns:
+      - Name: string
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets a string value from the message with the specified key.
   - Name: GetInt
-    ReturnType: number
+    Returns:
+      - Name: number
+        IsOptional: true
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets an integer value from the message with the specified key.
   - Name: GetNumber
-    ReturnType: number
+    Returns:
+      - Name: number
+        IsOptional: true
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets a number value from the message with the specified key.
   - Name: GetBool
-    ReturnType: boolean
+    Returns:
+      - Name: boolean
+        IsOptional: true
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets a boolean value from the message with the specified key.
   - Name: GetVector2
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: true
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets a Vector2 value from the message with the specified key.
   - Name: GetVector3
-    ReturnType: Vector3
+    Returns:
+      - Name: Vector3
+        IsOptional: true
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets a Vector3 value from the message with the specified key.
   - Name: GetColor
-    ReturnType: Color
+    Returns:
+      - Name: Color
+        IsOptional: true
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets a Color value from the message with the specified key.
   - Name: GetQuaternion
-    ReturnType: Quaternion
+    Returns:
+      - Name: Quaternion
+        IsOptional: true
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets a Quaternion value from the message with the specified key.
   - Name: GetVariant
-    ReturnType: Variant
+    Returns:
+      - Name: Variant
+        IsOptional: true
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets a Variant value from the message with the specified key.
   - Name: GetInstance
-    ReturnType: Instance
-    Parameters:
-      - Name: key
-        Type: string
+    Returns:
+      - Name: Instance
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets an Instance value from the message with the specified key.
   - Name: GetBuffer
-    ReturnType: buffer
-    Parameters:
-      - Name: key
-        Type: string
+    Returns:
+      - Name: buffer
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets an Buffer value from the message with the specified key.
   - Name: New
-    ReturnType: NetMessage
+    Returns:
+      - Name: NetMessage
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates a new NetMessage instance.
 Events: []
 IsStatic: false

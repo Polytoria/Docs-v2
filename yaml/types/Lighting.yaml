@@ -6,53 +6,67 @@ Category: game
 BaseType: Instance
 Properties:
   - Name: Skybox
-    Type: SkyboxPreset
+    Type:
+      Name: SkyboxPreset
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Sets the skybox to one of the preset skyboxes.
   - Name: AmbientSource
-    Type: AmbientSource
+    Type:
+      Name: AmbientSource
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the source of ambient lighting in the place.
   - Name: AmbientColor
-    Type: Color
+    Type:
+      Name: Color
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Sets the ambient color of the lighting in the place.
   - Name: FogEnabled
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Enables or disables fog in the place.
   - Name: FogColor
-    Type: Color
+    Type:
+      Name: Color
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Sets the color of the fog in the place.
   - Name: FogStartDistance
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Sets the distance from the camera at which fog begins to appear.
   - Name: FogEndDistance
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Sets the distance from the camera at which fog stops appearing.
 Methods: []
 Events: []

@@ -5,20 +5,30 @@ BaseType: Instance
 Properties: []
 Methods:
   - Name: GetStats
-    ReturnType: "{ Stat }"
+    Returns:
+      - ElementType:
+          Name: Stat
+          IsOptional: false
+        Name: Array
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets all Stat objects
   - Name: GetVisibleStats
-    ReturnType: "{ Stat }"
+    Returns:
+      - ElementType:
+          Name: Stat
+          IsOptional: false
+        Name: Array
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets all visible Stat objects
 Events: []
 IsStatic: true

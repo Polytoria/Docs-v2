@@ -55,7 +55,7 @@ for (const c of data.Classes) {
 
     // Load existing data if file exists
     let existingDescriptions = { Properties: {}, Methods: {}, Events: {} };
-    let existingArguments = { Events: {} };
+    let existingParameterNames = { Events: {} };
     let existingClassDescription = "Missing Documentation";
     let existingClassCategory = "";
 
@@ -99,7 +99,7 @@ for (const c of data.Classes) {
             events.forEach(e => {
                 if (e.Name) {
                     existingDescriptions.Events[e.Name] = e.Description || "";
-                    existingArguments.Events[e.Name] = e.Arguments || "";
+                    existingParameterNames.Events[e.Name] = e.Parameters.map(p => p.Name)
                 }
             });
         }
@@ -118,7 +118,7 @@ for (const c of data.Classes) {
 
     // Add properties
     for (const prop of c.Properties) {
-        if (prop.IsObsolete) continue
+        if (prop.ObsoletionInfo) continue
         obj.Properties.push({
             ...prop,
             Description: existingDescriptions.Properties[prop.Name] || "Missing Documentation"
@@ -127,7 +127,7 @@ for (const c of data.Classes) {
 
     // Add methods
     for (const m of c.Methods) {
-        if (m.IsObsolete) continue
+        if (m.ObsoletionInfo) continue
 
         // Ignore metamethods
         if (m.Name.startsWith("__")) continue
@@ -139,10 +139,16 @@ for (const c of data.Classes) {
 
     // Add events
     for (const e of c.Events) {
+        const existingParamNames = existingParameterNames.Events[e.Name]
+        if (existingParamNames) {
+            e.Parameters.forEach((p, i) => {
+                const paramName = existingParamNames[i]
+                if (paramName) p.Name = paramName
+            })
+        }
         obj.Events.push({
             ...e,
             Description: existingDescriptions.Events[e.Name] || "Missing Documentation",
-            Arguments: existingArguments.Events[e.Name] || ""
         })
     }
 

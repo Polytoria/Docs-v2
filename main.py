@@ -1,48 +1,81 @@
 import os
+import re
 
-def getClassLink(className):
+
+def getClassLink(className: str):
     # Find the actual link for the input classname by searching for the markdown file
     search_path = "docs/api/"
-    
+
     search_name = className
     if className.endswith("Enum"):
         className = className[:-4]
         search_name = className
-    
-    for root, dirs, files in os.walk(search_path):
-        for file in files:
-            if file.endswith(".md"):
-                if file[:-3] == search_name:
-                    filePath = os.path.join(root, file)
-                    filePath = filePath[len(search_path):]
-                    filePath = filePath[:-3]
-                    
-                    return "[%s](/api/%s/)" % (className, filePath)
-    
-    return "?"
 
-def getDirectory(category):
-    # Find the actual link for the input classname by searching for the markdown file
-    search_path = "docs/objects/" + category
-    linkPath = "/objects/"
-    if category == "removed":
-        search_path = "docs/removed"
-        linkPath = "/"
-
-    results = []
-    for root, dirs, files in os.walk(search_path):
+    for root, _, files in os.walk(search_path):
         for file in files:
-            className = file[:-3]
-            if file.endswith(".md") and className != "index":
+            if file.endswith(".md") and file[:-3] == search_name:
                 filePath = os.path.join(root, file)
                 filePath = filePath[len(search_path):]
                 filePath = filePath[:-3]
+                return f"[`{className}`](/api/{filePath}/)"
+
+def forceGetClassLink(className: str):
+    return getClassLink(className) or f"`{className}`"
+
+WORD_REGEX = re.compile(r"(\w+)")
+def getComplexLink(type: str):
+    result = ""
+    inSimple = False
+    oddIter = False
+    for chunk in WORD_REGEX.split(type):
+        if chunk:
+            link = getClassLink(chunk)
+            if link:
+                if inSimple:
+                    inSimple = False
+                    result += "`"
+                result += link
+            else:
+                if not inSimple:
+                    inSimple = True
+                    result += "`"
+                result += chunk
+        oddIter = not oddIter
+    return result + "`" if inSimple else result
+
+def getDirectory(category: str):
+    # Find the actual link for the input classname by searching for the markdown file
+    search_path = "docs/objects/" + category
+    if category == "removed":
+        search_path = "docs/removed"
+
+    results: list[str] = []
+    for _, _, files in os.walk(search_path):
+        for file in files:
+            className = file[:-3]
+            if file.endswith(".md") and className != "index":
                 if category == "enums":
-                    results.append("[%s](%s)" % ("Enum", className, (linkPath + category + "/" + className)))
+                    results.append(f"[Enum]({className})")
                 else:
-                    results.append("[%s](%s)" % (className, className, (linkPath + category + "/" + className)))
+                    results.append(f"[{className}]({className})")
     results.sort()
     return results
+
+def formatParam(param: str):
+    parts = param.split(";")
+    namePart = parts[0]
+    typePart = getComplexLink(parts[1])
+    return f"{namePart} [ {typePart} ]" if namePart else typePart
+
+def generateParamsQuote(params: str):
+    if not params:
+        return ""
+
+    paramsList = params.split(",")
+    if len(paramsList) == 1:
+        return "!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + formatParam(paramsList[0]) + "</span>\""
+
+    return "???+ quote \"Parameters\"\n    " + "\n\n    ".join(map(formatParam, paramsList))
 
 "Define macros"
 def define_env(env):
@@ -57,44 +90,45 @@ def define_env(env):
     """
     @env.macro
     def inherits(className):
-        return "Inherits %s\n{ data-search-exclude }" % (getClassLink(className))
+        return f"Inherits {forceGetClassLink(className)}\n{{ data-search-exclude }}"
 
     @env.macro
-    def inherited_by(classNames):
-        links = ", ".join(getClassLink(name) for name in classNames)
-        return "Inherited by %s\n{ data-search-exclude }" % links
+    def inherited_by(classNames: list[str]):
+        links = ", ".join(forceGetClassLink(name) for name in classNames)
+        return f"Inherited by {links}\n{{ data-search-exclude }}"
 
     @env.macro
     def directory(category):
         return '\n'.join(["- " + item for item in getDirectory(category)])
 
     @env.macro
-    def directorySort(categories):
+    def directorySort(categories: list[str]):
         text = ""
-        for i in range(len(categories)):
+        for categoryName in categories:
             categoryText = ""
-            category = getDirectory(categories[i])
-            categoryName = categories[i]
+            category = getDirectory(categoryName)
             categoryName = categoryName[0].upper() + categoryName[1:]
-            if categoryName == "Ui": categoryName = "UI"
-            if categoryName == "Static-classes": categoryName = "Static Classes"
+            if categoryName == "Ui":
+                categoryName = "UI"
+            elif categoryName == "Static-classes":
+                categoryName = "Static Classes"
 
-            for v in range(len(category)):
-                categoryText += "- " + category[v] + "\n"
+            for v in category:
+                categoryText += "- " + v + "\n"
             categoryText = "## " + categoryName + "\n" + categoryText + "\n---"
             text += "\n" + categoryText
         return text
 
     @env.macro
     def ambiguous(className, description):
-        return "!!! note \"Not to be confused with %s, %s\"" % (getClassLink(className), description)
+        return f"!!! note \"Not to be confused with {forceGetClassLink(className)}, {description}\""
 
     # Classes is an array of pairs of class names and descriptions
     @env.macro
     def ambiguousMultiple(classes):
         text = "!!! note \"Not to be confused with:\""
         for i in range(len(classes)):
-            text += "\n    - %s (%s)\n" % (getClassLink(classes[i][0]), classes[i][1])
+            text += f"\n    - {forceGetClassLink(classes[i][0])} ({classes[i][1]})\n"
         return text
 
 
@@ -129,12 +163,12 @@ def define_env(env):
     @env.macro
     def staticclass(className = ""):
         if className != "":
-            return """<div data-search-exclude markdown>
+            return f"""<div data-search-exclude markdown>
 !!! tip "Static Class"
-    This object is a static class. It can be accessed like this: `%s`.
+    This object is a static class. It can be accessed like this: `{className}`.
 
     Additionally, it cannot be created in the creator menu or with `Instance.New()`.
-</div>""" % (className)
+</div>"""
         else:
             return """<div data-search-exclude markdown>
 !!! tip "Static Class"
@@ -153,10 +187,10 @@ def define_env(env):
 
     @env.macro
     def nosync():
-        return """<div data-search-exclude markdown>
+        return f"""<div data-search-exclude markdown>
 !!! failure "Does not sync!"
-    This object does not sync across the server and client. It is recommended to avoid changing its properties from %ss, as the changes will not be visible to players.
-</div>""" % (getClassLink("Script"))
+    This object does not sync across the server and client. It is recommended to avoid changing its properties from {forceGetClassLink("Script")}s, as the changes will not be visible to players.
+</div>"""
 
     @env.macro
     def readonly():
@@ -168,7 +202,7 @@ def define_env(env):
 
     @env.macro
     def classLink(className):
-        return getClassLink(className)
+        return forceGetClassLink(className)
 
 
     """
@@ -179,169 +213,55 @@ def define_env(env):
         "Document the environment"
         return {name:getattr(env, name) for name in dir(env) if not name.startswith('_')}
 
-# define list of friendly names for method and property types
-type_friendlyname_table = {
-    "bool": "boolean",
-    "array": "[]"
-}
+# "name:type[=defaultValue]"
+PROPERTY_REGEX = re.compile(r"(\w+):([^=]+)(?:=(.+))?")
+def property(line):
+    match = PROPERTY_REGEX.match(line, 4)
+    if not match:
+        return f"### :polytoria-Property: {line[3:]}\n!!! bug \"Failed to parse line, fell back to raw.\""
 
-parametertype_friendlyname_table = {
-    "bool": "boolean"
-}
+    name, type, defaultValue = match.groups()
 
-def property(name):
-    value = name[3:] # in form "name:type=value"
-    name = value.split(":")[0].strip()
-    property_type = value.split(":")[1].strip()
-    if property_type in type_friendlyname_table:
-        property_type = type_friendlyname_table[property_type]
+    typePart = forceGetClassLink(type.strip())
+    if defaultValue:
+        typePart += f" = {defaultValue}"
 
-    default_value = ""
-    type_text = property_type
-    has_link = False
-    if (getClassLink(property_type) != "?"):
-        property_type = getClassLink(property_type)
-        has_link = True
-    else:
-        property_type = "%s" % (property_type)
+    return f"### :polytoria-Property: {name} : {typePart} {{ #{name} data-toc-label=\"{name}\" }}"
 
-    split = value.split("=")
-    split[0] = split[0].replace(name+':', '').strip()
-    if split[0] in type_friendlyname_table:
-        split[0] = type_friendlyname_table[split[0]]
-    if getClassLink(split[0]) != "?":
-        split[0] = getClassLink(split[0])
-        has_link = True
-    if not has_link:
-        split[0] = "`%s`" % (split[0])
-    if len(split) > 1:
-        property_type = split[0]
-        default_value = split[1]
-        type_text = "%s = `%s`" % (property_type, default_value)
-    else:
-        type_text = "%s" % (split[0])
+# "name(param;type,param;type ...)"
+EVENT_REGEX = re.compile(r"(\w+)\((.*)\)")
+def event(line):
+    match = EVENT_REGEX.match(line, 4)
+    if not match:
+        return f"### <a href=\"../../scripting/PTSignal\">:polytoria-Event:</a> {line[3:]}\n!!! bug \"Failed to parse line, fell back to raw.\""
 
+    name, paramsGroup = match.groups()
 
+    return f"### <a href=\"../../scripting/PTSignal\">:polytoria-Event:</a> {name} {{ #{name} data-toc-label=\"{name}\" }}\n{generateParamsQuote(paramsGroup)}"
 
-    return "### :polytoria-Property: %s : %s { #%s data-toc-label=\"%s\" }" % (name, type_text, name, name)
+# "name(param;type,param;type ...):(type,type ...)"
+METHOD_REGEX = re.compile(r"(\w+)\((.*)\):\((.*)\)")
+def method(line: str):
+    match = METHOD_REGEX.match(line, 4)
+    if not match:
+        return f"### :polytoria-Method: {line[3:]}\n!!! bug \"Failed to parse line, fell back to raw.\""
 
-def event(name):
-    value = name[3:]
-    name = value.split(":")[0].strip().split("(")[0].strip()
+    name, paramsGroup, returnsGroup = match.groups()
 
-    parametersList = ""
+    returnPart = "`()`"
+    if returnsGroup:
+        returns = returnsGroup.split(",")
+        if len(returns) == 1:
+            returnPart = getComplexLink(returns[0])
+        else:
+            returnPart = f"({", ".join(map(getComplexLink, returns))})"
 
-    parameters = ''.join(value.split("("))
-    parameters = parameters.split(")")[0].replace(name, '').split(',')
-    if "(" in value:
-        for i in range(len(parameters)):
-            v = parameters[i].replace(':', '').strip()
-
-            sections = v.split(';')
-            if len(sections) == 1:
-                sections.insert(0, "")
-            param_name = sections[0].strip()
-            param_type = sections[1].strip()
-
-            parts = param_type.split('=')
-            if len(parts) > 0:
-                for part in range(len(parts)):
-                    if parts[part] in parametertype_friendlyname_table:
-                        parts[part] = parametertype_friendlyname_table[parts[part]]
-
-                    if getClassLink(parts[part]) != "?":
-                        parts[part] = getClassLink(parts[part])
-                    else:
-                        parts[part] = "`" + parts[part] + "`"
-            param_type = ' = '.join(parts)
-
-            optional_msg = ""
-            if "?" in param_name:
-                optional_msg = " - this parameter is optional"
-                param_name = param_name.replace('?','')
-
-            if param_name != "":
-                v = "%s [ %s ]%s" % (param_name, param_type, optional_msg)
-            else:
-                v = param_type
-
-            parameters[i] = v
-
-        if len(parameters) > 1:
-            parametersList = f"\n??? quote \"Parameters\"\n" + "\n\n".join(["    " + item for item in parameters])
-        elif len(parameters) == 1:
-            parametersList = f"\n!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
-
-    return "### <a href=\"../../scripting/PTSignal\">:polytoria-Event:</a> %s { #%s data-toc-label=\"%s\" }%s" % (name, name, name, parametersList)
-
-def method(name):
-    value = name[3:] # in form "name:type"
-    name = value.split(":")[0].strip().split("(")[0].strip()
-
-    property_type = ""
-    has_link = False
-    if 1 < len(value.split(":")):
-        property_type = value.split(":")[1].strip()
-        if property_type in type_friendlyname_table:
-            property_type = type_friendlyname_table[property_type]
-        if getClassLink(property_type) != "?":
-            property_type = getClassLink(property_type)
-            has_link = True
-
-    if property_type != "":
-        if has_link == False:
-            property_type = "`" + property_type + "`"
-        property_type = "→ " + property_type
-
-    parametersList = ""
-
-    parameters = ''.join(value.split("("))
-    parameters = parameters.split(")")[0].replace(name, '').split(',')
-    if "(" in value:
-        for i in range(len(parameters)):
-            v = parameters[i].replace(':', '').strip()
-
-            sections = v.split(';')
-            if len(sections) == 1:
-                sections.insert(0, "")
-            param_name = sections[0].strip()
-            param_type = sections[1].strip()
-
-            parts = param_type.split('=')
-            if len(parts) > 0:
-                for part in range(len(parts)):
-                    if parts[part] in parametertype_friendlyname_table:
-                        parts[part] = parametertype_friendlyname_table[parts[part]]
-
-                    if getClassLink(parts[part]) != "?":
-                        parts[part] = getClassLink(parts[part])
-                    else:
-                        parts[part] = "`" + parts[part] + "`"
-            param_type = ' = '.join(parts)
-
-            optional_msg = ""
-            if "?" in param_name:
-                optional_msg = " - this parameter is optional"
-                param_name = param_name.replace('?','')
-
-            if param_name != "":
-                v = "%s [ %s ]%s" % (param_name, param_type, optional_msg)
-            else:
-                v = param_type
-
-            parameters[i] = v
-
-        if len(parameters) > 1:
-            parametersList = "\n??? quote \"Parameters\"\n" + "\n\n".join(['    ' + item for item in parameters])
-        elif len(parameters) == 1:
-            parametersList = f"\n!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
-
-    return "### :polytoria-Method: %s %s { #%s data-toc-label=\"%s\" }%s" % (name, property_type, name, name, parametersList)
+    return f"### :polytoria-Method: {name} → {returnPart} {{ #{name} data-toc-label=\"{name}\" }}\n{generateParamsQuote(paramsGroup)}"
 
 def on_pre_page_macros(env):
-    #find headers with { macroName } at the end and replace with the associated macro
-    markdown_text = env.markdown
-    lines = markdown_text.split("\n")
+    # find headers with { macroName } at the end and replace with the associated macro
+    markdownText = env.markdown
+    lines = markdownText.split("\n")
     for i in range(len(lines)):
         if lines[i].endswith("{ property }"):
             lines[i] = property(lines[i][:-len("{ property }")])
@@ -349,5 +269,5 @@ def on_pre_page_macros(env):
             lines[i] = event(lines[i][:-len("{ event }")])
         elif lines[i].endswith("{ method }"):
             lines[i] = method(lines[i][:-len("{ method }")])
-    markdown_text = "\n".join(lines)
-    env.markdown = markdown_text
+    markdownText = "\n".join(lines)
+    env.markdown = markdownText

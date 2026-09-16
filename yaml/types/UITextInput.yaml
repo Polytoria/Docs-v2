@@ -4,127 +4,160 @@ Category: ui
 BaseType: UIView
 Properties:
   - Name: Text
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The text of the label.
   - Name: TextColor
-    Type: Color
+    Type:
+      Name: Color
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The color of the text.
   - Name: JustifyText
-    Type: HorizontalAlignment
+    Type:
+      Name: HorizontalAlignment
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines how text is justified.
   - Name: FontSize
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The font size of the label.
   - Name: AutoSize
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Overrides font size and scales the text to fit the container.
   - Name: MaxAutoSize
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the maximum font size of the text when AutoSize is enabled.
   - Name: MultiLine
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determine if this text input can be typed in multi-line.
   - Name: Placeholder
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The placeholder text displayed when the input is empty.
   - Name: PlaceholderColor
-    Type: Color
+    Type:
+      Name: Color
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The color of the placeholder text.
   - Name: ReadOnlyColor
-    Type: Color
+    Type:
+      Name: Color
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The color of the text when the input is read-only.
   - Name: ReadOnly
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determine if this text input is read-only.
   - Name: FontAsset
-    Type: FontAsset
+    Type:
+      Name: FontAsset
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The font asset used for the text.
 Methods:
   - Name: Focus
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Forces the local player to focus on the text input.
+  - Name: New
+    Returns:
+      - Name: UITextInput
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events:
   - Name: Submitted
     Parameters:
-      - Name: string
-        Type: string
-        IsOptional: false
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: text
         DefaultValue: null
     Description: Fires when user submitted the text
-    Arguments:
-      Name: text
-      Type: string
   - Name: Changed
     Parameters:
-      - Name: string
-        Type: string
-        IsOptional: false
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: text
         DefaultValue: null
     Description: Fires when user changed the text
-    Arguments:
-      Name: text
-      Type: string
   - Name: FocusEnter
-    Parameters: null
+    Parameters: []
     Description: Fires when user focuses on this input field
-    Arguments: ""
   - Name: FocusExit
-    Parameters: null
+    Parameters: []
     Description: Fires when user defocused from this input field
-    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true

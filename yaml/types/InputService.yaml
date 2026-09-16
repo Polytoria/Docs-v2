@@ -5,276 +5,319 @@ Category: services
 BaseType: Instance
 Properties:
   - Name: IsWindowFocused
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether the game window is currently focused.
   - Name: IsTouchscreen
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether the input device is a touchscreen.
   - Name: IsGameFocused
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether the game is currently focused.
   - Name: IsInputFocused
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether an input is currently focused.
   - Name: IsGamepadConnected
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether a gamepad is currently connected.
   - Name: IsMenuOpened
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether the game menu is currently opened.
   - Name: CursorLocked
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether the cursor is currently locked.
   - Name: CursorVisible
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether the cursor is currently visible.
   - Name: MouseDelta
-    Type: Vector2
+    Type:
+      Name: Vector2
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Change in mouse position since the last frame.
   - Name: MousePosition
-    Type: Vector2
+    Type:
+      Name: Vector2
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates the current position of the mouse cursor.
   - Name: ScreenWidth
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates the width of the screen.
   - Name: ScreenHeight
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates the height of the screen.
 Methods:
   - Name: StartGamepadVibration
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: weakMagnitude
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: strongMagnitude
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: duration
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: false
-    IsSemiStatic: false
-    Description: Vibrates the gamepad
-  - Name: StopGamepadVibration
-    ReturnType: nil
-    Parameters: []
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: false
-    IsSemiStatic: false
-    Description: Stops vibrating the gamepad
-  - Name: GetMouseWorldPosition
-    ReturnType: Vector3
-    Parameters:
-      - Name: ignoreList
-        Type: "{ Instance }"
-        IsOptional: true
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: weakMagnitude
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: strongMagnitude
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: duration
         DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Vibrates the gamepad
+  - Name: StopGamepadVibration
+    Returns: []
+    Parameters: []
+    IsAsync: false
+    IsStatic: false
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Stops vibrating the gamepad
+  - Name: GetMouseWorldPosition
+    Returns:
+      - Name: Vector3
+        IsOptional: false
+    Parameters:
+      - Type:
+          ElementType:
+            Name: Instance
+            IsOptional: false
+          Name: Array
+          IsOptional: true
+        Name: ignoreList
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: true
+        Name: passthroughMask
+        DefaultValue: "1"
+    IsAsync: false
+    IsStatic: false
+    IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns the 3D world-space position corresponding to the current
       mouse cursor location.
   - Name: GetVector2
-    ReturnType: InputActionVector2
-    Parameters:
-      - Name: actionName
-        Type: string
+    Returns:
+      - Name: InputActionVector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: actionName
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns the current Vector2 value of the action.
   - Name: GetButton
-    ReturnType: InputActionButton
-    Parameters:
-      - Name: actionName
-        Type: string
+    Returns:
+      - Name: InputActionButton
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: actionName
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns true if the specified button is being held down.
   - Name: GetAxis
-    ReturnType: InputActionAxis
-    Parameters:
-      - Name: actionName
-        Type: string
+    Returns:
+      - Name: InputActionAxis
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: actionName
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns the value of the specified axis.
   - Name: BindButton
-    ReturnType: InputActionButton
-    Parameters:
-      - Name: name
-        Type: string
+    Returns:
+      - Name: InputActionButton
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: name
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Bind a new Button Input Action
   - Name: BindAxis
-    ReturnType: InputActionAxis
-    Parameters:
-      - Name: name
-        Type: string
+    Returns:
+      - Name: InputActionAxis
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: name
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Bind new Axis Input Action
   - Name: BindVector2
-    ReturnType: InputActionVector2
-    Parameters:
-      - Name: name
-        Type: string
+    Returns:
+      - Name: InputActionVector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: name
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Bind new Vector2 Input Action
 Events:
   - Name: MouseMoved
     Parameters:
-      - Name: vector2
-        Type: Vector2
-        IsOptional: false
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: mouseDelta
         DefaultValue: null
     Description: Fires when the mouse is moved
-    Arguments: ""
   - Name: GameFocused
-    Parameters: null
+    Parameters: []
     Description: Fires when the game has been focused
-    Arguments: ""
   - Name: GameUnfocused
-    Parameters: null
+    Parameters: []
     Description: Fires when the game has been unfocused
-    Arguments: ""
   - Name: GamepadConnected
-    Parameters: null
+    Parameters: []
     Description: Fires when gamepad is connected
-    Arguments: ""
   - Name: GamepadDisconnected
-    Parameters: null
+    Parameters: []
     Description: Fires when gamepad has been disconnected
-    Arguments: ""
   - Name: KeyDown
     Parameters:
-      - Name: keyCode
-        Type: KeyCode
-        IsOptional: false
+      - Type:
+          Name: KeyCode
+          IsOptional: false
+        Name: keycode
         DefaultValue: null
-      - Name: boolean
-        Type: boolean
-        IsOptional: false
+      - Type:
+          Name: boolean
+          IsOptional: false
+        Name: gameFocused
         DefaultValue: null
     Description: Fires when key has been pressed
-    Arguments:
-      - Name: keycode
-        Type: KeyCodeEnum
-      - Name: gameFocused
-        Type: boolean
   - Name: KeyUp
     Parameters:
-      - Name: keyCode
-        Type: KeyCode
-        IsOptional: false
+      - Type:
+          Name: KeyCode
+          IsOptional: false
+        Name: keycode
         DefaultValue: null
-      - Name: boolean
-        Type: boolean
-        IsOptional: false
+      - Type:
+          Name: boolean
+          IsOptional: false
+        Name: gameFocused
         DefaultValue: null
     Description: Fires when key has been released
-    Arguments:
-      - Name: keycode
-        Type: KeyCodeEnum
-      - Name: gameFocused
-        Type: boolean
   - Name: AxisValueChanged
     Parameters:
-      - Name: keyCode
-        Type: KeyCode
-        IsOptional: false
+      - Type:
+          Name: KeyCode
+          IsOptional: false
+        Name: keycode
         DefaultValue: null
-      - Name: number
-        Type: number
-        IsOptional: false
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: value
         DefaultValue: null
     Description: Fires when analog input has been changed
-    Arguments:
-      - Name: keycode
-        Type: KeyCodeEnum
-      - Name: value
-        Type: number
 IsStatic: true
 IsAbstract: false
 IsInstantiable: false

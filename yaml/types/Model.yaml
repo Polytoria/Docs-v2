@@ -4,7 +4,22 @@ Description: Model is an instance that can hold other instances, and which
 Category: world
 BaseType: Dynamic
 Properties: []
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: Model
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

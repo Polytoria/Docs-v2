@@ -4,61 +4,69 @@ Category: scripting
 BaseType: null
 Properties:
   - Name: Key
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The key identifying this Datastore connection.
 Methods:
   - Name: GetAsync
-    ReturnType: any
-    Parameters:
-      - Name: key
-        Type: string
+    Returns:
+      - Name: any
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Retrieves a value from the datastore asynchronously using the
       specified key.
   - Name: SetAsync
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: any
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
+      - Type:
+          Name: any
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Stores a value in the datastore asynchronously using the specified key.
   - Name: RemoveAsync
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: key
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: key
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Removes a value from the datastore asynchronously using the specified key.
   - Name: Disconnect
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Disconnect this datastore connection, this should be called when
       you finish using the datastore.
 Events: []

@@ -4,42 +4,57 @@ Category: types
 BaseType: null
 Properties:
   - Name: URL
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The target endpoint of the HTTP request.
   - Name: Method
-    Type: HttpRequestMethod
+    Type:
+      Name: HttpRequestMethod
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The HTTP method used for the request.
   - Name: Body
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The payload sent with the request.
   - Name: Headers
-    Type: table
+    Type:
+      KeyType:
+        Name: string
+        IsOptional: false
+      ValueType:
+        Name: string
+        IsOptional: false
+      Name: Dictionary
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
-    Description: A table of HTTP headers to include with the request, represented as
-      key-value pairs.
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Methods:
   - Name: New
-    ReturnType: HttpRequestData
+    Returns:
+      - Name: HttpRequestData
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Creates and returns a new instance of `HttpRequestData`
 Events: []
 IsStatic: false

@@ -4,271 +4,314 @@ Category: physics
 BaseType: Dynamic
 Properties:
   - Name: Anchored
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether this object is affected by physics.
   - Name: CanCollide
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether this object can collide with other objects.
   - Name: CollisionLayers
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines what collision layers this object belongs to.
   - Name: CollisionMask
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines what collision layers this object can collide with.
   - Name: Velocity
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the linear velocity of this object.
   - Name: AngularVelocity
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the angular velocity of this object.
+  - Name: RayPassthrough
+    Type:
+      Name: number
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Methods:
   - Name: SetNetworkAuthority
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: plr
-        Type: Player
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: plr
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sets the network authority of this object to the specified player.
   - Name: SetCollisionLayer
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: layer
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: boolean
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: layer
+        DefaultValue: null
+      - Type:
+          Name: boolean
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: SetCollisionMask
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: layer
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: value
-        Type: boolean
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: layer
+        DefaultValue: null
+      - Type:
+          Name: boolean
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: GetCollisionLayer
-    ReturnType: boolean
-    Parameters:
-      - Name: layer
-        Type: number
+    Returns:
+      - Name: boolean
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: layer
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: GetCollisionMask
-    ReturnType: boolean
-    Parameters:
-      - Name: layer
-        Type: number
+    Returns:
+      - Name: boolean
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: layer
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: GetTouching
-    ReturnType: "{ Physical }"
+    Returns:
+      - ElementType:
+          Name: Physical
+          IsOptional: false
+        Name: Array
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Get all objects that are currently in contact with this object.
   - Name: MovePosition
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: position
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: position
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Moves the part by the specified vector while keeping physics in mind.
   - Name: MoveRotation
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: rotation
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: rotation
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Rotates the part by the specified Euler angles while keeping physics in mind.
+    ObsoletionInfo: null
+    Description: Rotates the part by the specified Euler angles while keeping
+      physics in mind.
   - Name: AddForce
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: force
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: mode
-        Type: ForceMode
-        IsOptional: true
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: force
+        DefaultValue: null
+      - Type:
+          Name: ForceMode
+          IsOptional: true
+        Name: mode
         DefaultValue: Force
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Add force to this physical
   - Name: AddTorque
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: force
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: mode
-        Type: ForceMode
-        IsOptional: true
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: force
+        DefaultValue: null
+      - Type:
+          Name: ForceMode
+          IsOptional: true
+        Name: mode
         DefaultValue: Force
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Add torque to this physical
   - Name: AddForceAtPosition
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: force
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: position
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: mode
-        Type: ForceMode
-        IsOptional: true
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: force
+        DefaultValue: null
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: position
+        DefaultValue: null
+      - Type:
+          Name: ForceMode
+          IsOptional: true
+        Name: mode
         DefaultValue: Force
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Add force at position to this physical
   - Name: AddRelativeForce
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: force
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: mode
-        Type: ForceMode
-        IsOptional: true
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: force
+        DefaultValue: null
+      - Type:
+          Name: ForceMode
+          IsOptional: true
+        Name: mode
         DefaultValue: Force
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Add relative force to this physical
   - Name: AddRelativeTorque
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: torque
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: mode
-        Type: ForceMode
-        IsOptional: true
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: torque
+        DefaultValue: null
+      - Type:
+          Name: ForceMode
+          IsOptional: true
+        Name: mode
         DefaultValue: Force
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Add relative torque to this physical
 Events:
   - Name: Touched
     Parameters:
-      - Name: physical
-        Type: Physical
-        IsOptional: false
+      - Type:
+          Name: Physical
+          IsOptional: false
+        Name: hit
         DefaultValue: null
     Description: Fires when this object has collide with other object
-    Arguments:
-      Name: hit
-      Type: Physical
   - Name: TouchEnded
     Parameters:
-      - Name: physical
-        Type: Physical
-        IsOptional: false
+      - Type:
+          Name: Physical
+          IsOptional: false
+        Name: hit
         DefaultValue: null
     Description: Fires when this object has stopped colliding with other object
-    Arguments:
-      Name: hit
-      Type: Physical
   - Name: MouseEnter
-    Parameters: null
+    Parameters: []
     Description: Fires when cursor is hovered on this object. Only fired locally
-    Arguments: ""
   - Name: MouseExit
-    Parameters: null
+    Parameters: []
     Description: Fires when cursor leaves this object. Only fired locally
-    Arguments: ""
   - Name: Clicked
     Parameters:
-      - Name: player
-        Type: Player
-        IsOptional: false
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: player
         DefaultValue: null
     Description: Fires when this object has been clicked by a player
-    Arguments:
-      Name: player
-      Type: Player
 IsStatic: false
 IsAbstract: true
 IsInstantiable: false

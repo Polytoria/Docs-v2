@@ -4,471 +4,590 @@ Category: types
 BaseType: null
 Properties:
   - Name: X
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The X component of the vector.
   - Name: Y
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The Y component of the vector.
   - Name: Down
-    Type: Vector2
+    Type:
+      Name: Vector2
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: true
+    ObsoletionInfo: null
     Description: Shorthand for Vector2.New(0, -1).
   - Name: Left
-    Type: Vector2
+    Type:
+      Name: Vector2
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: true
+    ObsoletionInfo: null
     Description: Shorthand for Vector2.New(-1, 0).
   - Name: One
-    Type: Vector2
+    Type:
+      Name: Vector2
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: true
+    ObsoletionInfo: null
     Description: Shorthand for Vector2.New(1, 1).
   - Name: Zero
-    Type: Vector2
+    Type:
+      Name: Vector2
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: true
+    ObsoletionInfo: null
     Description: Shorthand for Vector2.New(0, 0).
   - Name: Right
-    Type: Vector2
+    Type:
+      Name: Vector2
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: true
+    ObsoletionInfo: null
     Description: Shorthand for Vector2.New(1, 0).
   - Name: Up
-    Type: Vector2
+    Type:
+      Name: Vector2
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: true
+    ObsoletionInfo: null
     Description: Shorthand for Vector2.New(0, 1).
   - Name: Magnitude
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The length of the vector.
   - Name: Normalized
-    Type: Vector2
+    Type:
+      Name: Vector2
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The normalized version of the vector.
   - Name: SqrMagnitude
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The squared length of the vector.
 Methods:
   - Name: New
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns a new Vector2 with the given x and y components.
   - Name: New
-    ReturnType: Vector2
-    Parameters:
-      - Name: d
-        Type: number
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: d
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns a new Vector2 with the given x and y components.
   - Name: New
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters:
-      - Name: x
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: y
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: x
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: y
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns a new Vector2 with the given x and y components.
   - Name: Angle
-    ReturnType: number
+    Returns:
+      - Name: number
+        IsOptional: false
     Parameters:
-      - Name: from
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: to
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: from
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: to
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns the angle in degrees between from and to.
   - Name: Cross
-    ReturnType: number
+    Returns:
+      - Name: number
+        IsOptional: false
     Parameters:
-      - Name: lhs
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: rhs
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: lhs
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: rhs
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns the cross product of lhs and rhs.
   - Name: Distance
-    ReturnType: number
+    Returns:
+      - Name: number
+        IsOptional: false
     Parameters:
-      - Name: a
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: b
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: a
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: b
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns the distance between a and b.
   - Name: Dot
-    ReturnType: number
+    Returns:
+      - Name: number
+        IsOptional: false
     Parameters:
-      - Name: lhs
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: rhs
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: lhs
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: rhs
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns the dot product of lhs and rhs.
   - Name: Lerp
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters:
-      - Name: a
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: b
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: t
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: a
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: b
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: t
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns a new vector that is the linear interpolation between a and b by t.
   - Name: Max
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters:
-      - Name: lhs
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: rhs
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: lhs
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: rhs
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns a vector that is made from the largest components of two vectors.
   - Name: Min
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters:
-      - Name: lhs
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: rhs
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: lhs
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: rhs
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns a vector that is made from the smallest components of two vectors.
   - Name: MoveTowards
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters:
-      - Name: current
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: target
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: maxDistanceDelta
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: current
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: target
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: maxDistanceDelta
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Calculate a position between the points specified by current and
       target, moving no farther than the distance specified by maxDistanceDelta.
   - Name: Normalize
-    ReturnType: Vector2
-    Parameters:
-      - Name: value
-        Type: Vector2
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: value
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns a new Vector2 that is the normalized version of the given vector.
   - Name: Project
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters:
-      - Name: vector
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: onNormal
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: vector
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: onNormal
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns the projection of a vector onto another vector.
   - Name: Reflect
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters:
-      - Name: inDirection
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: inNormal
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: inDirection
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: inNormal
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns the reflection of a vector off the plane defined by a normal.
   - Name: Slerp
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters:
-      - Name: a
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: b
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: t
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: a
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: b
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: t
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Spherically interpolates between two vectors.
   - Name: Floor
-    ReturnType: Vector2
-    Parameters:
-      - Name: val
-        Type: Vector2
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: val
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns a new Vector2 with all components rounded down.
   - Name: Ceil
-    ReturnType: Vector2
-    Parameters:
-      - Name: val
-        Type: Vector2
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: val
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns a new Vector2 with all components rounded up.
   - Name: Round
-    ReturnType: Vector2
-    Parameters:
-      - Name: val
-        Type: Vector2
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: val
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns a new Vector2 with all components rounded to the nearest integer.
   - Name: Abs
-    ReturnType: Vector2
-    Parameters:
-      - Name: val
-        Type: Vector2
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: val
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns a new Vector2 with all components as absolute values.
   - Name: Sign
-    ReturnType: Vector2
-    Parameters:
-      - Name: val
-        Type: Vector2
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: val
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Returns a new Vector2 with all components as sign values.
   - Name: Clamp
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters:
-      - Name: val
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: min
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: max
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: val
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: min
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: max
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Clamps a Vector2 within a range.
   - Name: ProjectOnPlane
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters:
-      - Name: vector
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: planeNormal
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: vector
+        DefaultValue: null
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: planeNormal
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: Rotated
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters:
-      - Name: val
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: angle
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: val
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: angle
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: LimitLength
-    ReturnType: Vector2
+    Returns:
+      - Name: Vector2
+        IsOptional: false
     Parameters:
-      - Name: val
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-      - Name: length
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: val
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: length
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Missing Documentation
   - Name: RadToDeg
-    ReturnType: Vector2
-    Parameters:
-      - Name: val
-        Type: Vector2
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: val
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Converts components from radians to degrees.
   - Name: DegToRad
-    ReturnType: Vector2
-    Parameters:
-      - Name: val
-        Type: Vector2
+    Returns:
+      - Name: Vector2
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Vector2
+          IsOptional: false
+        Name: val
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: true
     IsSemiStatic: true
+    ObsoletionInfo: null
     Description: Converts components from degrees to radians.
 Events: []
 IsStatic: false

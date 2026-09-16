@@ -6,353 +6,427 @@ Category: world
 BaseType: Physical
 Properties:
   - Name: Velocity
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the linear velocity of this NPC.
   - Name: SeatOffset
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The offset to the seat at which the NPC is positioned when sitting.
   - Name: Health
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The current health of the NPC.
   - Name: MaxHealth
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The maximum health of the NPC.
   - Name: JumpPower
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the jump power of the NPC.
   - Name: WalkSpeed
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the walking speed of the NPC.
   - Name: UseNametag
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether the NPC uses a nametag.
   - Name: NametagOffset
-    Type: Vector3
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the offset position of the NPC's nametag.
   - Name: NametagVisibleRadius
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the visibility radius of the NPC's nametag.
   - Name: DisplayName
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the display name of the NPC.
   - Name: JumpSound
-    Type: Sound
+    Type:
+      Name: Sound
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the sound played when the NPC jumps.
   - Name: IsSitting
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether the NPC is currently sitting.
   - Name: IsDead
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether the NPC is currently dead.
   - Name: HoldingTool
-    Type: Tool
+    Type:
+      Name: Tool
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates the tool currently held by the NPC.
   - Name: SittingIn
-    Type: Seat
+    Type:
+      Name: Seat
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates the seat in which the NPC is currently sitting.
   - Name: Character
-    Type: CharacterModel
+    Type:
+      Name: CharacterModel
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The character model associated with the NPC.
-  - Name: MoveTarget
-    Type: Dynamic
+  - Name: Vertical
+    Type:
+      Name: Vector3
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
+  - Name: MoveTarget
+    Type:
+      Name: Dynamic
+      IsOptional: false
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsStatic: false
+    ObsoletionInfo: null
     Description: Determines the instance the NPC should walk towards.
   - Name: IsOnGround
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates if NPC is standing on ground.
   - Name: IsOnCeiling
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates if NPC is on the ceiling.
   - Name: NavDestinationDistance
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates the distance to the navigation destination.
   - Name: NavDestinationReached
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether the NPC has reached its navigation destination.
   - Name: NavDestinationValid
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Indicates whether the navigation destination is valid.
 Methods:
   - Name: Move
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: velo
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: velo
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Move this NPC while respecting collisions.
   - Name: Kill
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Kills the NPC.
   - Name: TryStepUp
-    ReturnType: boolean
+    Returns:
+      - Name: boolean
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Try to detect stairs and step up. Returns true if the NPC has stepped up.
   - Name: Jump
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Makes the NPC jump.
   - Name: Sit
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: seat
-        Type: Seat
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Seat
+          IsOptional: false
+        Name: seat
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Makes the NPC sit on a specified seat.
   - Name: Unsit
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: addForce
-        Type: boolean
-        IsOptional: true
+      - Type:
+          Name: boolean
+          IsOptional: true
+        Name: addForce
         DefaultValue: "True"
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Unsits the NPC from the current seat.
   - Name: EquipTool
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: tool
-        Type: Tool
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Tool
+          IsOptional: false
+        Name: tool
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Equips the NPC with a specified tool.
   - Name: DropTool
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Unequips the currently equipped tool from the NPC.
   - Name: LoadAppearance
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: userID
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: userID
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Loads the appearance of the NPC based on a user ID.
   - Name: ClearAppearance
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Clears the NPC's current appearance.
   - Name: SetNavDestination
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: pos
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Vector3
+          IsOptional: false
+        Name: pos
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Determines the position the NPC should walk towards.
   - Name: Respawn
-    ReturnType: nil
+    Returns: []
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Respawns the NPC.
   - Name: TakeDamage
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: dmg
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: dmg
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Applies damage to the NPC.
   - Name: Heal
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: amount
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: amount
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Heals the NPC by a specified amount.
+  - Name: New
+    Returns:
+      - Name: NPC
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events:
   - Name: Died
-    Parameters: null
+    Parameters: []
     Description: Triggered when the NPC dies.
-    Arguments: ""
   - Name: HealthChanged
     Parameters:
-      - Name: number
-        Type: number
-        IsOptional: false
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: newHealth
         DefaultValue: null
-      - Name: number
-        Type: number
-        IsOptional: false
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: oldHealth
         DefaultValue: null
     Description: Fires when the NPC's health changes.
-    Arguments: ""
   - Name: Jumped
-    Parameters: null
+    Parameters: []
     Description: Fires when the NPC jumps.
-    Arguments: ""
   - Name: LeftGround
-    Parameters: null
+    Parameters: []
     Description: Fires when the NPC is no longer on ground.
-    Arguments: ""
   - Name: Seated
     Parameters:
-      - Name: seat
-        Type: Seat
-        IsOptional: false
+      - Type:
+          Name: Seat
+          IsOptional: false
+        Name: seat
         DefaultValue: null
     Description: Fires when the NPC sits on a seat.
-    Arguments: ""
   - Name: Unseated
     Parameters:
-      - Name: seat
-        Type: Seat
-        IsOptional: false
+      - Type:
+          Name: Seat
+          IsOptional: false
+        Name: seat
         DefaultValue: null
-    Description: Fires when the NPC exits from a seart.
-    Arguments: ""
+    Description: Fires when the NPC exits from a seat.
   - Name: Landed
-    Parameters: null
+    Parameters: []
     Description: Triggered when the NPC lands on the ground after a jump or fall.
-    Arguments: ""
   - Name: NavFinished
-    Parameters: null
+    Parameters: []
     Description: Triggered when the NPC finishes navigating to a destination.
-    Arguments: ""
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true

@@ -4,11 +4,13 @@ Category: assets
 BaseType: ResourceAsset
 Properties:
   - Name: AnimationType
-    Type: MeshAnimationType
+    Type:
+      Name: MeshAnimationType
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Animation type of this mesh
 Methods: []
 Events: []

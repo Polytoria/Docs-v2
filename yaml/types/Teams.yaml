@@ -5,12 +5,17 @@ BaseType: Instance
 Properties: []
 Methods:
   - Name: GetTeams
-    ReturnType: "{ Team }"
+    Returns:
+      - ElementType:
+          Name: Team
+          IsOptional: false
+        Name: Array
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Get all the teams
 Events: []
 IsStatic: true

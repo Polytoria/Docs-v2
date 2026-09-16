@@ -5,36 +5,43 @@ BaseType: null
 Properties: []
 Methods:
   - Name: AddButton
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: btn
-        Type: InputButton
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: InputButton
+          IsOptional: false
+        Name: btn
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Adds a new input button.
   - Name: RemoveButton
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: btn
-        Type: InputButton
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: InputButton
+          IsOptional: false
+        Name: btn
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Removes existing input button.
   - Name: GetButtons
-    ReturnType: "{ InputButton }"
+    Returns:
+      - ElementType:
+          Name: InputButton
+          IsOptional: false
+        Name: Array
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets all input buttons.
 Events: []
 IsStatic: false

@@ -6,86 +6,103 @@ Category: networking
 BaseType: Instance
 Properties:
   - Name: Reliable
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines if this network event should send messages reliably.
       Recommended to be off if you're passing lot of data that doesn't need to
       arrive reliably.
 Methods:
   - Name: InvokeServer
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: msg
-        Type: NetMessage
-        IsOptional: true
+      - Type:
+          Name: NetMessage
+          IsOptional: true
+        Name: msg
         DefaultValue: null
-      - Name: _
-        Type: any
-        IsOptional: true
+      - Type:
+          Name: any
+          IsOptional: true
+        Name: _
         DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a message to the server.
   - Name: InvokeClient
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: msg
-        Type: NetMessage
-        IsOptional: true
+      - Type:
+          Name: NetMessage
+          IsOptional: true
+        Name: msg
         DefaultValue: null
-      - Name: player
-        Type: Player
-        IsOptional: true
+      - Type:
+          Name: Player
+          IsOptional: true
+        Name: player
         DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a message to a specific client.
   - Name: InvokeClients
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: msg
-        Type: NetMessage
-        IsOptional: true
+      - Type:
+          Name: NetMessage
+          IsOptional: true
+        Name: msg
         DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Sends a message to all connected clients.
+  - Name: New
+    Returns:
+      - Name: NetworkEvent
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events:
   - Name: InvokedServer
     Parameters:
-      - Name: player
-        Type: Player
-        IsOptional: false
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: sender
         DefaultValue: null
-      - Name: netMessage
-        Type: NetMessage
-        IsOptional: false
+      - Type:
+          Name: NetMessage
+          IsOptional: false
+        Name: msg
         DefaultValue: null
     Description: Fires when server receives message from client
-    Arguments:
-      - Name: sender
-        Type: Player
-      - Name: msg
-        Type: NetMessage
   - Name: InvokedClient
     Parameters:
-      - Name: netMessage
-        Type: NetMessage
-        IsOptional: false
+      - Type:
+          Name: NetMessage
+          IsOptional: false
+        Name: msg
         DefaultValue: null
     Description: Fires when client receives message from server
-    Arguments:
-      - Name: msg
-        Type: NetMessage
 IsStatic: false
 IsAbstract: false
 IsInstantiable: true

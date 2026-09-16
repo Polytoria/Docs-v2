@@ -4,25 +4,31 @@ Category: input
 BaseType: InputAction
 Properties:
   - Name: Negative
-    Type: InputButtonCollection
+    Type:
+      Name: InputButtonCollection
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Collection of negative inputs
   - Name: Positive
-    Type: InputButtonCollection
+    Type:
+      Name: InputButtonCollection
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Collection of positive inputs
   - Name: Value
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: true
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The value of the input
 Methods: []
 Events: []

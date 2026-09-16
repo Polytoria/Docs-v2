@@ -5,36 +5,44 @@ BaseType: Instance
 Properties: []
 Methods:
   - Name: PromptAsync
-    ReturnType: boolean
+    Returns:
+      - Name: boolean
+        IsOptional: false
     Parameters:
-      - Name: player
-        Type: Player
-        IsOptional: false
-        DefaultValue: ""
-      - Name: assetID
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: player
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: assetID
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Prompt the purchase prompt to player
   - Name: OwnsItemAsync
-    ReturnType: boolean
+    Returns:
+      - Name: boolean
+        IsOptional: false
     Parameters:
-      - Name: player
-        Type: Player
-        IsOptional: false
-        DefaultValue: ""
-      - Name: assetID
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: player
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: assetID
+        DefaultValue: null
     IsAsync: true
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Checks asynchronously if the specified player owns the asset with
       the given asset ID.
 Events: []

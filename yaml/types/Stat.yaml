@@ -5,98 +5,132 @@ Category: game
 BaseType: Instance
 Properties:
   - Name: DisplayName
-    Type: string
+    Type:
+      Name: string
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: The display name for this stat.
   - Name: Visible
-    Type: boolean
+    Type:
+      Name: boolean
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines whether the stat is visible.
 Methods:
   - Name: GetDisplayName
-    ReturnType: string
+    Returns:
+      - Name: string
+        IsOptional: false
     Parameters: []
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Returns the display name of the stat. If DisplayName is specified,
       it returns DisplayName; otherwise, it returns Name.
   - Name: Set
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: player
-        Type: Player
-        IsOptional: false
-        DefaultValue: ""
-      - Name: val
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: player
+        DefaultValue: null
+      - Type:
+          Name: number
+          IsOptional: false
+        Name: val
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Set the value stat of player to string
   - Name: Set
-    ReturnType: nil
+    Returns: []
     Parameters:
-      - Name: player
-        Type: Player
-        IsOptional: false
-        DefaultValue: ""
-      - Name: val
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: player
+        DefaultValue: null
+      - Type:
+          Name: string
+          IsOptional: false
+        Name: val
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Set the value stat of player to string
   - Name: Get
-    ReturnType: any
-    Parameters:
-      - Name: player
-        Type: Player
+    Returns:
+      - Name: any
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: player
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Get the value stat of player
   - Name: GetTotalForTeam
-    ReturnType: number
-    Parameters:
-      - Name: team
-        Type: Team
+    Returns:
+      - Name: number
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Team
+          IsOptional: false
+        Name: team
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Get the total value for team
   - Name: GetDisplayValue
-    ReturnType: string
-    Parameters:
-      - Name: plr
-        Type: Player
+    Returns:
+      - Name: string
         IsOptional: false
-        DefaultValue: ""
+    Parameters:
+      - Type:
+          Name: Player
+          IsOptional: false
+        Name: plr
+        DefaultValue: null
     IsAsync: false
-    IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
+    ObsoletionInfo: null
     Description: Gets the display value for a player. If the value is a number, it
       is automatically converted to K/M/S format (e.g., 1K+, 12.3K+).
+  - Name: New
+    Returns:
+      - Name: Stat
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

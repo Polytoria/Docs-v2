@@ -5,27 +5,48 @@ Category: ui
 BaseType: Instance
 Properties:
   - Name: DominantAxis
-    Type: DominantAxis
+    Type:
+      Name: DominantAxis
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines which axis should be prioritized when scaling the UI element.
   - Name: ScaleType
-    Type: AspectRatioScaleType
+    Type:
+      Name: AspectRatioScaleType
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Determines how the UI element should be scaled.
   - Name: AspectRatio
-    Type: number
+    Type:
+      Name: number
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Target aspect ratio of the UI element.
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: UIAspectRatioRestraint
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false

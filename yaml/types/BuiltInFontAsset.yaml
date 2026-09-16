@@ -4,27 +4,48 @@ Category: assets
 BaseType: FontAsset
 Properties:
   - Name: FontPreset
-    Type: FontPreset
+    Type:
+      Name: FontPreset
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Target font to use
   - Name: FontWeight
-    Type: FontWeight
+    Type:
+      Name: FontWeight
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Font weight for this font
   - Name: FontStyle
-    Type: FontStyle
+    Type:
+      Name: FontStyle
+      IsOptional: false
     IsAccessibleByScripts: true
     IsReadOnly: false
-    IsObsolete: false
     IsStatic: false
+    ObsoletionInfo: null
     Description: Font style for this font
-Methods: []
+Methods:
+  - Name: New
+    Returns:
+      - Name: BuiltInFontAsset
+        IsOptional: false
+    Parameters:
+      - Type:
+          Name: NetworkedObject
+          IsOptional: true
+        Name: parent
+        DefaultValue: null
+    IsAsync: false
+    IsStatic: true
+    IsSemiStatic: false
+    ObsoletionInfo: null
+    Description: Missing Documentation
 Events: []
 IsStatic: false
 IsAbstract: false
