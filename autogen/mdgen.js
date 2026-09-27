@@ -93,6 +93,13 @@ for (const yamlFile of yamlFiles) {
         mk += str + "\n"
     }
 
+    function appendTagLine(tags) {
+        mk += "{{ tagSection([" + tags.toString() + "]) }}"
+    }
+    function appendPropExplainer(apiClass, propTitle, propType) {
+        mk += "{{ propExplainer(\"" + apiClass + "\",\"" + propTitle + "\",\"" + propType + "\") }}"
+    }
+
     appendLine("---")
     appendLine("title: " + c.Name)
     appendLine("description:")
@@ -174,9 +181,16 @@ for (const yamlFile of yamlFiles) {
 
     for (const prop of properties) {
         appendLine(`### ${prop.Name}:${prop.Type} { property }`)
+        //appendPropExplainer(c.Name, prop.Name, prop.Type)
         appendLine(``)
         appendLine(prop.Description || "Missing documentation!")
         appendLine(``)
+
+        if (prop.IsReadOnly) {
+            tags = new Array("\"Read-Only\",")
+            appendTagLine(tags)
+            appendLine(``)
+        }
     }
 
     const methods = c.Methods ? (Array.isArray(c.Methods) ? c.Methods : [c.Methods]) : [];
@@ -205,6 +219,20 @@ for (const yamlFile of yamlFiles) {
             appendLine("``` lua")
             appendLine(examplecode.toString())
             appendLine("```")
+        }
+
+        if (m.IsAsync && m.IsStatic) {
+            tags = new Array("\"Asynchronous\"", "\"Static\"")
+            appendLine(``)
+            appendTagLine(tags)
+        } else if (m.IsAsync && !m.IsStatic) {
+            tags = new Array("\"Asynchronous\"")
+            appendLine(``)
+            appendTagLine(tags)
+        } else if (!m.IsAsync && m.IsStatic) {
+            tags = new Array("\"Static\"")
+            appendLine(``)
+            appendTagLine(tags)
         }
     }
 

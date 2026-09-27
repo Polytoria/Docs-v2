@@ -21,6 +21,27 @@ def getClassLink(className):
     
     return "?"
 
+def getClassLink4Div(className):
+    # Find the actual link for the input classname by searching for the markdown file
+    search_path = "docs/api/"
+    
+    search_name = className
+    if className.endswith("Enum"):
+        className = className[:-4]
+        search_name = className
+    
+    for root, dirs, files in os.walk(search_path):
+        for file in files:
+            if file.endswith(".md"):
+                if file[:-3] == search_name:
+                    filePath = os.path.join(root, file)
+                    filePath = filePath[len(search_path):]
+                    filePath = filePath[:-3]
+                    
+                    return "<a href=\"/api/%s\">%s</a>" % (filePath, className)
+    
+    return "?"
+
 def getDirectory(category):
     # Find the actual link for the input classname by searching for the markdown file
     search_path = "docs/objects/" + category
@@ -105,7 +126,7 @@ def define_env(env):
     def notnewable():
         return """<div data-search-exclude markdown>
 
-!!! warning "Not newable"
+!!! not-newable "Not newable"
     This object cannot be created by scripts using `Instance.New()`.
 
     </div>"""
@@ -113,7 +134,7 @@ def define_env(env):
     @env.macro
     def abstract():
         return """<div data-search-exclude markdown>
-!!! danger "Abstract Object"
+!!! abstract-class "Abstract Object"
     This object exists only to serve as a foundation for other objects. It cannot be accessed directly, but its properties are documented below.
 
     Additionally, it cannot be created in the creator menu or with `Instance.New()`.
@@ -130,14 +151,14 @@ def define_env(env):
     def staticclass(className = ""):
         if className != "":
             return """<div data-search-exclude markdown>
-!!! tip "Static Class"
+!!! static "Static Class"
     This object is a static class. It can be accessed like this: `%s`.
 
     Additionally, it cannot be created in the creator menu or with `Instance.New()`.
 </div>""" % (className)
         else:
             return """<div data-search-exclude markdown>
-!!! tip "Static Class"
+!!! static "Static Class"
     This object is a static class.
 
     Additionally, it cannot be created in the creator menu or with `Instance.New()`.
@@ -170,6 +191,21 @@ def define_env(env):
     def classLink(className):
         return getClassLink(className)
 
+    @env.macro
+    def propExplainer(apiClass, propTitle, propType):
+        if (getClassLink(propType) != "?"):
+                propType = getClassLink4Div(propType)
+        return "\n<div class=\"explainer-section\"><div class=\"explainer-text\">" + apiClass + "." + propTitle + ": </div><div class=\"explainer-text\">" + propType + "</div></div>"
+
+    @env.macro
+    def tagSection(tags):
+        text = ""
+        text += "\n<div class=\"tag-section\"><div class=\"tag-holder\">"
+        for i in range(len(tags)):
+            tag = tags[i]
+            text += "<span class=\"tag-span\"><div class=\"tag-div\">" + tag + "</div></span>"
+        text += "</div></div>"
+        return text
 
     """
     !!! NOT SAFE FOR PRODUCTION USE !!!
@@ -268,12 +304,12 @@ def event(name):
             parameters[i] = v
 
         if len(parameters) > 1:
-            parametersList = f"\n??? quote \"Parameters\"\n" + "\n\n".join(["    " + item for item in parameters])
+            parametersList = f"\n??? parameters \"Parameters\"\n" + "\n\n".join(["    " + item for item in parameters])
         elif len(parameters) == 1:
-            parametersList = f"\n!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
+            parametersList = f"\n!!! parameters \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
 
         if (parametersList.find("``") != -1):
-            parametersList = f"\n!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + "None" + "</span>\""
+            parametersList = ""
             
     return "### <a href=\"../../scripting/PTSignal\">:polytoria-Event:</a> %s { #%s data-toc-label=\"%s\" }%s" % (name, name, name, parametersList)
 
@@ -335,12 +371,12 @@ def method(name):
             parameters[i] = v
 
         if len(parameters) > 1:
-            parametersList = "\n??? quote \"Parameters\"\n" + "\n\n".join(['    ' + item for item in parameters])
+            parametersList = "\n??? parameters \"Parameters\"\n" + "\n\n".join(['    ' + item for item in parameters])
         elif len(parameters) == 1:
-            parametersList = f"\n!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
+            parametersList = f"\n!!! parameters \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
         
         if (parametersList.find("``") != -1):
-            parametersList = f"\n!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + "None" + "</span>\""
+            parametersList = ""
 
     return "### :polytoria-Method: %s %s { #%s data-toc-label=\"%s\" }%s" % (name, property_type, name, name, parametersList)
 
@@ -402,12 +438,12 @@ def constructor(name):
             parameters[i] = v
 
         if len(parameters) > 1:
-            parametersList = "\n??? quote \"Parameters\"\n" + "\n\n".join(['    ' + item for item in parameters])
+            parametersList = "\n??? parameters \"Parameters\"\n" + "\n\n".join(['    ' + item for item in parameters])
         elif len(parameters) == 1:
-            parametersList = f"\n!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
+            parametersList = f"\n!!! parameters \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
         
         if (parametersList.find("``") != -1):
-            parametersList = f"\n!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + "None" + "</span>\""
+            parametersList = ""
 
     return "### :material-new-box: %s %s { #%s data-toc-label=\"%s\" }%s" % (name, property_type, name, name, parametersList)
 
