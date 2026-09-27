@@ -34,6 +34,12 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+  icon:
+    admonition:
+      quote: material/list-box
+      tip: material/code-array
+      danger: material/code-braces-box
+      
 extra:
   generator: true
 watch:
@@ -55,6 +61,11 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.snippets
   - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
   - tables
   - admonition
   - attr_list

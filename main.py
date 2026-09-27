@@ -21,6 +21,27 @@ def getClassLink(className):
     
     return "?"
 
+def getClassLink4Div(className):
+    # Find the actual link for the input classname by searching for the markdown file
+    search_path = "docs/api/"
+    
+    search_name = className
+    if className.endswith("Enum"):
+        className = className[:-4]
+        search_name = className
+    
+    for root, dirs, files in os.walk(search_path):
+        for file in files:
+            if file.endswith(".md"):
+                if file[:-3] == search_name:
+                    filePath = os.path.join(root, file)
+                    filePath = filePath[len(search_path):]
+                    filePath = filePath[:-3]
+                    
+                    return "<a href=\"/api/%s\">%s</a>" % (filePath, className)
+    
+    return "?"
+
 def getDirectory(category):
     # Find the actual link for the input classname by searching for the markdown file
     search_path = "docs/objects/" + category
@@ -105,7 +126,7 @@ def define_env(env):
     def notnewable():
         return """<div data-search-exclude markdown>
 
-!!! warning "Not newable"
+!!! not-newable "Not newable"
     This object cannot be created by scripts using `Instance.New()`.
 
     </div>"""
@@ -113,7 +134,7 @@ def define_env(env):
     @env.macro
     def abstract():
         return """<div data-search-exclude markdown>
-!!! danger "Abstract Object"
+!!! abstract-class "Abstract Object"
     This object exists only to serve as a foundation for other objects. It cannot be accessed directly, but its properties are documented below.
 
     Additionally, it cannot be created in the creator menu or with `Instance.New()`.
@@ -130,14 +151,14 @@ def define_env(env):
     def staticclass(className = ""):
         if className != "":
             return """<div data-search-exclude markdown>
-!!! tip "Static Class"
+!!! static "Static Class"
     This object is a static class. It can be accessed like this: `%s`.
 
     Additionally, it cannot be created in the creator menu or with `Instance.New()`.
 </div>""" % (className)
         else:
             return """<div data-search-exclude markdown>
-!!! tip "Static Class"
+!!! static "Static Class"
     This object is a static class.
 
     Additionally, it cannot be created in the creator menu or with `Instance.New()`.
@@ -170,6 +191,21 @@ def define_env(env):
     def classLink(className):
         return getClassLink(className)
 
+    @env.macro
+    def propExplainer(apiClass, propTitle, propType):
+        if (getClassLink(propType) != "?"):
+                propType = getClassLink4Div(propType)
+        return "\n<div class=\"explainer-section\"><div class=\"explainer-text\">" + apiClass + "." + propTitle + ": </div><div class=\"explainer-text\">" + propType + "</div></div>"
+
+    @env.macro
+    def tagSection(tags):
+        text = ""
+        text += "\n<div class=\"tag-section\"><div class=\"tag-holder\">"
+        for i in range(len(tags)):
+            tag = tags[i]
+            text += "<span class=\"tag-span\"><div class=\"tag-div\">" + tag + "</div></span>"
+        text += "</div></div>"
+        return text
 
     """
     !!! NOT SAFE FOR PRODUCTION USE !!!
@@ -268,10 +304,13 @@ def event(name):
             parameters[i] = v
 
         if len(parameters) > 1:
-            parametersList = f"\n??? quote \"Parameters\"\n" + "\n\n".join(["    " + item for item in parameters])
+            parametersList = f"\n??? parameters \"Parameters\"\n" + "\n\n".join(["    " + item for item in parameters])
         elif len(parameters) == 1:
-            parametersList = f"\n!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
+            parametersList = f"\n!!! parameters \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
 
+        if (parametersList.find("``") != -1):
+            parametersList = ""
+            
     return "### <a href=\"../../scripting/PTSignal\">:polytoria-Event:</a> %s { #%s data-toc-label=\"%s\" }%s" % (name, name, name, parametersList)
 
 def method(name):
@@ -332,18 +371,90 @@ def method(name):
             parameters[i] = v
 
         if len(parameters) > 1:
-            parametersList = "\n??? quote \"Parameters\"\n" + "\n\n".join(['    ' + item for item in parameters])
+            parametersList = "\n??? parameters \"Parameters\"\n" + "\n\n".join(['    ' + item for item in parameters])
         elif len(parameters) == 1:
-            parametersList = f"\n!!! quote \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
+            parametersList = f"\n!!! parameters \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
+        
+        if (parametersList.find("``") != -1):
+            parametersList = ""
 
     return "### :polytoria-Method: %s %s { #%s data-toc-label=\"%s\" }%s" % (name, property_type, name, name, parametersList)
+
+def constructor(name):
+    value = name[3:] # in form "name:type"
+    name = value.split(":")[0].strip().split("(")[0].strip()
+
+    property_type = ""
+    has_link = False
+    if 1 < len(value.split(":")):
+        property_type = value.split(":")[1].strip()
+        if property_type in type_friendlyname_table:
+            property_type = type_friendlyname_table[property_type]
+        if getClassLink(property_type) != "?":
+            property_type = getClassLink(property_type)
+            has_link = True
+
+    if property_type != "":
+        if has_link == False:
+            property_type = "`" + property_type + "`"
+        property_type = "→ " + property_type
+
+    parametersList = ""
+
+    parameters = ''.join(value.split("("))
+    parameters = parameters.split(")")[0].replace(name, '').split(',')
+    if "(" in value:
+        for i in range(len(parameters)):
+            v = parameters[i].replace(':', '').strip()
+
+            sections = v.split(';')
+            if len(sections) == 1:
+                sections.insert(0, "")
+            param_name = sections[0].strip()
+            param_type = sections[1].strip()
+
+            parts = param_type.split('=')
+            if len(parts) > 0:
+                for part in range(len(parts)):
+                    if parts[part] in parametertype_friendlyname_table:
+                        parts[part] = parametertype_friendlyname_table[parts[part]]
+
+                    if getClassLink(parts[part]) != "?":
+                        parts[part] = getClassLink(parts[part])
+                    else:
+                        parts[part] = "`" + parts[part] + "`"
+            param_type = ' = '.join(parts)
+
+            optional_msg = ""
+            if "?" in param_name:
+                optional_msg = " - this parameter is optional"
+                param_name = param_name.replace('?','')
+
+            if param_name != "":
+                v = "%s [ %s ]%s" % (param_name, param_type, optional_msg)
+            else:
+                v = param_type
+
+            parameters[i] = v
+
+        if len(parameters) > 1:
+            parametersList = "\n??? parameters \"Parameters\"\n" + "\n\n".join(['    ' + item for item in parameters])
+        elif len(parameters) == 1:
+            parametersList = f"\n!!! parameters \"**Parameters:** <span style=\"font-weight: normal;\">" + parameters[0] + "</span>\""
+        
+        if (parametersList.find("``") != -1):
+            parametersList = ""
+
+    return "### :material-new-box: %s %s { #%s data-toc-label=\"%s\" }%s" % (name, property_type, name, name, parametersList)
 
 def on_pre_page_macros(env):
     #find headers with { macroName } at the end and replace with the associated macro
     markdown_text = env.markdown
     lines = markdown_text.split("\n")
     for i in range(len(lines)):
-        if lines[i].endswith("{ property }"):
+        if lines[i].endswith("{ construct }"):
+            lines[i] = constructor(lines[i][:-len("{ construct }")])
+        elif lines[i].endswith("{ property }"):
             lines[i] = property(lines[i][:-len("{ property }")])
         elif lines[i].endswith("{ event }"):
             lines[i] = event(lines[i][:-len("{ event }")])

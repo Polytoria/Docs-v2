@@ -2,6 +2,15 @@ Name: HttpRequestData
 Description: HttpRequestData represents the data required to construct an HTTP request
 Category: types
 BaseType: null
+Constructors:
+  - Name: New
+    ReturnType: HttpRequestData
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates and returns a new instance of `HttpRequestData`
 Properties:
   - Name: URL
     Type: string
@@ -32,15 +41,7 @@ Properties:
     IsStatic: false
     Description: A table of HTTP headers to include with the request, represented as
       key-value pairs.
-Methods:
-  - Name: New
-    ReturnType: HttpRequestData
-    Parameters: []
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates and returns a new instance of `HttpRequestData`
+Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false

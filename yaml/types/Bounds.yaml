@@ -2,6 +2,31 @@ Name: Bounds
 Description: Represents a bounding box in 3D space.
 Category: types
 BaseType: null
+Constructors:
+  - Name: New
+    ReturnType: Bounds
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a new Bounds object.
+  - Name: New
+    ReturnType: Bounds
+    Parameters:
+      - Name: position
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: size
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a new Bounds object with the specified position and size.
 Properties:
   - Name: Center
     Type: Vector3
@@ -46,30 +71,6 @@ Properties:
     IsStatic: false
     Description: Indicates the volume of the bounds.
 Methods:
-  - Name: New
-    ReturnType: Bounds
-    Parameters: []
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a new Bounds object with the specified position and size.
-  - Name: New
-    ReturnType: Bounds
-    Parameters:
-      - Name: position
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: size
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a new Bounds object with the specified position and size.
   - Name: ClosestPoint
     ReturnType: Vector3
     Parameters:

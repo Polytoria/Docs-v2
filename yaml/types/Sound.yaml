@@ -154,7 +154,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Gets the current peak volume.
 Events:
   - Name: Loaded
     Parameters: null

@@ -3,6 +3,22 @@ Description: Instance is the base class of all classes. Every class derives from
   it and has all properties, events and functions Instance has.
 Category: misc
 BaseType: NetworkedObject
+Constructors:
+  - Name: New
+    Parameters:
+      - Name: className
+        Type: string
+        IsOptional: false
+        DefaultValue: ""
+      - Name: parent
+        Type: Instance
+        IsOptional: true
+        DefaultValue: null
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a new instance of the specified class.
 Properties:
   - Name: Parent
     Type: Instance
@@ -227,22 +243,6 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Determines if this instance is a descendant of the given class.
-  - Name: New
-    ReturnType: Instance
-    Parameters:
-      - Name: className
-        Type: string
-        IsOptional: false
-        DefaultValue: ""
-      - Name: parent
-        Type: Instance
-        IsOptional: true
-        DefaultValue: null
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a new instance of the specified class.
   - Name: AddTag
     ReturnType: nil
     Parameters:

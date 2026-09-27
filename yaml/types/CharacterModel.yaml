@@ -32,7 +32,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description:  Plays the idle animation
   - Name: PlayWalk
     ReturnType: nil
     Parameters: []
@@ -40,7 +40,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Plays the walk animation
   - Name: PlayRun
     ReturnType: nil
     Parameters: []
@@ -48,7 +48,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Plays the run animation
   - Name: PlayJump
     ReturnType: nil
     Parameters: []
@@ -56,7 +56,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Plays the jump animation
   - Name: PlayClimb
     ReturnType: nil
     Parameters: []
@@ -64,7 +64,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Plays the climb animation
   - Name: SetAnimSpeed
     ReturnType: nil
     Parameters:
@@ -76,7 +76,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Sets the animation speed
   - Name: SetState
     ReturnType: nil
     Parameters:
@@ -88,7 +88,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Sets this character's state
   - Name: GetAttachment
     ReturnType: Dynamic
     Parameters:

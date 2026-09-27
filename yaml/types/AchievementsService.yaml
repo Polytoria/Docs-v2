@@ -36,6 +36,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Award achievement to the target user asynchronously.
+    Example: achievements-service/award-async
   - Name: HasAchievementAsync
     ReturnType: boolean
     Parameters:
@@ -52,6 +53,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Check if the target user has the achievement, asynchronously.
+    Example: achievements-service/has-achievement-async
 Events:
   - Name: GotAchievement
     Parameters:

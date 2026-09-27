@@ -9,7 +9,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines whether the prompt is a GUI3D
   - Name: Enabled
     Type: boolean
     IsAccessibleByScripts: true
@@ -23,7 +23,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Hides the prompt by default
   - Name: Title
     Type: string
     IsAccessibleByScripts: true

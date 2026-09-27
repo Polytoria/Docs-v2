@@ -2,6 +2,15 @@ Name: ShadowLayer
 Description: ShadowLayer represents a shadow placed behind a UI element.
 Category: misc
 BaseType: null
+Constructors:
+  - Name: New
+    ReturnType: ShadowLayer
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a new ShadowLayer object.
 Properties:
   - Name: Color
     Type: Color
@@ -38,15 +47,7 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: Determines how the shadow is blended.
-Methods:
-  - Name: New
-    ReturnType: ShadowLayer
-    Parameters: []
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a new ShadowLayer object.
+Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false

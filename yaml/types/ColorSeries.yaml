@@ -3,15 +3,7 @@ Description: Color series is a data type that represents a collection of color
   and points, also known as gradient.
 Category: types
 BaseType: null
-Properties:
-  - Name: PointCount
-    Type: number
-    IsAccessibleByScripts: true
-    IsReadOnly: true
-    IsObsolete: false
-    IsStatic: false
-    Description: Returns the point count of this color series.
-Methods:
+Constructors:
   - Name: New
     ReturnType: ColorSeries
     Parameters: []
@@ -19,7 +11,7 @@ Methods:
     IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
-    Description: Creates a color series from a color range
+    Description: Creates a color series.
   - Name: New
     ReturnType: ColorSeries
     Parameters:
@@ -36,6 +28,15 @@ Methods:
     IsStatic: true
     IsSemiStatic: false
     Description: Creates a color series from a color range
+Properties:
+  - Name: PointCount
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Returns the point count of this color series.
+Methods:
   - Name: Clear
     ReturnType: nil
     Parameters: []

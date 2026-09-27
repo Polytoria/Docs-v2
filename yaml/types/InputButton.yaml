@@ -2,25 +2,15 @@ Name: InputButton
 Description: InputButton is a class that represents a button KeyCode
 Category: input
 BaseType: null
-Properties:
-  - Name: KeyCode
-    Type: KeyCode
-    IsAccessibleByScripts: true
-    IsReadOnly: false
-    IsObsolete: false
-    IsStatic: false
-    Description: Key code for this button
-Methods:
+Constructors:
   - Name: New
-    ReturnType: InputButton
     Parameters: []
     IsAsync: false
     IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
-    Description: Creates a new button with this keycode.
+    Description: Creates a new button.
   - Name: New
-    ReturnType: InputButton
     Parameters:
       - Name: key
         Type: KeyCode
@@ -31,6 +21,15 @@ Methods:
     IsStatic: true
     IsSemiStatic: false
     Description: Creates a new button with this keycode.
+Properties:
+  - Name: KeyCode
+    Type: KeyCode
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Key code for this button
+Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false

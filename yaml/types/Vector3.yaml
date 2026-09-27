@@ -2,6 +2,77 @@ Name: Vector3
 Description: Vector3 is a 3D vector with an x, y and z component.
 Category: types
 BaseType: null
+Constructors:
+  - Name: New
+    ReturnType: Vector3
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Returns a new Vector3.
+  - Name: New
+    ReturnType: Vector3
+    Parameters:
+      - Name: d
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Returns a new Vector3 with the given number as the returned Vector3 components.
+  - Name: New
+    ReturnType: Vector3
+    Parameters:
+      - Name: x
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: y
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Returns a new Vector3 with the given components and a z
+      component of 0.
+  - Name: New
+    ReturnType: Vector3
+    Parameters:
+      - Name: x
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: y
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: z
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Returns a new Vector3 with the given components.
+  - Name: New
+    ReturnType: Vector3
+    Parameters:
+      - Name: v
+        Type: Vector2
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Returns a new Vector3 with the given Vector2 components and a z
+      component of 0.
 Properties:
   - Name: X
     Type: number
@@ -102,79 +173,6 @@ Properties:
     IsStatic: false
     Description: The squared length of the vector.
 Methods:
-  - Name: New
-    ReturnType: Vector3
-    Parameters: []
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Returns a new Vector3 with the given Vector2 components and a z
-      component of 0.
-  - Name: New
-    ReturnType: Vector3
-    Parameters:
-      - Name: d
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Returns a new Vector3 with the given Vector2 components and a z
-      component of 0.
-  - Name: New
-    ReturnType: Vector3
-    Parameters:
-      - Name: x
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: y
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Returns a new Vector3 with the given Vector2 components and a z
-      component of 0.
-  - Name: New
-    ReturnType: Vector3
-    Parameters:
-      - Name: x
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: y
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: z
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Returns a new Vector3 with the given Vector2 components and a z
-      component of 0.
-  - Name: New
-    ReturnType: Vector3
-    Parameters:
-      - Name: v
-        Type: Vector2
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Returns a new Vector3 with the given Vector2 components and a z
-      component of 0.
   - Name: Angle
     ReturnType: number
     Parameters:

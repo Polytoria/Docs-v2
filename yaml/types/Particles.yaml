@@ -17,7 +17,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the speed of the particle over time
   - Name: Image
     Type: ImageAsset
     IsAccessibleByScripts: true
@@ -94,140 +94,140 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the rotational speed of the particle
   - Name: AngularVelocityOverLifetime
     Type: NumberSeries
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the rotational speed of the particle over time
   - Name: LinearAcceleration
     Type: NumberRange
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the accelleration of the particle
   - Name: LinearAccelerationOverLifetime
     Type: NumberSeries
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the accelleration of the particle over time
   - Name: RadialAcceleration
     Type: NumberRange
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the rotational accelleration of the particle
   - Name: RadialAccelerationOverLifetime
     Type: NumberSeries
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the rotational accelleration of the particle over time
   - Name: TangentialAcceleration
     Type: NumberRange
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the tangential accelleration of the particle
   - Name: TangentialAccelerationOverLifetime
     Type: NumberSeries
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the tangential accelleration of the particle over time
   - Name: OrbitalVelocity
     Type: NumberRange
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the orbital velocity of the particle
   - Name: OrbitalVelocityOverLifetime
     Type: NumberSeries
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the orbital velocity of the particle over time
   - Name: Damping
     Type: NumberRange
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the damping of the particle
   - Name: DampingOverLifetime
     Type: NumberSeries
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the damping of the particle over time
   - Name: ScaleOverVelocity
     Type: NumberRange
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the size of the particle over speed
   - Name: ScaleOverVelocityCurve
     Type: NumberSeries
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the size of the particle over speed in a curve
   - Name: TurbulenceEnabled
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines if drag affects the particle
   - Name: TurbulenceInfluence
     Type: NumberRange
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the strength of the drag
   - Name: TurbulenceOverLifetime
     Type: NumberSeries
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the drag of the particle over time
   - Name: TurbulenceNoiseScale
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the scale of the random drag of the particle over time
   - Name: TurbulenceNoiseStrength
     Type: number
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the strength of the random drag of the particle over time
   - Name: TurbulenceNoiseSpeed
     Type: Vector3
     IsAccessibleByScripts: true
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the speed of the random drag of the particle over time
   - Name: Spread
     Type: number
     IsAccessibleByScripts: true
@@ -255,7 +255,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines the scale of the particle over time
   - Name: HueVariation
     Type: NumberRange
     IsAccessibleByScripts: true
@@ -311,21 +311,21 @@ Properties:
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines if the particle is enabled
   - Name: IsPaused
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines if the particle is paused
   - Name: IsStopped
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Determines if the particle is not enabled
 Methods:
   - Name: Play
     ReturnType: nil
@@ -342,7 +342,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Pauses the particle system.
   - Name: Stop
     ReturnType: nil
     Parameters: []
@@ -358,7 +358,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Clears all particles in the system.
   - Name: Emit
     ReturnType: nil
     Parameters:

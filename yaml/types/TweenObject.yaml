@@ -66,6 +66,7 @@ Methods:
     IsSemiStatic: false
     Description: Set the direction of this tween. This function returns a
       `TweenObject` which means you can stack it with other functions.
+    Example: tween-object/set-direction
   - Name: SetTrans
     ReturnType: TweenObject
     Parameters:
@@ -79,6 +80,7 @@ Methods:
     IsSemiStatic: false
     Description: Set the transition of this tween. This function returns a
       `TweenObject` which means you can stack it with other functions.
+    Example: tween-object/set-trans
   - Name: TweenPosition
     ReturnType: nil
     Parameters:
@@ -99,6 +101,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Tweens the position of a Dynamic.
+    Example: tween-object/tween-position
   - Name: TweenRotation
     ReturnType: nil
     Parameters:
@@ -119,6 +122,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Tweens the rotation of a Dynamic.
+    Example: tween-object/tween-rotation
   - Name: TweenSize
     ReturnType: nil
     Parameters:
@@ -139,6 +143,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Tweens the size of a Dynamic.
+    Example: tween-object/tween-size
   - Name: TweenColor
     ReturnType: nil
     Parameters:
@@ -163,6 +168,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Tweens a color between two specified values.
+    Example: tween-object/tween-color
   - Name: TweenNumber
     ReturnType: nil
     Parameters:
@@ -187,6 +193,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Tweens a number between two specified values.
+    Example: tween-object/tween-number
   - Name: TweenVector2
     ReturnType: nil
     Parameters:
@@ -211,6 +218,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Tweens a Vector2 between two specified values.
+    Example: tween-object/tween-vector-2
   - Name: TweenVector3
     ReturnType: nil
     Parameters:
@@ -235,6 +243,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Tweens a Vector3 between two specified values.
+    Example: tween-object/tween-vector-3
   - Name: TweenQuaternion
     ReturnType: nil
     Parameters:
@@ -259,6 +268,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Tweens a Quaternion between two specified values.
+    Example: tween-object/tween-quaternion
   - Name: Play
     ReturnType: nil
     Parameters: []
@@ -267,6 +277,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Play this tween
+    Example: tween-object/play
   - Name: Pause
     ReturnType: nil
     Parameters: []
@@ -275,6 +286,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Pause this tween
+    Example: tween-object/pause
   - Name: Stop
     ReturnType: nil
     Parameters: []
@@ -283,6 +295,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Stop this tween
+    Example: tween-object/stop
   - Name: Interval
     ReturnType: nil
     Parameters:
@@ -295,6 +308,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Creates a delay in the tween.
+    Example: tween-object/interval
   - Name: Chain
     ReturnType: TweenObject
     Parameters: []
@@ -315,6 +329,7 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Cancel this tween
+    Example: tween-object/cancel
 Events:
   - Name: Finished
     Parameters: null
