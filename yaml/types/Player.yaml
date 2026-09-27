@@ -3,6 +3,13 @@ Description: Player represents a user playing the game.
 Category: game
 BaseType: NPC
 Properties:
+  - Name: CameraHeight
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: The vertical offset of the player's camera.
   - Name: UserID
     Type: number
     IsAccessibleByScripts: true
