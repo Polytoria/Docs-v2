@@ -311,21 +311,21 @@ Properties:
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Returns true if the particle is playing.
   - Name: IsPaused
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Returns true if the particle is paused.
   - Name: IsStopped
     Type: boolean
     IsAccessibleByScripts: true
     IsReadOnly: true
     IsObsolete: false
     IsStatic: false
-    Description: Missing Documentation
+    Description: Returns true if the particle has stopped.
 Methods:
   - Name: Play
     ReturnType: nil
@@ -334,7 +334,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Starts playing the particle system.
+    Description: Starts playing the particle system, as well as unpausing the currently paused particle system.
   - Name: Pause
     ReturnType: nil
     Parameters: []
@@ -342,7 +342,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Pauses all particles at the current position that they are at. Stop or play the particle system to unpause it.
   - Name: Stop
     ReturnType: nil
     Parameters: []
