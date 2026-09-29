@@ -130,6 +130,11 @@ for (const yamlFile of yamlFiles) {
         appendLine("")
     }
 
+    if (c.HttpWarning) {
+        appendLine("{{ httpwarning() }}")
+        appendLine("")
+    }
+
     if (c.IsAbstract) {
         appendLine("{{ abstract() }}")
         appendLine("")
