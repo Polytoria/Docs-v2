@@ -109,8 +109,7 @@ Methods:
     IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
-    Description: Returns a new Vector3 with the given Vector2 components and a z
-      component of 0.
+    Description: Returns a new Vector3 of (0,0,0) since there are no parameters.
   - Name: New
     ReturnType: Vector3
     Parameters:
@@ -122,8 +121,7 @@ Methods:
     IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
-    Description: Returns a new Vector3 with the given Vector2 components and a z
-      component of 0.
+    Description: Returns a new Vector3 with the given value of d and sets x, y, and z to d
   - Name: New
     ReturnType: Vector3
     Parameters:
@@ -139,8 +137,8 @@ Methods:
     IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
-    Description: Returns a new Vector3 with the given Vector2 components and a z
-      component of 0.
+    Description: Returns a new Vector3 with the given x and y with a z
+      component of 0, since it is not set.
   - Name: New
     ReturnType: Vector3
     Parameters:
@@ -160,8 +158,7 @@ Methods:
     IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
-    Description: Returns a new Vector3 with the given Vector2 components and a z
-      component of 0.
+    Description: Returns a new Vector3 with the given numbers x, y, and z, and sets the Vector3 to it.
   - Name: New
     ReturnType: Vector3
     Parameters:
