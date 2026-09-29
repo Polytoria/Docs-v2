@@ -42,7 +42,7 @@ Methods:
     IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
-    Description: Creates a new Color with the set R, G, B and A values
+    Description: Creates a Color object with an RGB of (0, 0, 0) and an alpha of 1.
   - Name: New
     ReturnType: Color
     Parameters:
@@ -54,7 +54,7 @@ Methods:
     IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
-    Description: Creates a new Color with the set R, G, B and A values
+    Description: Creates a Color object with an RGB of (d, d, d) and an alpha of 1.
   - Name: New
     ReturnType: Color
     Parameters:
@@ -74,7 +74,7 @@ Methods:
     IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
-    Description: Creates a new Color with the set R, G, B and A values
+    Description: Creates a new Color with the set R, G, B and an alpha of 1.
   - Name: New
     ReturnType: Color
     Parameters:
