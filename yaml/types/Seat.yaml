@@ -1,6 +1,6 @@
 Name: Seat
 Description: Seats are parts the player can sit on.
-Category: world
+Category: building
 BaseType: Part
 Properties:
   - Name: Occupant

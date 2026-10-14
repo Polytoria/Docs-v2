@@ -1,7 +1,7 @@
 Name: Accessory
 Description: Accessory represents an attachable object that can be equipped by a
   CharacterModel.
-Category: world
+Category: characters
 BaseType: Dynamic
 Properties:
   - Name: TargetAttachment

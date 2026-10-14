@@ -1,6 +1,7 @@
 Name: ShadowLayer
 Description: ShadowLayer represents a shadow placed behind a UI element.
-Category: misc
+Icon: UIShadow
+Category: ui
 BaseType: null
 Constructors:
   - Name: New

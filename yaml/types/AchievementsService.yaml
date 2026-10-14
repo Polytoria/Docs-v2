@@ -1,5 +1,6 @@
 Name: AchievementsService
 Description: Service for managing achievements
+Icon: Achievements
 Category: services
 BaseType: Instance
 Properties:

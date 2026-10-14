@@ -1,12 +1,12 @@
 ---
-title: boolean
+title: Booleans
 description:
 icon: polytoria/Bool
 ---
 
-# :polytoria-Bool: boolean
+# :polytoria-Bool: Booleans
 
-A `boolean` or `bool` is a variable that can be either `true` or `false`.
+A `boolean` or `bool` is a data type that can be either `true` or `false`.
 
 Booleans come from the way computers interpret data with `1` being `true` and `0` being `false`.
 

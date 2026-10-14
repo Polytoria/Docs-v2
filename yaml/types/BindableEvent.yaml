@@ -1,6 +1,7 @@
 Name: BindableEvent
 Description: BindableEvent is an event that can be called to communicate between
   scripts in the same boundary.
+Icon: Event
 Category: networking
 BaseType: Instance
 Properties: []

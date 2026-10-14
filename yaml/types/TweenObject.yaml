@@ -1,5 +1,6 @@
 Name: TweenObject
 Description: An object that represents tween
+Icon: Tween
 Category: misc
 BaseType: null
 Properties:

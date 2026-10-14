@@ -62,7 +62,7 @@ Methods:
         Type: any
         IsOptional: false
         DefaultValue: ""
-    IsAsync: false
+    IsAsync: true
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false

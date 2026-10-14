@@ -1,6 +1,6 @@
 Name: Image3D
 Description: Image3D are objects that can have an image texture and are placed in the world.
-Category: world
+Category: ui
 BaseType: Dynamic
 Properties:
   - Name: Image

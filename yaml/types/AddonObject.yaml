@@ -1,6 +1,7 @@
 Name: AddonObject
 Description: AddonObject represents an addon in the creator. This object serves
   as the main interface for addon developers to interact with the addon system.
+Icon: Creator
 Category: addons
 BaseType: null
 Properties:

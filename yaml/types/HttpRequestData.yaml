@@ -1,5 +1,6 @@
 Name: HttpRequestData
 Description: HttpRequestData represents the data required to construct an HTTP request
+Icon: Http
 Category: types
 BaseType: null
 Constructors:

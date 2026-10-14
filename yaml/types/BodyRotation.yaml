@@ -1,6 +1,7 @@
 Name: BodyRotation
 Description: BodyRotation are objects that apply a force to their parent until
   they reach the target rotation.
+Icon: BodyMover
 Category: physics
 BaseType: Instance
 Properties:

@@ -1,6 +1,6 @@
 Name: Clothing
 Description: Clothing represents a clothing that can be applied to a PolytorianModel
-Category: world
+Category: characters
 BaseType: Instance
 Properties:
   - Name: Image

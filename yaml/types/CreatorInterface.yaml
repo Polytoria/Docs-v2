@@ -1,7 +1,8 @@
 Name: CreatorInterface
 Description: CreatorInterface represent the user interface of the creator. This
   class is only available in the creator.
-Category: addons
+Icon: CreatorGUI
+Category: creator
 BaseType: null
 Properties:
   - Name: ToolMode

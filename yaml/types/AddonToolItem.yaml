@@ -1,5 +1,6 @@
 Name: AddonToolItem
 Description: AddonToolItem represents a tool item in the tools menu of the addon.
+Icon: Creator
 Category: addons
 BaseType: null
 Properties: []

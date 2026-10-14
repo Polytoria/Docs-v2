@@ -1,5 +1,6 @@
 Name: UIScrollView
 Description: UIScrollView is a class that allows the user to scroll content within a view.
+Icon: UIScroll
 Category: ui
 BaseType: UIContainer
 Properties:

@@ -1,6 +1,7 @@
 Name: Animator
 Description: WIP class
-Category: world
+Icon: Animation
+Category: characters
 BaseType: Instance
 Properties:
   - Name: CurrentAnimation

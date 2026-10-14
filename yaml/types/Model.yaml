@@ -1,7 +1,7 @@
 Name: Model
 Description: Model is an instance that can hold other instances, and which
   transform affects its children.
-Category: world
+Category: building
 BaseType: Dynamic
 Properties: []
 Methods: []

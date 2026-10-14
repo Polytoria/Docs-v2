@@ -1,6 +1,6 @@
 Name: CharacterModel
 Description: Base class for Character Models
-Category: world
+Category: characters
 BaseType: Dynamic
 Properties:
   - Name: CurrentState

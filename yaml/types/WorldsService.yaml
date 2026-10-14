@@ -2,6 +2,7 @@ Name: WorldsService
 Description: \!! WIP Class, WorldsService is a service that is used to join
   players to other worlds. This class is currently unavailable in public
   servers. **This is not recommended for use at this time.**
+Icon: World
 Category: services
 BaseType: Instance
 Properties: []

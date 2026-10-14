@@ -1,5 +1,6 @@
 Name: PTImageAsset
 Description: An image asset that's loaded from Polytoria.
+Icon: PTAsset
 Category: assets
 BaseType: ImageAsset
 Properties:

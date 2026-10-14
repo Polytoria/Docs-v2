@@ -1,6 +1,6 @@
 Name: Folder
 Description: Folder is similar to a model, used for storing objects in the place.
-Category: world
+Category: building
 BaseType: Instance
 Properties: []
 Methods: []

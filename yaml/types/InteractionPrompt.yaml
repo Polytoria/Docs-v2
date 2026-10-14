@@ -1,6 +1,6 @@
 Name: InteractionPrompt
 Description: InteractionPrompt is a object that allows players to interact with objects.
-Category: misc
+Category: ui
 BaseType: Physical
 Properties:
   - Name: UIMode

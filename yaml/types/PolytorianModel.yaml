@@ -1,6 +1,6 @@
 Name: PolytorianModel
 Description: a PolytorianModel is a CharacterModel that represents the default Polytoria Character.
-Category: world
+Category: characters
 BaseType: CharacterModel
 Properties:
   - Name: HeadColor

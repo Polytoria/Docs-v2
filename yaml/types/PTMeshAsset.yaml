@@ -1,5 +1,6 @@
 Name: PTMeshAsset
 Description: A mesh asset that's loaded from Polytoria.
+Icon: PTAsset
 Category: assets
 BaseType: MeshAsset
 Properties:

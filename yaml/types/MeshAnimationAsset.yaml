@@ -1,5 +1,6 @@
 Name: MeshAnimationAsset
 Description: \!! WIP Class, Base class for animation loaded from meshes
+Icon: BuiltInAsset
 Category: assets
 BaseType: ResourceAsset
 Properties:

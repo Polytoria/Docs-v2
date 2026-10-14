@@ -1,5 +1,6 @@
 Name: BuiltInFontAsset
 Description: Font asset that's built-in with the client
+Icon: FontAsset
 Category: assets
 BaseType: FontAsset
 Properties:

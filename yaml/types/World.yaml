@@ -1,7 +1,7 @@
 Name: World
 Description: World is the root object in the Polytoria instance tree. It is the
   object from which everything is descended.
-Category: world
+Category: game
 BaseType: Instance
 Properties:
   - Name: IsLocalTest
