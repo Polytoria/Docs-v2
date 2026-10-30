@@ -1,5 +1,6 @@
 Name: HttpService
 Description: Http is a service used for HTTP communications and requests.
+Icon: Http
 Category: services
 BaseType: Instance
 Properties: []

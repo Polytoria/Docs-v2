@@ -3,6 +3,15 @@ Description: NewServerRequestData represents the request data for a new server
   instance, to be used with WorldsService.
 Category: misc
 BaseType: null
+Constructors:
+  - Name: New
+    ReturnType: NewServerRequestData
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a new `NewServerRequestData`
 Properties:
   - Name: WorldPath
     Type: string
@@ -18,15 +27,7 @@ Properties:
     IsObsolete: false
     IsStatic: false
     Description: How much player slot should the new server allocates for.
-Methods:
-  - Name: New
-    ReturnType: NewServerRequestData
-    Parameters: []
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a new `NewServerRequestData`
+Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false

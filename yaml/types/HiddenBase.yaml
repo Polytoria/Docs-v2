@@ -1,5 +1,6 @@
 Name: HiddenBase
 Description: Base class for hiddens
+Icon: Hidden
 Category: misc
 BaseType: Instance
 Properties: []

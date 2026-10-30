@@ -1,5 +1,6 @@
 Name: PTSignal
 Description: A signal which scripts can subscribe to
+Icon: Event
 Category: scripting
 BaseType: null
 Properties: []

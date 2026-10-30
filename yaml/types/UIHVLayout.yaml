@@ -1,6 +1,7 @@
 Name: UIHVLayout
 Description: UIHVLayout is an abstract class that provides horizontal and
   vertical layout functionality for UI elements.
+Icon: UIHFlow
 Category: ui
 BaseType: UIContainer
 Properties:

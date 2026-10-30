@@ -3,25 +3,15 @@ Description: Number series is a data type that represents a collection of
   numbers and points.
 Category: types
 BaseType: null
-Properties:
-  - Name: PointCount
-    Type: number
-    IsAccessibleByScripts: true
-    IsReadOnly: true
-    IsObsolete: false
-    IsStatic: false
-    Description: Returns the point count of this number series.
-Methods:
+Constructors:
   - Name: New
-    ReturnType: NumberSeries
     Parameters: []
     IsAsync: false
     IsObsolete: false
     IsStatic: true
     IsSemiStatic: false
-    Description: Creates a number series from a range.
+    Description: Creates a number series.
   - Name: New
-    ReturnType: NumberSeries
     Parameters:
       - Name: min
         Type: number
@@ -36,6 +26,15 @@ Methods:
     IsStatic: true
     IsSemiStatic: false
     Description: Creates a number series from a range.
+Properties:
+  - Name: PointCount
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    IsStatic: false
+    Description: Returns the point count of this number series.
+Methods:
   - Name: Clear
     ReturnType: nil
     Parameters: []

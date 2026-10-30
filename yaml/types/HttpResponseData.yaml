@@ -1,5 +1,6 @@
 Name: HttpResponseData
 Description: HttpResponseData represents the result of an HTTP request.
+Icon: Http
 Category: types
 BaseType: null
 Properties:

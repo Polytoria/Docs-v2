@@ -1,5 +1,6 @@
 Name: MeshAsset
 Description: Base class for mesh assets
+Icon: BuiltInAsset
 Category: assets
 BaseType: ResourceAsset
 Properties: []

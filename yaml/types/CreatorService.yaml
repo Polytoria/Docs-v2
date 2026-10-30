@@ -1,6 +1,7 @@
 Name: CreatorService
 Description: CreatorService is the class that manages the creator. This class is
   only available in the creator.
+Icon: Creator
 Category: services
 BaseType: null
 Properties:

@@ -1,5 +1,6 @@
 Name: InputActionButton
 Description: InputActionButton is a class that represents input action of button type.
+Icon: InputAction
 Category: input
 BaseType: InputAction
 Properties:

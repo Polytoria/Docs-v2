@@ -38,3 +38,139 @@ h3+.admonition.quote {
 .contributors-link-footer {
     color: #007bff !important;
 }
+
+:root {
+    --md-admonition--parameters: url('list-box.svg');
+    --md-admonition--abstact-class: url('code-braces-box.svg');
+    --md-admonition--static: url('code-array.svg');
+    --md-admonition--not-newable: url('alert-box.svg');
+}
+
+/* Parameters Box */
+.md-typeset .admonition.parameters,
+.md-typeset details.parameters {
+    border-color: rgb(158, 158, 158);
+}
+
+.md-typeset .parameters>.admonition-title,
+.md-typeset .parameters>summary {
+    background-color: rgba(158, 158, 158, 0.1);
+}
+
+.md-typeset .parameters>.admonition-title::before,
+.md-typeset .parameters>summary::before {
+    background-color: rgb(158, 158, 158);
+    mask-image: var(--md-admonition--parameters);
+}
+
+/* Abstract Class Box */
+.md-typeset .admonition.abstract-class,
+.md-typeset details.abstract-class {
+    border-color: rgb(255, 23, 68);
+}
+
+.md-typeset .abstract-class>.admonition-title,
+.md-typeset .abstract-class>summary {
+    background-color: rgba(255, 23, 68, 0.1);
+}
+
+.md-typeset .abstract-class>.admonition-title::before,
+.md-typeset .abstract-class>summary::before {
+    background-color: rgb(255, 23, 68);
+    mask-image: var(--md-admonition--abstact-class);
+}
+
+/* Not Newable Box */
+.md-typeset .admonition.not-newable,
+.md-typeset details.not-newable {
+    border-color: rgb(255, 145, 0);
+}
+
+.md-typeset .not-newable>.admonition-title,
+.md-typeset .not-newable>summary {
+    background-color: rgba(255, 145, 0, 0.1);
+}
+
+.md-typeset .not-newable>.admonition-title::before,
+.md-typeset .not-newable>summary::before {
+    background-color: rgb(255, 145, 0);
+    mask-image: var(--md-admonition--not-newable);
+}
+
+/* Static Box */
+.md-typeset .admonition.static,
+.md-typeset details.static {
+    border-color: rgb(0, 191, 165);
+}
+
+.md-typeset .static>.admonition-title,
+.md-typeset .static>summary {
+    background-color: rgba(0, 191, 165, 0.1);
+}
+
+.md-typeset .static>.admonition-title::before,
+.md-typeset .static>summary::before {
+    background-color: rgb(0, 191, 165);
+    mask-image: var(--md-admonition--static);
+}
+
+.tag-section {
+    display: block;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+}
+
+.tag-holder {
+    align-items: flex-start;
+    column-gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    max-width: 100%;
+    row-gap: 4px;
+}
+
+.tag-span {
+    display: block;
+    margin-bottom: 4px;
+    margin-left: 0px;
+    margin-top: 2px;
+}
+
+.tag-div {
+    align-items: center;
+    background-color: rgba(208, 217, 251, 0.12);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(247 247 248);
+    display: inline-flex;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+    overflow-wrap: break-word;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-size-adjust: 100%;
+    text-transform: capitalize;
+    text-wrap-mode: nowrap;
+    white-space-collapse: collapse;
+}
+
+.explainer-section {
+    display: block;
+    margin: 0px;
+    padding: 12px;
+    color: white;
+    border: rgba(208, 217, 251, 0.12) solid 1px;
+    background-color: rgb(25, 26, 31);
+    border-radius: 4px;
+}
+
+.explainer-text {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 4px;
+    color: rgb(213, 215, 221);
+    font-size: 14px;
+    font-style: normal;
+}

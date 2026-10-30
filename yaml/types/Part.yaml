@@ -1,6 +1,6 @@
 Name: Part
 Description: Parts represent the basic building blocks of the world.
-Category: world
+Category: building
 BaseType: Entity
 Properties:
   - Name: Shape

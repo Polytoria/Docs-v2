@@ -1,6 +1,7 @@
 Name: PTMeshAnimationAsset
 Description: PTMeshAnimationAsset is an animation asset where animation is
   loaded from Polytoria mesh.
+Icon: PTAsset
 Category: assets
 BaseType: MeshAnimationAsset
 Properties:

@@ -5,36 +5,7 @@ Description: >-
     The alpha property is between 0 and 1. 0 is fully transparent and 1 is fully visible.
 Category: types
 BaseType: null
-Properties:
-  - Name: R
-    Type: number
-    IsAccessibleByScripts: true
-    IsReadOnly: false
-    IsObsolete: false
-    IsStatic: false
-    Description: Red color component
-  - Name: G
-    Type: number
-    IsAccessibleByScripts: true
-    IsReadOnly: false
-    IsObsolete: false
-    IsStatic: false
-    Description: Green color component
-  - Name: B
-    Type: number
-    IsAccessibleByScripts: true
-    IsReadOnly: false
-    IsObsolete: false
-    IsStatic: false
-    Description: Blue color component
-  - Name: A
-    Type: number
-    IsAccessibleByScripts: true
-    IsReadOnly: false
-    IsObsolete: false
-    IsStatic: false
-    Description: Alpha (opacity) color component
-Methods:
+Constructors:
   - Name: New
     ReturnType: Color
     Parameters: []
@@ -99,14 +70,6 @@ Methods:
     IsStatic: true
     IsSemiStatic: false
     Description: Creates a new Color with the set R, G, B and A values
-  - Name: Random
-    ReturnType: Color
-    Parameters: []
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Returns a random color with an alpha value of 1.
   - Name: FromRGB
     ReturnType: Color
     Parameters:
@@ -143,18 +106,6 @@ Methods:
     IsStatic: true
     IsSemiStatic: false
     Description: Creates a new Color from the specified hex value.
-  - Name: ToHex
-    ReturnType: string
-    Parameters:
-      - Name: c
-        Type: Color
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: true
-    Description: Converts a Color value to its hexadecimal string representation.
   - Name: FromHSV
     ReturnType: Color
     Parameters:
@@ -179,6 +130,56 @@ Methods:
     IsStatic: true
     IsSemiStatic: false
     Description: Creates a new Color from the specified HSV value.
+Properties:
+  - Name: R
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Red color component
+  - Name: G
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Green color component
+  - Name: B
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Blue color component
+  - Name: A
+    Type: number
+    IsAccessibleByScripts: true
+    IsReadOnly: false
+    IsObsolete: false
+    IsStatic: false
+    Description: Alpha (opacity) color component
+Methods:
+  - Name: Random
+    ReturnType: Color
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Returns a random color with an alpha value of 1.
+  - Name: ToHex
+    ReturnType: string
+    Parameters:
+      - Name: c
+        Type: Color
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: true
+    Description: Converts a Color value to its hexadecimal string representation.
   - Name: Lerp
     ReturnType: Color
     Parameters:

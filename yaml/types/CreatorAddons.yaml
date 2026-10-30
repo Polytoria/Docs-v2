@@ -1,6 +1,7 @@
 Name: CreatorAddons
 Description: Service for managing addons
-Category: addons
+Icon: Creator
+Category: creator
 BaseType: Instance
 Properties: []
 Methods:

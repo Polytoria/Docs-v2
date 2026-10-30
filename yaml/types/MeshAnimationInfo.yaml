@@ -1,5 +1,6 @@
 Name: MeshAnimationInfo
 Description: MeshAnimationInfo contains the animation information for meshes.
+Icon: Animation
 Category: misc
 BaseType: null
 Properties:

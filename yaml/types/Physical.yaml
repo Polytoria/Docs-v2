@@ -73,7 +73,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Sets the layer of which this collides
   - Name: SetCollisionMask
     ReturnType: nil
     Parameters:
@@ -89,7 +89,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Sets the mask of which this collides
   - Name: GetCollisionLayer
     ReturnType: boolean
     Parameters:
@@ -101,7 +101,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Gets the layer of which this collides
   - Name: GetCollisionMask
     ReturnType: boolean
     Parameters:
@@ -113,7 +113,7 @@ Methods:
     IsObsolete: false
     IsStatic: false
     IsSemiStatic: false
-    Description: Missing Documentation
+    Description: Gets the mask of which this collides
   - Name: GetTouching
     ReturnType: "{ Physical }"
     Parameters: []

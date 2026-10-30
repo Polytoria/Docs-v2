@@ -1,5 +1,6 @@
 Name: PTSignalConnection
 Description: PTSignalConnection represents a signal for this connection
+Icon: Event
 Category: scripting
 BaseType: null
 Properties: []

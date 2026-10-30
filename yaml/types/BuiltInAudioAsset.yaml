@@ -1,5 +1,6 @@
 Name: BuiltInAudioAsset
 Description: Audio asset that's built-in with the client
+Icon: AudioAsset
 Category: assets
 BaseType: AudioAsset
 Properties:

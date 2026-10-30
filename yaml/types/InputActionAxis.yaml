@@ -1,5 +1,6 @@
 Name: InputActionAxis
 Description: InputActionAxis is a class that represents input action of axis type.
+Icon: InputAction
 Category: input
 BaseType: InputAction
 Properties:

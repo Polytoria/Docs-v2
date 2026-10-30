@@ -2,6 +2,131 @@ Name: Quaternion
 Description: Represents a quaternion used for rotations.
 Category: types
 BaseType: null
+Constructors:
+  - Name: New
+    ReturnType: Quaternion
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a new Quaternion object with the specified components.
+  - Name: New
+    ReturnType: Quaternion
+    Parameters:
+      - Name: x
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: y
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: z
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: w
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a new Quaternion object with the specified components.
+  - Name: AngleAxis
+    ReturnType: Quaternion
+    Parameters:
+      - Name: angle
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: axis
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a rotation which rotates angle degrees around axis.
+  - Name: Euler
+    ReturnType: Quaternion
+    Parameters:
+      - Name: x
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: y
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+      - Name: z
+        Type: number
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a quaternion from Euler angles specified by a Vector3.
+  - Name: Euler
+    ReturnType: Quaternion
+    Parameters:
+      - Name: euler
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a quaternion from Euler angles specified by a Vector3.
+  - Name: FromToRotation
+    ReturnType: Quaternion
+    Parameters:
+      - Name: fromDirection
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: toDirection
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a rotation which rotates angle degrees around axis.
+  - Name: LookRotation
+    ReturnType: Quaternion
+    Parameters:
+      - Name: forward
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a rotation with the specified forward and upwards directions.
+  - Name: LookRotation
+    ReturnType: Quaternion
+    Parameters:
+      - Name: forward
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+      - Name: upwards
+        Type: Vector3
+        IsOptional: false
+        DefaultValue: ""
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a rotation with the specified forward and upwards directions.
 Properties:
   - Name: X
     Type: number
@@ -39,38 +164,6 @@ Properties:
     IsStatic: true
     Description: The identity rotation.
 Methods:
-  - Name: New
-    ReturnType: Quaternion
-    Parameters: []
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a new Quaternion object with the specified components.
-  - Name: New
-    ReturnType: Quaternion
-    Parameters:
-      - Name: x
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: y
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: z
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: w
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a new Quaternion object with the specified components.
   - Name: Angle
     ReturnType: number
     Parameters:
@@ -87,22 +180,6 @@ Methods:
     IsStatic: true
     IsSemiStatic: true
     Description: Calculates the angle between two quaternions.
-  - Name: AngleAxis
-    ReturnType: Quaternion
-    Parameters:
-      - Name: angle
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: axis
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a rotation which rotates angle degrees around axis.
   - Name: Dot
     ReturnType: number
     Parameters:
@@ -119,38 +196,6 @@ Methods:
     IsStatic: true
     IsSemiStatic: true
     Description: Calculates the dot product of two quaternions.
-  - Name: Euler
-    ReturnType: Quaternion
-    Parameters:
-      - Name: x
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: y
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-      - Name: z
-        Type: number
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a quaternion from Euler angles specified by a Vector3.
-  - Name: Euler
-    ReturnType: Quaternion
-    Parameters:
-      - Name: euler
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a quaternion from Euler angles specified by a Vector3.
   - Name: ToEuler
     ReturnType: Vector3
     Parameters:
@@ -163,22 +208,6 @@ Methods:
     IsStatic: true
     IsSemiStatic: true
     Description: Converts a quaternion to Euler angles represented as a Vector3.
-  - Name: FromToRotation
-    ReturnType: Quaternion
-    Parameters:
-      - Name: fromDirection
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: toDirection
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a rotation which rotates angle degrees around axis.
   - Name: Inverse
     ReturnType: Quaternion
     Parameters:
@@ -232,34 +261,6 @@ Methods:
     IsSemiStatic: true
     Description: Linearly interpolates between two quaternions without clamping the
       interpolant.
-  - Name: LookRotation
-    ReturnType: Quaternion
-    Parameters:
-      - Name: forward
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a rotation with the specified forward and upwards directions.
-  - Name: LookRotation
-    ReturnType: Quaternion
-    Parameters:
-      - Name: forward
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-      - Name: upwards
-        Type: Vector3
-        IsOptional: false
-        DefaultValue: ""
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a rotation with the specified forward and upwards directions.
   - Name: Normalize
     ReturnType: Quaternion
     Parameters:

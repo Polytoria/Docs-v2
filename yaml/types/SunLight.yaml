@@ -1,6 +1,7 @@
 Name: SunLight
 Description: SunLight is the main directional light source representing the sun
   in the game world.
+Icon: Sun
 Category: lighting
 BaseType: Light
 Properties: []

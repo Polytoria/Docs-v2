@@ -1,5 +1,6 @@
 Name: CoreUIService
 Description: CoreUI is a static class that allows for the toggling of certain core GUI.
+Icon: CoreUI
 Category: services
 BaseType: Instance
 Properties:

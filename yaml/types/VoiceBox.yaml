@@ -1,6 +1,6 @@
 Name: VoiceBox
 Description: VoiceBox is an object that can output speech bubbles.
-Category: misc
+Category: characters
 BaseType: Part
 Properties: []
 Methods:

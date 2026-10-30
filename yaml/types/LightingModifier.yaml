@@ -1,6 +1,7 @@
 Name: LightingModifier
 Description: Base class for lighting modifiers
-Category: misc
+Icon: Sun
+Category: lighting
 BaseType: Instance
 Properties: []
 Methods: []

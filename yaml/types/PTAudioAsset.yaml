@@ -1,5 +1,6 @@
 Name: PTAudioAsset
 Description: Audio asset which is loaded from Polytoria
+Icon: PTAsset
 Category: assets
 BaseType: AudioAsset
 Properties:

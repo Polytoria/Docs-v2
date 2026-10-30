@@ -2,15 +2,7 @@ Name: Variant
 Description: Variant is a container that can store any type of value.
 Category: types
 BaseType: null
-Properties:
-  - Name: Value
-    Type: any
-    IsAccessibleByScripts: true
-    IsReadOnly: true
-    IsObsolete: false
-    IsStatic: false
-    Description: The value of the variant.
-Methods:
+Constructors:
   - Name: New
     ReturnType: Variant
     Parameters: []
@@ -31,6 +23,15 @@ Methods:
     IsStatic: true
     IsSemiStatic: false
     Description: Returns a new Variant
+Properties:
+  - Name: Value
+    Type: any
+    IsAccessibleByScripts: true
+    IsReadOnly: true
+    IsObsolete: false
+    IsStatic: false
+    Description: The value of the variant.
+Methods: []
 Events: []
 IsStatic: false
 IsAbstract: false

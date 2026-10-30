@@ -1,5 +1,6 @@
 Name: InputButtonCollection
 Description: A collection of Input Buttons
+Icon: InputButton
 Category: input
 BaseType: null
 Properties: []

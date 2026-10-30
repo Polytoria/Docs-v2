@@ -1,6 +1,6 @@
 Name: Light
 Description: Light is an abstract base class for all light objects in the world.
-Category: misc
+Category: lighting
 BaseType: Dynamic
 Properties:
   - Name: Enabled

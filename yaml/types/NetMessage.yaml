@@ -3,6 +3,14 @@ Description: Represents a network message used for communication between clients
   and servers.
 Category: networking
 BaseType: null
+Constructors:
+  - Name: New
+    Parameters: []
+    IsAsync: false
+    IsObsolete: false
+    IsStatic: true
+    IsSemiStatic: false
+    Description: Creates a new NetMessage instance.
 Properties: []
 Methods:
   - Name: AddString
@@ -313,14 +321,6 @@ Methods:
     IsStatic: false
     IsSemiStatic: false
     Description: Gets an Buffer value from the message with the specified key.
-  - Name: New
-    ReturnType: NetMessage
-    Parameters: []
-    IsAsync: false
-    IsObsolete: false
-    IsStatic: true
-    IsSemiStatic: false
-    Description: Creates a new NetMessage instance.
 Events: []
 IsStatic: false
 IsAbstract: false

@@ -1,7 +1,7 @@
 Name: ColorAdjustModifier
 Description: ColorAdjustModifier is a LightingModifier that allows the
   adjustment of lighting
-Category: elements
+Category: lighting
 BaseType: LightingModifier
 Properties:
   - Name: Brightness

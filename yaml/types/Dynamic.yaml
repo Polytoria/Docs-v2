@@ -1,7 +1,7 @@
 Name: Dynamic
 Description: Dynamic is the base class where all objects with a position,
   rotation and scale derive from.
-Category: world
+Category: building
 BaseType: Instance
 Properties:
   - Name: Position

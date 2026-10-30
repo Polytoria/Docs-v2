@@ -1,5 +1,6 @@
 Name: ResourceAsset
 Description: Base class for resource based assets
+Icon: BuiltInAsset
 Category: assets
 BaseType: BaseAsset
 Properties:

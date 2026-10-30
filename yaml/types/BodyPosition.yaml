@@ -1,6 +1,7 @@
 Name: BodyPosition
 Description: BodyPosition are objects that apply a force to their parent until
   they reach the target position.
+Icon: BodyMover
 Category: physics
 BaseType: Instance
 Properties:

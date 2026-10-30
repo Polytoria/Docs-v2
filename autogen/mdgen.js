@@ -2,6 +2,7 @@ const fs = require("fs")
 const path = require("path")
 const yaml = require("yaml")
 
+const codeExamplesPath = path.join(__dirname, "../", "code-examples")
 const yamlAPIPath = path.join(__dirname, "../", "yaml", "types")
 const mdAPIPath = path.join(__dirname, "../", "docs/api", "types")
 const iconDataPath = path.join(__dirname, "../", "docs/theme/.icons", "polytoria")
@@ -85,25 +86,39 @@ for (const yamlFile of yamlFiles) {
     }
 
     let mk = ""
-    const iconPath = path.join(iconDataPath, c.Name + ".svg")
+    var iconPath = path.join(iconDataPath, c.Name + ".svg")
+    if (c.Icon) {
+        iconPath = path.join(iconDataPath, c.Icon + ".svg")
+    }
     const emojiExists = fs.existsSync(iconPath)
 
     function appendLine(str) {
         mk += str + "\n"
     }
 
+    function appendTagLine(tags) {
+        mk += "{{ tagSection([" + tags.toString() + "]) }}"
+    }
+    function appendPropExplainer(apiClass, propTitle, propType) {
+        mk += "{{ propExplainer(\"" + apiClass + "\",\"" + propTitle + "\",\"" + propType + "\") }}"
+    }
+
     appendLine("---")
     appendLine("title: " + c.Name)
     appendLine("description:")
-    if (emojiExists) {
+    if (emojiExists &! c.Icon) {
         appendLine("icon: polytoria/" + c.Name)
+    } else if (c.Icon) {
+        appendLine("icon: polytoria/" + c.Icon)
     } else {
         appendLine("icon: polytoria/Unknown")
     }
     appendLine("---")
     appendLine("")
-    if (emojiExists) {
+    if (emojiExists &! c.Icon) {
         appendLine(`# :polytoria-${c.Name}: ` + c.Name)
+    } else if (c.Icon) {
+        appendLine(`# :polytoria-${c.Icon}: ` + c.Name)
     } else {
         appendLine("# " + c.Name)
     }
@@ -140,7 +155,52 @@ for (const yamlFile of yamlFiles) {
         appendLine("")
     }
 
+    const constructors = c.Constructors ? (Array.isArray(c.Constructors) ? c.Constructors : [c.Constructors]) : [];
+    constructors.sort((a, b) => {
+        const nameA = a.Name.toUpperCase();
+        const nameB = b.Name.toUpperCase();
+        if (nameA < nameB) {
+            return -1;
+        }
+        if (nameA > nameB) {
+            return 1;
+        }
+        return 0;
+    });
+
+    if (constructors.length > 0) {
+        appendLine("")
+        appendLine("## Constructors")
+        appendLine("")
+    }
+    for (const con of constructors) {
+        if (con.IsObsolete) continue
+        let params = []
+
+        const parameters = con.Parameters ? (Array.isArray(con.Parameters) ? con.Parameters : [con.Parameters]) : [];
+        for (const p of parameters) {
+            params.push(`${p.Name};${p.Type}${p.IsOptional ? "?" : ""}`)
+        }
+
+        appendLine(`### ${con.Name}(${params.join(",")}) { construct }`)
+        appendLine(``)
+        appendLine(con.Description || "Missing documentation!")
+        appendLine(``)
+    }
+
+
     const properties = c.Properties ? (Array.isArray(c.Properties) ? c.Properties : [c.Properties]) : [];
+    properties.sort((a, b) => {
+        const nameA = a.Name.toUpperCase();
+        const nameB = b.Name.toUpperCase();
+        if (nameA < nameB) {
+            return -1;
+        }
+        if (nameA > nameB) {
+            return 1;
+        }
+        return 0;
+    });
 
     if (properties.length > 0) {
         appendLine("")
@@ -150,12 +210,30 @@ for (const yamlFile of yamlFiles) {
 
     for (const prop of properties) {
         appendLine(`### ${prop.Name}:${prop.Type} { property }`)
+        //appendPropExplainer(c.Name, prop.Name, prop.Type)
         appendLine(``)
         appendLine(prop.Description || "Missing documentation!")
         appendLine(``)
+
+        if (prop.IsReadOnly) {
+            tags = new Array("\"Read-Only\",")
+            appendTagLine(tags)
+            appendLine(``)
+        }
     }
 
     const methods = c.Methods ? (Array.isArray(c.Methods) ? c.Methods : [c.Methods]) : [];
+    methods.sort((a, b) => {
+        const nameA = a.Name.toUpperCase();
+        const nameB = b.Name.toUpperCase();
+        if (nameA < nameB) {
+            return -1;
+        }
+        if (nameA > nameB) {
+            return 1;
+        }
+        return 0;
+    });
 
     if (methods.length > 0) {
         appendLine("")
@@ -175,9 +253,44 @@ for (const yamlFile of yamlFiles) {
         appendLine(``)
         appendLine(m.Description || "Missing documentation!")
         appendLine(``)
+
+        if (m.Example) {
+            const examplecode = fs.readFileSync(path.join(codeExamplesPath, m.Example + ".lua"))
+            appendLine("``` lua")
+            appendLine(examplecode.toString())
+            appendLine("```")
+        }
+
+        if (m.IsAsync && m.IsStatic) {
+            tags = new Array("\"Asynchronous\"", "\"Static\"")
+            appendLine(``)
+            appendTagLine(tags)
+            appendLine(``)
+        } else if (m.IsAsync && !m.IsStatic) {
+            tags = new Array("\"Asynchronous\"")
+            appendLine(``)
+            appendTagLine(tags)
+            appendLine(``)
+        } else if (!m.IsAsync && m.IsStatic) {
+            tags = new Array("\"Static\"")
+            appendLine(``)
+            appendTagLine(tags)
+            appendLine(``)
+        }
     }
 
     const events = c.Events ? (Array.isArray(c.Events) ? c.Events : [c.Events]) : [];
+    events.sort((a, b) => {
+        const nameA = a.Name.toUpperCase();
+        const nameB = b.Name.toUpperCase();
+        if (nameA < nameB) {
+            return -1;
+        }
+        if (nameA > nameB) {
+            return 1;
+        }
+        return 0;
+    });
 
     if (events.length > 0) {
         appendLine("")

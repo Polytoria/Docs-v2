@@ -1,6 +1,7 @@
 Name: Animator
 Description: WIP class
-Category: world
+Icon: Animation
+Category: characters
 BaseType: Instance
 Properties:
   - Name: CurrentAnimation
@@ -9,7 +10,7 @@ Properties:
     IsReadOnly: false
     IsObsolete: false
     IsStatic: false
-    Description: Determines the currently playing animation name
+    Description: Determines the currently playing animation's name
 Methods:
   - Name: PlayAnimation
     ReturnType: nil

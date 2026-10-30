@@ -1,6 +1,6 @@
 Name: Truss
 Description: Trusses are parts that can be climbed by the player.
-Category: world
+Category: building
 BaseType: Part
 Properties:
   - Name: ClimbSpeed

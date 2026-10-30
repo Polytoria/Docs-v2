@@ -1,6 +1,6 @@
 Name: Tool
 Description: Tools are objects that can be held by the player.
-Category: world
+Category: characters
 BaseType: RigidBody
 Properties:
   - Name: Droppable
