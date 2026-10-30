@@ -124,24 +124,64 @@ print("Done!")
 
 ## 7. Chaining Tweens
 
-You can run multiple tweens one after another by waiting for the `Finished` event, then reusing the same tween object.
+There are a few methods to running tweens after another.
+
+
+### Using Separate TweenObjects
+This approach is very straightforward; after the first tween finishes, create a second one!
+Using the `Finished` event, we can wait until the first tween finishes and then create a new one after.
+
+This method is best if you want to run code in between each step of the tween.
 
 ```lua
 local part: Part = script.Parent
 local startPos = part.Position
-local tween = Tween:NewTween()
+local endPos = part.Position + Vector3.New(0, 5, 0)
 
 -- Move up
-tween:TweenVector3(startPos, startPos + Vector3.New(0, 5, 0), 1, function(val)
-    part.Position = val
-end)
+local tween = Tween:NewTween()
+tween:TweenPosition(part, endPos, 1)
+
+-- Wait for the first movement to finish
 tween.Finished:Wait()
 
--- Move back down
-tween:Stop()
-tween:TweenVector3(part.Position, startPos, 1, function(val)
-    part.Position = val
+print("Halfway done!")
+
+-- Then move back down
+tween = Tween:NewTween()
+tween:TweenPosition(part, startPos, 1)
+
+tween.Finished:Wait()
+print("Done!")
+```
+
+### Using the `Chain` Method
+This approach uses `Chain` to run a second tween after the first tween finishes, on the same TweenObject.
+
+This method is best if you want to treat everything as one TweenObject.
+`Finished` will only run once, when all tweens are done.
+
+```lua
+wait(5)
+local part: Part = script.Parent
+local startPos = part.Position
+local endPos = part.Position + Vector3.New(0, 5, 0)
+
+-- Move up
+local tween = Tween:NewTween()
+tween:TweenVector3(startPos, endPos, 1, function(v)
+	part.Position = v
 end)
+
+-- Everything after this call will automatically run after the first TweenVector3 finishes
+-- We don't have to manually wait for Finished
+tween:Chain()
+
+-- Then move back down
+tween:TweenVector3(endPos, startPos, 1, function(v)
+	part.Position = v
+end)
+
 tween.Finished:Wait()
 print("Done!")
 ```
